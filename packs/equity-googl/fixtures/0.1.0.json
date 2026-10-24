@@ -1,0 +1,2426 @@
+{
+ "pack": "thinkingtext/equity-googl",
+ "version": "0.1.0",
+ "engine": "fp_41bc10de0e",
+ "usage": {
+  "prompt_tokens": 4857,
+  "completion_tokens": 0,
+  "total_tokens": 4857,
+  "prompt_tokens_details": {
+   "content_tokens": 2537,
+   "text_tokens": 2537,
+   "query_tokens": 2320,
+   "floor_tokens": 0
+  },
+  "inputs": 5,
+  "content": {
+   "tokens": 2537,
+   "text_tokens": 2537,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 17,
+   "combinations": 17,
+   "options": 34,
+   "prompts": 85,
+   "floor_prompts": 0,
+   "query_tokens": 2320,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 3451,
+  "packed_tokens": 3177,
+  "content_tokens": 2537,
+  "text_tokens": 2537,
+  "query_tokens": 2320,
+  "floor_tokens": 0,
+  "generated_tokens": 0,
+  "images": 0,
+  "image_tokens": 0,
+  "video_frames": 0,
+  "video_tokens": 0,
+  "audio_ms": 0,
+  "audio_tokens": 0
+ },
+ "cases": [
+  {
+   "id": "wn4672",
+   "text": "Google Inc. may offer hosting services to Wikipedia, a free community-built encyclopedia, and other projects hosted by the Wikimedia Foundation. Preliminary talks are scheduled to continue in March.\nThe steps of Google towards Wikipedia are not surprising. Google's competitors, such as Clusty.com, MSN Search, and Yahoo, already offer searching of encyclopedias as a dedicated  search category. Clusty.com offers the English Wikipedia, MSN Search links to Encarta, and Yahoo has access to the Columbia Encyclopedia.\nWikipedia is often one of the top results of many searches. Anyone can distribute and even modify Wikipedia content in compliance with its license, called the GNU Free Documentation License. Besides attribution, the license requires that modifications are made available under the same conditions, a principle known as \"copyleft\" and most frequently applied to computer software such as the free operating system Linux.\nHow would a tight Wikipedia integration into Google look?\nA Wikipedia-specific search category like Google's Newsgroups Index Google Groups that even is editable. You can subscribe to Google Groups and post a response to a message thread.\nA Wikipedia-specific search category that is non-editable and links to the original project like Google Category that uses the Open Content the Open Directory Project.\nAn inline feature that emphasizes Wikipedia results at the top of a search result. For details see Google Web Search Features.\nThe technical side of Google hosting also leaves various possibilities:\nGoogle could place a daily updated mirror of Wikipedia that is Google-owned and hosted as a subdomain like news.google.com. That option could be perceived negatively by the Wikipedia users. There is already a discussion on Wikipedia how to deal with Mirrors of Wikipedia that are listed in Google search results higher than the original content. Wikipedia:Send in the clones\nGoogle could offer some Web servers with unlimited bandwidth for the Wikimedia Foundation without conditions. That would have benefits for both sides: Wikipedia, that is currently in the Top 200 Web sites according to Alexa.com, would have no problems with  delivering the content to the users. Google could index Wikipedia content instantly and would not be restricted to the limited number of requests to index it by Google Webspiders.\nHere is an excerpt of a page about hosting posted on Wikimedia's \"Meta-Wiki\", which is used by the community to coordinate project organization:\n\"Google Inc. have made a proposal to host some of the content of the Wikimedia projects. The terms of the offer are currently being discussed by the board. The developer committee have been informed of some of the details via email. A private IRC meeting with Google is planned for March, 2005. Please note that this agreement does not mean there is any requirement for us to include advertising on the site.\" [1]\nThe original summary [2] was written by Angela Beesley, one of the two elected board members of the Wikimedia Foundation, which operates Wikipedia and its sister projects. According to a message posted to a public Wikimedia discussion list by the second elected trustee, Florence Nibart-Devouard, Wikipedia founder and Wikimedia president Jimmy Wales met with Google founders Larry Page and Sergey Brin on February 10, \"who were extremely enthusiastic about the whole project.\" [3]\nGoogle hosting A discussion on MetaWiki.\nGoogle News Aggregator\nTech News World\nBeta News\nSlashdot\nGoogle Blog\nGildot\nNews.com\nABC News: John C. Dvorak talks about Googlepedia\nThis article was originally based on the blog entry \"Google wants to Host Wikipedia or its Content\" by \"Sweet Silhouette\". Portions of it are therefore licensed under the Creative Commons Attribution License 2.0.",
+   "context": "article",
+   "source": {
+    "title": "Google offers to help Wikipedia",
+    "url": "https://en.wikinews.org/wiki/Google_offers_to_help_Wikipedia",
+    "revision": 4819007,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn4672",
+    "queries": [
+     {
+      "id": "googl:alphabet_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.244026,
+          "p": 0.495709,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.226862,
+          "p": 0.504291,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.921312,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:demand_for_google_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.984656,
+          "p": 0.935146,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.653226,
+          "p": 0.064854,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.600525,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.779902,
+          "p": 0.293909,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.90343,
+          "p": 0.706091,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.92234,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.151445,
+          "p": 0.421118,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.833261,
+          "p": 0.578882,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.898389,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.711185,
+          "p": 0.239197,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.554097,
+          "p": 0.760803,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.897789,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.615258,
+          "p": 0.886366,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.669401,
+          "p": 0.113634,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96964,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.100805,
+          "p": 0.790699,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.429947,
+          "p": 0.209301,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943072,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.921959,
+          "p": 0.545774,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.105568,
+          "p": 0.454226,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.731903,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:the_valuation_of_alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.487337,
+          "p": 0.625117,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.998663,
+          "p": 0.374883,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.867015,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.196199,
+          "p": 0.549193,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.393608,
+          "p": 0.450807,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.972591,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.190677,
+          "p": 0.477029,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.09873,
+          "p": 0.522971,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.91375,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:google_cloud_revenue_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.602885,
+          "p": 0.482005,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.530873,
+          "p": 0.517995,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943476,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.155385,
+          "p": 0.399496,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.747821,
+          "p": 0.600504,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.709988,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.567455,
+          "p": 0.518652,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.642099,
+          "p": 0.481348,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.852058,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.025757,
+          "p": 0.404037,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.637083,
+          "p": 0.595963,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.879909,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.562629,
+          "p": 0.530488,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.684734,
+          "p": 0.469512,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946532,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.394292,
+          "p": 0.599628,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.798208,
+          "p": 0.400372,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.944025,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.571098,
+       "percentile": 0.653952,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.341296,
+       "percentile": 0.180669,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.388035,
+       "percentile": 0.28274,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.562311,
+       "percentile": 0.600331,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.347633,
+       "percentile": 0.177987,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.531581,
+       "percentile": 0.576028,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.663033,
+       "percentile": 0.864556,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.485634,
+       "percentile": 0.428689,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn268972",
+   "text": "Google has confirmed that it has \"received formal notification,\" that the Federal Trade Commission (FTC) is investigating its business practices. The acknowledgment was posted on the internet search engine company's  blog  Friday. Google said it was unclear about the nature of the probe.\nA broad FTC investigation would cause the company be tied up in defending itself for years, and according to Bloomberg, might well  be the government’s biggest antitrust case since the Microsoft probe.\nThe FTC will likely launch an  anti-trust investigation, as the company has been the target of many past smaller ones, according to CNN.\nMercury News reported Friday  morning that the FTC review will probably focus on whether Google is using  its dominance in the internet search business to  promote its own products and services.  Google's rivals say  Google unfairly profits from its monopoly in the search engine business by using its search services to point users of its internet search engine to its own sites and services while hiding links to its competitors.\nThe FCC probe  is expected to determine if Google abuses it market dominance to promote moneymaking online marketing, such as  its  mapping, comparison shopping and travel services. According to CNN, \"Google dominates search in the United States, controlling about two-thirds of the market, according to comScore. It also licenses the world's largest smartphone operating system, and its share of U.S. display advertising revenue recently eclipsed long-time leader Yahoo.\"\nGoogle's response is that most complaints of anticompetitive behavior come from companies who are displeased with their ranking in Google's search engine. However, Joshua Wright, law professor at George Mason University said  the FTC will be looking at possible  harm to users and not complaints by  Google’s competitors.\nMelissa Maxman, co-chair of a Washington-based, antitrust practice group, said the FTC's Bureau of Consumer Protection unit will almost certainly be involved to see if Google deceives search engine users by screening search results to profit its own services. She said she would be \"shocked\" if the consumer protection unit was not involved.\nGoogle Fellow Amit Singhal said in the post, \"We respect the FTC's process and will be working with them (as we have with other agencies) over the coming months to answer questions about Google and our services.\" But Singhal acknowledged, \"It's still unclear exactly what the FTC's concerns are, but we're clear about where we stand. Since the beginning, we have been guided by the idea that, if we focus on the user, all else will follow.\"\nBloomberg reported Friday: \"Google has set aside $500 million for a U.S. government investigation into online pharmacy ads the company accepted that may have violated the law.\"\nGoogle's efforts to improve privacy policies after last years' determination that its social-networking service Google Buzz used deceptive tactics, are currently being overseen by the FTC.",
+   "context": "article",
+   "source": {
+    "title": "FTC begins antitrust inquiry of Google",
+    "url": "https://en.wikinews.org/wiki/FTC_begins_antitrust_inquiry_of_Google",
+    "revision": 4817629,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn268972",
+    "queries": [
+     {
+      "id": "googl:alphabet_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.306569,
+          "p": 0.319733,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.551568,
+          "p": 0.680267,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.885399,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:demand_for_google_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.093364,
+          "p": 0.508063,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.125618,
+          "p": 0.491937,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.757369,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.859011,
+          "p": 0.133808,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.991311,
+          "p": 0.866192,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.94202,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.56994,
+          "p": 0.13196,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.686202,
+          "p": 0.86804,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.921502,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.170186,
+          "p": 0.155466,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.477826,
+          "p": 0.844534,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.900625,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.685776,
+          "p": 0.871204,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.597424,
+          "p": 0.128796,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.971215,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.287962,
+          "p": 0.479851,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.207321,
+          "p": 0.520149,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.922205,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.41615,
+          "p": 0.117584,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.400637,
+          "p": 0.882416,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.720721,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:the_valuation_of_alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.240536,
+          "p": 0.241412,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.095581,
+          "p": 0.758588,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.837858,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.533225,
+          "p": 0.635331,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.088382,
+          "p": 0.364669,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.954023,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.114597,
+          "p": 0.481298,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.039753,
+          "p": 0.518702,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.907757,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:google_cloud_revenue_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.418743,
+          "p": 0.504333,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.436075,
+          "p": 0.495667,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.935056,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.677006,
+          "p": 0.226822,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.450665,
+          "p": 0.773178,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.696817,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.487485,
+          "p": 0.185724,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.009448,
+          "p": 0.814276,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.83536,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.234431,
+          "p": 0.366802,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.68847,
+          "p": 0.633198,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.892632,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.740655,
+          "p": 0.555277,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.962669,
+          "p": 0.444723,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.957249,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.766958,
+          "p": 0.271048,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.777645,
+          "p": 0.728952,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.914693,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.050358,
+       "percentile": 0.017101,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.008783,
+       "percentile": 0.003112,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.192532,
+       "percentile": 0.064368,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.009488,
+       "percentile": 0.002669,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.516615,
+       "percentile": 0.483803,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.105702,
+       "percentile": 0.036423,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.461249,
+       "percentile": 0.350842,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.092684,
+       "percentile": 0.021525,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn189749",
+   "text": "Access to search engine Google has been limited and most of Google's online services cannot be accessed in Turkey. The access limitation happened due to the blocking of an IP set that belongs to Google. These IP addresses were shared between YouTube and other Google services.\nThe Turkish news site Hürriyet Daily News reports that Turkey's Telecommunications Communication Presidency (TCP) (a government agency that manages Turkish ISPs) indefinitely shut off access to several Google services. The shut-off came after the banning of YouTube for alleged insults against Turkish Republic founder Mustafa Kemal Atatürk. TCP released an official statement Friday, saying it had blocked access to some Google IP addresses \"because of legal reasons\". Under Turkish law, it is an offence to \"insult Turkishness.\"\nSoftpedia states that the limited access to Google could be a result of the government trying to block specific DNS addresses that relate to Google, as part of its ongoing attempts to block YouTube. Since Google services share common software and IP addresses, the search engine itself suffers from access restrictions. Turkish citizens are concerned that this move of the governmental agency was another step towards a complete ban on Google, as exists in China.\nSeveral Internet sites have been banned in Turkey in recent years, and although some of them were subsequently unbanned, most of them remain inaccessible. Engelli Web, a website listing banned sites reports that currently YouTube (since May 2008), Last.fm (since June 26, 2009), and Spanish newspaper El Mundo (since May 14, 2010) are among the banned sites in Turkey. MySpace and WordPress were also among banned sites for a period of time. Websites will be blocked following a court decision or if TCP decides to block on its behalf.\nRetweetToday reports that Turkish citizens on Twitter have also reported access problems. Comments about the blockage are being shared using hashtags such as TurkeyCensorGoogle and TurkeyGoogleBan, as well as NoGoogleNoWeb.",
+   "context": "article",
+   "source": {
+    "title": "Ban on YouTube spreads to Google services in Turkey",
+    "url": "https://en.wikinews.org/wiki/Ban_on_YouTube_spreads_to_Google_services_in_Turkey",
+    "revision": 4814309,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn189749",
+    "queries": [
+     {
+      "id": "googl:alphabet_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.644373,
+          "p": 0.094137,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.380232,
+          "p": 0.905863,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.897855,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:demand_for_google_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.876914,
+          "p": 0.699279,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.720783,
+          "p": 0.300721,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.781115,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.977492,
+          "p": 0.238007,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.813855,
+          "p": 0.761993,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.921294,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.303784,
+          "p": 0.126772,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.373977,
+          "p": 0.873228,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.893373,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.164783,
+          "p": 0.153528,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.45759,
+          "p": 0.846472,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.898826,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.72313,
+          "p": 0.866458,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.593128,
+          "p": 0.133542,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.972118,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.625231,
+          "p": 0.690988,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.429976,
+          "p": 0.309012,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.961442,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.900415,
+          "p": 0.204802,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.543868,
+          "p": 0.795198,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.731446,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:the_valuation_of_alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.133839,
+          "p": 0.293218,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.254035,
+          "p": 0.706782,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.851475,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.134053,
+          "p": 0.576959,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.444356,
+          "p": 0.423041,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.972238,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.117628,
+          "p": 0.456364,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.942641,
+          "p": 0.543636,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903012,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:google_cloud_revenue_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.479772,
+          "p": 0.506203,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.504586,
+          "p": 0.493797,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.939126,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.172013,
+          "p": 0.365698,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.621297,
+          "p": 0.634302,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.68841,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.508313,
+          "p": 0.257195,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.447713,
+          "p": 0.742805,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.883561,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.101525,
+          "p": 0.417796,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.769696,
+          "p": 0.582204,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.892338,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.288025,
+          "p": 0.515884,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.351582,
+          "p": 0.484116,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.973382,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.876151,
+          "p": 0.249491,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.774821,
+          "p": 0.750509,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.916909,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.008029,
+       "percentile": 0.002239,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.028538,
+       "percentile": 0.01056,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.178178,
+       "percentile": 0.057754,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.04932,
+       "percentile": 0.017415,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.389,
+       "percentile": 0.233793,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.240879,
+       "percentile": 0.083915,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.415906,
+       "percentile": 0.247019,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.108117,
+       "percentile": 0.026659,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn22541",
+   "text": "Google is being sued by the Authors Guild, among others, due to the verbatim publishing of contents of their books in Google Print for Libraries, a search engine for searching books that started in December. The Authors Guild wants Google to make the content from books protected under copyright unavailable, as they claim that they have never given permission for their text to be published. However, Google offers the option of having their text removed from their databases.\nGoogle also claims that the text is used under fair use, as they only include \"snippets\" of the text, and not the entire book. Also, Google sees Google Print as an incentive to authors, as it could help boost sales. “This ability to introduce millions of users to millions of titles can only expand the market for authors’ books, which is precisely what copyright law is intended to foster,” says Google.\nThe lawsuit was filed by three writers in a New York federal court, and has the support from the U.S.-based Authors Guild. The suit acknowledges that text snippets presented via the internet to users is legal under the U.S. definition of fair use. Rather, the complaint centers on the wholesale copying of a book's text into Google databases.\nAnother Google Print program, called \"Google Print for Publishers\", seeks consent from publishers (such as Simon & Schuster, who has given permission) to publish their works. Considering as publishers may be holders of the copyright in book contents, this could be the sole project of Google Print, assuming Google Print for Libraries is deemed \"massive copyright infringement\" by the District Court in Manhattan where the suit was filed.",
+   "context": "article",
+   "source": {
+    "title": "Google sued by thousands of authors over Google Print",
+    "url": "https://en.wikinews.org/wiki/Google_sued_by_thousands_of_authors_over_Google_Print",
+    "revision": 4811066,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn22541",
+    "queries": [
+     {
+      "id": "googl:alphabet_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.21279,
+          "p": 0.426337,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.915976,
+          "p": 0.573663,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.905605,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:demand_for_google_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.833953,
+          "p": 0.621571,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.330173,
+          "p": 0.378429,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.74294,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.525954,
+          "p": 0.329572,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.815833,
+          "p": 0.670428,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910721,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.288899,
+          "p": 0.325428,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.559962,
+          "p": 0.674572,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.885397,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.599011,
+          "p": 0.273585,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.622502,
+          "p": 0.726415,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.900028,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.573023,
+          "p": 0.862285,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.407423,
+          "p": 0.137715,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.967446,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.340124,
+          "p": 0.658956,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.998768,
+          "p": 0.341044,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946229,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.436372,
+          "p": 0.379036,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.942731,
+          "p": 0.620964,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.76921,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:the_valuation_of_alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.108474,
+          "p": 0.380602,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.621482,
+          "p": 0.619398,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.882636,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.781584,
+          "p": 0.584594,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.123244,
+          "p": 0.415406,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.961022,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.959309,
+          "p": 0.465649,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.82169,
+          "p": 0.534351,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.88864,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:google_cloud_revenue_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.43363,
+          "p": 0.452139,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.241601,
+          "p": 0.547861,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.928629,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.107851,
+          "p": 0.36915,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.571985,
+          "p": 0.63085,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.670868,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.587889,
+          "p": 0.433765,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.321381,
+          "p": 0.566235,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.826684,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.59155,
+          "p": 0.487646,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.542125,
+          "p": 0.512354,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.846397,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.687433,
+          "p": 0.553131,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.900764,
+          "p": 0.446869,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.954737,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.078932,
+          "p": 0.354534,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.479765,
+          "p": 0.645466,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.870229,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.13865,
+       "percentile": 0.048099,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.277209,
+       "percentile": 0.112235,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.352361,
+       "percentile": 0.221137,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.143038,
+       "percentile": 0.052111,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.329921,
+       "percentile": 0.160647,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.418847,
+       "percentile": 0.281212,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.574156,
+       "percentile": 0.665205,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.3003,
+       "percentile": 0.090592,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn2834522",
+   "text": "On Thursday, the Competition Commission of India (CCI), a government anti-trust watchdog, fined US-based internet technology company Google, a subsidiary of Alphabet, Inc. ₹135.86 crore (about ₹1.36 billion, US$21 million) for manipulating their search results in favour of its products and syndicates, which affected business of rival companies. In the 190-page long decision, CCI said, \"Google was leveraging its dominance in the market for online general web search, to strengthen its position in the market for online syndicate search services\".\nIn the ruling passed 4–2, the watchdog said, Google's \"search bias\" caused \"harm to its competitors as well as to users\". In 2012, Consumer Unity and Tests Society (CUTS), which is a non-profit organisation, and Bharat Matrimony filed a complaint against the search engine for manipulating the search results.\nGoogle is to pay the fine within 60 days. CCI had fined them five percent of the average profit Google made over three fiscal years due to its Indian user base. Per the law, CCI could have fined Google up to ten percent of the profit.\nLast year, Google was fined by the European Commission (EC) for favouring certain shopping services for the amount of €2.42 billion (about US$3 billion). That accounted for five percent of \"average daily worldwide turnover of Alphabet\", EC's official statement read. Google was also fined by Russian Federation Antimonopoly Service for US$6.8 million in 2016 for favouring its own digital services.\n\"Whilst finding Google to have abused its dominant position, the CCI has nonetheless exercised restraint in recognizing the dynamic nature of online markets and not found Google guilty of every allegation\", Naval Shah, who was representing Bharat Matrimony from Shardul Amarchand law firm, told Reuters News agency.\nA Google spokesperson said, \"We have always focused on innovating to support the evolving needs of our users. The Competition Commission of India has confirmed that, on the majority of issues it examined, our conduct complies with Indian competition laws\".",
+   "context": "article",
+   "source": {
+    "title": "Competition Commission of India fines Google ₹1.36 billion for 'search bias'",
+    "url": "https://en.wikinews.org/wiki/Competition_Commission_of_India_fines_Google_%E2%82%B91.36_billion_for_%27search_bias%27",
+    "revision": 5024807,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn2834522",
+    "queries": [
+     {
+      "id": "googl:alphabet_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.991252,
+          "p": 0.074591,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.473029,
+          "p": 0.925409,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.908874,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:demand_for_google_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.534563,
+          "p": 0.333273,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -1.841142,
+          "p": 0.666727,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.762067,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.565779,
+          "p": 0.072831,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.021788,
+          "p": 0.927169,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.947459,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.448655,
+          "p": 0.048205,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.465774,
+          "p": 0.951795,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910755,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.923007,
+          "p": 0.208388,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.588336,
+          "p": 0.791612,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.905073,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.040303,
+          "p": 0.821589,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.567456,
+          "p": 0.178411,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.978588,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.916793,
+          "p": 0.463968,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -2.772414,
+          "p": 0.536032,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.883382,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:alphabet_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.794417,
+          "p": 0.084452,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.411074,
+          "p": 0.915548,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.733623,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googl:the_valuation_of_alphabet__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.652633,
+          "p": 0.074998,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.140298,
+          "p": 0.925002,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.872844,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.959249,
+          "p": 0.57819,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.274598,
+          "p": 0.42181,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.967005,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:alphabet_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.219172,
+          "p": 0.466658,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.085606,
+          "p": 0.533342,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.914309,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "googlrep:google_cloud_revenue_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.486501,
+          "p": 0.540063,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.647096,
+          "p": 0.459937,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943325,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.613042,
+          "p": 0.255412,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.543088,
+          "p": 0.744588,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.712969,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.800669,
+          "p": 0.180124,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.285159,
+          "p": 0.819876,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.875886,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.926527,
+          "p": 0.45559,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.748416,
+          "p": 0.54441,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.882388,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.302155,
+          "p": 0.496311,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.287398,
+          "p": 0.503689,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.97272,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.92808,
+          "p": 0.115325,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.890612,
+          "p": 0.884675,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.937217,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.001651,
+       "percentile": 0.0,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.000527,
+       "percentile": 0,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.161742,
+       "percentile": 0.050181,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.002284,
+       "percentile": 1e-06,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.4653,
+       "percentile": 0.368568,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.114734,
+       "percentile": 0.039597,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.273941,
+       "percentile": 0.087723,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.027984,
+       "percentile": 1e-06,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "wn140446",
+  "context": "article",
+  "text": "Parties to a lawsuit against Amazon.com agreed September 25 to a proposed settlement resolving claims that Amazon unlawfully deleted content from users' Kindle reading devices.  Justin Gawronski, a Michigan high school senior, and Antoine Bruguier, a California engineer, had sued on July 30, after Amazon deleted George Orwell's Nineteen Eighty-Four from their Kindles.  Gawronski also said his digital notes lost value because they were no longer associated with the relevant text.  The plaintiffs argued that Amazon had breached its terms of service and violated the Computer Fraud and Abuse Act and Washington Consumer Protection Act.  Amazon had first claimed it was forced to delete the books when it learned it did not have the right to sell them.  However, it apologized on July 23 and on September 7 offered affected customers either US$30 or a copy of the deleted book.\nThe proposed settlement includes a commitment that Amazon will only delete e-books remotely under four circumstances: the user consents, the user fails to pay or gets a refund, the government mandates it, or the deletion is necessary to \"protect\" the consumer, device, or network.  Amazon would also pay KamberEdelson, the plaintiffs' firm, US$150,000 in legal fees, with the proviso that it go to charity.  Michael Aschenbrener, an attorney at KamberEdelson, described the agreement as a \"great settlement\" that \"provides protection for Kindle users and provides confidence to them that the books, newspapers and magazines they purchase will not be subject to remote deletion by Amazon.  It sends a message to digital media purveyors of all kinds that sellers really need to respect users' rights to that content.\"  Amazon spokesman Drew Herdener refused to comment.\nThe agreement is still subject to court approval.",
+  "source": {
+   "title": "Plaintiffs and Amazon propose settlement to Kindle deletion lawsuit",
+   "url": "https://en.wikinews.org/wiki/Plaintiffs_and_Amazon_propose_settlement_to_Kindle_deletion_lawsuit",
+   "revision": 4824142,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn2837166",
+  "context": "article",
+  "text": "On Tuesday representatives from US-based online retailer Amazon.com and smart doorbell company Ring announced the startup company will be acquired by Amazon. Ring builds WiFi-connected video doorbells that allow homeowners to view and talk to people at their door from their smartphone. Ring also sells security cameras.\nThe deal was not officially announced to have happened, although an Amazon spokesperson told about the acquisition to US television channel CNBC (Consumer News and Business Channel).\nAnalysts suggested the deal could aid the Amazon Key service, which allows Amazon grocery, and other, deliveries to be dropped off inside Amazon Prime members' homes. Use of Ring WiFi-connected cameras would complement the indoor Cloud Cam Amazon provides to members.\nPreviously, Ring's CEO, Jamie Siminoff, remarked the company started when his doorbell wasn't audible from his shop in his garage.  He built a WiFi door bell, he said. Siminoff said sales boosted after his 2013 appearance in a Shark Tank episode where the show panel declined funding the startup. In late 2017, Siminoff appeared on shopping television channel QVC. Ring also settled a lawsuit with competing security company, the ADT Corporation.\nAmazon's Echo smart home speaker product had already been integrated with Ring, by taking voice commands to show the image from a Ring front door camera on an Echo Show device. Amazon had also purchased Blink, a manufacturer of internet-connected security cameras and doorbells, in late 2017.",
+  "source": {
+   "title": "Amazon to buy smart doorbell startup Ring",
+   "url": "https://en.wikinews.org/wiki/Amazon_to_buy_smart_doorbell_startup_Ring",
+   "revision": 4813204,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn130028",
+  "context": "article",
+  "text": "Justin Gawronski and Antoine Bruguier sued Amazon.com on Thursday for remotely deleting their digital copies of George Orwell's Nineteen Eighty-Four from their Kindle devices. The suit, filed in the United States District Court for the Western District of Washington, argues in part that Amazon violated its terms of service, as well as the Computer Fraud and Abuse Act and Washington Consumer Protection Act.\nGawronski, a Michigan high school senior, originally purchased both his Kindle and an e-book of the novel for his Advanced Placement English summer reading. He made regular annotations using the Kindle's facility, noting \"If [...] something [...] catches my eye as I am reading, I just place a note there\". After reading online that Amazon was deleting some copies of Nineteen Eighty-Four, he switched his Kindle on, and watched the copy he had purchased vanish. He later found that the notes he had written were effectively useless, stating, \"all my notes refer back to nothing\". He said he would probably have to re-read the entire book.\nBruguier, a Silicon Valley engineer, also had his copy of Nineteen Eighty-Four remotely deleted.  According to the complaint, Amazon sent him an email saying they were \"writing to confirm that we have processed your refund.\"  In response, Bruguier wrote that \"I would like to keep the title 1984. I like this book.\"  Amazon refused to allow him to do so, and said they would not provide any \"additional insight or action\".  Eventually, Amazon wrote a new email justifying the deletion by claiming they had lacked the right to sell him the book. Bruguier noted in response that he was \"annoyed by [Amazon's] deceit\" and that he \"thought that once purchased, the books were [his].\"  His emails also quoted the portion of Amazon's terms of service cited in the suit.\nBoth clients are represented by KamberEdelson, and the lawsuit seeks class action status. Several classes are delineated, representing relevant sub-groupings of Kindle owners.",
+  "source": {
+   "title": "Michigan student and California engineer sue Amazon for remote deletion of 'Nineteen Eighty-Four'",
+   "url": "https://en.wikinews.org/wiki/Michigan_student_and_California_engineer_sue_Amazon_for_remote_deletion_of_%27Nineteen_Eighty-Four%27",
+   "revision": 4821960,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn2865566",
+  "context": "article",
+  "text": "According to a report on Wednesday by UpGuard, a cybersecurity firm, two databases containing user data from Facebook were found on Amazon.com web servers accessible to the public on the internet. Information leaked included user ID's, photos, Facebook friend and group lists, and interests.\nOne of the databases is owned by the Mexican company Cultura Colectiva, which specializes in digital media, while the other is owned by a separate Facebook-integrated app, At the Pool. In these two instances, the records were publicly available because the \"Amazon S3 Buckets\" on which the data were stored were misconfigured to allow public access instead of only private access. The original report was not entirely clear about this point, and Wikinews confirmed with UpGuard that the two incidents involved two separate Amazon S3 buckets.\nUpGuard reportedly sent an email to Cultura Colectiva on January 10, and again on January 14, but received no response. On January 28, UpGuard reportedly emailed Amazon Web Services informing them of the situation, to which on February 1 Amazon Web Services acknowledged the bucket's owner had been informed. After the database had still not been secured, UpGuard reportedly emailed Amazon Web Services again on February 21, with Amazon Web services responding that they would investigate what else could be done about it. Reportedly, the Amazon S3 Buckets were only secured after Bloomberg contacted Facebook.\nThe Guardian drew comparisons between this case and the Cambridge Analytica scandal, in which over 50 million Facebook profiles were harvested for data without users' knowledge or consent.",
+  "source": {
+   "title": "540 million private Facebook records found on public Internet",
+   "url": "https://en.wikinews.org/wiki/540_million_private_Facebook_records_found_on_public_Internet",
+   "revision": 4812693,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn82700",
+  "context": "article",
+  "text": "Today, the United States Patent and Trademark Office (USPTO) issued an office action, which confirmed the patentability of claims 6 to 10 of the Amazon 1-Click patent, US 5,960,411. The patent examiner, however, rejected claims 1 to 5 and 11 to 15.  Amazon now has up to six months to amend the rejected claims to overcome the examiner's rejection, provide arguments to demonstrate that the examiner is in error and/or provide evidence to demonstrate the patentability of their claims.  During this period, the entire patent is still considered valid under US patent law.\nThe USPTO is reconsidering the patentability of the claims due to a request for reexamination filed by New Zealander Peter Calveley. Mr. Calveley used internet archives to show that defunct company Digi Cash used a similar technique prior to Amazon.  Despite costing a substantial sum of cash and requiring donations to prepare and file the request for reexamination, Calveley said he did it as a game and hopes that his success inspires others to play the same game.\n\"One Click\" shopping is an ecommerce technique, which allows a customer to purchase products via the Internet without repeatedly entering personal information such as name and address.  At the time it was introduced it eased the frustration of on-line shopping.\nAmazon filed the patent application for 1-click shopping in early 1997 and was granted the patent in September 1999.  23 days later Amazon sued rival Barnes & Noble for alleged infringement by its \"Express Lane\" ordering which was introduced in 1998.  In December 1999 Amazon won an interim injunction against Barnes & Noble but the USA Court of Appeals for the Federal Circuit lifted this injunction in February 2001.  The parties then settled their dispute for undisclosed terms.  Amazon has since successfully licensed the technique to other e-sellers such as Apple.",
+  "source": {
+   "title": "USPTO partially confirms validity of Amazon \"1-click patent\"",
+   "url": "https://en.wikinews.org/wiki/USPTO_partially_confirms_validity_of_Amazon_%221-click_patent%22",
+   "revision": 4829224,
+   "license": "CC BY 2.5"
+  }
+ }
+]

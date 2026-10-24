@@ -1,0 +1,410 @@
+{
+ "pack": "thinkingtext/equity-csco",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Cisco news",
+ "description": "The Cisco (CSCO) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Cisco",
+  "ticker": "CSCO",
+  "peers": [],
+  "weights": {
+   "company": 0.67,
+   "peers": 0,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "a0be51c2b07bbbf1e42139faef04f948",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "csco:corporate_spending_on_networking_equipme__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: corporate spending on networking equipment is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "csco:cisco_s_profit_margins__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Cisco's profit margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "csco:cisco__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for Cisco shareholders, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "csco:cisco_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Cisco's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "cscorep:cisco_s_product_orders__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Cisco's product orders came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "cscorep:cisco_s_quarterly_results__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Cisco's quarterly results came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "cscorep:cisco_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Cisco's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "csco:corporate_spending_on_networking_equipme__sum": {
+   "phrase": "corporate spending on networking equipment",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "csco"
+  },
+  "csco:cisco_s_profit_margins__sum": {
+   "phrase": "Cisco's profit margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "csco"
+  },
+  "csco:cisco__sum": {
+   "phrase": "Cisco",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_co",
+   "principal": "csco"
+  },
+  "csco:cisco_s_share_price__sum": {
+   "phrase": "Cisco's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "csco"
+  },
+  "cscorep:cisco_s_product_orders__sum": {
+   "phrase": "Cisco's product orders",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "cscorep"
+  },
+  "cscorep:cisco_s_quarterly_results__sum": {
+   "phrase": "Cisco's quarterly results",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "cscorep"
+  },
+  "cscorep:cisco_s_revenue_guidance__sum": {
+   "phrase": "Cisco's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "cscorep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/csco:corporate_spending_on_networking_equipme__sum",
+   "query": "csco:corporate_spending_on_networking_equipme__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/csco:corporate_spending_on_networking_equipme__sum",
+   "query": "csco:corporate_spending_on_networking_equipme__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "profits/csco:cisco_s_profit_margins__sum",
+   "query": "csco:cisco_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits"
+  },
+  {
+   "id": "company/profits/csco:cisco_s_profit_margins__sum",
+   "query": "csco:cisco_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits"
+  },
+  {
+   "id": "reflectors/csco:cisco__sum",
+   "query": "csco:cisco__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/csco:cisco__sum",
+   "query": "csco:cisco__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "reflectors/csco:cisco_s_share_price__sum",
+   "query": "csco:cisco_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/csco:cisco_s_share_price__sum",
+   "query": "csco:cisco_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "surprise/cscorep:cisco_s_product_orders__sum",
+   "query": "cscorep:cisco_s_product_orders__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/cscorep:cisco_s_product_orders__sum",
+   "query": "cscorep:cisco_s_product_orders__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/cscorep:cisco_s_quarterly_results__sum",
+   "query": "cscorep:cisco_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/cscorep:cisco_s_quarterly_results__sum",
+   "query": "cscorep:cisco_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/cscorep:cisco_s_revenue_guidance__sum",
+   "query": "cscorep:cisco_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/cscorep:cisco_s_revenue_guidance__sum",
+   "query": "cscorep:cisco_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Demand for the company's products and its revenue",
+   "deciding": false,
+   "role": "slot"
+  },
+  "profits": {
+   "label": "Profits and margins",
+   "deciding": false,
+   "role": "slot"
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "deciding": false,
+   "role": "slot"
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "deciding": false,
+   "role": "slot"
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "company": {
+   "label": "Cisco news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "deciding": false,
+   "role": "composite"
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": []
+ }
+}

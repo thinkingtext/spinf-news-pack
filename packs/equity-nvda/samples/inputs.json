@@ -1,0 +1,31 @@
+[
+ {
+  "id": "wn2970761",
+  "context": "article",
+  "text": "Microsoft and Spanish cloud-gaming platform Nware signed a 10-year agreement on Friday to allow Nware to stream Microsoft gaming titles.\nMicrosoft Vice Chairman Brad Smith announced the deal on Twitter, saying \"while it's still early for the emerging cloud segment in gaming, this new partnership combined with our other recent commitments will make more popular games available on more cloud game streaming services than they are today\". Financial details were kept secret by the parties.\nOn Wednesday, UK regulator the Competition and Markets Authority (CMA) blocked Microsoft's acquisition of Activision Blizzard, citing fears it would stifle competition, saying Microsoft would have a reason to make titles exclusive to their own services. Friday's agreement would extend to titles held by Activision in the event the acquisition is successful.\nReuters described the Microsoft-Nware deal as an attempt to provide reassurance that the acquisition of Activision would not harm competition.\nMicrosoft has previously signed agreements with companies, including Nvidia and Boosteroid, to allow streaming both Activision and Microsoft titles on their services. Both companies spoke up against CMA's decision, with Nvidia tweeting \"we see this [deal] as a benefit to cloud gaming and hope for a positive resolution\".\nAddressing these agreements, the CMA said \"implementing the ineffective remedy would have replaced market forces with ongoing regulatory obligations overseen by the CMA, when competitive forces in a free market are much better placed to achieve the right outcome\" and \"such remedies are described as ‘behavioural’ because they seek to regulate the behaviour of the businesses… contrary to their commercial incentives.\" The CMA specified that Microsoft's proposals \"did not sufficiently cover different cloud gaming service business models, including multigame subscription services\" and are \"not sufficiently open to providers who might wish to offer versions of games on PC operating systems other than Windows.\"\nMicrosoft announced their intentions to challenge the CMA's decision, with Activision saying they would \"work aggressively with Microsoft to reverse this on appeal\".\nIn the US, the Federal Trade Commission filed a suit to stop the purchase of Activision. According to Reuters, European regulators are expected to make a decision by May 22.",
+  "source": {
+   "title": "Microsoft, Nware sign 10-year cloud gaming deal",
+   "url": "https://en.wikinews.org/wiki/Microsoft,_Nware_sign_10-year_cloud_gaming_deal",
+   "revision": 4822017,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "syn-nvda-1",
+  "context": "article",
+  "text": "Nvidia said on Wednesday that demand for its data centre chips continued to exceed what it can ship, and raised its revenue forecast for the current quarter above analysts' estimates.\n\nThe company reported quarterly revenue up sharply from a year earlier, led by sales of accelerators to cloud providers building out capacity for artificial intelligence workloads. Gross margin widened as the mix shifted toward its newest products.\n\nThe chief financial officer said supply constraints would ease gradually through the year as a second packaging partner comes on line, but that visibility into orders now extends several quarters.\n\nShares rose in extended trading. Analysts noted that the forecast implies continued growth in capital spending by the largest cloud customers, though several flagged that customer concentration remains a risk.",
+  "source": {
+   "title": "Nvidia raises outlook as data centre orders outrun supply",
+   "license": "written by thinkingtext, illustrative (not a news report)"
+  }
+ },
+ {
+  "id": "syn-nvda-2",
+  "context": "article",
+  "text": "The US Commerce Department on Tuesday expanded restrictions on the sale of advanced semiconductors to China, closing routes that had allowed modified versions of high-end accelerators to be shipped there.\n\nThe rules take effect in thirty days. Nvidia, the largest maker of the chips covered, said in a filing that it expects a meaningful hit to data centre revenue in the region, which had accounted for a double-digit share of the segment, and that it would design products compliant with the new thresholds.\n\nAnalysts said the broader demand for the company's products from US and European cloud providers would absorb much of the shortfall, but that the move raises regulatory pressure on the whole sector and adds uncertainty to earnings forecasts for the coming year.\n\nShares of Nvidia and its competitors fell in early trading.",
+  "source": {
+   "title": "Washington widens export controls on advanced chips to China",
+   "license": "written by thinkingtext, illustrative (not a news report)"
+  }
+ }
+]

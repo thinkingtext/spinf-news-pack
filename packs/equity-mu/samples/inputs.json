@@ -1,0 +1,20 @@
+[
+ {
+  "id": "syn-mu-1",
+  "context": "article",
+  "text": "Micron Technology returned to profit in its latest quarter as prices for memory chips rebounded and demand from data centre customers for high-bandwidth memory used in AI systems outstripped supply.\n\nThe company said its high-bandwidth memory output for the year was sold out and that it had begun pricing contracts for the next year. Revenue rose strongly from the prior quarter and gross margin turned positive after several quarters of losses.\n\nThe chief executive said the memory industry's supply discipline, with producers holding back capacity additions, had helped prices recover faster than expected. Micron raised its capital spending plan to expand production of advanced memory.\n\nShares rose in after-hours trading. Analysts said the forecast for the coming quarter implied further margin expansion, though the memory market remains cyclical and consumer device demand is still soft.",
+  "source": {
+   "title": "Micron returns to profit as memory prices rebound",
+   "license": "written by thinkingtext, illustrative (not a news report)"
+  }
+ },
+ {
+  "id": "syn-mu-2",
+  "context": "article",
+  "text": "Contract prices for memory chips fell for the first time in a year, according to industry trackers, as smartphone and PC makers reduced orders after building up inventory in the first half.\n\nThe drop weighed on shares of Micron Technology and its Asian competitors. Analysts said the decline was concentrated in commodity memory for consumer devices, while demand for the high-bandwidth memory used in data centres remained strong and supply tight.\n\nMicron had said at its last earnings call that it expected pricing to hold through the year. One analyst cut his earnings forecasts for the company, citing the risk that weaker consumer demand would spread to other product lines, but kept a positive rating on the stock, pointing to the data centre business.\n\nThe company declined to comment ahead of its results next month.",
+  "source": {
+   "title": "Memory prices slip as smartphone makers trim orders",
+   "license": "written by thinkingtext, illustrative (not a news report)"
+  }
+ }
+]

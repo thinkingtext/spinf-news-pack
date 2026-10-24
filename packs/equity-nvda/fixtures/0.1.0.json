@@ -1,0 +1,2123 @@
+{
+ "pack": "thinkingtext/equity-nvda",
+ "version": "0.1.0",
+ "engine": "fp_51319d2ff6",
+ "usage": {
+  "prompt_tokens": 2858,
+  "completion_tokens": 0,
+  "total_tokens": 2858,
+  "prompt_tokens_details": {
+   "content_tokens": 728,
+   "text_tokens": 728,
+   "query_tokens": 2130,
+   "floor_tokens": 0
+  },
+  "inputs": 3,
+  "content": {
+   "tokens": 728,
+   "text_tokens": 728,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 26,
+   "combinations": 26,
+   "options": 52,
+   "prompts": 78,
+   "floor_prompts": 0,
+   "query_tokens": 2130,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 1567
+ },
+ "cases": [
+  {
+   "id": "wn2970761",
+   "text": "Microsoft and Spanish cloud-gaming platform Nware signed a 10-year agreement on Friday to allow Nware to stream Microsoft gaming titles.\nMicrosoft Vice Chairman Brad Smith announced the deal on Twitter, saying \"while it's still early for the emerging cloud segment in gaming, this new partnership combined with our other recent commitments will make more popular games available on more cloud game streaming services than they are today\". Financial details were kept secret by the parties.\nOn Wednesday, UK regulator the Competition and Markets Authority (CMA) blocked Microsoft's acquisition of Activision Blizzard, citing fears it would stifle competition, saying Microsoft would have a reason to make titles exclusive to their own services. Friday's agreement would extend to titles held by Activision in the event the acquisition is successful.\nReuters described the Microsoft-Nware deal as an attempt to provide reassurance that the acquisition of Activision would not harm competition.\nMicrosoft has previously signed agreements with companies, including Nvidia and Boosteroid, to allow streaming both Activision and Microsoft titles on their services. Both companies spoke up against CMA's decision, with Nvidia tweeting \"we see this [deal] as a benefit to cloud gaming and hope for a positive resolution\".\nAddressing these agreements, the CMA said \"implementing the ineffective remedy would have replaced market forces with ongoing regulatory obligations overseen by the CMA, when competitive forces in a free market are much better placed to achieve the right outcome\" and \"such remedies are described as ‘behavioural’ because they seek to regulate the behaviour of the businesses… contrary to their commercial incentives.\" The CMA specified that Microsoft's proposals \"did not sufficiently cover different cloud gaming service business models, including multigame subscription services\" and are \"not sufficiently open to providers who might wish to offer versions of games on PC operating systems other than Windows.\"\nMicrosoft announced their intentions to challenge the CMA's decision, with Activision saying they would \"work aggressively with Microsoft to reverse this on appeal\".\nIn the US, the Federal Trade Commission filed a suit to stop the purchase of Activision. According to Reuters, European regulators are expected to make a decision by May 22.",
+   "context": "article",
+   "source": {
+    "title": "Microsoft, Nware sign 10-year cloud gaming deal",
+    "url": "https://en.wikinews.org/wiki/Microsoft,_Nware_sign_10-year_cloud_gaming_deal",
+    "revision": 4822017,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn2970761",
+    "queries": [
+     {
+      "id": "nvda:demand_for_nvidia_s_data_centre_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.266788,
+          "p": 0.956333,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.353303,
+          "p": 0.043667,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.891623,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:demand_for_nvidia_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.083878,
+          "p": 0.920043,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.526816,
+          "p": 0.079957,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.632321,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.417997,
+          "p": 0.420593,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.097656,
+          "p": 0.579407,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.922067,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.981739,
+          "p": 0.984764,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.150478,
+          "p": 0.015236,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.860038,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.887514,
+          "p": 0.971357,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.411308,
+          "p": 0.028643,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.844086,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.036495,
+          "p": 0.656555,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.684475,
+          "p": 0.343445,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.926887,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.797425,
+          "p": 0.351977,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.187064,
+          "p": 0.648023,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.936279,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.940877,
+          "p": 0.59402,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.321487,
+          "p": 0.40598,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911082,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.301888,
+          "p": 0.152193,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.584387,
+          "p": 0.847807,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911015,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -2.725387,
+          "p": 0.912964,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.075761,
+          "p": 0.087036,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.928233,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.273293,
+          "p": 0.60492,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.699301,
+          "p": 0.39508,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.937378,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.362714,
+          "p": 0.819832,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.877925,
+          "p": 0.180168,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.885142,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.060838,
+          "p": 0.541317,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.226484,
+          "p": 0.458683,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.764746,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:the_valuation_of_nvidia__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.575565,
+          "p": 0.676213,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.311986,
+          "p": 0.323787,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.887445,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvdarep:nvidia_s_data_centre_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.380954,
+          "p": 0.623973,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.887399,
+          "p": 0.376027,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.851817,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvdarep:nvidia_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.600533,
+          "p": 0.596006,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.989384,
+          "p": 0.403994,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.95418,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.909207,
+          "p": 0.547196,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.098554,
+          "p": 0.452804,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.729169,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.34035,
+          "p": 0.597384,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.734925,
+          "p": 0.402616,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.838807,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.239945,
+          "p": 0.427943,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.949698,
+          "p": 0.572057,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.908478,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.619241,
+          "p": 0.515268,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.680332,
+          "p": 0.484732,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.947982,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.202754,
+          "p": 0.968571,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.630838,
+          "p": 0.031429,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.958031,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.064175,
+          "p": 0.965056,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.382624,
+          "p": 0.034944,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951617,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.748045,
+          "p": 0.896724,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.909392,
+          "p": 0.103276,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.92857,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.570714,
+          "p": 0.415,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.227382,
+          "p": 0.585,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.932203,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.077434,
+          "p": 0.935079,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.744899,
+          "p": 0.064921,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.866053,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.309585,
+          "p": 0.169575,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.720944,
+          "p": 0.830425,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.970845,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.632036,
+       "percentile": 0.804128,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.908775,
+       "percentile": 0.993349,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.597819,
+       "percentile": 0.691259,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.974448,
+       "percentile": 0.999113,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.712013,
+       "percentile": 0.883584,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.687629,
+       "percentile": 0.80899,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.720505,
+       "percentile": 0.901232,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.500591,
+       "percentile": 0.473509,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.76676,
+       "percentile": 0.974378,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "syn-nvda-1",
+   "text": "Nvidia said on Wednesday that demand for its data centre chips continued to exceed what it can ship, and raised its revenue forecast for the current quarter above analysts' estimates.\n\nThe company reported quarterly revenue up sharply from a year earlier, led by sales of accelerators to cloud providers building out capacity for artificial intelligence workloads. Gross margin widened as the mix shifted toward its newest products.\n\nThe chief financial officer said supply constraints would ease gradually through the year as a second packaging partner comes on line, but that visibility into orders now extends several quarters.\n\nShares rose in extended trading. Analysts noted that the forecast implies continued growth in capital spending by the largest cloud customers, though several flagged that customer concentration remains a risk.",
+   "context": "article",
+   "source": {
+    "title": "Nvidia raises outlook as data centre orders outrun supply",
+    "license": "written by thinkingtext, illustrative (not a news report)"
+   },
+   "result": {
+    "input_id": "syn-nvda-1",
+    "queries": [
+     {
+      "id": "nvda:demand_for_nvidia_s_data_centre_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.515366,
+          "p": 0.94033,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.272774,
+          "p": 0.05967,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.968376,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:demand_for_nvidia_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.291216,
+          "p": 0.914324,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.658833,
+          "p": 0.085676,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.959305,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.806377,
+          "p": 0.940598,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.568561,
+          "p": 0.059402,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.935761,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.664367,
+          "p": 0.986938,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.989265,
+          "p": 0.013062,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.929435,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.907902,
+          "p": 0.956665,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.002386,
+          "p": 0.043335,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.942937,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.181245,
+          "p": 0.92721,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.725846,
+          "p": 0.07279,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.955205,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.054753,
+          "p": 0.836357,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.686124,
+          "p": 0.163643,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943643,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.282413,
+          "p": 0.867401,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.160582,
+          "p": 0.132599,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.882364,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.54307,
+          "p": 0.874816,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.487301,
+          "p": 0.125184,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.966937,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.977899,
+          "p": 0.959324,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -7.138492,
+          "p": 0.040676,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.980481,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.225232,
+          "p": 0.72176,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.178439,
+          "p": 0.27824,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.944931,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.126024,
+          "p": 0.958068,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.254901,
+          "p": 0.041932,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.875467,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.22145,
+          "p": 0.920016,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.664012,
+          "p": 0.079984,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.679568,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:the_valuation_of_nvidia__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.580763,
+          "p": 0.776843,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.828123,
+          "p": 0.223157,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.902533,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvdarep:nvidia_s_data_centre_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.277463,
+          "p": 0.875068,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.223996,
+          "p": 0.124932,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.882816,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvdarep:nvidia_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.448274,
+          "p": 0.885682,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -5.495652,
+          "p": 0.114318,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.964095,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.354725,
+          "p": 0.820128,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.871941,
+          "p": 0.179872,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.685393,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.690058,
+          "p": 0.845069,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.386495,
+          "p": 0.154931,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.781664,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.203457,
+          "p": 0.653834,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.83939,
+          "p": 0.346166,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.937872,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.255713,
+          "p": 0.531674,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.38258,
+          "p": 0.468326,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.973324,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.261875,
+          "p": 0.9612,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.471649,
+          "p": 0.0388,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.960137,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.883867,
+          "p": 0.948321,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.793502,
+          "p": 0.051679,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.941035,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.616718,
+          "p": 0.928067,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.174086,
+          "p": 0.071933,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.921296,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.983132,
+          "p": 0.505269,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.004208,
+          "p": 0.494731,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.963134,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.542803,
+          "p": 0.881091,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.545607,
+          "p": 0.118909,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910741,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.942818,
+          "p": 0.231758,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.744404,
+          "p": 0.768242,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.969216,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.887446,
+       "percentile": 0.995375,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.99919,
+       "percentile": 1,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.996014,
+       "percentile": 1,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.993679,
+       "percentile": 1,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.99369,
+       "percentile": 1,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.999026,
+       "percentile": 1,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.96675,
+       "percentile": 0.995482,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.63686,
+       "percentile": 0.843077,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.988577,
+       "percentile": 1,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "syn-nvda-2",
+   "text": "The US Commerce Department on Tuesday expanded restrictions on the sale of advanced semiconductors to China, closing routes that had allowed modified versions of high-end accelerators to be shipped there.\n\nThe rules take effect in thirty days. Nvidia, the largest maker of the chips covered, said in a filing that it expects a meaningful hit to data centre revenue in the region, which had accounted for a double-digit share of the segment, and that it would design products compliant with the new thresholds.\n\nAnalysts said the broader demand for the company's products from US and European cloud providers would absorb much of the shortfall, but that the move raises regulatory pressure on the whole sector and adds uncertainty to earnings forecasts for the coming year.\n\nShares of Nvidia and its competitors fell in early trading.",
+   "context": "article",
+   "source": {
+    "title": "Washington widens export controls on advanced chips to China",
+    "license": "written by thinkingtext, illustrative (not a news report)"
+   },
+   "result": {
+    "input_id": "syn-nvda-2",
+    "queries": [
+     {
+      "id": "nvda:demand_for_nvidia_s_data_centre_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.403497,
+          "p": 0.724581,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.370799,
+          "p": 0.275419,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.954102,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:demand_for_nvidia_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.802664,
+          "p": 0.776754,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.049515,
+          "p": 0.223246,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.921921,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -6.630468,
+          "p": 0.015442,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.475347,
+          "p": 0.984558,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.914547,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.748967,
+          "p": 0.90577,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.012011,
+          "p": 0.09423,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.929349,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.974992,
+          "p": 0.856182,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.75893,
+          "p": 0.143818,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.940377,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.07328,
+          "p": 0.619833,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.56212,
+          "p": 0.380167,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.925352,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.388658,
+          "p": 0.051174,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.468666,
+          "p": 0.948826,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910734,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.275599,
+          "p": 0.029667,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.78798,
+          "p": 0.970333,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.827587,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.985782,
+          "p": 0.167546,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.382665,
+          "p": 0.832454,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.959209,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -6.656768,
+          "p": 0.522123,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.745317,
+          "p": 0.477877,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.997538,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.634807,
+          "p": 0.10572,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.499581,
+          "p": 0.89428,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.908173,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.37977,
+          "p": 0.446246,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.163921,
+          "p": 0.553754,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.923685,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:nvidia_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.165847,
+          "p": 0.03467,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -0.839254,
+          "p": 0.96533,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.552451,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvda:the_valuation_of_nvidia__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.298969,
+          "p": 0.031603,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.876595,
+          "p": 0.968397,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.841893,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvdarep:nvidia_s_data_centre_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.501842,
+          "p": 0.593399,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.879875,
+          "p": 0.406601,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.861924,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nvdarep:nvidia_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.827912,
+          "p": 0.573919,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.12577,
+          "p": 0.426081,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.962094,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.938802,
+          "p": 0.149508,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.200336,
+          "p": 0.850492,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.645978,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.37761,
+          "p": 0.194834,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.958708,
+          "p": 0.805166,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.824831,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.437921,
+          "p": 0.236675,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.266927,
+          "p": 0.763325,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.864238,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.853079,
+          "p": 0.371728,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.328267,
+          "p": 0.628272,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.94293,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.123868,
+          "p": 0.86396,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.972447,
+          "p": 0.13604,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.98127,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.551213,
+          "p": 0.979812,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.433511,
+          "p": 0.020188,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.920406,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.13321,
+          "p": 0.570622,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.4176,
+          "p": 0.429378,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.923631,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.005238,
+          "p": 0.070614,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.427948,
+          "p": 0.929386,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.90508,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.028697,
+          "p": 0.932703,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.657665,
+          "p": 0.067297,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.859005,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.364082,
+          "p": 0.298281,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.508585,
+          "p": 0.701719,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.957334,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.036412,
+       "percentile": 0.007361,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.00605,
+       "percentile": 0.000895,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.061551,
+       "percentile": 0.019743,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.037681,
+       "percentile": 0.007132,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.000886,
+       "percentile": 0,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.586422,
+       "percentile": 0.62945,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.076365,
+       "percentile": 0.026882,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.183934,
+       "percentile": 0.051025,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.042068,
+       "percentile": 0.001674,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

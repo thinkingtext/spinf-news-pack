@@ -1,0 +1,346 @@
+{
+ "format": 1,
+ "namespace": "thinkingtext",
+ "name": "thinkingtext news packs",
+ "homepage": "https://github.com/thinkingtext/spinf-news-pack",
+ "license": "Apache-2.0",
+ "packs": [
+  {
+   "id": "thinkingtext/oil",
+   "name": "Oil news",
+   "description": "The questions of the OIL-F6 oil news index: 18 slots (demand, supply, inventories, OPEC+, disruption risk, refining margins, and the macro context) read on an article, and the signed six-slot composite.",
+   "tags": [
+    "news",
+    "finance",
+    "oil",
+    "commodities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/oil/README.md",
+   "samples": "packs/oil/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/oil/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/oil/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/market",
+   "name": "Market news",
+   "description": "The general market read of the EQ-S10 equity news index: 126 macro and market cells, signed toward higher US stock prices, read on business news.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/market/README.md",
+   "samples": "packs/market/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/market/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/market/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-aapl",
+   "name": "Apple news",
+   "description": "The Apple (AAPL) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-aapl/README.md",
+   "samples": "packs/equity-aapl/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-aapl/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-aapl/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-amd",
+   "name": "AMD news",
+   "description": "The AMD (AMD) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-amd/README.md",
+   "samples": "packs/equity-amd/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-amd/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-amd/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-amzn",
+   "name": "Amazon news",
+   "description": "The Amazon (AMZN) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-amzn/README.md",
+   "samples": "packs/equity-amzn/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-amzn/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-amzn/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-csco",
+   "name": "Cisco news",
+   "description": "The Cisco (CSCO) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-csco/README.md",
+   "samples": "packs/equity-csco/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-csco/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-csco/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-googl",
+   "name": "Alphabet news",
+   "description": "The Alphabet (GOOGL) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-googl/README.md",
+   "samples": "packs/equity-googl/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-googl/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-googl/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-intc",
+   "name": "Intel news",
+   "description": "The Intel (INTC) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-intc/README.md",
+   "samples": "packs/equity-intc/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-intc/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-intc/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-meta",
+   "name": "Meta news",
+   "description": "The Meta (META) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-meta/README.md",
+   "samples": "packs/equity-meta/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-meta/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-meta/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-msft",
+   "name": "Microsoft news",
+   "description": "The Microsoft (MSFT) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-msft/README.md",
+   "samples": "packs/equity-msft/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-msft/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-msft/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-mu",
+   "name": "Micron news",
+   "description": "The Micron (MU) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-mu/README.md",
+   "samples": "packs/equity-mu/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-mu/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-mu/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-nvda",
+   "name": "Nvidia news",
+   "description": "The Nvidia (NVDA) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-nvda/README.md",
+   "samples": "packs/equity-nvda/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-nvda/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-nvda/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-pltr",
+   "name": "Palantir news",
+   "description": "The Palantir (PLTR) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-pltr/README.md",
+   "samples": "packs/equity-pltr/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-pltr/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-pltr/fixtures/0.1.0.json"
+    }
+   ]
+  },
+  {
+   "id": "thinkingtext/equity-tsla",
+   "name": "Tesla news",
+   "description": "The Tesla (TSLA) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+   "tags": [
+    "news",
+    "finance",
+    "equities"
+   ],
+   "media": [
+    "text"
+   ],
+   "readme": "packs/equity-tsla/README.md",
+   "samples": "packs/equity-tsla/samples/",
+   "versions": [
+    {
+     "version": "0.1.0",
+     "file": "packs/equity-tsla/0.1.0.json",
+     "model": "spinf/gemma-4-12b-fp8",
+     "status": "available",
+     "fixture": "packs/equity-tsla/fixtures/0.1.0.json"
+    }
+   ]
+  }
+ ]
+}

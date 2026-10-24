@@ -1,0 +1,2378 @@
+{
+ "pack": "thinkingtext/oil",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Oil news",
+ "description": "The questions of the OIL-F6 oil news index: 18 slots (demand, supply, inventories, OPEC+, disruption risk, refining margins, and the macro context) read on an article, and the signed six-slot composite.",
+ "origin": {
+  "index": "OIL-F6",
+  "long_name": "Oil News Index F6",
+  "spec_version": "1.1",
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "a1607d1655faa1fc414a4a7708cde3d9",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "world:global_oil_demand",
+    "template": "\n\nAs a result, global oil demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "usa:us_oil_demand",
+    "template": "\n\nAs a result, US oil demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "china:chinese_oil_demand",
+    "template": "\n\nAs a result, Chinese oil demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "world:global_oil_supply",
+    "template": "\n\nAs a result, global oil supply is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "opec:opec_crude_oil_production",
+    "template": "\n\nAs a result, OPEC+ crude oil production is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "shale:us_shale_oil_production",
+    "template": "\n\nAs a result, US shale oil production is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "nonopec:non_opec_oil_supply",
+    "template": "\n\nAs a result, non-OPEC oil supply is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "us:us_crude_oil_inventories",
+    "template": "\n\nAs a result, US crude oil inventories is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "cushing:crude_oil_inventories_at_cushing_oklahom",
+    "template": "\n\nAs a result, crude oil inventories at Cushing, Oklahoma is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "gasoline:us_gasoline_inventories",
+    "template": "\n\nAs a result, US gasoline inventories is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "diesel:us_distillate_inventories",
+    "template": "\n\nAs a result, US distillate inventories is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "opec:opec_production_quotas",
+    "template": "\n\nAs a result, OPEC+ production quotas is likely to{?}",
+    "options": [
+     " tighten",
+     " ease"
+    ]
+   },
+   {
+    "id": "mideast:the_risk_of_oil_supply_disruptions_in_th",
+    "template": "\n\nAs a result, the risk of oil supply disruptions in the Middle East is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+    "template": "\n\nAs a result, the risk of a closure of the Strait of Hormuz is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "russia:the_risk_of_disruption_to_russian_oil_ex",
+    "template": "\n\nAs a result, the risk of disruption to Russian oil exports is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+    "template": "\n\nAs a result, the risk of escalation in the war in Ukraine is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "world:global_economic_growth",
+    "template": "\n\nAs a result, global economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usa:us_economic_growth",
+    "template": "\n\nAs a result, US economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "china:china_s_economic_growth",
+    "template": "\n\nAs a result, China's economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "world:the_risk_of_a_global_recession",
+    "template": "\n\nAs a result, the risk of a global recession is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:us_interest_rates",
+    "template": "\n\nAs a result, US interest rates is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:the_federal_funds_rate",
+    "template": "\n\nAs a result, the federal funds rate is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "dollar:the_us_dollar",
+    "template": "\n\nAs a result, the US dollar is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "dollar:the_dollar",
+    "template": "\n\nAs a result, the dollar is likely to{?}",
+    "options": [
+     " strengthen",
+     " weaken"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices",
+    "template": "\n\nAs a result, US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "market:mood_financial_markets",
+    "template": "\n\nThe mood in financial markets is one of{?}",
+    "options": [
+     " optimism",
+     " pessimism"
+    ]
+   },
+   {
+    "id": "market:fear_in_financial_markets",
+    "template": "\n\nAs a result, fear in financial markets is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "market:investor_optimism",
+    "template": "\n\nAs a result, investor optimism is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "market:risk_aversion_among_investors",
+    "template": "\n\nAs a result, risk aversion among investors is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "market:turmoil_in_financial_markets",
+    "template": "\n\nAs a result, turmoil in financial markets is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "refiners:global_refining_margins",
+    "template": "\n\nAs a result, global refining margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "diesel:diesel_prices",
+    "template": "\n\nAs a result, diesel prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:us_inflation",
+    "template": "\n\nAs a result, US inflation is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:expectations_of_fed_rate_cuts",
+    "template": "\n\nAs a result, expectations of Fed rate cuts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:bets_on_federal_reserve_rate_cuts",
+    "template": "\n\nAs a result, bets on Federal Reserve rate cuts is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "gold:gold_prices",
+    "template": "\n\nAs a result, gold prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "euro:the_euro_against_the_us_dollar",
+    "template": "\n\nAs a result, the euro against the US dollar is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "euro:the_euro",
+    "template": "\n\nAs a result, the euro is likely to{?}",
+    "options": [
+     " strengthen",
+     " weaken"
+    ]
+   },
+   {
+    "id": "market:geopolitical_tensions",
+    "template": "\n\nAs a result, geopolitical tensions is likely to{?}",
+    "options": [
+     " ease",
+     " escalate"
+    ]
+   },
+   {
+    "id": "market:the_risk_of_a_wider_war",
+    "template": "\n\nAs a result, the risk of a wider war is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "market:trade_tensions",
+    "template": "\n\nAs a result, trade tensions is likely to{?}",
+    "options": [
+     " ease",
+     " escalate"
+    ]
+   },
+   {
+    "id": "trade:us_china_trade_tensions",
+    "template": "\n\nAs a result, US-China trade tensions is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "haven:financial_market_volatility",
+    "template": "\n\nAs a result, financial market volatility is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "world:global_oil_demand": {
+   "phrase": "global oil demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "world"
+  },
+  "usa:us_oil_demand": {
+   "phrase": "US oil demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "china:chinese_oil_demand": {
+   "phrase": "Chinese oil demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "china"
+  },
+  "world:global_oil_supply": {
+   "phrase": "global oil supply",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "world"
+  },
+  "opec:opec_crude_oil_production": {
+   "phrase": "OPEC+ crude oil production",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "opec"
+  },
+  "shale:us_shale_oil_production": {
+   "phrase": "US shale oil production",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "shale"
+  },
+  "nonopec:non_opec_oil_supply": {
+   "phrase": "non-OPEC oil supply",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "nonopec"
+  },
+  "us:us_crude_oil_inventories": {
+   "phrase": "US crude oil inventories",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "us"
+  },
+  "cushing:crude_oil_inventories_at_cushing_oklahom": {
+   "phrase": "crude oil inventories at Cushing, Oklahoma",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "cushing"
+  },
+  "gasoline:us_gasoline_inventories": {
+   "phrase": "US gasoline inventories",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "gasoline"
+  },
+  "diesel:us_distillate_inventories": {
+   "phrase": "US distillate inventories",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "diesel"
+  },
+  "opec:opec_production_quotas": {
+   "phrase": "OPEC+ production quotas",
+   "pair": [
+    "tighten",
+    "ease"
+   ],
+   "wording": "default",
+   "principal": "opec"
+  },
+  "mideast:the_risk_of_oil_supply_disruptions_in_th": {
+   "phrase": "the risk of oil supply disruptions in the Middle East",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "mideast"
+  },
+  "hormuz:the_risk_of_a_closure_of_the_strait_of_h": {
+   "phrase": "the risk of a closure of the Strait of Hormuz",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "hormuz"
+  },
+  "russia:the_risk_of_disruption_to_russian_oil_ex": {
+   "phrase": "the risk of disruption to Russian oil exports",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "russia"
+  },
+  "ukraine:the_risk_of_escalation_in_the_war_in_ukr": {
+   "phrase": "the risk of escalation in the war in Ukraine",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "ukraine"
+  },
+  "world:global_economic_growth": {
+   "phrase": "global economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "world"
+  },
+  "usa:us_economic_growth": {
+   "phrase": "US economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "china:china_s_economic_growth": {
+   "phrase": "China's economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "china"
+  },
+  "world:the_risk_of_a_global_recession": {
+   "phrase": "the risk of a global recession",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "world"
+  },
+  "fed:us_interest_rates": {
+   "phrase": "US interest rates",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "fed:the_federal_funds_rate": {
+   "phrase": "the federal funds rate",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "dollar:the_us_dollar": {
+   "phrase": "the US dollar",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "dollar"
+  },
+  "dollar:the_dollar": {
+   "phrase": "the dollar",
+   "pair": [
+    "strengthen",
+    "weaken"
+   ],
+   "wording": "default",
+   "principal": "dollar"
+  },
+  "stocks:us_stock_prices": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "stocks"
+  },
+  "market:mood_financial_markets": {
+   "phrase": "financial markets",
+   "pair": [
+    "optimism",
+    "pessimism"
+   ],
+   "wording": "mood",
+   "principal": "market"
+  },
+  "market:fear_in_financial_markets": {
+   "phrase": "fear in financial markets",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "market"
+  },
+  "market:investor_optimism": {
+   "phrase": "investor optimism",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "market"
+  },
+  "market:risk_aversion_among_investors": {
+   "phrase": "risk aversion among investors",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "market"
+  },
+  "market:turmoil_in_financial_markets": {
+   "phrase": "turmoil in financial markets",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "market"
+  },
+  "refiners:global_refining_margins": {
+   "phrase": "global refining margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "refiners"
+  },
+  "diesel:diesel_prices": {
+   "phrase": "diesel prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "diesel"
+  },
+  "fed:us_inflation": {
+   "phrase": "US inflation",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "fed:expectations_of_fed_rate_cuts": {
+   "phrase": "expectations of Fed rate cuts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "fed:bets_on_federal_reserve_rate_cuts": {
+   "phrase": "bets on Federal Reserve rate cuts",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "gold:gold_prices": {
+   "phrase": "gold prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "gold"
+  },
+  "euro:the_euro_against_the_us_dollar": {
+   "phrase": "the euro against the US dollar",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "euro"
+  },
+  "euro:the_euro": {
+   "phrase": "the euro",
+   "pair": [
+    "strengthen",
+    "weaken"
+   ],
+   "wording": "default",
+   "principal": "euro"
+  },
+  "market:geopolitical_tensions": {
+   "phrase": "geopolitical tensions",
+   "pair": [
+    "ease",
+    "escalate"
+   ],
+   "wording": "default",
+   "principal": "market"
+  },
+  "market:the_risk_of_a_wider_war": {
+   "phrase": "the risk of a wider war",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "market"
+  },
+  "market:trade_tensions": {
+   "phrase": "trade tensions",
+   "pair": [
+    "ease",
+    "escalate"
+   ],
+   "wording": "default",
+   "principal": "market"
+  },
+  "trade:us_china_trade_tensions": {
+   "phrase": "US-China trade tensions",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "trade"
+  },
+  "haven:financial_market_volatility": {
+   "phrase": "financial market volatility",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "haven"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/world:global_oil_demand",
+   "query": "world:global_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 2.075,
+   "sd": 0.81362
+  },
+  {
+   "id": "f6/demand/world:global_oil_demand",
+   "query": "world:global_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "demand",
+   "mean": 2.075,
+   "sd": 0.81362
+  },
+  {
+   "id": "demand/usa:us_oil_demand",
+   "query": "usa:us_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 1.3847,
+   "sd": 0.71293
+  },
+  {
+   "id": "f6/demand/usa:us_oil_demand",
+   "query": "usa:us_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "demand",
+   "mean": 1.3847,
+   "sd": 0.71293
+  },
+  {
+   "id": "demand/china:chinese_oil_demand",
+   "query": "china:chinese_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 2.6851,
+   "sd": 0.70403
+  },
+  {
+   "id": "f6/demand/china:chinese_oil_demand",
+   "query": "china:chinese_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "demand",
+   "mean": 2.6851,
+   "sd": 0.70403
+  },
+  {
+   "id": "supply/world:global_oil_supply",
+   "query": "world:global_oil_supply",
+   "kind": "pair",
+   "sign": 1,
+   "category": "supply",
+   "mean": 1.63733,
+   "sd": 0.57715
+  },
+  {
+   "id": "f6/supply/world:global_oil_supply",
+   "query": "world:global_oil_supply",
+   "kind": "pair",
+   "sign": -1,
+   "category": "f6",
+   "view": "supply",
+   "mean": -1.63733,
+   "sd": 0.57715
+  },
+  {
+   "id": "supply/opec:opec_crude_oil_production",
+   "query": "opec:opec_crude_oil_production",
+   "kind": "pair",
+   "sign": 1,
+   "category": "supply",
+   "mean": 2.33753,
+   "sd": 0.38334
+  },
+  {
+   "id": "f6/supply/opec:opec_crude_oil_production",
+   "query": "opec:opec_crude_oil_production",
+   "kind": "pair",
+   "sign": -1,
+   "category": "f6",
+   "view": "supply",
+   "mean": -2.33753,
+   "sd": 0.38334
+  },
+  {
+   "id": "supply/shale:us_shale_oil_production",
+   "query": "shale:us_shale_oil_production",
+   "kind": "pair",
+   "sign": 1,
+   "category": "supply",
+   "mean": 2.94351,
+   "sd": 0.81456
+  },
+  {
+   "id": "f6/supply/shale:us_shale_oil_production",
+   "query": "shale:us_shale_oil_production",
+   "kind": "pair",
+   "sign": -1,
+   "category": "f6",
+   "view": "supply",
+   "mean": -2.94351,
+   "sd": 0.81456
+  },
+  {
+   "id": "supply/nonopec:non_opec_oil_supply",
+   "query": "nonopec:non_opec_oil_supply",
+   "kind": "pair",
+   "sign": 1,
+   "category": "supply",
+   "mean": 2.58437,
+   "sd": 0.47526
+  },
+  {
+   "id": "f6/supply/nonopec:non_opec_oil_supply",
+   "query": "nonopec:non_opec_oil_supply",
+   "kind": "pair",
+   "sign": -1,
+   "category": "f6",
+   "view": "supply",
+   "mean": -2.58437,
+   "sd": 0.47526
+  },
+  {
+   "id": "inventories/us:us_crude_oil_inventories",
+   "query": "us:us_crude_oil_inventories",
+   "kind": "pair",
+   "sign": 1,
+   "category": "inventories",
+   "mean": -0.02721,
+   "sd": 0.25374
+  },
+  {
+   "id": "f6/inventories/us:us_crude_oil_inventories",
+   "query": "us:us_crude_oil_inventories",
+   "kind": "pair",
+   "sign": -1,
+   "category": "f6",
+   "view": "inventories",
+   "mean": 0.02721,
+   "sd": 0.25374
+  },
+  {
+   "id": "inventories/cushing:crude_oil_inventories_at_cushing_oklahom",
+   "query": "cushing:crude_oil_inventories_at_cushing_oklahom",
+   "kind": "pair",
+   "sign": 1,
+   "category": "inventories",
+   "mean": 0.27587,
+   "sd": 0.38749
+  },
+  {
+   "id": "f6/inventories/cushing:crude_oil_inventories_at_cushing_oklahom",
+   "query": "cushing:crude_oil_inventories_at_cushing_oklahom",
+   "kind": "pair",
+   "sign": -1,
+   "category": "f6",
+   "view": "inventories",
+   "mean": -0.27587,
+   "sd": 0.38749
+  },
+  {
+   "id": "inventories/gasoline:us_gasoline_inventories",
+   "query": "gasoline:us_gasoline_inventories",
+   "kind": "pair",
+   "sign": 1,
+   "category": "inventories",
+   "mean": -0.12942,
+   "sd": 0.25913
+  },
+  {
+   "id": "f6/inventories/gasoline:us_gasoline_inventories",
+   "query": "gasoline:us_gasoline_inventories",
+   "kind": "pair",
+   "sign": -1,
+   "category": "f6",
+   "view": "inventories",
+   "mean": 0.12942,
+   "sd": 0.25913
+  },
+  {
+   "id": "inventories/diesel:us_distillate_inventories",
+   "query": "diesel:us_distillate_inventories",
+   "kind": "pair",
+   "sign": 1,
+   "category": "inventories",
+   "mean": -0.21468,
+   "sd": 0.19209
+  },
+  {
+   "id": "f6/inventories/diesel:us_distillate_inventories",
+   "query": "diesel:us_distillate_inventories",
+   "kind": "pair",
+   "sign": -1,
+   "category": "f6",
+   "view": "inventories",
+   "mean": 0.21468,
+   "sd": 0.19209
+  },
+  {
+   "id": "opec/opec:opec_production_quotas",
+   "query": "opec:opec_production_quotas",
+   "kind": "pair",
+   "sign": 1,
+   "category": "opec",
+   "mean": 1.3228,
+   "sd": 0.32771
+  },
+  {
+   "id": "f6/opec/opec:opec_production_quotas",
+   "query": "opec:opec_production_quotas",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "opec",
+   "mean": 1.3228,
+   "sd": 0.32771
+  },
+  {
+   "id": "disruption/mideast:the_risk_of_oil_supply_disruptions_in_th",
+   "query": "mideast:the_risk_of_oil_supply_disruptions_in_th",
+   "kind": "pair",
+   "sign": 1,
+   "category": "disruption",
+   "mean": 2.16387,
+   "sd": 0.66297
+  },
+  {
+   "id": "f6/disruption/mideast:the_risk_of_oil_supply_disruptions_in_th",
+   "query": "mideast:the_risk_of_oil_supply_disruptions_in_th",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "disruption",
+   "mean": 2.16387,
+   "sd": 0.66297
+  },
+  {
+   "id": "disruption/hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+   "query": "hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+   "kind": "pair",
+   "sign": 1,
+   "category": "disruption",
+   "mean": 2.46322,
+   "sd": 0.50994
+  },
+  {
+   "id": "f6/disruption/hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+   "query": "hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "disruption",
+   "mean": 2.46322,
+   "sd": 0.50994
+  },
+  {
+   "id": "disruption/russia:the_risk_of_disruption_to_russian_oil_ex",
+   "query": "russia:the_risk_of_disruption_to_russian_oil_ex",
+   "kind": "pair",
+   "sign": 1,
+   "category": "disruption",
+   "mean": 1.72952,
+   "sd": 0.55742
+  },
+  {
+   "id": "f6/disruption/russia:the_risk_of_disruption_to_russian_oil_ex",
+   "query": "russia:the_risk_of_disruption_to_russian_oil_ex",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "disruption",
+   "mean": 1.72952,
+   "sd": 0.55742
+  },
+  {
+   "id": "disruption/ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+   "query": "ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+   "kind": "pair",
+   "sign": 1,
+   "category": "disruption",
+   "mean": 2.66418,
+   "sd": 0.49894
+  },
+  {
+   "id": "f6/disruption/ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+   "query": "ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "disruption",
+   "mean": 2.66418,
+   "sd": 0.49894
+  },
+  {
+   "id": "growth/world:global_economic_growth",
+   "query": "world:global_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "growth",
+   "mean": -1.70611,
+   "sd": 1.1571
+  },
+  {
+   "id": "growth/usa:us_economic_growth",
+   "query": "usa:us_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "growth",
+   "mean": -1.41401,
+   "sd": 0.90651
+  },
+  {
+   "id": "growth/china:china_s_economic_growth",
+   "query": "china:china_s_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "growth",
+   "mean": -1.6417,
+   "sd": 0.66397
+  },
+  {
+   "id": "growth/world:the_risk_of_a_global_recession",
+   "query": "world:the_risk_of_a_global_recession",
+   "kind": "pair",
+   "sign": -1,
+   "category": "growth",
+   "mean": -1.84812,
+   "sd": 1.17182
+  },
+  {
+   "id": "rates/fed:us_interest_rates",
+   "query": "fed:us_interest_rates",
+   "kind": "pair",
+   "sign": 1,
+   "category": "rates",
+   "mean": 1.18661,
+   "sd": 0.85278
+  },
+  {
+   "id": "rates/fed:the_federal_funds_rate",
+   "query": "fed:the_federal_funds_rate",
+   "kind": "pair",
+   "sign": 1,
+   "category": "rates",
+   "mean": 1.1067,
+   "sd": 0.94367
+  },
+  {
+   "id": "dollar/dollar:the_us_dollar",
+   "query": "dollar:the_us_dollar",
+   "kind": "pair",
+   "sign": 1,
+   "category": "dollar",
+   "mean": -0.44323,
+   "sd": 0.87058
+  },
+  {
+   "id": "dollar/dollar:the_dollar",
+   "query": "dollar:the_dollar",
+   "kind": "pair",
+   "sign": 1,
+   "category": "dollar",
+   "mean": -0.18881,
+   "sd": 0.70441
+  },
+  {
+   "id": "stocks/stocks:us_stock_prices",
+   "query": "stocks:us_stock_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "stocks",
+   "mean": -0.39619,
+   "sd": 0.98747
+  },
+  {
+   "id": "stocks/world:the_risk_of_a_global_recession",
+   "query": "world:the_risk_of_a_global_recession",
+   "kind": "pair",
+   "sign": -1,
+   "category": "stocks",
+   "mean": -1.84812,
+   "sd": 1.17182
+  },
+  {
+   "id": "mood/market:mood_financial_markets",
+   "query": "market:mood_financial_markets",
+   "kind": "pair",
+   "sign": 1,
+   "category": "mood",
+   "mean": 1.86988,
+   "sd": 0.99876
+  },
+  {
+   "id": "mood/market:fear_in_financial_markets",
+   "query": "market:fear_in_financial_markets",
+   "kind": "pair",
+   "sign": -1,
+   "category": "mood",
+   "mean": -2.99361,
+   "sd": 1.16537
+  },
+  {
+   "id": "mood/market:investor_optimism",
+   "query": "market:investor_optimism",
+   "kind": "pair",
+   "sign": 1,
+   "category": "mood",
+   "mean": 1.24013,
+   "sd": 1.50461
+  },
+  {
+   "id": "mood/market:risk_aversion_among_investors",
+   "query": "market:risk_aversion_among_investors",
+   "kind": "pair",
+   "sign": -1,
+   "category": "mood",
+   "mean": -2.39316,
+   "sd": 1.15506
+  },
+  {
+   "id": "mood/market:turmoil_in_financial_markets",
+   "query": "market:turmoil_in_financial_markets",
+   "kind": "pair",
+   "sign": -1,
+   "category": "mood",
+   "mean": -1.8107,
+   "sd": 1.00679
+  },
+  {
+   "id": "margins/refiners:global_refining_margins",
+   "query": "refiners:global_refining_margins",
+   "kind": "pair",
+   "sign": 1,
+   "category": "margins",
+   "mean": 0.07095,
+   "sd": 0.46793
+  },
+  {
+   "id": "f6/margins/refiners:global_refining_margins",
+   "query": "refiners:global_refining_margins",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "margins",
+   "mean": 0.07095,
+   "sd": 0.46793
+  },
+  {
+   "id": "margins/diesel:diesel_prices",
+   "query": "diesel:diesel_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "margins",
+   "mean": 1.08451,
+   "sd": 0.74474
+  },
+  {
+   "id": "f6/margins/diesel:diesel_prices",
+   "query": "diesel:diesel_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "f6",
+   "view": "margins",
+   "mean": 1.08451,
+   "sd": 0.74474
+  },
+  {
+   "id": "inflation/fed:us_inflation",
+   "query": "fed:us_inflation",
+   "kind": "pair",
+   "sign": 1,
+   "category": "inflation",
+   "mean": 1.04087,
+   "sd": 0.77462
+  },
+  {
+   "id": "fedcuts/fed:expectations_of_fed_rate_cuts",
+   "query": "fed:expectations_of_fed_rate_cuts",
+   "kind": "pair",
+   "sign": 1,
+   "category": "fedcuts",
+   "mean": 0.81817,
+   "sd": 0.40187
+  },
+  {
+   "id": "fedcuts/fed:bets_on_federal_reserve_rate_cuts",
+   "query": "fed:bets_on_federal_reserve_rate_cuts",
+   "kind": "pair",
+   "sign": 1,
+   "category": "fedcuts",
+   "mean": 2.76243,
+   "sd": 0.44943
+  },
+  {
+   "id": "gold/gold:gold_prices",
+   "query": "gold:gold_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "gold",
+   "mean": 0.98835,
+   "sd": 0.83398
+  },
+  {
+   "id": "euro/euro:the_euro_against_the_us_dollar",
+   "query": "euro:the_euro_against_the_us_dollar",
+   "kind": "pair",
+   "sign": 1,
+   "category": "euro",
+   "mean": -0.33154,
+   "sd": 0.70272
+  },
+  {
+   "id": "euro/euro:the_euro",
+   "query": "euro:the_euro",
+   "kind": "pair",
+   "sign": 1,
+   "category": "euro",
+   "mean": -0.35509,
+   "sd": 0.60292
+  },
+  {
+   "id": "geopolitics/market:geopolitical_tensions",
+   "query": "market:geopolitical_tensions",
+   "kind": "pair",
+   "sign": -1,
+   "category": "geopolitics",
+   "mean": 1.83402,
+   "sd": 1.24987
+  },
+  {
+   "id": "geopolitics/market:the_risk_of_a_wider_war",
+   "query": "market:the_risk_of_a_wider_war",
+   "kind": "pair",
+   "sign": 1,
+   "category": "geopolitics",
+   "mean": 2.73278,
+   "sd": 0.67651
+  },
+  {
+   "id": "trade/market:trade_tensions",
+   "query": "market:trade_tensions",
+   "kind": "pair",
+   "sign": -1,
+   "category": "trade",
+   "mean": 1.80374,
+   "sd": 1.2535
+  },
+  {
+   "id": "trade/trade:us_china_trade_tensions",
+   "query": "trade:us_china_trade_tensions",
+   "kind": "pair",
+   "sign": -1,
+   "category": "trade",
+   "mean": -3.58174,
+   "sd": 0.93235
+  },
+  {
+   "id": "volatility/haven:financial_market_volatility",
+   "query": "haven:financial_market_volatility",
+   "kind": "pair",
+   "sign": 1,
+   "category": "volatility",
+   "mean": 2.73433,
+   "sd": 1.07681
+  },
+  {
+   "id": "volatility/market:turmoil_in_financial_markets",
+   "query": "market:turmoil_in_financial_markets",
+   "kind": "pair",
+   "sign": 1,
+   "category": "volatility",
+   "mean": 1.8107,
+   "sd": 1.00679
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Global oil demand",
+   "sentence": "Global oil demand is {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "index",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00336,
+     0.28536,
+     0.38613,
+     0.43916,
+     0.48369,
+     0.52156,
+     0.56295,
+     0.59783,
+     0.64102,
+     0.70896,
+     0.75742,
+     0.86084,
+     0.94517,
+     0.96034
+    ]
+   }
+  },
+  "supply": {
+   "label": "Global oil supply",
+   "sentence": "Global oil supply is {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "index",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00359,
+     0.31347,
+     0.38864,
+     0.44338,
+     0.48342,
+     0.5175,
+     0.5538,
+     0.58567,
+     0.63403,
+     0.68004,
+     0.71896,
+     0.80646,
+     0.89446,
+     0.96372
+    ]
+   }
+  },
+  "inventories": {
+   "label": "US oil inventories",
+   "sentence": "US oil inventories are {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "index",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00359,
+     0.33216,
+     0.38408,
+     0.41974,
+     0.45537,
+     0.48985,
+     0.52305,
+     0.56317,
+     0.61507,
+     0.68639,
+     0.76291,
+     0.86544,
+     0.98742,
+     0.99441
+    ]
+   }
+  },
+  "opec": {
+   "label": "OPEC+ production quotas",
+   "sentence": "OPEC+ production quotas are {w}.",
+   "words": [
+    "easing sharply",
+    "easing",
+    "unchanged",
+    "tightening",
+    "tightening sharply"
+   ],
+   "role": "index",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00595,
+     0.23641,
+     0.32247,
+     0.39481,
+     0.45532,
+     0.50959,
+     0.57069,
+     0.62616,
+     0.68305,
+     0.75141,
+     0.81254,
+     0.9184,
+     0.97088,
+     0.9965
+    ]
+   }
+  },
+  "disruption": {
+   "label": "The risk of oil supply disruptions",
+   "sentence": "The risk of oil supply disruptions is {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "index",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.08295,
+     0.27684,
+     0.33639,
+     0.38796,
+     0.43659,
+     0.48031,
+     0.53705,
+     0.58239,
+     0.64257,
+     0.72542,
+     0.803,
+     0.94247,
+     0.99185,
+     0.99795
+    ]
+   }
+  },
+  "growth": {
+   "label": "The global economy",
+   "sentence": "The global economy is {w}.",
+   "words": [
+    "slowing sharply",
+    "slowing",
+    "steady",
+    "accelerating",
+    "accelerating sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.02687,
+     0.28157,
+     0.40261,
+     0.45559,
+     0.49066,
+     0.52476,
+     0.55673,
+     0.59349,
+     0.63229,
+     0.68922,
+     0.73852,
+     0.84324,
+     0.92598,
+     0.94151
+    ]
+   }
+  },
+  "rates": {
+   "label": "US interest rates",
+   "sentence": "US interest rates are {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00486,
+     0.32011,
+     0.40504,
+     0.4469,
+     0.47876,
+     0.50506,
+     0.53346,
+     0.56714,
+     0.61799,
+     0.71628,
+     0.80401,
+     0.93332,
+     0.97077,
+     0.99247
+    ]
+   }
+  },
+  "dollar": {
+   "label": "The US dollar",
+   "sentence": "The US dollar is {w}.",
+   "words": [
+    "weakening sharply",
+    "weakening",
+    "steady",
+    "strengthening",
+    "strengthening sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00517,
+     0.30836,
+     0.37612,
+     0.42107,
+     0.45621,
+     0.49249,
+     0.52531,
+     0.5692,
+     0.63503,
+     0.73423,
+     0.8043,
+     0.9248,
+     0.9919,
+     0.99836
+    ]
+   }
+  },
+  "stocks": {
+   "label": "Stock markets",
+   "sentence": "Stock markets are {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.01755,
+     0.25509,
+     0.35442,
+     0.43143,
+     0.47824,
+     0.52497,
+     0.56855,
+     0.60449,
+     0.65038,
+     0.71354,
+     0.76469,
+     0.8784,
+     0.95915,
+     0.97007
+    ]
+   }
+  },
+  "mood": {
+   "label": "Investor sentiment",
+   "sentence": "Investor sentiment is {w}.",
+   "words": [
+    "very pessimistic",
+    "pessimistic",
+    "neutral",
+    "optimistic",
+    "very optimistic"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.03672,
+     0.25755,
+     0.37743,
+     0.4428,
+     0.48901,
+     0.52596,
+     0.55951,
+     0.59642,
+     0.63867,
+     0.68656,
+     0.74134,
+     0.86752,
+     0.96444,
+     0.97177
+    ]
+   }
+  },
+  "margins": {
+   "label": "Refining margins",
+   "sentence": "Refining margins are {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "index",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00486,
+     0.33997,
+     0.40504,
+     0.44027,
+     0.46672,
+     0.49272,
+     0.51976,
+     0.54771,
+     0.58988,
+     0.65988,
+     0.76026,
+     0.95306,
+     0.99155,
+     0.99436
+    ]
+   }
+  },
+  "inflation": {
+   "label": "US inflation",
+   "sentence": "US inflation is {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.01681,
+     0.32115,
+     0.37416,
+     0.40584,
+     0.43405,
+     0.46123,
+     0.49263,
+     0.52691,
+     0.57907,
+     0.69181,
+     0.84826,
+     0.98619,
+     0.99779,
+     0.99893
+    ]
+   }
+  },
+  "fedcuts": {
+   "label": "Expectations of Federal Reserve rate cuts",
+   "sentence": "Expectations of Federal Reserve rate cuts are {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.0006,
+     0.29672,
+     0.3713,
+     0.426,
+     0.46391,
+     0.50631,
+     0.5452,
+     0.587,
+     0.62741,
+     0.69728,
+     0.74875,
+     0.91921,
+     0.99164,
+     0.99974
+    ]
+   }
+  },
+  "gold": {
+   "label": "Gold prices",
+   "sentence": "Gold prices are {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.01351,
+     0.30208,
+     0.33865,
+     0.3678,
+     0.39623,
+     0.43026,
+     0.47475,
+     0.5286,
+     0.63443,
+     0.79881,
+     0.90498,
+     0.9662,
+     0.9825,
+     0.98712
+    ]
+   }
+  },
+  "euro": {
+   "label": "The euro against the dollar",
+   "sentence": "The euro is {w} against the dollar.",
+   "words": [
+    "weakening sharply",
+    "weakening",
+    "steady",
+    "strengthening",
+    "strengthening sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00274,
+     0.29199,
+     0.36584,
+     0.41843,
+     0.46184,
+     0.50264,
+     0.54063,
+     0.58143,
+     0.6324,
+     0.72075,
+     0.80597,
+     0.92697,
+     0.99016,
+     0.99257
+    ]
+   }
+  },
+  "geopolitics": {
+   "label": "Geopolitical tensions",
+   "sentence": "Geopolitical tensions are {w}.",
+   "words": [
+    "easing sharply",
+    "easing",
+    "unchanged",
+    "escalating",
+    "escalating sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.0044,
+     0.28712,
+     0.34369,
+     0.39451,
+     0.43276,
+     0.48202,
+     0.5243,
+     0.57249,
+     0.62996,
+     0.74819,
+     0.82039,
+     0.94267,
+     0.98261,
+     0.98718
+    ]
+   }
+  },
+  "trade": {
+   "label": "Trade tensions",
+   "sentence": "Trade tensions are {w}.",
+   "words": [
+    "easing sharply",
+    "easing",
+    "unchanged",
+    "escalating",
+    "escalating sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.18358,
+     0.334,
+     0.37577,
+     0.41321,
+     0.45204,
+     0.49063,
+     0.52445,
+     0.56844,
+     0.61741,
+     0.68066,
+     0.72791,
+     0.81819,
+     0.90207,
+     0.93765
+    ]
+   }
+  },
+  "volatility": {
+   "label": "Financial market volatility",
+   "sentence": "Financial market volatility is {w}.",
+   "words": [
+    "falling sharply",
+    "falling",
+    "steady",
+    "rising",
+    "rising sharply"
+   ],
+   "role": "context",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.01246,
+     0.27309,
+     0.33471,
+     0.38348,
+     0.42526,
+     0.47076,
+     0.51607,
+     0.57417,
+     0.65425,
+     0.77929,
+     0.85099,
+     0.93284,
+     0.96514,
+     0.9696
+    ]
+   }
+  },
+  "f6": {
+   "label": "Oil news read (F6)",
+   "aggregate": "views",
+   "words": [
+    "very bearish",
+    "bearish",
+    "balanced",
+    "bullish",
+    "very bullish"
+   ],
+   "slots": {
+    "demand": 1,
+    "supply": -1,
+    "inventories": -1,
+    "opec": 1,
+    "disruption": 1,
+    "margins": 1
+   },
+   "role": "composite",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.12168,
+     0.38032,
+     0.43285,
+     0.46186,
+     0.48274,
+     0.50406,
+     0.52261,
+     0.54284,
+     0.56628,
+     0.59698,
+     0.63713,
+     0.75343,
+     0.93274,
+     0.93925
+    ]
+   }
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": [],
+  "per_category": {}
+ },
+ "engine": "fp_51319d2ff6",
+ "calibration": {
+  "sample": "calibration/wikinews_business.json.gz",
+  "n": 1500,
+  "statistic": "mean and sd of each read over the sample; no thresholds, no decision",
+  "date": "2026-10-24"
+ }
+}

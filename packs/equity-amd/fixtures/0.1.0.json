@@ -1,0 +1,3399 @@
+{
+ "pack": "thinkingtext/equity-amd",
+ "version": "0.1.0",
+ "engine": "fp_51319d2ff6",
+ "usage": {
+  "prompt_tokens": 5552,
+  "completion_tokens": 0,
+  "total_tokens": 5552,
+  "prompt_tokens_details": {
+   "content_tokens": 2117,
+   "text_tokens": 2117,
+   "query_tokens": 3435,
+   "floor_tokens": 0
+  },
+  "inputs": 5,
+  "content": {
+   "tokens": 2117,
+   "text_tokens": 2117,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 25,
+   "combinations": 25,
+   "options": 50,
+   "prompts": 125,
+   "floor_prompts": 0,
+   "query_tokens": 3435,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 3302
+ },
+ "cases": [
+  {
+   "id": "wn13093",
+   "text": "AMD filed an antitrust complaint against Intel Corporation two days ago in U.S. federal district court for the district of Delaware under Section 2 of the Sherman Antitrust Act, Sections 4 and 16 of the Clayton Act, and the California Business and Professions Code.\nAccording to the complaint, Intel has unlawfully maintained its monopoly by, among other things:\nForcing major customers such as Dell, Sony, Toshiba, Gateway, and Hitachi into Intel-exclusive deals in return for outright cash payments, discriminatory pricing or marketing subsidies conditioned on the exclusion of AMD;\nAccording to industry reports, and as confirmed by the JFTC in Japan, Intel has paid Dell and Toshiba huge sums not to do business with AMD.\nIntel paid Sony millions for exclusivity. AMD’s share of Sony’s business went from 23 percent in ‘02 to 8% in ‘03, to 0%, where it remains today.\nForcing other major customers such as NEC, Acer, and Fujitsu into partial exclusivity agreements by conditioning rebates, allowances and market development funds (MDF) on customers’ agreement to severely limit or forego entirely purchases from AMD;\nIntel paid NEC several million dollars for caps on NEC’s purchases from AMD. Those caps assured Intel at least 90% of NEC’s business in Japan and imposed a worldwide cap on the amount of AMD business NEC could do.\nEstablishing a system of discriminatory and retroactive incentives triggered by purchases at such high levels as to have the intended effect of denying customers the freedom to purchase any significant volume of processors from AMD;\nWhen AMD succeeded in getting on the HP retail roadmap for mobile computers, and its products sold well, Intel responded by withholding HP’s fourth quarter 2004 rebate check and refusing to waive HP’s failure to achieve its targeted rebate goal; it allowed HP to make up the shortfall in succeeding quarters by promising Intel at least 90% of HP’s mainstream retail business.\nThreatening retaliation against customers for introducing AMD computer platforms, particularly in strategic market segments such as commercial desktop;\nThen-Compaq CEO Michael Capellas said in 2000 that because of the volume of business given to AMD, Intel withheld delivery of critical server chips. Saying \"he had a gun to his head,\" he told AMD he had to stop buying.\nAccording to Gateway executives, their company has paid a high price for even its limited AMD dealings. They claim that Intel has \"beaten them into ‘guacamole’\" in retaliation.\nEstablishing and enforcing quotas among key retailers such as Best Buy and Circuit City, effectively requiring them to stock overwhelmingly or exclusively, Intel computers, artificially limiting consumer choice;\nAMD has been entirely shut out from Media Markt, Europe's largest computer retailer, which accounts for 35 percent of Germany's retail sales.\nOffice Depot declined to stock AMD-powered notebooks regardless of the amount of financial support AMD offered, citing the risk of retaliation.\nForcing PC makers and tech partners to boycott AMD product launches or promotions;\nThen-Intel CEO Craig Barrett threatened Acer’s Chairman with \"severe consequences\" for supporting the AMD Athlon 64 launch. This coincided with an unexplained delay by Intel in providing $15-20M in market development funds owed to Acer. Acer withdrew from the launch in September 2003.\nAbusing its market power by forcing on the industry technical standards and products that have as their main purpose the handicapping of AMD in the marketplace.\nIntel denied AMD access to the highest level of membership for the Advanced DRAM technology consortium to limit AMD’s participation in critical industry standard decisions that would affect its business.\nIntel designed its compilers, which translate software programs into machine-readable language, to degrade a program’s performance if operated on a computer powered by an AMD microprocessor.",
+   "context": "article",
+   "source": {
+    "title": "AMD files antitrust lawsuit against Intel in US federal district court",
+    "url": "https://en.wikinews.org/wiki/AMD_files_antitrust_lawsuit_against_Intel_in_US_federal_district_court",
+    "revision": 4810660,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn13093",
+    "queries": [
+     {
+      "id": "amd:amd_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.059492,
+          "p": 0.198938,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.666545,
+          "p": 0.801062,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.91325,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_data_centre_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.2029,
+          "p": 0.980042,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.096884,
+          "p": 0.019958,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.887268,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.589327,
+          "p": 0.855504,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.367769,
+          "p": 0.144496,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.761471,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.102462,
+          "p": 0.970585,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.598872,
+          "p": 0.029415,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.874143,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.316482,
+          "p": 0.958578,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.45811,
+          "p": 0.041422,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.897118,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.833234,
+          "p": 0.850123,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.568801,
+          "p": 0.149877,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.930807,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.176229,
+          "p": 0.28726,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.267499,
+          "p": 0.71274,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946542,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.652356,
+          "p": 0.331528,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.951072,
+          "p": 0.668472,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.921786,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.271817,
+          "p": 0.090212,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.960773,
+          "p": 0.909788,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943087,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.615371,
+          "p": 0.862544,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.451951,
+          "p": 0.137456,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.988524,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.226068,
+          "p": 0.426358,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.929339,
+          "p": 0.573642,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.906854,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.263205,
+          "p": 0.707152,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.144798,
+          "p": 0.292848,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.945888,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.236969,
+          "p": 0.448939,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.032009,
+          "p": 0.551061,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.762146,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:the_valuation_of_amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.161431,
+          "p": 0.516525,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.227556,
+          "p": 0.483475,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.917981,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_data_centre_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.237671,
+          "p": 0.511573,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.28397,
+          "p": 0.488427,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.923266,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.145698,
+          "p": 0.505691,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.168462,
+          "p": 0.494309,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.968692,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.412861,
+          "p": 0.388083,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.957483,
+          "p": 0.611917,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.915104,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.082738,
+          "p": 0.220999,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.822887,
+          "p": 0.779001,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.792608,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.722929,
+          "p": 0.22413,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.48117,
+          "p": 0.77587,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.892192,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.085349,
+          "p": 0.204722,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.728309,
+          "p": 0.795278,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.917853,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.156284,
+          "p": 0.57715,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.467369,
+          "p": 0.42285,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.972857,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.369883,
+          "p": 0.969294,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.822009,
+          "p": 0.030706,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.964517,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.030118,
+          "p": 0.636555,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.59056,
+          "p": 0.363445,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.924107,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.762828,
+          "p": 0.955857,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.83801,
+          "p": 0.044143,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.933972,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "uspolicy:us_tariffs_on_imports__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -9.095076,
+          "p": 0.388366,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -8.64089,
+          "p": 0.611634,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.999711,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.594343,
+       "percentile": 0.722901,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.664163,
+       "percentile": 0.790114,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.249546,
+       "percentile": 0.095711,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.816802,
+       "percentile": 0.916616,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.451728,
+       "percentile": 0.38097,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.283907,
+       "percentile": 0.120585,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.128252,
+       "percentile": 0.045796,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.374718,
+       "percentile": 0.168668,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.435064,
+       "percentile": 0.295529,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn22204",
+   "text": "An Intel spokesperson confirmed Thursday that Dell would no longer be offering servers with Intel Itanium CPUs.  The spokesperson said \"Losing Dell as an Itanium customer is unfortunate but frankly, we see their impact as negligible.\"  Servers with Itanium CPUs are no longer promoted on Dell's website, though a few can be found by searching.\nDell is the largest seller of computers with Intel processors. Dell currently sells 10.5 percent of all servers worldwide. The majority of Dell servers use an IA-32 (colloquially \"x86\") chip, but a growing number use the 64-bit Intel Xeon. Sales of Itanium servers have been very poor; last year Dell sold only 1,371 Itanium servers, up from 12 the previous year. In February, IBM also phased out Itanium-based servers, replacing them with IBM Power CPUs. Fujitsu, HP, Hitachi NEC, SGI and Unisys are the only major manufacturers to still offer Itanium-based servers.\nThe Intel Itanium was designed in the early 1990s. It was intended to be the processor of choice for 64-bit computers, but the processor suffered from several major flaws preventing widespread adoption. Unlike competing AMD64 chips, the Intel Itanium uses a different instruction set from IA-32 chips. An emulation feature allows them to run IA-32 code, but only very slowly; users were forced to choose between accepting greatly-reduced performance and expending time and programmers' salaries porting their software.  Even Intel has acquiesced to AMD's leadership in this field, designing chips with a compatible EM64T technology.",
+   "context": "article",
+   "source": {
+    "title": "Dell to drop Itanium-based servers",
+    "url": "https://en.wikinews.org/wiki/Dell_to_drop_Itanium-based_servers",
+    "revision": 4816669,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn22204",
+    "queries": [
+     {
+      "id": "amd:amd_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.875515,
+          "p": 0.53008,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.995982,
+          "p": 0.46992,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.893625,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_data_centre_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.67124,
+          "p": 0.978279,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.478758,
+          "p": 0.021721,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.807812,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.923014,
+          "p": 0.953346,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.940231,
+          "p": 0.046654,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.583236,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.750919,
+          "p": 0.939848,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.499762,
+          "p": 0.060152,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.815274,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.055586,
+          "p": 0.950241,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.005112,
+          "p": 0.049759,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.865279,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.481915,
+          "p": 0.767827,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.677996,
+          "p": 0.232173,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.891143,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.865424,
+          "p": 0.623669,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.370574,
+          "p": 0.376331,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.908671,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.29655,
+          "p": 0.788397,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.611838,
+          "p": 0.211603,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.872392,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.78574,
+          "p": 0.243187,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.650454,
+          "p": 0.756813,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.906689,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -2.479434,
+          "p": 0.944635,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.316285,
+          "p": 0.055365,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911298,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.398277,
+          "p": 0.899808,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.593372,
+          "p": 0.100192,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.899007,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.957845,
+          "p": 0.834816,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.577996,
+          "p": 0.165184,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.937794,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.457723,
+          "p": 0.791119,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.789409,
+          "p": 0.208881,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.705777,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:the_valuation_of_amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.135578,
+          "p": 0.795867,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.496239,
+          "p": 0.204133,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.851513,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_data_centre_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.918264,
+          "p": 0.442887,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.688812,
+          "p": 0.557113,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.878011,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.659051,
+          "p": 0.52645,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.764949,
+          "p": 0.47355,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951074,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.11852,
+          "p": 0.44381,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.892808,
+          "p": 0.55619,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.900357,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.023914,
+          "p": 0.449296,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.8204,
+          "p": 0.550704,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.705902,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.814348,
+          "p": 0.418237,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.484335,
+          "p": 0.581763,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.856675,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.133126,
+          "p": 0.375699,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.625283,
+          "p": 0.624301,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.883999,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.064944,
+          "p": 0.464435,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.922445,
+          "p": 0.535565,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.963043,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.739865,
+          "p": 0.943199,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.549596,
+          "p": 0.056801,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.931532,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.381041,
+          "p": 0.701087,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.233521,
+          "p": 0.298913,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951487,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.164134,
+          "p": 0.914518,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.534223,
+          "p": 0.085482,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.874415,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "uspolicy:us_tariffs_on_imports__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -9.343016,
+          "p": 0.487498,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -9.292997,
+          "p": 0.512502,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.99982,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.664502,
+       "percentile": 0.856595,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.990421,
+       "percentile": 0.999713,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.738871,
+       "percentile": 0.900815,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.996315,
+       "percentile": 1,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.933467,
+       "percentile": 0.994832,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.301497,
+       "percentile": 0.140107,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.471276,
+       "percentile": 0.401029,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.410333,
+       "percentile": 0.244849,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.840326,
+       "percentile": 0.994025,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn14831",
+   "text": "Local Law enforcement officials acting on behalf of the European Commission raided offices of Intel and several computer makers this morning, a spokesman for the EU said. He did not specify which countries or which other firms were involved. However, a spokesman for Intel Germany, Hans-Jürgen Werner, said that Intel's offices in Munich and Swindon were among those searched.\nIt emerged on Wednesday 13th, that raids also took place at Intel's facility in County Kildare, Ireland in relation to the firms anti-competitive business practices. Intel employs over 5,000 people at its Irish manufacturing facility.\nThe raids are most likely connected to an ongoing anti-trust investigation against Intel by the EU. It is alleged that the company used its market dominance to bully its clients into buying its chips instead of AMD ones. Intel is denying the allegations.",
+   "context": "article",
+   "source": {
+    "title": "Intel's offices across the EU raided",
+    "url": "https://en.wikinews.org/wiki/Intel%27s_offices_across_the_EU_raided",
+    "revision": 4811130,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn14831",
+    "queries": [
+     {
+      "id": "amd:amd_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.911944,
+          "p": 0.461669,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.758317,
+          "p": 0.538331,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.882232,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_data_centre_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.523859,
+          "p": 0.983353,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.602585,
+          "p": 0.016647,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.778442,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.681287,
+          "p": 0.990029,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.279377,
+          "p": 0.009971,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.488939,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.010943,
+          "p": 0.97779,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.795695,
+          "p": 0.02221,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.863097,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.160111,
+          "p": 0.926617,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.69596,
+          "p": 0.073383,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.875556,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.689629,
+          "p": 0.818509,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.195906,
+          "p": 0.181491,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.917037,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.991068,
+          "p": 0.570397,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.27454,
+          "p": 0.429603,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911932,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.700855,
+          "p": 0.592696,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.075977,
+          "p": 0.407304,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.886707,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.100001,
+          "p": 0.220001,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.834338,
+          "p": 0.779999,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.92467,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -2.142442,
+          "p": 0.967841,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.546811,
+          "p": 0.032159,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.878732,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.239534,
+          "p": 0.837481,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.879139,
+          "p": 0.162519,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.872823,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.283113,
+          "p": 0.7974,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.653238,
+          "p": 0.2026,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.872127,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.440993,
+          "p": 0.766469,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.629474,
+          "p": 0.233531,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.691191,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:the_valuation_of_amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.313289,
+          "p": 0.625709,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.827142,
+          "p": 0.374291,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.841883,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_data_centre_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.229239,
+          "p": 0.527902,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.340962,
+          "p": 0.472098,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.92501,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.275126,
+          "p": 0.529915,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.394931,
+          "p": 0.470085,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.97375,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.256281,
+          "p": 0.516707,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.323135,
+          "p": 0.483293,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.925429,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.044157,
+          "p": 0.162017,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.400858,
+          "p": 0.837983,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.705978,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.058459,
+          "p": 0.133677,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.189624,
+          "p": 0.866323,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.870766,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.377223,
+          "p": 0.304862,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.552972,
+          "p": 0.695138,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.888008,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.562985,
+          "p": 0.511846,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.610379,
+          "p": 0.488154,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.944604,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.486986,
+          "p": 0.954364,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.527344,
+          "p": 0.045636,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.912863,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.815639,
+          "p": 0.469862,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -2.69494,
+          "p": 0.530138,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.872587,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.333323,
+          "p": 0.924501,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.838456,
+          "p": 0.075499,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.895108,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "uspolicy:us_tariffs_on_imports__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -8.697346,
+          "p": 0.456581,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -8.523232,
+          "p": 0.543419,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.999634,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.815463,
+       "percentile": 0.981785,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.966204,
+       "percentile": 0.997825,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.834305,
+       "percentile": 0.971674,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.990848,
+       "percentile": 1,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.857122,
+       "percentile": 0.983821,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.553974,
+       "percentile": 0.549986,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.053578,
+       "percentile": 0.018576,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.366166,
+       "percentile": 0.153037,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.771361,
+       "percentile": 0.976318,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn36547",
+   "text": "Engineers at China's Yellow Sheep River have developed a desktop computer, called a Municator, which costs only €123 ($150 US).  The machine is designed to help bridge the digital divide in China and to expand China's small domestic semiconductor industry. Its development has been heavily subsidized by local governments.\nThe Municator measures 14.5 x 18 x 3.7 cm. (5.7 x 7.1 x 1.5 in.),  and weighs 0.65 kg. (1.4 pounds).  It is expected to use an existing TV as a monitor. The operating system is a GNU/Linux distribution, known as Thinix 3.0, which is developed by YellowSheepRiver Inc. itself and overseen by the Chinese government for security reasons. The Municator was shown last week at the 2006 CeBIT Fair in Hannover, Germany.\nVideo coverage from CeBIT 2006 speculated that the Municator will include applications such as: Firefox for web browsing, Thunderbird for e-mail, Gaim for instant messaging, Skype for VoIP, Red Office (99 percent compatible with Microsoft Office and based on Open Office) for Linux for word processing, and MPlayer for audio/video playback. The Skype application for VoIP is currently only available from Skype on i386-32 processors under Linux, but CeBit's video briefly shows a beta version of Skype running on the Municator's screen.\nThe 64-bit Godson 2c 400-800 MHz CPU used in the machine has a MIPS-like instruction set, and is roughly as fast as a 500-mHz Pentium III.  The Godson II is made exclusively in China, and consumes relatively little power for its speed in comparison to x86 Intel and compatible AMD chips.  A similar Chinese laptop project called the Longmeng also uses the Godson II.\nNo version of Microsoft Windows supports the Godson II, and due to the independent nature of the Chinese government, the Municator is unlikely to ever run Microsoft Windows or its applications. Banners at CeBIT 2006 proclaim \"Say No To Wintel Try Now!\"\nThe MIT Media Lab has a similar initiative to develop an inexpensive Linux machine, known as the $100 laptop, which seeks to begin production by the end of 2007.",
+   "context": "article",
+   "source": {
+    "title": "Yellow Sheep River develops €123 Linux based computer",
+    "url": "https://en.wikinews.org/wiki/Yellow_Sheep_River_develops_%E2%82%AC123_Linux_based_computer",
+    "revision": 4830529,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn36547",
+    "queries": [
+     {
+      "id": "amd:amd_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.418594,
+          "p": 0.245964,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.298342,
+          "p": 0.754036,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.866816,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_data_centre_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.060611,
+          "p": 0.96304,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.320876,
+          "p": 0.03696,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.867735,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.637866,
+          "p": 0.832921,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.244338,
+          "p": 0.167079,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.766611,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.360091,
+          "p": 0.961435,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.576184,
+          "p": 0.038565,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.733068,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.348132,
+          "p": 0.981983,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.346404,
+          "p": 0.018017,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.73551,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.549727,
+          "p": 0.967348,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.938371,
+          "p": 0.032652,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.780528,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.646488,
+          "p": 0.207387,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.305738,
+          "p": 0.792613,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.874232,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.341656,
+          "p": 0.259969,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.295527,
+          "p": 0.740031,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.863913,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.709801,
+          "p": 0.087785,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.368822,
+          "p": 0.912215,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.897403,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.087129,
+          "p": 0.887285,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.150432,
+          "p": 0.112715,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.94857,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.146614,
+          "p": 0.303483,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.315849,
+          "p": 0.696517,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.85832,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.86307,
+          "p": 0.736866,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.892812,
+          "p": 0.263134,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.922519,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.153319,
+          "p": 0.411128,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.794013,
+          "p": 0.588872,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.71761,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:the_valuation_of_amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.251078,
+          "p": 0.571772,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.540161,
+          "p": 0.428228,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.815861,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_data_centre_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.820928,
+          "p": 0.487902,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.772527,
+          "p": 0.512098,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.877945,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.627064,
+          "p": 0.553193,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.840643,
+          "p": 0.446807,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951926,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.016227,
+          "p": 0.447046,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.803615,
+          "p": 0.552954,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.890424,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.084313,
+          "p": 0.412461,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.730511,
+          "p": 0.587539,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.698414,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.83521,
+          "p": 0.389576,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.386117,
+          "p": 0.610424,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.849308,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.089188,
+          "p": 0.351417,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.476371,
+          "p": 0.648583,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.870413,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.679131,
+          "p": 0.516034,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.74329,
+          "p": 0.483966,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951079,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.674277,
+          "p": 0.931696,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.28732,
+          "p": 0.068304,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.925988,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.866625,
+          "p": 0.817293,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.364737,
+          "p": 0.182707,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.930391,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.106663,
+          "p": 0.909311,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.411917,
+          "p": 0.090689,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.866225,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "uspolicy:us_tariffs_on_imports__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -9.082073,
+          "p": 0.425354,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -8.78124,
+          "p": 0.574646,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.999733,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.707193,
+       "percentile": 0.916651,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.440817,
+       "percentile": 0.374018,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.298793,
+       "percentile": 0.145676,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.649101,
+       "percentile": 0.771127,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.480431,
+       "percentile": 0.443599,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.409859,
+       "percentile": 0.280951,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.410837,
+       "percentile": 0.263061,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.506848,
+       "percentile": 0.526585,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.48844,
+       "percentile": 0.430247,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn37709",
+   "text": "On March 21, 2006, Sun Microsystems released the source code for its newest processor, the UltraSPARC T1. The UltraSPARC T1 is available with four, six or eight cores, each able to work on four threads at a time. The concept is similar to that of the Intel Pentium EE which uses two cores with two threads.\nA multicore processor is like having many CPUs on the one chip. Multiple threads allow each core to work on a number of tasks concurrently on a single core. This is particularly useful in a server environment where the UltraSPAC T1 was designed to be used.\nSun call the open source version of their processor the OpenSPARC T1 and have made the source code (in Verilog format) and specifications available on the OpenSPARC T1 website under the General Public License, the same license under which most distributions of Linux are released.\nIndustry observers say that the move is triggered by the SPARC architecture's shrinking market share to the likes of IBM's POWER architecture and x86 based chips from Intel and AMD.\nOpen Source Hardware has been gaining momentum since 2002, when Kofi Annan issued a challenge to technology companies. Despite Sun's OpenSPARC T1 not being the first open source processor in the world, it is the first time that the design for a proprietary design processor has been released to the open source community.",
+   "context": "article",
+   "source": {
+    "title": "Sun releases T1 source code",
+    "url": "https://en.wikinews.org/wiki/Sun_releases_T1_source_code",
+    "revision": 565303,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn37709",
+    "queries": [
+     {
+      "id": "amd:amd_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.166595,
+          "p": 0.343493,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.518829,
+          "p": 0.656507,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.877299,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_data_centre_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.967773,
+          "p": 0.954898,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.020452,
+          "p": 0.045102,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.853631,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:demand_for_amd_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.550351,
+          "p": 0.896225,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.706321,
+          "p": 0.103775,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.763259,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.64592,
+          "p": 0.967336,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.034206,
+          "p": 0.032664,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.800654,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.813617,
+          "p": 0.968231,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.230603,
+          "p": 0.031769,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.831586,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.711897,
+          "p": 0.931004,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.314114,
+          "p": 0.068996,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.806099,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.745742,
+          "p": 0.263691,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.71887,
+          "p": 0.736309,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910433,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.116077,
+          "p": 0.358219,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.532976,
+          "p": 0.641781,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.876247,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.584835,
+          "p": 0.095959,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.341886,
+          "p": 0.904041,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.893648,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -2.743472,
+          "p": 0.923086,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.228501,
+          "p": 0.076914,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.930292,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.273629,
+          "p": 0.637613,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.838649,
+          "p": 0.362387,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.940609,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.418367,
+          "p": 0.8329,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.024686,
+          "p": 0.1671,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96066,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:amd_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.90144,
+          "p": 0.519901,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.981087,
+          "p": 0.480099,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.712727,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amd:the_valuation_of_amd__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.682073,
+          "p": 0.529919,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.801893,
+          "p": 0.470081,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.870884,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_data_centre_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.9235,
+          "p": 0.454289,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.740144,
+          "p": 0.545711,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.881694,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.644661,
+          "p": 0.545231,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.826082,
+          "p": 0.454769,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.952075,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "amdrep:amd_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.050708,
+          "p": 0.465493,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.91246,
+          "p": 0.534507,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.898333,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.97701,
+          "p": 0.475674,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.879629,
+          "p": 0.524326,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.708871,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.263593,
+          "p": 0.540254,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.424959,
+          "p": 0.459746,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.807542,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.916585,
+          "p": 0.387619,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.459252,
+          "p": 0.612381,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.860383,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.868707,
+          "p": 0.53769,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.019754,
+          "p": 0.46231,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.961157,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.810859,
+          "p": 0.900354,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.012025,
+          "p": 0.099646,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.933189,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.139366,
+          "p": 0.843456,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.823534,
+          "p": 0.156544,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.948651,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.319734,
+          "p": 0.900604,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.52369,
+          "p": 0.099396,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.890851,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "uspolicy:us_tariffs_on_imports__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -9.543248,
+          "p": 0.383431,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -9.068238,
+          "p": 0.616569,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.999813,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.682096,
+       "percentile": 0.886605,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.658563,
+       "percentile": 0.782018,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.433222,
+       "percentile": 0.344057,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.948555,
+       "percentile": 0.992728,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.674223,
+       "percentile": 0.831291,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.377274,
+       "percentile": 0.232461,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.615973,
+       "percentile": 0.764966,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.585334,
+       "percentile": 0.74029,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.654455,
+       "percentile": 0.880358,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

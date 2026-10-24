@@ -1,0 +1,2157 @@
+{
+ "pack": "thinkingtext/equity-tsla",
+ "version": "0.1.0",
+ "engine": "fp_51319d2ff6",
+ "usage": {
+  "prompt_tokens": 2903,
+  "completion_tokens": 0,
+  "total_tokens": 2903,
+  "prompt_tokens_details": {
+   "content_tokens": 770,
+   "text_tokens": 770,
+   "query_tokens": 2133,
+   "floor_tokens": 0
+  },
+  "inputs": 3,
+  "content": {
+   "tokens": 770,
+   "text_tokens": 770,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 26,
+   "combinations": 26,
+   "options": 52,
+   "prompts": 78,
+   "floor_prompts": 0,
+   "query_tokens": 2133,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 1561
+ },
+ "cases": [
+  {
+   "id": "wn195847",
+   "text": "Toyota Motor Company announced they have formalized an agreement to develop an electric version of the RAV4 SUV with Tesla Motors.\nIn May 2010, Akio Toyoda and Elon Musk, leaders of Toyota and Tesla, respectively, announced they would work together on electric vehicles. The agreement formalizes this announcement and would allow Tesla to work with Toyota at an automobile production plant in California.\nThe plant will open 2011, when Tesla reopens it after it bought the Fremont, California plant. The plant was previously used by Toyota and General Motors, but was shut down when Toyota said it would not produce cars in California.\nTesla currently produces only a single model, the US$109,000 Roadster, although it is currently designing a second model, the Model S, which will be produced at the Fremont factory.\nAnalysts supported the move; John Boesel, CEO of a green-transportation trade group, said that \"Toyota's willingness to partner with Tesla to provide an electric version of one of the Japanese automaker's existing vehicles suggests the partnership between the two companies is going to be a meaningful one.\"\nFollowing this announcement, Tesla's shares rose $0.75, while Toyota's fell $1.65.",
+   "context": "article",
+   "source": {
+    "title": "Toyota, Tesla to develop electric SUV",
+    "url": "https://en.wikinews.org/wiki/Toyota,_Tesla_to_develop_electric_SUV",
+    "revision": 4827688,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn195847",
+    "queries": [
+     {
+      "id": "ev:sales_of_electric_vehicles__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.703424,
+          "p": 0.994419,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.886149,
+          "p": 0.005581,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.502334,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:demand_for_tesla_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.652854,
+          "p": 0.987265,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.003451,
+          "p": 0.012735,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.472727,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.000026,
+          "p": 0.837292,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.638244,
+          "p": 0.162708,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.83837,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_vehicle_deliveries__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.50826,
+          "p": 0.964856,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.820779,
+          "p": 0.035144,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.770645,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.777429,
+          "p": 0.443659,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.551103,
+          "p": 0.556341,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.859806,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.54388,
+          "p": 0.848564,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.267262,
+          "p": 0.151436,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.748338,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.180203,
+          "p": 0.809788,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.628834,
+          "p": 0.190212,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.860434,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -1.762362,
+          "p": 0.987755,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.152661,
+          "p": 0.012245,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.826233,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:competitive_pressure_on_tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.005596,
+          "p": 0.929193,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.579954,
+          "p": 0.070807,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.606296,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.76564,
+          "p": 0.915408,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.147167,
+          "p": 0.084592,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.813114,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:regulatory_pressure_on_tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.492185,
+          "p": 0.850053,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.227199,
+          "p": 0.149947,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.735451,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_costs__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.888696,
+          "p": 0.308729,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.082628,
+          "p": 0.691271,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.819749,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -1.777645,
+          "p": 0.949015,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.701548,
+          "p": 0.050985,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.821883,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.042961,
+          "p": 0.932566,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.669746,
+          "p": 0.067434,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.622107,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:the_valuation_of_tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.646501,
+          "p": 0.885455,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.691633,
+          "p": 0.114545,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.782346,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tslarep:tesla_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.798693,
+          "p": 0.639863,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.373461,
+          "p": 0.360137,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.964992,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tslarep:tesla_s_quarterly_vehicle_deliveries__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.824812,
+          "p": 0.6722,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.542965,
+          "p": 0.3278,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911753,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tslarep:tesla_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.428211,
+          "p": 0.598142,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.825939,
+          "p": 0.401858,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.852553,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.700134,
+          "p": 0.622799,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.201578,
+          "p": 0.377201,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.706713,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.54255,
+          "p": 0.799406,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.925133,
+          "p": 0.200594,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.732507,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.180211,
+          "p": 0.632395,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.722716,
+          "p": 0.367605,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.821286,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.814425,
+          "p": 0.633068,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.359826,
+          "p": 0.366932,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.965169,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.2854,
+          "p": 0.935975,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.96772,
+          "p": 0.064025,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.98529,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.304961,
+          "p": 0.867023,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.179852,
+          "p": 0.132977,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.884937,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.619401,
+          "p": 0.552289,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.829324,
+          "p": 0.447711,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951477,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.229912,
+          "p": 0.851405,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.975577,
+          "p": 0.148595,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.873694,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.994596,
+       "percentile": 0.999999,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.986602,
+       "percentile": 0.998491,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.998434,
+       "percentile": 1,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.988282,
+       "percentile": 1,
+       "flagged": null
+      },
+      "regulation": {
+       "score": 0.966611,
+       "percentile": 0.999235,
+       "flagged": null
+      },
+      "costs": {
+       "score": 0.989623,
+       "percentile": 0.999638,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.996556,
+       "percentile": 1.0,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.800167,
+       "percentile": 0.960988,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.902135,
+       "percentile": 0.9814,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.70329,
+       "percentile": 0.930146,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.979101,
+       "percentile": 1,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn123903",
+   "text": "While hybrid vehicles have found considerable popularity in the United States since their introduction, one difficulty associated with the rollout of a fully electric car has been the comparably high price and poor performance, compared to an internal combustion engine-driven car of similar size. Tesla Motors claims that their Model S, a sedan which runs solely on electricity, will be more affordable.\nTesla first entered the automobile market in 2006, with a prototype of an electric vehicle designed on the roadster style. While the car, whose exterior design was based on the Lotus Elise, accelerated well and had considerable range, its cost of US$109,000 was prohibitive for many and to date only 300 have been sold, with a thousand more ordered.\nTesla says, however, that the Model S could sell for around $56,400, with the actual price some $7,500 lower after a Federal Government tax credit on electric vehicles.\nTesla claims the Model S has a range of up to 450 kilometers (280 miles) without recharging and can reach a top speed of 200 km/h (125 mph). It is powered by a 454 kg (1001 lb) battery pack.\nInitial plans were to build the car in New Mexico, but instead the Model S will be built near the company's headquarters in San Jose, California.",
+   "context": "article",
+   "source": {
+    "title": "Southern California auto maker announces fully-electric sedan",
+    "url": "https://en.wikinews.org/wiki/Southern_California_auto_maker_announces_fully-electric_sedan",
+    "revision": 4826420,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn123903",
+    "queries": [
+     {
+      "id": "ev:sales_of_electric_vehicles__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.719368,
+          "p": 0.996498,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.37016,
+          "p": 0.003502,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.511228,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:demand_for_tesla_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.988143,
+          "p": 0.983543,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.078528,
+          "p": 0.016457,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.621504,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.718373,
+          "p": 0.748086,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.806803,
+          "p": 0.251914,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911799,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_vehicle_deliveries__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.743235,
+          "p": 0.972318,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.30214,
+          "p": 0.027682,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.820066,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.173903,
+          "p": 0.331397,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.472027,
+          "p": 0.668603,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.953554,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.562658,
+          "p": 0.651968,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.190356,
+          "p": 0.348032,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.881743,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.776442,
+          "p": 0.618432,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.259339,
+          "p": 0.381568,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.899327,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -2.672175,
+          "p": 0.978708,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.500072,
+          "p": 0.021292,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.929395,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:competitive_pressure_on_tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.198088,
+          "p": 0.964377,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.496572,
+          "p": 0.035623,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.687082,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.72739,
+          "p": 0.916269,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.120092,
+          "p": 0.083731,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.928635,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:regulatory_pressure_on_tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.458668,
+          "p": 0.913626,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.817397,
+          "p": 0.086374,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.745469,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_costs__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.242531,
+          "p": 0.275614,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.276208,
+          "p": 0.724386,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.947858,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.70599,
+          "p": 0.920215,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.151257,
+          "p": 0.079785,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.927404,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.363106,
+          "p": 0.809828,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.811996,
+          "p": 0.190172,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.68405,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:the_valuation_of_tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.977689,
+          "p": 0.834991,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.599109,
+          "p": 0.165009,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.834263,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tslarep:tesla_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.08666,
+          "p": 0.549146,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.283882,
+          "p": 0.450854,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.969416,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tslarep:tesla_s_quarterly_vehicle_deliveries__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.203743,
+          "p": 0.605005,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.630108,
+          "p": 0.394995,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.932877,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tslarep:tesla_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.942024,
+          "p": 0.544453,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.120307,
+          "p": 0.455547,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903098,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.708171,
+          "p": 0.59865,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.108013,
+          "p": 0.40135,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.697324,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.035499,
+          "p": 0.681985,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.79841,
+          "p": 0.318015,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.808478,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.569801,
+          "p": 0.55961,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.809379,
+          "p": 0.44039,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.863207,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.456679,
+          "p": 0.555996,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.681605,
+          "p": 0.444004,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.979135,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.217963,
+          "p": 0.979511,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -7.08514,
+          "p": 0.020489,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.959126,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.628282,
+          "p": 0.895258,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.773898,
+          "p": 0.104742,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.91935,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.692815,
+          "p": 0.467211,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.561469,
+          "p": 0.532789,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946701,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.844664,
+          "p": 0.861882,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.675671,
+          "p": 0.138118,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.932527,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.994341,
+       "percentile": 0.999945,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.897445,
+       "percentile": 0.982054,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.988007,
+       "percentile": 0.998957,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.968695,
+       "percentile": 0.999372,
+       "flagged": null
+      },
+      "regulation": {
+       "score": 0.845041,
+       "percentile": 0.971633,
+       "flagged": null
+      },
+      "costs": {
+       "score": 0.992421,
+       "percentile": 1,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.97639,
+       "percentile": 0.998266,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.501051,
+       "percentile": 0.44942,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.817938,
+       "percentile": 0.957449,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.685501,
+       "percentile": 0.909296,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.941368,
+       "percentile": 0.999164,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn54998",
+   "text": "Wednesday at the American Institute of Physics Industrial Physics Forum meeting in San Francisco, a group of researchers proposed new research into an old way, invented by Nikola Tesla,  to transfer power wirelessly. Marin Soljacic and his MIT colleagues revived an idea which involves a source that creates a short range oscillating field. Nearby circuits that resonate at the frequency of the source absorb some of the energy. The system would operate in much the same way as the coils inside a transformer, except that the researchers believe they can develop sources that transfer energy over much longer distances than is typical in transformers. Technology based on this proposal could mean wireless gadgets such as cell phones and iPods never have to be plugged into a wall outlet. The researchers also propose that it could power micro-robots or other machines that are too small to carry their own batteries. Eventually it might enable electric transportation such as buses to recharge wirelessly through power sources near the roadway. One potential problem with the system could be its inefficiency. Soljacic's calculations show that it is at best 60% efficient.",
+   "context": "article",
+   "source": {
+    "title": "MIT researchers explore method of transferring electricity wirelessly",
+    "url": "https://en.wikinews.org/wiki/MIT_researchers_explore_method_of_transferring_electricity_wirelessly",
+    "revision": 4821397,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn54998",
+    "queries": [
+     {
+      "id": "ev:sales_of_electric_vehicles__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.575036,
+          "p": 0.95574,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.64745,
+          "p": 0.04426,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.783414,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:demand_for_tesla_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.093851,
+          "p": 0.929352,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.670633,
+          "p": 0.070648,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.639616,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.444643,
+          "p": 0.622335,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.944114,
+          "p": 0.377665,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.860594,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_vehicle_deliveries__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.65247,
+          "p": 0.871537,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.567084,
+          "p": 0.128463,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.919135,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.816271,
+          "p": 0.510141,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.856842,
+          "p": 0.489859,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.956856,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.959172,
+          "p": 0.827526,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.527369,
+          "p": 0.172474,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.937329,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.166529,
+          "p": 0.313567,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.383034,
+          "p": 0.686433,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.95055,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -2.252148,
+          "p": 0.97689,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.996254,
+          "p": 0.02311,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.892339,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:competitive_pressure_on_tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.729827,
+          "p": 0.92658,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.265129,
+          "p": 0.07342,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.808635,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.766487,
+          "p": 0.613152,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.227068,
+          "p": 0.386848,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.897444,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:regulatory_pressure_on_tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.412064,
+          "p": 0.908206,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.703984,
+          "p": 0.091794,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.731735,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_costs__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.473425,
+          "p": 0.713099,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.383907,
+          "p": 0.286901,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.984002,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.783279,
+          "p": 0.790558,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.111574,
+          "p": 0.209442,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.921783,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:tesla_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.543519,
+          "p": 0.785935,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.844113,
+          "p": 0.214065,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.728186,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tsla:the_valuation_of_tesla__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.794534,
+          "p": 0.937035,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.494674,
+          "p": 0.062965,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.822627,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tslarep:tesla_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.726541,
+          "p": 0.587264,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.079207,
+          "p": 0.412736,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.959003,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tslarep:tesla_s_quarterly_vehicle_deliveries__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.42459,
+          "p": 0.582874,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.759173,
+          "p": 0.417126,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.944134,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tslarep:tesla_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.065,
+          "p": 0.536055,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.20947,
+          "p": 0.463945,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.912968,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.022454,
+          "p": 0.417054,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.687575,
+          "p": 0.582946,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.682702,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.398482,
+          "p": 0.538721,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.553675,
+          "p": 0.461279,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.831349,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.86007,
+          "p": 0.417922,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.52876,
+          "p": 0.582078,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.862977,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.797276,
+          "p": 0.540897,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.961231,
+          "p": 0.459103,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.958529,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.44702,
+          "p": 0.97166,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.981749,
+          "p": 0.02834,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.967231,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.198154,
+          "p": 0.834944,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.819237,
+          "p": 0.165056,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.95109,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.407035,
+          "p": 0.411396,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.048837,
+          "p": 0.588604,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.919447,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.854279,
+          "p": 0.931391,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.462543,
+          "p": 0.068609,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.831901,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.715762,
+       "percentile": 0.912533,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.988218,
+       "percentile": 0.998691,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.940309,
+       "percentile": 0.993569,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.893291,
+       "percentile": 0.994459,
+       "flagged": null
+      },
+      "regulation": {
+       "score": 0.86704,
+       "percentile": 0.986284,
+       "flagged": null
+      },
+      "costs": {
+       "score": 0.761722,
+       "percentile": 0.892957,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.962393,
+       "percentile": 0.996681,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.513294,
+       "percentile": 0.476263,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.567523,
+       "percentile": 0.668457,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.542971,
+       "percentile": 0.608998,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.845684,
+       "percentile": 0.992936,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

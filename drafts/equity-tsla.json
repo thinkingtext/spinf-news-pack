@@ -1,0 +1,942 @@
+{
+ "pack": "thinkingtext/equity-tsla",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Tesla news",
+ "description": "The Tesla (TSLA) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Tesla",
+  "ticker": "TSLA",
+  "peers": [],
+  "weights": {
+   "company": 0.67,
+   "peers": 0,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "d05fe1b5e9593cff5a09a0a13c538796",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "ev:sales_of_electric_vehicles__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: sales of electric vehicles is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tsla:demand_for_tesla_s_products__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for Tesla's products is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tsla:tesla_s_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Tesla's revenue is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tsla:tesla_s_vehicle_deliveries__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Tesla's vehicle deliveries is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tsla:tesla_s_profit_margins__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Tesla's profit margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tsla:tesla_s_profits__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Tesla's profits is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tsla:tesla_s_earnings_forecasts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Tesla's earnings forecasts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tsla:tesla_s_growth_prospects__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Tesla's growth prospects is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "tsla:competitive_pressure_on_tesla__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: competitive pressure on Tesla is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tsla:tesla_s_market_share__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Tesla's market share is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tsla:regulatory_pressure_on_tesla__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: regulatory pressure on Tesla is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tsla:tesla_s_costs__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Tesla's costs is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tsla:tesla__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for Tesla shareholders, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "tsla:tesla_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Tesla's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tsla:the_valuation_of_tesla__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the valuation of Tesla is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tslarep:tesla_s_quarterly_results__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Tesla's quarterly results came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "tslarep:tesla_s_quarterly_vehicle_deliveries__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Tesla's quarterly vehicle deliveries came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "tslarep:tesla_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Tesla's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:expectations_of_fed_rate_cuts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: expectations of Fed rate cuts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "funds:investor_risk_appetite__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: investor risk appetite is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "investors:news_inv_investors__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for investors, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "tech:big_tech_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: big tech earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usa:the_risk_of_a_us_recession__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the risk of a US recession is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "ev:sales_of_electric_vehicles__sum": {
+   "phrase": "sales of electric vehicles",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "ev"
+  },
+  "tsla:demand_for_tesla_s_products__sum": {
+   "phrase": "demand for Tesla's products",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:tesla_s_revenue__sum": {
+   "phrase": "Tesla's revenue",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:tesla_s_vehicle_deliveries__sum": {
+   "phrase": "Tesla's vehicle deliveries",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:tesla_s_profit_margins__sum": {
+   "phrase": "Tesla's profit margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:tesla_s_profits__sum": {
+   "phrase": "Tesla's profits",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:tesla_s_earnings_forecasts__sum": {
+   "phrase": "Tesla's earnings forecasts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:tesla_s_growth_prospects__sum": {
+   "phrase": "Tesla's growth prospects",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:competitive_pressure_on_tesla__sum": {
+   "phrase": "competitive pressure on Tesla",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:tesla_s_market_share__sum": {
+   "phrase": "Tesla's market share",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:regulatory_pressure_on_tesla__sum": {
+   "phrase": "regulatory pressure on Tesla",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:tesla_s_costs__sum": {
+   "phrase": "Tesla's costs",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:tesla__sum": {
+   "phrase": "Tesla",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_co",
+   "principal": "tsla"
+  },
+  "tsla:tesla_s_share_price__sum": {
+   "phrase": "Tesla's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tsla:the_valuation_of_tesla__sum": {
+   "phrase": "the valuation of Tesla",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tsla"
+  },
+  "tslarep:tesla_s_quarterly_results__sum": {
+   "phrase": "Tesla's quarterly results",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "tslarep"
+  },
+  "tslarep:tesla_s_quarterly_vehicle_deliveries__sum": {
+   "phrase": "Tesla's quarterly vehicle deliveries",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "tslarep"
+  },
+  "tslarep:tesla_s_revenue_guidance__sum": {
+   "phrase": "Tesla's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "tslarep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  },
+  "fed:expectations_of_fed_rate_cuts__sum": {
+   "phrase": "expectations of Fed rate cuts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "fed"
+  },
+  "funds:investor_risk_appetite__sum": {
+   "phrase": "investor risk appetite",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "funds"
+  },
+  "investors:news_inv_investors__sum": {
+   "phrase": "investors",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_inv",
+   "principal": "investors"
+  },
+  "tech:big_tech_earnings__sum": {
+   "phrase": "big tech earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "usa:the_risk_of_a_us_recession__sum": {
+   "phrase": "the risk of a US recession",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "usa"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/ev:sales_of_electric_vehicles__sum",
+   "query": "ev:sales_of_electric_vehicles__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/ev:sales_of_electric_vehicles__sum",
+   "query": "ev:sales_of_electric_vehicles__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/tsla:demand_for_tesla_s_products__sum",
+   "query": "tsla:demand_for_tesla_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/tsla:demand_for_tesla_s_products__sum",
+   "query": "tsla:demand_for_tesla_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/tsla:tesla_s_revenue__sum",
+   "query": "tsla:tesla_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/tsla:tesla_s_revenue__sum",
+   "query": "tsla:tesla_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/tsla:tesla_s_vehicle_deliveries__sum",
+   "query": "tsla:tesla_s_vehicle_deliveries__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/tsla:tesla_s_vehicle_deliveries__sum",
+   "query": "tsla:tesla_s_vehicle_deliveries__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "profits/tsla:tesla_s_profit_margins__sum",
+   "query": "tsla:tesla_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits"
+  },
+  {
+   "id": "company/profits/tsla:tesla_s_profit_margins__sum",
+   "query": "tsla:tesla_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits"
+  },
+  {
+   "id": "profits/tsla:tesla_s_profits__sum",
+   "query": "tsla:tesla_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits"
+  },
+  {
+   "id": "company/profits/tsla:tesla_s_profits__sum",
+   "query": "tsla:tesla_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits"
+  },
+  {
+   "id": "outlook/tsla:tesla_s_earnings_forecasts__sum",
+   "query": "tsla:tesla_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook"
+  },
+  {
+   "id": "company/outlook/tsla:tesla_s_earnings_forecasts__sum",
+   "query": "tsla:tesla_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook"
+  },
+  {
+   "id": "outlook/tsla:tesla_s_growth_prospects__sum",
+   "query": "tsla:tesla_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook"
+  },
+  {
+   "id": "company/outlook/tsla:tesla_s_growth_prospects__sum",
+   "query": "tsla:tesla_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook"
+  },
+  {
+   "id": "competition/tsla:competitive_pressure_on_tesla__sum",
+   "query": "tsla:competitive_pressure_on_tesla__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "competition"
+  },
+  {
+   "id": "company/competition/tsla:competitive_pressure_on_tesla__sum",
+   "query": "tsla:competitive_pressure_on_tesla__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "competition"
+  },
+  {
+   "id": "competition/tsla:tesla_s_market_share__sum",
+   "query": "tsla:tesla_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "competition"
+  },
+  {
+   "id": "company/competition/tsla:tesla_s_market_share__sum",
+   "query": "tsla:tesla_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "competition"
+  },
+  {
+   "id": "regulation/tsla:regulatory_pressure_on_tesla__sum",
+   "query": "tsla:regulatory_pressure_on_tesla__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "regulation"
+  },
+  {
+   "id": "company/regulation/tsla:regulatory_pressure_on_tesla__sum",
+   "query": "tsla:regulatory_pressure_on_tesla__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "regulation"
+  },
+  {
+   "id": "costs/tsla:tesla_s_costs__sum",
+   "query": "tsla:tesla_s_costs__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "costs"
+  },
+  {
+   "id": "company/costs/tsla:tesla_s_costs__sum",
+   "query": "tsla:tesla_s_costs__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "costs"
+  },
+  {
+   "id": "reflectors/tsla:tesla__sum",
+   "query": "tsla:tesla__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/tsla:tesla__sum",
+   "query": "tsla:tesla__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "reflectors/tsla:tesla_s_share_price__sum",
+   "query": "tsla:tesla_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/tsla:tesla_s_share_price__sum",
+   "query": "tsla:tesla_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "reflectors/tsla:the_valuation_of_tesla__sum",
+   "query": "tsla:the_valuation_of_tesla__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/tsla:the_valuation_of_tesla__sum",
+   "query": "tsla:the_valuation_of_tesla__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "surprise/tslarep:tesla_s_quarterly_results__sum",
+   "query": "tslarep:tesla_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/tslarep:tesla_s_quarterly_results__sum",
+   "query": "tslarep:tesla_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/tslarep:tesla_s_quarterly_vehicle_deliveries__sum",
+   "query": "tslarep:tesla_s_quarterly_vehicle_deliveries__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/tslarep:tesla_s_quarterly_vehicle_deliveries__sum",
+   "query": "tslarep:tesla_s_quarterly_vehicle_deliveries__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/tslarep:tesla_s_revenue_guidance__sum",
+   "query": "tslarep:tesla_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/tslarep:tesla_s_revenue_guidance__sum",
+   "query": "tslarep:tesla_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/funds:investor_risk_appetite__sum",
+   "query": "funds:investor_risk_appetite__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/funds:investor_risk_appetite__sum",
+   "query": "funds:investor_risk_appetite__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/tech:big_tech_earnings__sum",
+   "query": "tech:big_tech_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/tech:big_tech_earnings__sum",
+   "query": "tech:big_tech_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro"
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Demand for the company's products and its revenue",
+   "deciding": false,
+   "role": "slot"
+  },
+  "profits": {
+   "label": "Profits and margins",
+   "deciding": false,
+   "role": "slot"
+  },
+  "outlook": {
+   "label": "Earnings forecasts and growth prospects",
+   "deciding": false,
+   "role": "slot"
+  },
+  "competition": {
+   "label": "Market share and competitive pressure",
+   "deciding": false,
+   "role": "slot"
+  },
+  "regulation": {
+   "label": "Regulatory, legal and policy pressure",
+   "deciding": false,
+   "role": "slot"
+  },
+  "costs": {
+   "label": "Costs",
+   "deciding": false,
+   "role": "slot"
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "deciding": false,
+   "role": "slot"
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "deciding": false,
+   "role": "slot"
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "company": {
+   "label": "Tesla news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "deciding": false,
+   "role": "composite"
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": []
+ }
+}

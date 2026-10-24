@@ -1,0 +1,2956 @@
+{
+ "pack": "thinkingtext/equity-meta",
+ "version": "0.1.0",
+ "engine": "fp_41bc10de0e",
+ "usage": {
+  "prompt_tokens": 5051,
+  "completion_tokens": 0,
+  "total_tokens": 5051,
+  "prompt_tokens_details": {
+   "content_tokens": 2171,
+   "text_tokens": 2171,
+   "query_tokens": 2880,
+   "floor_tokens": 0
+  },
+  "inputs": 5,
+  "content": {
+   "tokens": 2171,
+   "text_tokens": 2171,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 21,
+   "combinations": 21,
+   "options": 42,
+   "prompts": 105,
+   "floor_prompts": 0,
+   "query_tokens": 2880,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 3157,
+  "packed_tokens": 2901,
+  "content_tokens": 2171,
+  "text_tokens": 2171,
+  "query_tokens": 2880,
+  "floor_tokens": 0,
+  "generated_tokens": 0,
+  "images": 0,
+  "image_tokens": 0,
+  "video_frames": 0,
+  "video_tokens": 0,
+  "audio_ms": 0,
+  "audio_tokens": 0
+ },
+ "cases": [
+  {
+   "id": "wn410307",
+   "text": "The popular social networking site Facebook agreed to purchase the Instagram photo-sharing mobile app for US$1 billion in cash and stock Monday.\nThe app, which can be used to apply faux-vintage filters to photographs, allows users to share photos with one another both directly and through posts to social networking sites.  Instagram was founded less than two years ago by two Stanford University graduates near San Francisco, California and the purchase is one of the largest acquisitions in Facebook history following after a failed takeover bid in early 2011 which had been declined by Instagram.\nFacebook, despite its prominence as the largest website for social networking in the world, has had difficulties expanding into the mobile market, particularly the realm of mobile advertising. As of yet, Facebook lacks an advertising platform for its apps and has yet to capitalize off the boom in mobile phone use that Instagram is intertwined with.\nFacebook co-founder Mark Zuckerberg noted the importance of the ability to post to multiple social media sites at once in a post. He wrote on his personal timeline, \"We think the fact that Instagram is connected to other services beyond Facebook is an important part of the experience.\" He said Facebook \"plan[s] on keeping features like the ability to post to other social networks, the ability to not share your Instagrams on Facebook if you want, and the ability to have followers and follow people separately from your friends on Facebook.\"\nMany other small services that Facebook has acquired, namely Gowalla, Hot Potato, and FriendFeed, were all shuttered shortly after acquisition. The co-founder of Instagram, Kevin Systrom, in a company blog post, has denied any claims that Instagram would share the fate of these past services. \"It’s important to be clear that Instagram is not going away. We’ll be working with Facebook to evolve Instagram and build the network. We’ll continue to add new features to the product and find new ways to create a better mobile photos experience,\" he wrote.\nMany reasons have been put forth for the purchase, and Zuckerberg commented, \"for years, we've focused on building the best experience for sharing photos with your friends and family. Now, we'll be able to work even more closely with the Instagram team to also offer the best experiences for sharing beautiful mobile photos with people based on your interests.\"",
+   "context": "article",
+   "source": {
+    "title": "Facebook acquires Instagram for US$1 billion",
+    "url": "https://en.wikinews.org/wiki/Facebook_acquires_Instagram_for_US$1_billion",
+    "revision": 4817634,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn410307",
+    "queries": [
+     {
+      "id": "meta:demand_for_meta_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.527154,
+          "p": 0.794376,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.878663,
+          "p": 0.205624,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.726637,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_advertising_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.216733,
+          "p": 0.457949,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.04813,
+          "p": 0.542051,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.912467,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.011699,
+          "p": 0.476954,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.919448,
+          "p": 0.523046,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.896829,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.632986,
+          "p": 0.315566,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.858761,
+          "p": 0.684434,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.916223,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.816668,
+          "p": 0.471471,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.702429,
+          "p": 0.528529,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.873153,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.13999,
+          "p": 0.049539,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.185797,
+          "p": 0.950461,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.881754,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.048065,
+          "p": 0.914929,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.423431,
+          "p": 0.085071,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.948137,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.278785,
+          "p": 0.475997,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.1827,
+          "p": 0.524003,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.920852,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_costs__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.629385,
+          "p": 0.961873,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.857336,
+          "p": 0.038127,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.796179,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.235915,
+          "p": 0.809103,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.680108,
+          "p": 0.190897,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.867885,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.913719,
+          "p": 0.531355,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.039304,
+          "p": 0.468645,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.72235,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:the_valuation_of_meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.909598,
+          "p": 0.418714,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.581542,
+          "p": 0.581286,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.869845,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_daily_active_users__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.472512,
+          "p": 0.669747,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.179552,
+          "p": 0.330253,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.874023,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.951057,
+          "p": 0.601566,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.363051,
+          "p": 0.398434,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.968026,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.213118,
+          "p": 0.458393,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.046303,
+          "p": 0.541607,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.912235,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.829734,
+          "p": 0.661604,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.500186,
+          "p": 0.338396,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.757474,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.708092,
+          "p": 0.778143,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.962967,
+          "p": 0.221857,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.767123,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.633551,
+          "p": 0.603493,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.053591,
+          "p": 0.396507,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.880988,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.825853,
+          "p": 0.882067,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.838009,
+          "p": 0.117933,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.932819,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.315722,
+          "p": 0.569171,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.594191,
+          "p": 0.430829,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.936209,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.412907,
+          "p": 0.875558,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.363928,
+          "p": 0.124442,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.897717,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.718265,
+       "percentile": 0.877216,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.767049,
+       "percentile": 0.918248,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.561094,
+       "percentile": 0.63407,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.873615,
+       "percentile": 0.965951,
+       "flagged": null
+      },
+      "costs": {
+       "score": 0.20388,
+       "percentile": 0.080757,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.685174,
+       "percentile": 0.816451,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.676825,
+       "percentile": 0.832763,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.90201,
+       "percentile": 0.983652,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.734834,
+       "percentile": 0.943194,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.701736,
+       "percentile": 0.913312,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn2824781",
+   "text": "On Tuesday, Russian government internet watchdog Roskomnadzor \"insisted\" US-based social networking website Facebook comply with law #242 on personal data of users in order to continue operating in the country. Per law #242, user data of Russian citizens should be hosted on local servers — the rule which business-oriented networking site LinkedIn did not agree to, for which LinkedIn was eventually blocked in the country.\nRoskomnadzor's head, Aleksandr Zharov, said, \"The law is mandatory for everyone. In any case, we will make sure the law is carried out, or else the company will stop working in Russia, as regretfully happened to Linkedin. There are no exceptions here\" ((ru))Russian language: ‍Закон обязателен для всех. В любом случае мы или добьемся того, чтобы закон был исполнен, или компания прекратит работать на территории Российской Федерации, как, к сожалению, произошло с LinkedIn. Тут исключений нет. Nikolay Nikiforov, the communication minister, in remarks to RIA Novosti said Facebook would be blocked by the authorities in the country if they did not comply with the rules. On Tuesday, Russian president Vladmir Putin's press secretary Dmitry Peskov said, \"this is a business company that is making money and that must do this in accordance with the laws of the Russian Federation. There are laws that must be observed\".\nHowever, the watchdog said Facebook would not be blocked until next year. Zharov said, \"We don't have Facebook in our 2017 inspections schedule in this direction. In 2018 we will think about it and maybe we will launch an inspection.\" ((ru))Russian language: ‍У нас в плане проверок по этому направлению до конца 2017 года Facebook'a нет, в 2018 году мы подумаем, может быть, проверим\nLaw #242 came into effect on September 1, 2015. Russian websites like LiveJournal, Mail.ru, VK.com, Yandex, and Rambler had already fulfilled this requirement. In April, Twitter announced moving personal data to Russian servers by mid-2018.\nFacebook estimated it had some six million daily users from Russia last year, and more than fourteen million monthly users. Considering these statistics, and other companies already complying with the law, Zharov said, \"We are well aware that Facebook has a significant number of users in Russia; we also understand that this service is not one of a kind, and there are other social networks available\" ((ru))Russian language: ‍Мы прекрасно осознаем, что Facebook имеет значительное количество пользователей на территории Российской Федерации, с другой стороны, мы понимаем, что это не уникальный сервис, есть и другие социальные сети.\nWithin the preceding week, Facebook, Inc.'s CEO, Mark Zuckerberg, announced the company's intention to reveal information about Russian companies who bought commercials on the platform, which are speculated to have interfered with and affected last year's presidential election in the US.",
+   "context": "article",
+   "source": {
+    "title": "Russia asks Facebook to comply with personal data policy",
+    "url": "https://en.wikinews.org/wiki/Russia_asks_Facebook_to_comply_with_personal_data_policy",
+    "revision": 4825393,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn2824781",
+    "queries": [
+     {
+      "id": "meta:demand_for_meta_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.078936,
+          "p": 0.55784,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.311335,
+          "p": 0.44216,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.775808,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_advertising_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.127014,
+          "p": 0.086817,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.773881,
+          "p": 0.913183,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.931646,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.112161,
+          "p": 0.204662,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.754754,
+          "p": 0.795338,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.920003,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.191101,
+          "p": 0.237261,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.023346,
+          "p": 0.762739,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.936232,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.805032,
+          "p": 0.267505,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.797711,
+          "p": 0.732495,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.916792,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.976934,
+          "p": 0.081688,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.557302,
+          "p": 0.918312,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.915591,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.434354,
+          "p": 0.802565,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -4.836755,
+          "p": 0.197435,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.959821,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.969453,
+          "p": 0.243706,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.836987,
+          "p": 0.756294,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.922514,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_costs__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.407868,
+          "p": 0.977498,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.17928,
+          "p": 0.022502,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.749704,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.207339,
+          "p": 0.83001,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.79304,
+          "p": 0.16999,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951249,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.824875,
+          "p": 0.361694,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.256855,
+          "p": 0.638306,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.836005,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:the_valuation_of_meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.549667,
+          "p": 0.21163,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.234539,
+          "p": 0.78837,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.864224,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_daily_active_users__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.65645,
+          "p": 0.6247,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.165997,
+          "p": 0.3753,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.887631,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.092978,
+          "p": 0.535079,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.233527,
+          "p": 0.464921,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.968809,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.108237,
+          "p": 0.433634,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.841197,
+          "p": 0.566366,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.896965,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.134816,
+          "p": 0.465416,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.996258,
+          "p": 0.534584,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.745891,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.186256,
+          "p": 0.357106,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.59831,
+          "p": 0.642894,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.884275,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.55865,
+          "p": 0.364717,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.003699,
+          "p": 0.635283,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.92192,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.987818,
+          "p": 0.773571,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.216406,
+          "p": 0.226429,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.934851,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.686803,
+          "p": 0.188253,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.225402,
+          "p": 0.811747,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951044,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.268132,
+          "p": 0.943769,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.088543,
+          "p": 0.056231,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.890328,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.088013,
+       "percentile": 0.029052,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.365156,
+       "percentile": 0.255381,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.394529,
+       "percentile": 0.332875,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.431288,
+       "percentile": 0.415758,
+       "flagged": null
+      },
+      "costs": {
+       "score": 0.073655,
+       "percentile": 0.028733,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.458156,
+       "percentile": 0.43669,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.472154,
+       "percentile": 0.38689,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.419864,
+       "percentile": 0.278488,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.332559,
+       "percentile": 0.123684,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.304652,
+       "percentile": 0.091423,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn206713",
+   "text": "Facebook Places, a location-publicising service that was released in the United States in August, has now become available to users in the United Kingdom. The service was released in Japan earlier this week. Previously, some people in the UK who use Facebook's iPhone application discovered that they were able to use the service.\nThis service allows individuals to publicise their location, or \"check in\", in a way similar to the one used by Gowalla and Foursquare. Users of Facebook Places will be able to establish if any of their Facebook \"friends\" are or have been in the vicinity if both decide to \"check in\". The service will become available to other parts of Europe \"as soon as possible\", stated Michael Sharon, Facebook Places' product manager.\nSharon commented: \"We wanted to prepare a robust set of privacy controls. I'm really proud of what we've done with the Places privacy settings because they are unprecedented in the industry at this moment in time. We think Here Now [which shows users if other Facebookers are in the area] is a fantastic feature. It's a great way to meet new interesting people, but we also know some people wouldn't like to use the feature – they just want to share with friends or friends of friends – so we took care to turn it on for only some people. Some people explicitly let us know that they just want to share with a certain group so we changed the settings from the default for them – of course they can opt back in at a later time.\"\n\"One of the major issues is the way that Facebook have implemented his functionality,\" mentioned Trend Micro's Rik Ferguson. Having had a trial use of the service upon its launch yesterday, Ferguson continued: \"By default, users are opted in to the ability to be tagged by their friends, they are opted in to allowing their friends' Facebook apps to access their location information, and they are opted in to allowing 'non-friends' checked-in to the same place to see their whereabouts. This is all backwards - this should be deployed on a purely opt-in basis and no information about my whereabouts should be posted without my explicit consent, every single time a post is made.\"",
+   "context": "article",
+   "source": {
+    "title": "Facebook Places launches in UK",
+    "url": "https://en.wikinews.org/wiki/Facebook_Places_launches_in_UK",
+    "revision": 4817633,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn206713",
+    "queries": [
+     {
+      "id": "meta:demand_for_meta_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.30546,
+          "p": 0.933074,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.940361,
+          "p": 0.066926,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.709511,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_advertising_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.172769,
+          "p": 0.466052,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.036767,
+          "p": 0.533948,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910123,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.97162,
+          "p": 0.483485,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.905536,
+          "p": 0.516515,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.89406,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.464653,
+          "p": 0.352022,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.854489,
+          "p": 0.647978,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911131,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.646787,
+          "p": 0.512936,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.698541,
+          "p": 0.487064,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.861818,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.397617,
+          "p": 0.117209,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.378488,
+          "p": 0.882791,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.895003,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.127063,
+          "p": 0.937573,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.836364,
+          "p": 0.062427,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.953234,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.985546,
+          "p": 0.5019,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.993145,
+          "p": 0.4981,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.899359,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_costs__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.723175,
+          "p": 0.892819,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.843044,
+          "p": 0.107181,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.800073,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.221827,
+          "p": 0.845116,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.918627,
+          "p": 0.154884,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.952809,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.736476,
+          "p": 0.565114,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.99842,
+          "p": 0.434886,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.688311,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:the_valuation_of_meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.634554,
+          "p": 0.536747,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.781809,
+          "p": 0.463253,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.866323,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_daily_active_users__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.81353,
+          "p": 0.607287,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.249453,
+          "p": 0.392713,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.901212,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.121438,
+          "p": 0.503774,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.136533,
+          "p": 0.496226,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.967801,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.357032,
+          "p": 0.411989,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.001281,
+          "p": 0.588011,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.915438,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.779756,
+          "p": 0.470257,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.660642,
+          "p": 0.529743,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.641304,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.201811,
+          "p": 0.604219,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.624885,
+          "p": 0.395781,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.816949,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.911825,
+          "p": 0.443995,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.686861,
+          "p": 0.556005,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.877529,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.027435,
+          "p": 0.875748,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.980204,
+          "p": 0.124252,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.944688,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.984315,
+          "p": 0.558559,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.219632,
+          "p": 0.441441,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.909456,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.685698,
+          "p": 0.843899,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.373229,
+          "p": 0.156101,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.919216,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.836969,
+       "percentile": 0.972783,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.840077,
+       "percentile": 0.960296,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.797279,
+       "percentile": 0.932004,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.896079,
+       "percentile": 0.97697,
+       "flagged": null
+      },
+      "costs": {
+       "score": 0.735479,
+       "percentile": 0.86067,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.786903,
+       "percentile": 0.939535,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.371264,
+       "percentile": 0.199783,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.672716,
+       "percentile": 0.845986,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.704583,
+       "percentile": 0.91509,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.756664,
+       "percentile": 0.957567,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn195564",
+   "text": "Social networking site Facebook was tonight refusing to remove pages set up in tribute to British killer Raoul Moat, despite pressure from the highest levels of the UK government. A Downing Street official had earlier said that a complaint would likely be lodged with Facebook, following questions to Prime Minister David Cameron in Parliament.\nRaoul Moat killed one person and seriously wounded two others in Northumbria following his release from prison, prompting a major week-long manhunt. A standoff with police ended early on Saturday morning with Moat shooting himself. An investigation by the Independent Police Complaints Commission is ongoing.\nThirteen people have now been arrested, with several under suspicion of assisting Moat in evading the police. Flowers have been left on the riverbank where Moat shot himself, and outside his home in Newcastle. A tribute page on Facebook titled \"RIP Raoul Moat You Legend\" has attracted over 30,000 members.\nDuring the weekly Prime Minister's Questions session, Conservative MP Chris Heaton-Harris asked David Cameron to contact Facebook about removing the page, which he described as containing \"a whole host of anti-police statements\".\nThe Prime Minister described Moat as a \"callous murderer\", and condemned the expressions of sympathy for him.\n\"I cannot understand any wave, however small, of public sympathy for this man,\" stated Cameron. \"There should be sympathy for his victims and the havoc he wreaked in that community. There should be no sympathy for him.\"\nA spokesman for the Prime Minister later said that Facebook would be contacted over the matter. In response Facebook issued a statement saying that the page did not breach its terms of service and would not be removed.\n\"Facebook is a place where people can express their views and discuss things in an open way as they can and do in many other places, and as such we sometimes find people discussing topics others may find distasteful, however that is not a reason in itself to stop a debate from happening.\"",
+   "context": "article",
+   "source": {
+    "title": "Facebook and UK government clash over tributes to killer",
+    "url": "https://en.wikinews.org/wiki/Facebook_and_UK_government_clash_over_tributes_to_killer",
+    "revision": 4817635,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn195564",
+    "queries": [
+     {
+      "id": "meta:demand_for_meta_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.612748,
+          "p": 0.729801,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.60636,
+          "p": 0.270199,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.726858,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_advertising_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.950628,
+          "p": 0.158649,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.282312,
+          "p": 0.841351,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.878709,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.28151,
+          "p": 0.292574,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.398597,
+          "p": 0.707426,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.871583,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.797073,
+          "p": 0.223181,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.54985,
+          "p": 0.776819,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.89947,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.268958,
+          "p": 0.319685,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.513738,
+          "p": 0.680315,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.880989,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.882416,
+          "p": 0.080234,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.443243,
+          "p": 0.919766,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.905543,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.700007,
+          "p": 0.793168,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.044135,
+          "p": 0.206832,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96883,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.784377,
+          "p": 0.274203,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.810977,
+          "p": 0.725797,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.917131,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_costs__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.928097,
+          "p": 0.921574,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.392027,
+          "p": 0.078426,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.8422,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.037118,
+          "p": 0.686705,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.821879,
+          "p": 0.313295,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.93014,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.575588,
+          "p": 0.274835,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.605362,
+          "p": 0.725165,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.723074,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:the_valuation_of_meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.891821,
+          "p": 0.105726,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.756658,
+          "p": 0.894274,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.806971,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_daily_active_users__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.806395,
+          "p": 0.628473,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.332066,
+          "p": 0.371527,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903858,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.314327,
+          "p": 0.534644,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.453126,
+          "p": 0.465356,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.974982,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.465127,
+          "p": 0.414126,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.118192,
+          "p": 0.585874,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.924494,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.757725,
+          "p": 0.45958,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.59569,
+          "p": 0.54042,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.624795,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.854151,
+          "p": 0.44972,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.652348,
+          "p": 0.55028,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.87191,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.78715,
+          "p": 0.443459,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.560015,
+          "p": 0.556541,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.8611,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.092318,
+          "p": 0.75924,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.240836,
+          "p": 0.24076,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.940208,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.033787,
+          "p": 0.42457,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.729746,
+          "p": 0.57543,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.886631,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.118043,
+          "p": 0.917633,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.528661,
+          "p": 0.082367,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.868938,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.263328,
+       "percentile": 0.099358,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.411005,
+       "percentile": 0.332277,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.375237,
+       "percentile": 0.293807,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.515641,
+       "percentile": 0.549121,
+       "flagged": null
+      },
+      "costs": {
+       "score": 0.570064,
+       "percentile": 0.64891,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.182668,
+       "percentile": 0.06378,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.454035,
+       "percentile": 0.351038,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.512436,
+       "percentile": 0.519173,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.525273,
+       "percentile": 0.557885,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.415122,
+       "percentile": 0.2891,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn196549",
+   "text": "Social networking service Facebook, which has been active for six years, has announced that the website reached a total of 500 million users on Wednesday. According to AFP, this number equates to one out of every fourteen people or, according to The Hindu, 8% of the population of the Earth.\nMark Zuckerberg, the chief executive officer and founder of Facebook, created a blog post in relation to this milestone. \"As of this morning, 500 million people all around the world are actively using Facebook to stay connected with their friends and the people around them,\" he wrote. \"This is an important milestone for all of you who have helped spread Facebook around the world.\"\nTo mark the occasion, the California, United States-based company released an application, entitled Facebook Stories, that allows the website's users to \"tell the incredible stories of the moving and interesting ways they've used Facebook\". Zuckerberg stated that there is a \"good chance\" of Facebook reaching a total of a billion members in the next three to five years.",
+   "context": "article",
+   "source": {
+    "title": "Facebook reaches 500 million users",
+    "url": "https://en.wikinews.org/wiki/Facebook_reaches_500_million_users",
+    "revision": 4817640,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn196549",
+    "queries": [
+     {
+      "id": "meta:demand_for_meta_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.407233,
+          "p": 0.913723,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.767201,
+          "p": 0.086277,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.732064,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_advertising_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.653874,
+          "p": 0.308732,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.847819,
+          "p": 0.691268,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.916139,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.349528,
+          "p": 0.380274,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.861142,
+          "p": 0.619726,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.907696,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.546591,
+          "p": 0.381948,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.065302,
+          "p": 0.618052,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.924538,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.763293,
+          "p": 0.611244,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.215836,
+          "p": 0.388756,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.896795,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.94327,
+          "p": 0.067044,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.310259,
+          "p": 0.932956,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.893633,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.638708,
+          "p": 0.922067,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.109476,
+          "p": 0.077933,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.971492,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.395798,
+          "p": 0.524202,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.492682,
+          "p": 0.475798,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.936067,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_costs__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.709324,
+          "p": 0.95528,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.770907,
+          "p": 0.04472,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.810539,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.41613,
+          "p": 0.910246,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.732775,
+          "p": 0.089754,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.901932,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:meta_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.755255,
+          "p": 0.627457,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.276577,
+          "p": 0.372543,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.724502,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "meta:the_valuation_of_meta__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.631639,
+          "p": 0.512675,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.682351,
+          "p": 0.487325,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.859637,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_daily_active_users__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.568218,
+          "p": 0.584209,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.908295,
+          "p": 0.415791,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.868759,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.097926,
+          "p": 0.450533,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.899409,
+          "p": 0.549467,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.963139,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "metarep:meta_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.283211,
+          "p": 0.329072,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.570826,
+          "p": 0.670928,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.88602,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.593756,
+          "p": 0.589533,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.95579,
+          "p": 0.410467,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.655386,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.240125,
+          "p": 0.70084,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.091424,
+          "p": 0.29916,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.848118,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.754903,
+          "p": 0.494404,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.732519,
+          "p": 0.505596,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.87133,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.609132,
+          "p": 0.922219,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.082019,
+          "p": 0.077781,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.920194,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:big_tech_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.298537,
+          "p": 0.592325,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.672124,
+          "p": 0.407675,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.93764,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.465496,
+          "p": 0.90016,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.664505,
+          "p": 0.09984,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.905609,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.653324,
+       "percentile": 0.789873,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.914264,
+       "percentile": 0.985683,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.647889,
+       "percentile": 0.769441,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.912519,
+       "percentile": 0.985035,
+       "flagged": null
+      },
+      "costs": {
+       "score": 0.268124,
+       "percentile": 0.124216,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.87558,
+       "percentile": 0.990232,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.192345,
+       "percentile": 0.070533,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.825514,
+       "percentile": 0.962119,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.723835,
+       "percentile": 0.932975,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.708317,
+       "percentile": 0.919785,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

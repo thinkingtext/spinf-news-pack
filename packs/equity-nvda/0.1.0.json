@@ -1,0 +1,1408 @@
+{
+ "pack": "thinkingtext/equity-nvda",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Nvidia news",
+ "description": "The Nvidia (NVDA) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Nvidia",
+  "ticker": "NVDA",
+  "peers": [
+   "AMD",
+   "INTC",
+   "MU"
+  ],
+  "weights": {
+   "company": 0.52,
+   "peers": 0.15,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "01c187eee8b39f5378f7f9bbaf7797de",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "nvda:demand_for_nvidia_s_data_centre_chips__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for Nvidia's data centre chips is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "nvda:demand_for_nvidia_s_products__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for Nvidia's products is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "nvda:nvidia_s_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Nvidia's revenue is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tech:capital_spending_on_artificial_intellige__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: capital spending on artificial intelligence is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:demand_for_ai_chips__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for AI chips is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:semiconductor_demand__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: semiconductor demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "nvda:nvidia_s_profit_margins__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Nvidia's profit margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "nvda:nvidia_s_profits__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Nvidia's profits is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "nvda:nvidia_s_earnings_forecasts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Nvidia's earnings forecasts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "nvda:nvidia_s_growth_prospects__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Nvidia's growth prospects is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "nvda:nvidia_s_market_share__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Nvidia's market share is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "nvda:nvidia__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for Nvidia shareholders, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "nvda:nvidia_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Nvidia's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "nvda:the_valuation_of_nvidia__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the valuation of Nvidia is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "nvdarep:nvidia_s_data_centre_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Nvidia's data centre revenue came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "nvdarep:nvidia_s_quarterly_results__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Nvidia's quarterly results came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:expectations_of_fed_rate_cuts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: expectations of Fed rate cuts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "funds:investor_risk_appetite__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: investor risk appetite is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "haven:financial_market_volatility__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: financial market volatility is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "investors:news_inv_investors__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for investors, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "tech:big_tech_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: big tech earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usa:the_risk_of_a_us_recession__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the risk of a US recession is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usa:us_economic_growth__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "nvda:demand_for_nvidia_s_data_centre_chips__sum": {
+   "phrase": "demand for Nvidia's data centre chips",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "nvda:demand_for_nvidia_s_products__sum": {
+   "phrase": "demand for Nvidia's products",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "nvda:nvidia_s_revenue__sum": {
+   "phrase": "Nvidia's revenue",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "tech:capital_spending_on_artificial_intellige__sum": {
+   "phrase": "capital spending on artificial intelligence",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "tech:demand_for_ai_chips__sum": {
+   "phrase": "demand for AI chips",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "tech:semiconductor_demand__sum": {
+   "phrase": "semiconductor demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "nvda:nvidia_s_profit_margins__sum": {
+   "phrase": "Nvidia's profit margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "nvda:nvidia_s_profits__sum": {
+   "phrase": "Nvidia's profits",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "nvda:nvidia_s_earnings_forecasts__sum": {
+   "phrase": "Nvidia's earnings forecasts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "nvda:nvidia_s_growth_prospects__sum": {
+   "phrase": "Nvidia's growth prospects",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "nvda:nvidia_s_market_share__sum": {
+   "phrase": "Nvidia's market share",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "nvda:nvidia__sum": {
+   "phrase": "Nvidia",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_co",
+   "principal": "nvda"
+  },
+  "nvda:nvidia_s_share_price__sum": {
+   "phrase": "Nvidia's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "nvda:the_valuation_of_nvidia__sum": {
+   "phrase": "the valuation of Nvidia",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "nvda"
+  },
+  "nvdarep:nvidia_s_data_centre_revenue__sum": {
+   "phrase": "Nvidia's data centre revenue",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "nvdarep"
+  },
+  "nvdarep:nvidia_s_quarterly_results__sum": {
+   "phrase": "Nvidia's quarterly results",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "nvdarep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  },
+  "fed:expectations_of_fed_rate_cuts__sum": {
+   "phrase": "expectations of Fed rate cuts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "fed"
+  },
+  "funds:investor_risk_appetite__sum": {
+   "phrase": "investor risk appetite",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "funds"
+  },
+  "haven:financial_market_volatility__sum": {
+   "phrase": "financial market volatility",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "haven"
+  },
+  "investors:news_inv_investors__sum": {
+   "phrase": "investors",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_inv",
+   "principal": "investors"
+  },
+  "tech:big_tech_earnings__sum": {
+   "phrase": "big tech earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "usa:the_risk_of_a_us_recession__sum": {
+   "phrase": "the risk of a US recession",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "usa"
+  },
+  "usa:us_economic_growth__sum": {
+   "phrase": "US economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "usa"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/nvda:demand_for_nvidia_s_data_centre_chips__sum",
+   "query": "nvda:demand_for_nvidia_s_data_centre_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 3.11217,
+   "sd": 0.54517
+  },
+  {
+   "id": "company/demand/nvda:demand_for_nvidia_s_data_centre_chips__sum",
+   "query": "nvda:demand_for_nvidia_s_data_centre_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 3.11217,
+   "sd": 0.54517
+  },
+  {
+   "id": "demand/nvda:demand_for_nvidia_s_products__sum",
+   "query": "nvda:demand_for_nvidia_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 2.16504,
+   "sd": 0.49316
+  },
+  {
+   "id": "company/demand/nvda:demand_for_nvidia_s_products__sum",
+   "query": "nvda:demand_for_nvidia_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 2.16504,
+   "sd": 0.49316
+  },
+  {
+   "id": "demand/nvda:nvidia_s_revenue__sum",
+   "query": "nvda:nvidia_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": -0.81591,
+   "sd": 0.45121
+  },
+  {
+   "id": "company/demand/nvda:nvidia_s_revenue__sum",
+   "query": "nvda:nvidia_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": -0.81591,
+   "sd": 0.45121
+  },
+  {
+   "id": "demand/tech:capital_spending_on_artificial_intellige__sum",
+   "query": "tech:capital_spending_on_artificial_intellige__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 3.27966,
+   "sd": 0.42455
+  },
+  {
+   "id": "company/demand/tech:capital_spending_on_artificial_intellige__sum",
+   "query": "tech:capital_spending_on_artificial_intellige__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 3.27966,
+   "sd": 0.42455
+  },
+  {
+   "id": "demand/tech:demand_for_ai_chips__sum",
+   "query": "tech:demand_for_ai_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 2.73923,
+   "sd": 0.5264
+  },
+  {
+   "id": "company/demand/tech:demand_for_ai_chips__sum",
+   "query": "tech:demand_for_ai_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 2.73923,
+   "sd": 0.5264
+  },
+  {
+   "id": "demand/tech:semiconductor_demand__sum",
+   "query": "tech:semiconductor_demand__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 1.70174,
+   "sd": 0.5394
+  },
+  {
+   "id": "company/demand/tech:semiconductor_demand__sum",
+   "query": "tech:semiconductor_demand__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 1.70174,
+   "sd": 0.5394
+  },
+  {
+   "id": "profits/nvda:nvidia_s_profit_margins__sum",
+   "query": "nvda:nvidia_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits",
+   "mean": -1.41209,
+   "sd": 0.34476
+  },
+  {
+   "id": "company/profits/nvda:nvidia_s_profit_margins__sum",
+   "query": "nvda:nvidia_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits",
+   "mean": -1.41209,
+   "sd": 0.34476
+  },
+  {
+   "id": "profits/nvda:nvidia_s_profits__sum",
+   "query": "nvda:nvidia_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits",
+   "mean": -0.70421,
+   "sd": 0.47746
+  },
+  {
+   "id": "company/profits/nvda:nvidia_s_profits__sum",
+   "query": "nvda:nvidia_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits",
+   "mean": -0.70421,
+   "sd": 0.47746
+  },
+  {
+   "id": "outlook/nvda:nvidia_s_earnings_forecasts__sum",
+   "query": "nvda:nvidia_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook",
+   "mean": -2.16563,
+   "sd": 0.46207
+  },
+  {
+   "id": "company/outlook/nvda:nvidia_s_earnings_forecasts__sum",
+   "query": "nvda:nvidia_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook",
+   "mean": -2.16563,
+   "sd": 0.46207
+  },
+  {
+   "id": "outlook/nvda:nvidia_s_growth_prospects__sum",
+   "query": "nvda:nvidia_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook",
+   "mean": 2.41209,
+   "sd": 0.34856
+  },
+  {
+   "id": "company/outlook/nvda:nvidia_s_growth_prospects__sum",
+   "query": "nvda:nvidia_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook",
+   "mean": 2.41209,
+   "sd": 0.34856
+  },
+  {
+   "id": "competition/nvda:nvidia_s_market_share__sum",
+   "query": "nvda:nvidia_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "competition",
+   "mean": -0.92923,
+   "sd": 0.3722
+  },
+  {
+   "id": "company/competition/nvda:nvidia_s_market_share__sum",
+   "query": "nvda:nvidia_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "competition",
+   "mean": -0.92923,
+   "sd": 0.3722
+  },
+  {
+   "id": "reflectors/nvda:nvidia__sum",
+   "query": "nvda:nvidia__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": 1.34064,
+   "sd": 0.33756
+  },
+  {
+   "id": "company/reflectors/nvda:nvidia__sum",
+   "query": "nvda:nvidia__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": 1.34064,
+   "sd": 0.33756
+  },
+  {
+   "id": "reflectors/nvda:nvidia_s_share_price__sum",
+   "query": "nvda:nvidia_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": -0.01497,
+   "sd": 0.34298
+  },
+  {
+   "id": "company/reflectors/nvda:nvidia_s_share_price__sum",
+   "query": "nvda:nvidia_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": -0.01497,
+   "sd": 0.34298
+  },
+  {
+   "id": "reflectors/nvda:the_valuation_of_nvidia__sum",
+   "query": "nvda:the_valuation_of_nvidia__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": -0.08243,
+   "sd": 0.48981
+  },
+  {
+   "id": "company/reflectors/nvda:the_valuation_of_nvidia__sum",
+   "query": "nvda:the_valuation_of_nvidia__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": -0.08243,
+   "sd": 0.48981
+  },
+  {
+   "id": "surprise/nvdarep:nvidia_s_data_centre_revenue__sum",
+   "query": "nvdarep:nvidia_s_data_centre_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.20913,
+   "sd": 0.24029
+  },
+  {
+   "id": "company/surprise/nvdarep:nvidia_s_data_centre_revenue__sum",
+   "query": "nvdarep:nvidia_s_data_centre_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.20913,
+   "sd": 0.24029
+  },
+  {
+   "id": "surprise/nvdarep:nvidia_s_quarterly_results__sum",
+   "query": "nvdarep:nvidia_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.29905,
+   "sd": 0.2635
+  },
+  {
+   "id": "company/surprise/nvdarep:nvidia_s_quarterly_results__sum",
+   "query": "nvdarep:nvidia_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.29905,
+   "sd": 0.2635
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.27834,
+   "sd": 0.60406
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.27834,
+   "sd": 0.60406
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.15599,
+   "sd": 0.49171
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.15599,
+   "sd": 0.49171
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": -0.5258,
+   "sd": 0.77317
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": -0.5258,
+   "sd": 0.77317
+  },
+  {
+   "id": "macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": 0.12633,
+   "sd": 0.25792
+  },
+  {
+   "id": "company/macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": 0.12633,
+   "sd": 0.25792
+  },
+  {
+   "id": "macro/funds:investor_risk_appetite__sum",
+   "query": "funds:investor_risk_appetite__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": 3.19287,
+   "sd": 0.73812
+  },
+  {
+   "id": "company/macro/funds:investor_risk_appetite__sum",
+   "query": "funds:investor_risk_appetite__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": 3.19287,
+   "sd": 0.73812
+  },
+  {
+   "id": "macro/haven:financial_market_volatility__sum",
+   "query": "haven:financial_market_volatility__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro",
+   "mean": -2.61638,
+   "sd": 0.6446
+  },
+  {
+   "id": "company/macro/haven:financial_market_volatility__sum",
+   "query": "haven:financial_market_volatility__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro",
+   "mean": -2.61638,
+   "sd": 0.6446
+  },
+  {
+   "id": "macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": 1.21504,
+   "sd": 0.8533
+  },
+  {
+   "id": "company/macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": 1.21504,
+   "sd": 0.8533
+  },
+  {
+   "id": "macro/tech:big_tech_earnings__sum",
+   "query": "tech:big_tech_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": -0.56267,
+   "sd": 0.51384
+  },
+  {
+   "id": "company/macro/tech:big_tech_earnings__sum",
+   "query": "tech:big_tech_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": -0.56267,
+   "sd": 0.51384
+  },
+  {
+   "id": "macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro",
+   "mean": -2.13837,
+   "sd": 0.67105
+  },
+  {
+   "id": "company/macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro",
+   "mean": -2.13837,
+   "sd": 0.67105
+  },
+  {
+   "id": "macro/usa:us_economic_growth__sum",
+   "query": "usa:us_economic_growth__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": -1.58135,
+   "sd": 0.7504
+  },
+  {
+   "id": "company/macro/usa:us_economic_growth__sum",
+   "query": "usa:us_economic_growth__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": -1.58135,
+   "sd": 0.7504
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Demand for the company's products and its revenue",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.01511,
+     0.30451,
+     0.38421,
+     0.44352,
+     0.48256,
+     0.51948,
+     0.55177,
+     0.58574,
+     0.62952,
+     0.69048,
+     0.74802,
+     0.83704,
+     0.92144,
+     0.97553
+    ]
+   }
+  },
+  "profits": {
+   "label": "Profits and margins",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00374,
+     0.26182,
+     0.36419,
+     0.4264,
+     0.47435,
+     0.5197,
+     0.56456,
+     0.61003,
+     0.65753,
+     0.73098,
+     0.79647,
+     0.88821,
+     0.94348,
+     0.98831
+    ]
+   }
+  },
+  "outlook": {
+   "label": "Earnings forecasts and growth prospects",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.0079,
+     0.27965,
+     0.36465,
+     0.43155,
+     0.47835,
+     0.52634,
+     0.56137,
+     0.60131,
+     0.65254,
+     0.71809,
+     0.75867,
+     0.86014,
+     0.93942,
+     0.96395
+    ]
+   }
+  },
+  "competition": {
+   "label": "Market share and competitive pressure",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.02308,
+     0.2278,
+     0.3227,
+     0.38659,
+     0.44516,
+     0.49626,
+     0.55295,
+     0.6056,
+     0.67839,
+     0.76857,
+     0.84219,
+     0.9325,
+     0.97263,
+     0.98875
+    ]
+   }
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.02346,
+     0.25144,
+     0.35297,
+     0.41477,
+     0.46787,
+     0.51922,
+     0.56875,
+     0.61216,
+     0.66335,
+     0.72157,
+     0.77596,
+     0.8583,
+     0.92587,
+     0.97988
+    ]
+   }
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00203,
+     0.23897,
+     0.32626,
+     0.40997,
+     0.46753,
+     0.5217,
+     0.5714,
+     0.62241,
+     0.68114,
+     0.75332,
+     0.80174,
+     0.87486,
+     0.92297,
+     0.95065
+    ]
+   }
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00262,
+     0.27695,
+     0.37423,
+     0.43228,
+     0.47091,
+     0.50652,
+     0.53727,
+     0.58299,
+     0.63376,
+     0.71894,
+     0.78247,
+     0.92458,
+     0.99381,
+     0.99797
+    ]
+   }
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.03369,
+     0.32814,
+     0.40082,
+     0.4449,
+     0.4782,
+     0.50866,
+     0.54128,
+     0.57417,
+     0.61374,
+     0.66741,
+     0.70785,
+     0.81805,
+     0.94536,
+     0.97476
+    ]
+   }
+  },
+  "company": {
+   "label": "Nvidia news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "role": "composite",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.03723,
+     0.32616,
+     0.39629,
+     0.44851,
+     0.4885,
+     0.51732,
+     0.54482,
+     0.58045,
+     0.61078,
+     0.65975,
+     0.70284,
+     0.80772,
+     0.88999,
+     0.97071
+    ]
+   }
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": [],
+  "per_category": {}
+ },
+ "engine": "fp_51319d2ff6",
+ "calibration": {
+  "sample": "calibration/wikinews_business.json.gz",
+  "n": 1500,
+  "statistic": "mean and sd of each read over the sample; no thresholds, no decision",
+  "date": "2026-10-24"
+ }
+}

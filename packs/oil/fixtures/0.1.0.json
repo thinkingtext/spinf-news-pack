@@ -1,0 +1,6963 @@
+{
+ "pack": "thinkingtext/oil",
+ "version": "0.1.0",
+ "engine": "fp_51319d2ff6",
+ "usage": {
+  "prompt_tokens": 6197,
+  "completion_tokens": 0,
+  "total_tokens": 6197,
+  "prompt_tokens_details": {
+   "content_tokens": 3059,
+   "text_tokens": 3059,
+   "query_tokens": 3138,
+   "floor_tokens": 0
+  },
+  "inputs": 6,
+  "content": {
+   "tokens": 3059,
+   "text_tokens": 3059,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 43,
+   "combinations": 43,
+   "options": 86,
+   "prompts": 258,
+   "floor_prompts": 0,
+   "query_tokens": 3138,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 5130
+ },
+ "cases": [
+  {
+   "id": "wn118354",
+   "text": "The Organization of the Petroleum Exporting Countries (OPEC) has agreed to drastically cut the daily production of oil by 2.2 million barrels per day (bpd). In a decision reached in Oran, Algeria, energy ministers from all 12 OPEC members agreed to make the largest cut in OPEC's history.\nOil prices have fallen from a high of $140 in July to just around $40; a decrease of $100. OPEC has cut 4.2 million bpd since September, when the price of oil decreased suddenly over fears of a global recession and lower usage of oil. With this new decrease, production by OPEC members will be 24.845 million bpd. Saudi Arabia is taking the majority of the cut by decreasing their production by 1.2 million bpd.\nIn the statement released by the organization, they wrote \"...that crude volumes entering the market remain well in excess of actual demand: this is clearly demonstrated by the fact that crude stocks in OECD countries are well above their five-year average and are expected to continue to rise. Moreover, the impact of the grave global economic downturn has led to a destruction of demand, resulting in unprecedented downward pressure being exerted on prices...\"\nOPEC faces a tough task in trying to level the price of oil to a reasonable amount. Most experts and oil officials believe that $75 is the 'fair price' for a barrel of oil. Chakib Khelil, the OPEC president, said during the meeting that \"OPEC has a long-established record in meeting the challenges it faces, however tough they may be. The challenge facing the oil market today is clearly a formidable one.\"\nRussia, which is not a member of OPEC, also agreed that a cut was needed and would cut its production by 600,000 barrels. OPEC will also urge other non-OPEC members who are oil exports, to cut their production. Mexico and Norway are two of the largest oil producers that not members of OPEC. Russia's action is not official, and the country has had a history of failing their pledge to cut their output.",
+   "context": "article",
+   "source": {
+    "title": "OPEC cuts production by 2.2 million barrels a day",
+    "url": "https://en.wikinews.org/wiki/OPEC_cuts_production_by_2.2_million_barrels_a_day",
+    "revision": 4823354,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn118354",
+    "queries": [
+     {
+      "id": "world:global_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.826921,
+          "p": 0.440128,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.58628,
+          "p": 0.559872,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.865506,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.037937,
+          "p": 0.666853,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.731922,
+          "p": 0.333147,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.804609,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:chinese_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.495108,
+          "p": 0.732944,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.504719,
+          "p": 0.267056,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.887457,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.861575,
+          "p": 0.110569,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -1.776629,
+          "p": 0.889431,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.809758,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_crude_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.992649,
+          "p": 0.224357,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.752197,
+          "p": 0.775643,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.917762,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "shale:us_shale_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.143371,
+          "p": 0.669235,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.848097,
+          "p": 0.330765,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.824787,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nonopec:non_opec_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.429785,
+          "p": 0.66724,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.125516,
+          "p": 0.33276,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.86803,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "us:us_crude_oil_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.039921,
+          "p": 0.510581,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.082253,
+          "p": 0.489419,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.745312,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cushing:crude_oil_inventories_at_cushing_oklahom",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.287645,
+          "p": 0.566326,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.554523,
+          "p": 0.433674,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.820765,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gasoline:us_gasoline_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.985198,
+          "p": 0.505087,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.005548,
+          "p": 0.494913,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.72806,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:us_distillate_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.524376,
+          "p": 0.437745,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.274055,
+          "p": 0.562255,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.816998,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_production_quotas",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -5.468565,
+          "p": 0.748619,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -6.559828,
+          "p": 0.251381,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.994367,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mideast:the_risk_of_oil_supply_disruptions_in_th",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.453843,
+          "p": 0.911893,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.790809,
+          "p": 0.088107,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.905732,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.277441,
+          "p": 0.92591,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.802937,
+          "p": 0.07409,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.889248,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "russia:the_risk_of_disruption_to_russian_oil_ex",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.142486,
+          "p": 0.927699,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.694351,
+          "p": 0.072301,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.87349,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.477119,
+          "p": 0.948352,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.387385,
+          "p": 0.051648,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911441,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.820932,
+          "p": 0.211657,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.505968,
+          "p": 0.788343,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.961923,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.616969,
+          "p": 0.221793,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.36172,
+          "p": 0.778207,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.955442,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:china_s_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.887095,
+          "p": 0.116783,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.863837,
+          "p": 0.883217,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.935407,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:the_risk_of_a_global_recession",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.807594,
+          "p": 0.604145,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.230362,
+          "p": 0.395855,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.963251,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_interest_rates",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.325516,
+          "p": 0.360266,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.751307,
+          "p": 0.639734,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.72872,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:the_federal_funds_rate",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.129354,
+          "p": 0.213445,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.825073,
+          "p": 0.786555,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.795048,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.119508,
+          "p": 0.715887,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.04366,
+          "p": 0.284113,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.832249,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -1.829945,
+          "p": 0.844424,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -3.521462,
+          "p": 0.155576,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.810021,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.557574,
+          "p": 0.636227,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.116601,
+          "p": 0.363773,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.668913,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:mood_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " optimism",
+          "logprob": -1.956991,
+          "p": 0.911271,
+          "floor_p": null
+         },
+         {
+          "text": " pessimism",
+          "logprob": -4.286249,
+          "p": 0.088729,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.844961,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:fear_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.01059,
+          "p": 0.798793,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.389355,
+          "p": 0.201207,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.938329,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:investor_optimism",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.218379,
+          "p": 0.87668,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.179738,
+          "p": 0.12332,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.954351,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:risk_aversion_among_investors",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.86288,
+          "p": 0.799372,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.245256,
+          "p": 0.200628,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.928564,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:turmoil_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -6.028387,
+          "p": 0.864905,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.885027,
+          "p": 0.135095,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.997214,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "refiners:global_refining_margins",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.227453,
+          "p": 0.398459,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.815563,
+          "p": 0.601541,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.900471,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:diesel_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.065695,
+          "p": 0.522443,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.155529,
+          "p": 0.477557,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.757428,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_inflation",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.257715,
+          "p": 0.360903,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.686269,
+          "p": 0.639097,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.710202,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.780869,
+          "p": 0.676005,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.51634,
+          "p": 0.323995,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.908307,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:bets_on_federal_reserve_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.903155,
+          "p": 0.923291,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.391087,
+          "p": 0.076709,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.838515,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gold:gold_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.998315,
+          "p": 0.680098,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.752536,
+          "p": 0.319902,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.800671,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro_against_the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.735543,
+          "p": 0.550277,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.937335,
+          "p": 0.449723,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.882134,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -2.922777,
+          "p": 0.509102,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -2.95919,
+          "p": 0.490898,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.894355,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:geopolitical_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -3.167073,
+          "p": 0.431004,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -2.889317,
+          "p": 0.568996,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.902259,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:the_risk_of_a_wider_war",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.626954,
+          "p": 0.93757,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.336205,
+          "p": 0.06243,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.922888,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -3.264671,
+          "p": 0.343579,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -2.617287,
+          "p": 0.656421,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.88879,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "trade:us_china_trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.833964,
+          "p": 0.96243,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.077212,
+          "p": 0.03757,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.977532,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.582208,
+          "p": 0.881827,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.592056,
+          "p": 0.118173,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.968458,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.112552,
+       "percentile": 0.038721,
+       "flagged": null
+      },
+      "supply": {
+       "score": 0.003589,
+       "percentile": 0,
+       "flagged": null
+      },
+      "inventories": {
+       "score": 0.540119,
+       "percentile": 0.642546,
+       "flagged": null
+      },
+      "opec": {
+       "score": 0.330366,
+       "percentile": 0.210915,
+       "flagged": null
+      },
+      "disruption": {
+       "score": 0.642889,
+       "percentile": 0.800385,
+       "flagged": null
+      },
+      "growth": {
+       "score": 0.571682,
+       "percentile": 0.640675,
+       "flagged": null
+      },
+      "rates": {
+       "score": 0.090311,
+       "percentile": 0.027106,
+       "flagged": null
+      },
+      "dollar": {
+       "score": 0.892833,
+       "percentile": 0.979389,
+       "flagged": null
+      },
+      "stocks": {
+       "score": 0.748729,
+       "percentile": 0.934398,
+       "flagged": null
+      },
+      "mood": {
+       "score": 0.652691,
+       "percentile": 0.829278,
+       "flagged": null
+      },
+      "margins": {
+       "score": 0.234382,
+       "percentile": 0.068491,
+       "flagged": null
+      },
+      "inflation": {
+       "score": 0.110915,
+       "percentile": 0.030921,
+       "flagged": null
+      },
+      "fedcuts": {
+       "score": 0.399325,
+       "percentile": 0.251234,
+       "flagged": null
+      },
+      "gold": {
+       "score": 0.430273,
+       "percentile": 0.500029,
+       "flagged": null
+      },
+      "euro": {
+       "score": 0.669107,
+       "percentile": 0.841547,
+       "flagged": null
+      },
+      "geopolitics": {
+       "score": 0.345256,
+       "percentile": 0.20308,
+       "flagged": null
+      },
+      "trade": {
+       "score": 0.430521,
+       "percentile": 0.344582,
+       "flagged": null
+      },
+      "volatility": {
+       "score": 0.422239,
+       "percentile": 0.39277,
+       "flagged": null
+      },
+      "f6": {
+       "score": 0.586548,
+       "percentile": 0.86602,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn22555",
+   "text": "Oil, natural gas, and gasoline futures prices are all rising in anticipation of the Hurricane Rita landfall on Friday.  The market price for crude oil is rising about 1% a day, while gasoline futures rose 5% both Wednesday and Thursday.  Natural gas prices are also rising, with NYMEX Henry Hub price index showing an increase of over 3.5% on Thursday.  Oil refineries in the path of the storm, despite the pressure exerted by rising oil prices, are expected to increase their prices which in turn will be reflected at the pump.\nThe price for crude oil is expected to reach US$68 a barrel after reaching the all-time high in the U.S. at $70.85 on Aug 30, in fear of the landing of Rita along the U.S. Gulf Coast. Along the Texas gulf coastline, whose key U.S. oil production facilities were largely untouched by the catastrophic Hurricane Katrina onslaught three weeks ago, production and distribution facilities have been battened down.\nRita was downgraded to a Category 3 storm Friday as it neared the coast. The storm, packing sustained winds of 125 mph, appears headed for the border between Texas and Louisiana. Hurricane force winds extend up to 60 miles from the center, according to the National Hurricane Center. The storm, currently, is the third-most intense hurricane ever recorded in the Atlantic, just behind Gilbert in 1988 and the 1935 Labor Day hurricane.\nRegions of Texas near where the storm is expected to land is home to the biggest concentration of U.S. oil refineries, accounting for 26 percent of the nation's total capacity. After Katrina made its landfall in Louisiana last month, four damaged refineries in Mississippi and Louisiana were shut down, crippling 5 percent of the US capacity. Eighteen of the 26 refineries in Texas are located on the Gulf of Mexico with a combined distillation capacity of 4 million barrels daily.\nThe National Weather Service has issued a flood watch for the Texas coastline, including Galveston, where the nation's largest oil refinery belonging to Exxon Mobil Corp. is located.\n\"Some of those refineries in Texas, they're at sea level. It's a table top, it floods very easily, said Ed Silliere, vice president of risk management at Energy Merchant LLC in New York.\nPlants have shut down as Rita advances. Shell Oil shut down its seventh-largest refinery in Deer Park, Texas. There is no date set for resuming production. Conoco Philips is shutting its Old Ocean, Texas, refinery. BP is pulling some workers from its Texas refinery and shutting parts of the fourth largest plants in US. Valero, the largest U.S. refiner, said it is closing its plants in Texas City and Houston, with the shutdown to be completed by midday Thursday.\nThe Organization of Petroleum Exporting Countries (OPEC) agreed at its meeting in Vienna on Tuesday to effectively suspend its quota system for the first time since 1991 Gulf War to relieve the rising oil price by pumping an estimated additional 2 million barrels of oil a day, which will begin at Oct 1 and last for 3 months.\nThe head of the U.S. Energy Information Administration (the statistical and analytical wing of the U.S. Department of Energy), Guy Caruso, criticized OPEC for constraining production to keep prices high after the 11-member oil cartel pledged to make available the additional 2 million barrels daily.\n\"Without question,\" Caruso said Wednesday when asked during a Senate Commerce Committee hearing whether OPEC has contributed to soaring oil prices, \"OPEC policy has been to constrain production and collude... Under the FTC definition of collusion and price-fixing, yes.\"\nAccording to OPEC, 62 percent in U.K., and 24 percent of fuel prices in the U.S. consist of taxes. Consuming nations have a responsibility to invest in refineries and to lower taxes if they want lower fuel prices, OPEC President Sheikh Ahmad Fahd al-Sabah said. He is the oil minister of Kuwait.",
+   "context": "article",
+   "source": {
+    "title": "Oil price jumps as Rita heads to refineries",
+    "url": "https://en.wikinews.org/wiki/Oil_price_jumps_as_Rita_heads_to_refineries",
+    "revision": 4823474,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn22555",
+    "queries": [
+     {
+      "id": "world:global_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.688226,
+          "p": 0.729458,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.680103,
+          "p": 0.270542,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.906778,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -4.013632,
+          "p": 0.261967,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.97786,
+          "p": 0.738033,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.931031,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:chinese_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.192336,
+          "p": 0.905776,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.455449,
+          "p": 0.094224,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.876729,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.310958,
+          "p": 0.89959,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.50364,
+          "p": 0.10041,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.889765,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_crude_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.588446,
+          "p": 0.984648,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.749498,
+          "p": 0.015352,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.792573,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "shale:us_shale_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.765656,
+          "p": 0.939122,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.501736,
+          "p": 0.060878,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.817836,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nonopec:non_opec_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.472718,
+          "p": 0.970612,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.970051,
+          "p": 0.029388,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.763756,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "us:us_crude_oil_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.371998,
+          "p": 0.36911,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.835961,
+          "p": 0.63089,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.747246,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cushing:crude_oil_inventories_at_cushing_oklahom",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.843471,
+          "p": 0.604935,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.26954,
+          "p": 0.395065,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.738373,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gasoline:us_gasoline_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.311934,
+          "p": 0.152721,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.598514,
+          "p": 0.847279,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.761358,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:us_distillate_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.960585,
+          "p": 0.216331,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.673409,
+          "p": 0.783669,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.760605,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_production_quotas",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -5.912294,
+          "p": 0.580067,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -6.235342,
+          "p": 0.419933,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.995335,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mideast:the_risk_of_oil_supply_disruptions_in_th",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.468178,
+          "p": 0.964296,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.764307,
+          "p": 0.035704,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.912123,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.684135,
+          "p": 0.954903,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.736934,
+          "p": 0.045097,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.928495,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "russia:the_risk_of_disruption_to_russian_oil_ex",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.311259,
+          "p": 0.917631,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.72185,
+          "p": 0.082369,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.891965,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.88044,
+          "p": 0.922867,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.362389,
+          "p": 0.077133,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.9392,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -6.79733,
+          "p": 0.045949,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.764137,
+          "p": 0.954051,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.975696,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -7.0006,
+          "p": 0.029922,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.521802,
+          "p": 0.970078,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.969543,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:china_s_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.99411,
+          "p": 0.149624,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.256559,
+          "p": 0.850376,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.954702,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:the_risk_of_a_global_recession",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.824844,
+          "p": 0.988048,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.23966,
+          "p": 0.011952,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.836807,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_interest_rates",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.19782,
+          "p": 0.848647,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.921848,
+          "p": 0.151353,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.644314,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:the_federal_funds_rate",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.400261,
+          "p": 0.868324,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.286484,
+          "p": 0.131676,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.716082,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.839144,
+          "p": 0.175184,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.289818,
+          "p": 0.824816,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.877203,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -3.964452,
+          "p": 0.146822,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -2.204703,
+          "p": 0.853178,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.870738,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.882872,
+          "p": 0.261508,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.844727,
+          "p": 0.738492,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.785958,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:mood_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " optimism",
+          "logprob": -3.42088,
+          "p": 0.818119,
+          "floor_p": null
+         },
+         {
+          "text": " pessimism",
+          "logprob": -4.924536,
+          "p": 0.181881,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96005,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:fear_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.089624,
+          "p": 0.953627,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.113185,
+          "p": 0.046373,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.952267,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:investor_optimism",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.59453,
+          "p": 0.780181,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.861252,
+          "p": 0.219819,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.964786,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:risk_aversion_among_investors",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.564496,
+          "p": 0.958302,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.699214,
+          "p": 0.041698,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.919693,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:turmoil_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.961352,
+          "p": 0.972498,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -8.526951,
+          "p": 0.027502,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.992798,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "refiners:global_refining_margins",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.011857,
+          "p": 0.805115,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.43043,
+          "p": 0.194885,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.833887,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:diesel_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.368358,
+          "p": 0.918775,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.794179,
+          "p": 0.081225,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.722974,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_inflation",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.354243,
+          "p": 0.993169,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.333657,
+          "p": 0.006831,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.740082,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.999531,
+          "p": 0.73459,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.017565,
+          "p": 0.26541,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.932193,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:bets_on_federal_reserve_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.175784,
+          "p": 0.909207,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.479779,
+          "p": 0.090793,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.875145,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gold:gold_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.090913,
+          "p": 0.512249,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.139919,
+          "p": 0.487751,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.758761,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro_against_the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.340204,
+          "p": 0.574789,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.641622,
+          "p": 0.425211,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.832446,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -3.311249,
+          "p": 0.429882,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -3.028916,
+          "p": 0.570118,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.915161,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:geopolitical_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -4.467171,
+          "p": 0.367837,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -3.925665,
+          "p": 0.632163,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.968791,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:the_risk_of_a_wider_war",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.555102,
+          "p": 0.971592,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.08738,
+          "p": 0.028408,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.920044,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -5.467425,
+          "p": 0.043869,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -2.385749,
+          "p": 0.956131,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903758,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "trade:us_china_trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.506728,
+          "p": 0.992024,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.33006,
+          "p": 0.007976,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.91781,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.866643,
+          "p": 0.981935,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.862184,
+          "p": 0.018065,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.942064,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.144891,
+       "percentile": 0.050188,
+       "flagged": null
+      },
+      "supply": {
+       "score": 0.863701,
+       "percentile": 0.995854,
+       "flagged": null
+      },
+      "inventories": {
+       "score": 0.034608,
+       "percentile": 0.00944,
+       "flagged": null
+      },
+      "opec": {
+       "score": 0.045186,
+       "percentile": 0.017025,
+       "flagged": null
+      },
+      "disruption": {
+       "score": 0.717107,
+       "percentile": 0.889966,
+       "flagged": null
+      },
+      "growth": {
+       "score": 0.191571,
+       "percentile": 0.064665,
+       "flagged": null
+      },
+      "rates": {
+       "score": 0.674394,
+       "percentile": 0.857385,
+       "flagged": null
+      },
+      "dollar": {
+       "score": 0.148005,
+       "percentile": 0.047111,
+       "flagged": null
+      },
+      "stocks": {
+       "score": 0.194626,
+       "percentile": 0.074546,
+       "flagged": null
+      },
+      "mood": {
+       "score": 0.365411,
+       "percentile": 0.189974,
+       "flagged": null
+      },
+      "margins": {
+       "score": 0.912177,
+       "percentile": 0.981518,
+       "flagged": null
+      },
+      "inflation": {
+       "score": 0.993846,
+       "percentile": 0.99594,
+       "flagged": null
+      },
+      "fedcuts": {
+       "score": 0.435032,
+       "percentile": 0.323824,
+       "flagged": null
+      },
+      "gold": {
+       "score": 0.244837,
+       "percentile": 0.080163,
+       "flagged": null
+      },
+      "euro": {
+       "score": 0.624971,
+       "percentile": 0.785424,
+       "flagged": null
+      },
+      "geopolitics": {
+       "score": 0.518451,
+       "percentile": 0.586167,
+       "flagged": null
+      },
+      "trade": {
+       "score": 0.461056,
+       "percentile": 0.423363,
+       "flagged": null
+      },
+      "volatility": {
+       "score": 0.811097,
+       "percentile": 0.922181,
+       "flagged": null
+      },
+      "f6": {
+       "score": 0.496948,
+       "percentile": 0.466644,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn115227",
+   "text": "International oil prices sank on Thursday as investors worried that a looming global recession will lower demand.\nCrude oil for future delivery fell to below US$71 a barrel in electronic trading on the New York Mercantile Exchange, its lowest price in more than a year. In London, Brent crude oil for November dropped below $66 a barrel.\nOil prices have dropped more than 50 percent since hitting a record high of $147 a barrel in July. A report released today showed an unexpected increase in inventories. Analysts expected only a 1.9 million barrel increase last week, but the actual amount was 5.6 million barrels\nThe Organization of Petroleum Exporting Countries (OPEC) cut its estimate for crude oil demand next year in a report released Wednesday. OPEC, which was planning on having an emergency meeting next month on the issue of lower oil prices, pushed forward the meeting to next week. The cartel is expected to cut production by 500,000 barrels a day, in a bid to boost oil prices. Saudi Arabia, which initially did not support the cut a few weeks ago, now supports such a move.\nSome Asian governments are under pressure to reduce domestic fuel prices in light of the decline of the price of oil. In China, some drivers are paying more for gas than drivers in the United States, which last occurred several years ago. India, China, and Indonesia appear to be to content to keep the price at the same level; however, some other Asian governments have lowered the price already. Malaysia and Vietnam have cut prices and are expected to do the same if oil drops some more.",
+   "context": "article",
+   "source": {
+    "title": "Oil prices drop as inventories grow",
+    "url": "https://en.wikinews.org/wiki/Oil_prices_drop_as_inventories_grow",
+    "revision": 4823477,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn115227",
+    "queries": [
+     {
+      "id": "world:global_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.585275,
+          "p": 0.85041,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.323097,
+          "p": 0.14959,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.759068,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.115253,
+          "p": 0.94043,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.874432,
+          "p": 0.05957,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.651402,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:chinese_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.984787,
+          "p": 0.523714,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.079714,
+          "p": 0.476286,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903477,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.6647,
+          "p": 0.86694,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.538872,
+          "p": 0.13306,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.781706,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_crude_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.233818,
+          "p": 0.752126,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.343801,
+          "p": 0.247874,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.857579,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "shale:us_shale_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.095217,
+          "p": 0.750756,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.197867,
+          "p": 0.249244,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.836107,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nonopec:non_opec_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.061674,
+          "p": 0.928872,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.631156,
+          "p": 0.071128,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.627638,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "us:us_crude_oil_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.809216,
+          "p": 0.683125,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.577386,
+          "p": 0.316875,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.760245,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cushing:crude_oil_inventories_at_cushing_oklahom",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.964816,
+          "p": 0.696178,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.793981,
+          "p": 0.303822,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.798641,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gasoline:us_gasoline_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.857821,
+          "p": 0.647947,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.467848,
+          "p": 0.352053,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.759221,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:us_distillate_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.599385,
+          "p": 0.466063,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.463429,
+          "p": 0.533937,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.840538,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_production_quotas",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -4.777535,
+          "p": 0.850428,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -6.515496,
+          "p": 0.149572,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.990103,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mideast:the_risk_of_oil_supply_disruptions_in_th",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.14994,
+          "p": 0.832875,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.756084,
+          "p": 0.167125,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.860134,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.298695,
+          "p": 0.896595,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.458645,
+          "p": 0.103405,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.888032,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "russia:the_risk_of_disruption_to_russian_oil_ex",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.012834,
+          "p": 0.857497,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.807489,
+          "p": 0.142503,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.844187,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.246188,
+          "p": 0.905537,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.506506,
+          "p": 0.094463,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.883161,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.899368,
+          "p": 0.453108,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.711248,
+          "p": 0.546892,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.955298,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.124354,
+          "p": 0.364335,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.567756,
+          "p": 0.635665,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.955607,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:china_s_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.558083,
+          "p": 0.200082,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.172298,
+          "p": 0.799918,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.947611,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:the_risk_of_a_global_recession",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.057189,
+          "p": 0.876883,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.020427,
+          "p": 0.123117,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946379,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_interest_rates",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.777455,
+          "p": 0.319917,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.023301,
+          "p": 0.680083,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.805585,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:the_federal_funds_rate",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.753618,
+          "p": 0.305327,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.931561,
+          "p": 0.694673,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.791381,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.586938,
+          "p": 0.686969,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.372924,
+          "p": 0.313031,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.890461,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -2.105095,
+          "p": 0.719034,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -3.04477,
+          "p": 0.280966,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.830559,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.489093,
+          "p": 0.786504,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.793071,
+          "p": 0.213496,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.71319,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:mood_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " optimism",
+          "logprob": -4.677307,
+          "p": 0.09788,
+          "floor_p": null
+         },
+         {
+          "text": " pessimism",
+          "logprob": -2.456298,
+          "p": 0.90212,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.904944,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:fear_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.180207,
+          "p": 0.933586,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.823338,
+          "p": 0.066414,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.955465,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:investor_optimism",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.6778,
+          "p": 0.639765,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.252143,
+          "p": 0.360235,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.960488,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:risk_aversion_among_investors",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.286604,
+          "p": 0.942564,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.08454,
+          "p": 0.057436,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.960342,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:turmoil_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -7.835509,
+          "p": 0.468717,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.710211,
+          "p": 0.531283,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.999156,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "refiners:global_refining_margins",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.016396,
+          "p": 0.047128,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.009777,
+          "p": 0.952872,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.859353,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:diesel_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.68384,
+          "p": 0.125227,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.740004,
+          "p": 0.874773,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.799354,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_inflation",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.932026,
+          "p": 0.108045,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.821154,
+          "p": 0.891955,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.818557,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.083292,
+          "p": 0.76417,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.258973,
+          "p": 0.23583,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.940055,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:bets_on_federal_reserve_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.572711,
+          "p": 0.958424,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.710483,
+          "p": 0.041576,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.783518,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gold:gold_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.761718,
+          "p": 0.753592,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.879582,
+          "p": 0.246408,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.772092,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro_against_the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.501065,
+          "p": 0.594102,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.882012,
+          "p": 0.405898,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.86198,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -3.168564,
+          "p": 0.376987,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -2.666207,
+          "p": 0.623013,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.888421,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:geopolitical_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -2.568194,
+          "p": 0.676023,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -3.303748,
+          "p": 0.323977,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.886581,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:the_risk_of_a_wider_war",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.432315,
+          "p": 0.914391,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.800786,
+          "p": 0.085609,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903943,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -3.044528,
+          "p": 0.50112,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -3.049007,
+          "p": 0.49888,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.904975,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "trade:us_china_trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.001448,
+          "p": 0.958538,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.142069,
+          "p": 0.041462,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.948134,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.362604,
+          "p": 0.955529,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.430027,
+          "p": 0.044471,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.963743,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.326985,
+       "percentile": 0.141307,
+       "flagged": null
+      },
+      "supply": {
+       "score": 0.219123,
+       "percentile": 0.069554,
+       "flagged": null
+      },
+      "inventories": {
+       "score": 0.876152,
+       "percentile": 0.99079,
+       "flagged": null
+      },
+      "opec": {
+       "score": 0.780204,
+       "percentile": 0.923551,
+       "flagged": null
+      },
+      "disruption": {
+       "score": 0.370018,
+       "percentile": 0.265208,
+       "flagged": null
+      },
+      "growth": {
+       "score": 0.653901,
+       "percentile": 0.837961,
+       "flagged": null
+      },
+      "rates": {
+       "score": 0.103414,
+       "percentile": 0.031262,
+       "flagged": null
+      },
+      "dollar": {
+       "score": 0.818615,
+       "percentile": 0.954752,
+       "flagged": null
+      },
+      "stocks": {
+       "score": 0.692483,
+       "percentile": 0.86666,
+       "flagged": null
+      },
+      "mood": {
+       "score": 0.369807,
+       "percentile": 0.193641,
+       "flagged": null
+      },
+      "margins": {
+       "score": 0.004861,
+       "percentile": 0.0,
+       "flagged": null
+      },
+      "inflation": {
+       "score": 0.016811,
+       "percentile": 0.0,
+       "flagged": null
+      },
+      "fedcuts": {
+       "score": 0.703159,
+       "percentile": 0.905711,
+       "flagged": null
+      },
+      "gold": {
+       "score": 0.538746,
+       "percentile": 0.709587,
+       "flagged": null
+      },
+      "euro": {
+       "score": 0.595035,
+       "percentile": 0.726693,
+       "flagged": null
+      },
+      "geopolitics": {
+       "score": 0.214638,
+       "percentile": 0.074363,
+       "flagged": null
+      },
+      "trade": {
+       "score": 0.381142,
+       "percentile": 0.214348,
+       "flagged": null
+      },
+      "volatility": {
+       "score": 0.308572,
+       "percentile": 0.157582,
+       "flagged": null
+      },
+      "f6": {
+       "score": 0.269122,
+       "percentile": 0.057007,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn87271",
+   "text": "On Wednesday at 12:40 p.m. CET (UTC+1), Norwegian authorities were alerted to an oil spill in the Statfjord oil field. The spill originated from the oil platform \"Statfjord A\", one of three platforms in the field, operated by StatoilHydro.\nKristin Hoffmann of Petroleum Safety Authority Norway (Petroleumtilsynet) told Dagens Nyheter: \"This is the second largest in Norwegian history.\" The amount of oil released into the sea is believed to be at least 3840 cubic metres, 25,000 barrels, or approximately 4,000 metric tons. This amount would rank the spill low on the list of oil spills.\n\"It is a significant amount and we are taking it seriously,\" said Vegar Stokset, a spokesman for StatoilHydro, though he said the spill was \"very far from land.\"\nThe accident occurred in rough seas while tanker Navion Britannia was loading oil from a storage buoy, StatoilHydro said. Christian Sletner of the Norwegian Coastal Administration said, \"StatoilHydro has a good preparedness plan, and a satisfactory system for handling this.\" He added, \"StatoilHydro is responsible for cleaning up. This is the 'polluter pays' principle.\"\n\"The amount of damage could range from completely marginal to relatively large if substantial amounts reach land,\" Sletner said. \"The chances of it reaching land, at the moment, seem to be relatively small.\"\nNo one was injured at the time of the accident and the platform will continue work as usual Thursday, said StatiolHydro Information Director Kai Nielsen. In a press release, StatiolHydro announced that four vessels are on their way to begin the clean-up, though they will have to wait for calmer seas to begin work.\nPetroleum Safety Authority Norway said in a press release that it is demobilizing disaster teams and beginning to prepare for its investigation of the incident. It will also closely follow StatoilHydro's clean-up.\nStatfjord is 200 km (124 miles) off the coast of Norway, located to the east of Bergen. It is an oil and gas field in the Norwegian sector of the North Sea, though approximately 15% of it is in the United Kingdom's waters. At peak production, it produces over 700,000 barrels of oil per day. The field is one of the largest known under-sea oil fields in the world.",
+   "context": "article",
+   "source": {
+    "title": "North Sea oil spill is Norway's second worst",
+    "url": "https://en.wikinews.org/wiki/North_Sea_oil_spill_is_Norway%27s_second_worst",
+    "revision": 4823276,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn87271",
+    "queries": [
+     {
+      "id": "world:global_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.542901,
+          "p": 0.899014,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.729217,
+          "p": 0.100986,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.912529,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.961025,
+          "p": 0.786361,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.26415,
+          "p": 0.213639,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.93417,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:chinese_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.416954,
+          "p": 0.941588,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.196996,
+          "p": 0.058412,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.905274,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.371622,
+          "p": 0.677859,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.115572,
+          "p": 0.322141,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.94935,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_crude_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.148768,
+          "p": 0.93698,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.84797,
+          "p": 0.06302,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.875528,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "shale:us_shale_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.083972,
+          "p": 0.968839,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.520911,
+          "p": 0.031161,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.871563,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nonopec:non_opec_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.02647,
+          "p": 0.940517,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.787203,
+          "p": 0.059483,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.859864,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "us:us_crude_oil_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.185987,
+          "p": 0.607856,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.624294,
+          "p": 0.392144,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.815142,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cushing:crude_oil_inventories_at_cushing_oklahom",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.155655,
+          "p": 0.579232,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.475275,
+          "p": 0.420768,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.800033,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gasoline:us_gasoline_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.340741,
+          "p": 0.465199,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.201312,
+          "p": 0.534801,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.793086,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:us_distillate_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.632595,
+          "p": 0.457533,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.462318,
+          "p": 0.542467,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.842871,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_production_quotas",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -4.663255,
+          "p": 0.741013,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -5.714494,
+          "p": 0.258987,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.987266,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mideast:the_risk_of_oil_supply_disruptions_in_th",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.045393,
+          "p": 0.94706,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.929588,
+          "p": 0.05294,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.863441,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.183847,
+          "p": 0.944495,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.018016,
+          "p": 0.055505,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.95614,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "russia:the_risk_of_disruption_to_russian_oil_ex",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.165524,
+          "p": 0.890576,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.262158,
+          "p": 0.109424,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.952624,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.024689,
+          "p": 0.950395,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.977482,
+          "p": 0.049605,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.948892,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.609715,
+          "p": 0.189261,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.154894,
+          "p": 0.810739,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.947402,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.957463,
+          "p": 0.175751,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.412057,
+          "p": 0.824249,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.959996,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:china_s_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.66382,
+          "p": 0.151906,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.944094,
+          "p": 0.848094,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.93792,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:the_risk_of_a_global_recession",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.42013,
+          "p": 0.835874,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.047972,
+          "p": 0.164126,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.893632,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_interest_rates",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.865,
+          "p": 0.729031,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.854709,
+          "p": 0.270969,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.787531,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:the_federal_funds_rate",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.585172,
+          "p": 0.741013,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.636411,
+          "p": 0.258987,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.89827,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.62751,
+          "p": 0.35454,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.028368,
+          "p": 0.64546,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.925023,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -3.238783,
+          "p": 0.411345,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -2.880373,
+          "p": 0.588655,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.904675,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.456265,
+          "p": 0.352963,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.850224,
+          "p": 0.647037,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.757043,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:mood_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " optimism",
+          "logprob": -3.454858,
+          "p": 0.858383,
+          "floor_p": null
+         },
+         {
+          "text": " pessimism",
+          "logprob": -5.25678,
+          "p": 0.141617,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.963196,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:fear_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.541184,
+          "p": 0.972611,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.111014,
+          "p": 0.027389,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.919009,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:investor_optimism",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.629768,
+          "p": 0.801764,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.027126,
+          "p": 0.198236,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96692,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:risk_aversion_among_investors",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.002287,
+          "p": 0.955142,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.060642,
+          "p": 0.044858,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.858632,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:turmoil_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.536034,
+          "p": 0.892641,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.654041,
+          "p": 0.107359,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.995584,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "refiners:global_refining_margins",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.394166,
+          "p": 0.671728,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.110179,
+          "p": 0.328272,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.864158,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:diesel_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.403759,
+          "p": 0.964548,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.707228,
+          "p": 0.035452,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.745299,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_inflation",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.09989,
+          "p": 0.740976,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.150936,
+          "p": 0.259024,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.834718,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.274065,
+          "p": 0.744193,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.341941,
+          "p": 0.255807,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.949136,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:bets_on_federal_reserve_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.637325,
+          "p": 0.96346,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.909449,
+          "p": 0.03654,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.925734,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gold:gold_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.97876,
+          "p": 0.86411,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.828612,
+          "p": 0.13589,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.84002,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro_against_the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.338358,
+          "p": 0.38105,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.853262,
+          "p": 0.61895,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.906849,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -3.742645,
+          "p": 0.358989,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -3.162891,
+          "p": 0.641011,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.934005,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:geopolitical_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -5.21287,
+          "p": 0.075879,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -2.713164,
+          "p": 0.924121,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.928227,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:the_risk_of_a_wider_war",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.286083,
+          "p": 0.947713,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.183395,
+          "p": 0.052287,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.892727,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -3.421197,
+          "p": 0.198305,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -2.024278,
+          "p": 0.801695,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.835238,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "trade:us_china_trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.141787,
+          "p": 0.942186,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.932766,
+          "p": 0.057814,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.98313,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.517812,
+          "p": 0.968438,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.941554,
+          "p": 0.031562,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.916736,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.513101,
+       "percentile": 0.477663,
+       "flagged": null
+      },
+      "supply": {
+       "score": 0.523259,
+       "percentile": 0.515864,
+       "flagged": null
+      },
+      "inventories": {
+       "score": 0.630652,
+       "percentile": 0.821848,
+       "flagged": null
+      },
+      "opec": {
+       "score": 0.303928,
+       "percentile": 0.178455,
+       "flagged": null
+      },
+      "disruption": {
+       "score": 0.68195,
+       "percentile": 0.847532,
+       "flagged": null
+      },
+      "growth": {
+       "score": 0.508917,
+       "percentile": 0.45354,
+       "flagged": null
+      },
+      "rates": {
+       "score": 0.463855,
+       "percentile": 0.353217,
+       "flagged": null
+      },
+      "dollar": {
+       "score": 0.44771,
+       "percentile": 0.37581,
+       "flagged": null
+      },
+      "stocks": {
+       "score": 0.496933,
+       "percentile": 0.440003,
+       "flagged": null
+      },
+      "mood": {
+       "score": 0.433441,
+       "percentile": 0.285683,
+       "flagged": null
+      },
+      "margins": {
+       "score": 0.89835,
+       "percentile": 0.978649,
+       "flagged": null
+      },
+      "inflation": {
+       "score": 0.503284,
+       "percentile": 0.63108,
+       "flagged": null
+      },
+      "fedcuts": {
+       "score": 0.706351,
+       "percentile": 0.908812,
+       "flagged": null
+      },
+      "gold": {
+       "score": 0.737497,
+       "percentile": 0.862701,
+       "flagged": null
+      },
+      "euro": {
+       "score": 0.42664,
+       "percentile": 0.318914,
+       "flagged": null
+      },
+      "geopolitics": {
+       "score": 0.595778,
+       "percentile": 0.740523,
+       "flagged": null
+      },
+      "trade": {
+       "score": 0.565077,
+       "percentile": 0.692356,
+       "flagged": null
+      },
+      "volatility": {
+       "score": 0.616031,
+       "percentile": 0.752274,
+       "flagged": null
+      },
+      "f6": {
+       "score": 0.563711,
+       "percentile": 0.789039,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn108642",
+   "text": "The president of the Organization of Petroleum Exporting Countries (OPEC) Chakib Khelil predicts that prices of world crude oil could reach the US$150 to $170 range per barrel before this year's summer ends.\nIn an interview on the French news channel France24, Khelil who is also Algeria's energy minister, also stated that prices won't reach $200 per barrel when asked as to how far would prices would go up.\nDuring the interview, Khelil said that prices would depend on how far the United States puts pressure on oil producer Iran, over its nuclear program and on the stability of the euro, Europe's currency.\nIn a transcript of the France24 interview, the OPEC President said, \"I think that the devaluation of the dollar against the euro, if everything goes as I think it will, will be of the order of perhaps 1-2 percent and this will probably generate an $8 rise in the price of oil,\" he said.\nThe OPEC president blamed the weakness of the U.S. dollar as the main reason for the current prices of oil.\nKhelil was also quoted saying, \"You can see it, every time there is a strengthening of the dollar, there's a drop in prices.\"\nCome September, Khelil said that the thirteen member countries of OPEC will review its hands off policy on the sky rocketing prices of world crude oil.\nWestern nations has been pressuring OPEC to increase oil production to halt the soaring oil prices.",
+   "context": "article",
+   "source": {
+    "title": "OPEC sees US$170 per barrel of oil",
+    "url": "https://en.wikinews.org/wiki/OPEC_sees_US$170_per_barrel_of_oil",
+    "revision": 4823355,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn108642",
+    "queries": [
+     {
+      "id": "world:global_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.276738,
+          "p": 0.806939,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.706979,
+          "p": 0.193061,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.87283,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -4.06502,
+          "p": 0.271315,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.077059,
+          "p": 0.728685,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.936743,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:chinese_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.239112,
+          "p": 0.923727,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.733209,
+          "p": 0.076273,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.884649,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.930239,
+          "p": 0.909276,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.235065,
+          "p": 0.090724,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.840408,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_crude_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.218797,
+          "p": 0.964936,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.533691,
+          "p": 0.035064,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.693674,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "shale:us_shale_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.504694,
+          "p": 0.966933,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.880299,
+          "p": 0.033067,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.77032,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nonopec:non_opec_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.413405,
+          "p": 0.962613,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.661725,
+          "p": 0.037387,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.747237,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "us:us_crude_oil_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.388057,
+          "p": 0.43888,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.142346,
+          "p": 0.56112,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.790813,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cushing:crude_oil_inventories_at_cushing_oklahom",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.449341,
+          "p": 0.500496,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.451327,
+          "p": 0.499504,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.82747,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gasoline:us_gasoline_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.541444,
+          "p": 0.390682,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.096997,
+          "p": 0.609318,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.798423,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:us_distillate_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.460997,
+          "p": 0.419058,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.134354,
+          "p": 0.580942,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.796329,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_production_quotas",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -6.546787,
+          "p": 0.455308,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -6.36754,
+          "p": 0.544692,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.996849,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mideast:the_risk_of_oil_supply_disruptions_in_th",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.420143,
+          "p": 0.981529,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.393057,
+          "p": 0.018471,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.966677,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.266677,
+          "p": 0.980148,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.166066,
+          "p": 0.019852,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.961095,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "russia:the_risk_of_disruption_to_russian_oil_ex",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.584704,
+          "p": 0.961547,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.803821,
+          "p": 0.038453,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.921566,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.515789,
+          "p": 0.965396,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.844348,
+          "p": 0.034604,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96921,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -7.539759,
+          "p": 0.023114,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.795832,
+          "p": 0.976886,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.977004,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -6.933483,
+          "p": 0.026658,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.335827,
+          "p": 0.973342,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96344,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:china_s_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.508055,
+          "p": 0.070447,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.92822,
+          "p": 0.929553,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.942454,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:the_risk_of_a_global_recession",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.883011,
+          "p": 0.982996,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.940178,
+          "p": 0.017004,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943066,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_interest_rates",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.446934,
+          "p": 0.809836,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.895882,
+          "p": 0.190164,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.709459,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:the_federal_funds_rate",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.724225,
+          "p": 0.746776,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.805717,
+          "p": 0.253224,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.761225,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.220104,
+          "p": 0.159716,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.559765,
+          "p": 0.840284,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.90798,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -3.146573,
+          "p": 0.217186,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -1.864434,
+          "p": 0.782814,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.802017,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.825047,
+          "p": 0.347998,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.197198,
+          "p": 0.652002,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.82958,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:mood_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " optimism",
+          "logprob": -3.176641,
+          "p": 0.795848,
+          "floor_p": null
+         },
+         {
+          "text": " pessimism",
+          "logprob": -4.537185,
+          "p": 0.204152,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.947571,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:fear_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.061841,
+          "p": 0.978037,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.858033,
+          "p": 0.021963,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.952148,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:investor_optimism",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.612999,
+          "p": 0.843324,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.296167,
+          "p": 0.156676,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.968018,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:risk_aversion_among_investors",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.154436,
+          "p": 0.947262,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.042679,
+          "p": 0.052738,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.954962,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:turmoil_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.703885,
+          "p": 0.90545,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.963187,
+          "p": 0.09455,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.996319,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "refiners:global_refining_margins",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.300187,
+          "p": 0.291796,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.413509,
+          "p": 0.708204,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.873623,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:diesel_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.096951,
+          "p": 0.977097,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.850291,
+          "p": 0.022903,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.874291,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_inflation",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.742876,
+          "p": 0.97884,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.577137,
+          "p": 0.02116,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.8212,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.786777,
+          "p": 0.705421,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.660025,
+          "p": 0.294579,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.988178,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:bets_on_federal_reserve_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.917586,
+          "p": 0.938655,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.645514,
+          "p": 0.061345,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.942403,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gold:gold_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.455322,
+          "p": 0.699398,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.299757,
+          "p": 0.300602,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.877272,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro_against_the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.385642,
+          "p": 0.825167,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.937394,
+          "p": 0.174833,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.888471,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -1.986576,
+          "p": 0.77483,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -3.222364,
+          "p": 0.22517,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.822975,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:geopolitical_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -5.095957,
+          "p": 0.119074,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -3.094728,
+          "p": 0.880926,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.948591,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:the_risk_of_a_wider_war",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.269269,
+          "p": 0.986496,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.560479,
+          "p": 0.013504,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.961445,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -5.273331,
+          "p": 0.057172,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -2.470505,
+          "p": 0.942828,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910331,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "trade:us_china_trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.472373,
+          "p": 0.964475,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.77371,
+          "p": 0.035525,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.967813,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.777043,
+          "p": 0.976374,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.498538,
+          "p": 0.023626,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.936272,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.187867,
+       "percentile": 0.065428,
+       "flagged": null
+      },
+      "supply": {
+       "score": 0.803515,
+       "percentile": 0.988654,
+       "flagged": null
+      },
+      "inventories": {
+       "score": 0.301192,
+       "percentile": 0.090575,
+       "flagged": null
+      },
+      "opec": {
+       "score": 0.010116,
+       "percentile": 0.001808,
+       "flagged": null
+      },
+      "disruption": {
+       "score": 0.915849,
+       "percentile": 0.982365,
+       "flagged": null
+      },
+      "growth": {
+       "score": 0.133888,
+       "percentile": 0.042017,
+       "flagged": null
+      },
+      "rates": {
+       "score": 0.535057,
+       "percentile": 0.604741,
+       "flagged": null
+      },
+      "dollar": {
+       "score": 0.186171,
+       "percentile": 0.059699,
+       "flagged": null
+      },
+      "stocks": {
+       "score": 0.257334,
+       "percentile": 0.102259,
+       "flagged": null
+      },
+      "mood": {
+       "score": 0.412005,
+       "percentile": 0.252892,
+       "flagged": null
+      },
+      "margins": {
+       "score": 0.683202,
+       "percentile": 0.911617,
+       "flagged": null
+      },
+      "inflation": {
+       "score": 0.973562,
+       "percentile": 0.986338,
+       "flagged": null
+      },
+      "fedcuts": {
+       "score": 0.507535,
+       "percentile": 0.50315,
+       "flagged": null
+      },
+      "gold": {
+       "score": 0.456966,
+       "percentile": 0.560026,
+       "flagged": null
+      },
+      "euro": {
+       "score": 0.934583,
+       "percentile": 0.991084,
+       "flagged": null
+      },
+      "geopolitics": {
+       "score": 0.771836,
+       "percentile": 0.916375,
+       "flagged": null
+      },
+      "trade": {
+       "score": 0.633879,
+       "percentile": 0.826037,
+       "flagged": null
+      },
+      "volatility": {
+       "score": 0.663998,
+       "percentile": 0.807796,
+       "flagged": null
+      },
+      "f6": {
+       "score": 0.359761,
+       "percentile": 0.092051,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn214537",
+   "text": "A scientist for the National Wildlife Federation, Doug Inkley, has criticised what he described as America's \"addiction to oil\". Inkley stated it is ultimately responsible for the Deepwater Horizon disaster earlier this year.\nInkley commented on the incident, six months after the explosion which killed eleven rig workers and resulted in over 170 million gallons of crude oil leaking into the Gulf of Mexico causing damage to marine wildlife habitats as well as the Gulf's fishing and tourism industries.\nInkley is a senior scientist working for the National Wildlife Federation. He stated, \"Looking back at what we knew six months after the Exxon Valdez disaster in Alaska illustrates the danger of too quickly drawing conclusions about the full impacts of the Gulf oil disaster.\"\n\"Six months after the Exxon Valdez disaster,\" he continued, \"the herring stocks in Prince William Sound seemed like they’d pull through. It wasn’t until the fourth year after the disaster that herring stocks collapsed due to a delayed population effect of the oil, devastating the people and wildlife that depended on them. Today, more than two decades later, this once-vital fish still hasn’t recovered.\"\nHis remarks echo those issued by another environmental organisation in July. Greenpeace demanded that BP, who the United States Congress has blamed for the disaster, take a \"new direction\" and end an \"obsession with high risk, environmentally reckless sources of oil.\"\nA spokesperson for Greenpeace said, \"[t]he moment has come for BP to move beyond oil. Under Tony Hayward the company went backwards, squeezing the last drops of oil from places like the Gulf of Mexico, the tar sands of Canada and even the fragile Arctic wilderness [...] The age of oil is coming to an end and companies like BP will be left behind unless they begin to adapt now.\" Statistics show that the United States is by far the largest consumer of oil, using 20,680,000 barrels every day. Its closest rival, China, consumes only 7,578,000 barrels per day.\nInkley said incidents in the past showed there can be far-reaching effects. \"The Exxon Valdez disaster was not simply one ecosystem earthquake – the aftershocks have continued to this day,\" he said, citing the 1989 disaster which occurred when an oil tanker ran aground in the Gulf of Alaska.\n\"What tremors are still to come in the Gulf? The aftershocks of the Gulf oil disaster will continue to cast a long shadow of uncertainty on the Gulf ecosystem and the livelihoods of those who depend upon it for years to come,\" pointed out Inkley. Adding, \"[a]s I look back on my days in Louisiana's wetlands wading through thick black oil in prime pelican habitat, I continue to wonder: How long must we wait for lawmakers to act to prevent future disasters? How many more lives, livelihoods and animals must be claimed by our addiction to oil?\"",
+   "context": "article",
+   "source": {
+    "title": "Scientist demands end to US 'addiction to oil'",
+    "url": "https://en.wikinews.org/wiki/Scientist_demands_end_to_US_%27addiction_to_oil%27",
+    "revision": 4825681,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn214537",
+    "queries": [
+     {
+      "id": "world:global_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.988068,
+          "p": 0.895659,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.13796,
+          "p": 0.104341,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.847085,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.772247,
+          "p": 0.717736,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.705505,
+          "p": 0.282264,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.912891,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:chinese_oil_demand",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.152198,
+          "p": 0.942224,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.943873,
+          "p": 0.057776,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.876645,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.624063,
+          "p": 0.733214,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.635051,
+          "p": 0.266786,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.90111,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_crude_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.043597,
+          "p": 0.894778,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.184096,
+          "p": 0.105222,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.855202,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "shale:us_shale_oil_production",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.777758,
+          "p": 0.978274,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.585038,
+          "p": 0.021726,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.82723,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "nonopec:non_opec_oil_supply",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.057542,
+          "p": 0.907976,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.346714,
+          "p": 0.092024,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.859283,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "us:us_crude_oil_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.347726,
+          "p": 0.447808,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.138196,
+          "p": 0.552192,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.786547,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cushing:crude_oil_inventories_at_cushing_oklahom",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.134347,
+          "p": 0.652958,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.766414,
+          "p": 0.347042,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.818791,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gasoline:us_gasoline_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.332047,
+          "p": 0.396074,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.910197,
+          "p": 0.603926,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.754852,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:us_distillate_inventories",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.43586,
+          "p": 0.435707,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.177256,
+          "p": 0.564293,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.799125,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "opec:opec_production_quotas",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -5.188024,
+          "p": 0.713105,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -6.098535,
+          "p": 0.286895,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.992171,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mideast:the_risk_of_oil_supply_disruptions_in_th",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.238079,
+          "p": 0.910063,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.552481,
+          "p": 0.089937,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.882796,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "hormuz:the_risk_of_a_closure_of_the_strait_of_h",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.500585,
+          "p": 0.946972,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.383029,
+          "p": 0.053028,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.913369,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "russia:the_risk_of_disruption_to_russian_oil_ex",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.465887,
+          "p": 0.901699,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.682138,
+          "p": 0.098301,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.905807,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "ukraine:the_risk_of_escalation_in_the_war_in_ukr",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.09172,
+          "p": 0.938123,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.810447,
+          "p": 0.061877,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.95158,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:global_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.882198,
+          "p": 0.123181,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.919554,
+          "p": 0.876819,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.938462,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.348329,
+          "p": 0.112465,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.282527,
+          "p": 0.887535,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.957711,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "china:china_s_economic_growth",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.774113,
+          "p": 0.170414,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.191418,
+          "p": 0.829586,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.950441,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "world:the_risk_of_a_global_recession",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.464195,
+          "p": 0.938753,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.193826,
+          "p": 0.061247,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.909372,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_interest_rates",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.330457,
+          "p": 0.738104,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.366595,
+          "p": 0.261896,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.868242,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:the_federal_funds_rate",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.055809,
+          "p": 0.707456,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.938869,
+          "p": 0.292544,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.933445,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.080246,
+          "p": 0.258564,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.026803,
+          "p": 0.741436,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.934626,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "dollar:the_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -3.55305,
+          "p": 0.348119,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -2.92573,
+          "p": 0.651881,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.917737,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.949959,
+          "p": 0.297359,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.090054,
+          "p": 0.702641,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.823978,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:mood_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " optimism",
+          "logprob": -3.025869,
+          "p": 0.820012,
+          "floor_p": null
+         },
+         {
+          "text": " pessimism",
+          "logprob": -4.542299,
+          "p": 0.179988,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.940835,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:fear_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.914958,
+          "p": 0.962717,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.166173,
+          "p": 0.037283,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943694,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:investor_optimism",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.921103,
+          "p": 0.751149,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.025853,
+          "p": 0.248851,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.973615,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:risk_aversion_among_investors",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.741995,
+          "p": 0.88794,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.811863,
+          "p": 0.11206,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.927426,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:turmoil_in_financial_markets",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.689705,
+          "p": 0.896737,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.851187,
+          "p": 0.103263,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.99623,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "refiners:global_refining_margins",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.251381,
+          "p": 0.39484,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.824369,
+          "p": 0.60516,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.901933,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "diesel:diesel_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.748834,
+          "p": 0.795642,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.108112,
+          "p": 0.204358,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.781338,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:us_inflation",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.629452,
+          "p": 0.817138,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.12653,
+          "p": 0.182862,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.760093,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.225094,
+          "p": 0.696683,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.056646,
+          "p": 0.303317,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.942941,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:bets_on_federal_reserve_rate_cuts",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.457203,
+          "p": 0.94986,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.398691,
+          "p": 0.05014,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.909803,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "gold:gold_prices",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.302468,
+          "p": 0.809837,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.751417,
+          "p": 0.190163,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.876504,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro_against_the_us_dollar",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.467522,
+          "p": 0.256565,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.40362,
+          "p": 0.743435,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.878416,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "euro:the_euro",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " strengthen",
+          "logprob": -3.900283,
+          "p": 0.288888,
+          "floor_p": null
+         },
+         {
+          "text": " weaken",
+          "logprob": -2.99949,
+          "p": 0.711112,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.929951,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:geopolitical_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -5.662826,
+          "p": 0.049335,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -2.704299,
+          "p": 0.950665,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.92961,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:the_risk_of_a_wider_war",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.96025,
+          "p": 0.960534,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.152312,
+          "p": 0.039466,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946065,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "market:trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " ease",
+          "logprob": -3.873616,
+          "p": 0.211789,
+          "floor_p": null
+         },
+         {
+          "text": " escalate",
+          "logprob": -2.559439,
+          "p": 0.788211,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.901869,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "trade:us_china_trade_tensions",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.412158,
+          "p": 0.980933,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.352713,
+          "p": 0.019067,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.966389,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.019313,
+          "p": 0.916258,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.411874,
+          "p": 0.083742,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946702,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.467563,
+       "percentile": 0.363783,
+       "flagged": null
+      },
+      "supply": {
+       "score": 0.428008,
+       "percentile": 0.271918,
+       "flagged": null
+      },
+      "inventories": {
+       "score": 0.428221,
+       "percentile": 0.323802,
+       "flagged": null
+      },
+      "opec": {
+       "score": 0.221303,
+       "percentile": 0.093445,
+       "flagged": null
+      },
+      "disruption": {
+       "score": 0.624318,
+       "percentile": 0.769672,
+       "flagged": null
+      },
+      "growth": {
+       "score": 0.401066,
+       "percentile": 0.198724,
+       "flagged": null
+      },
+      "rates": {
+       "score": 0.448503,
+       "percentile": 0.305033,
+       "flagged": null
+      },
+      "dollar": {
+       "score": 0.340352,
+       "percentile": 0.147214,
+       "flagged": null
+      },
+      "stocks": {
+       "score": 0.351847,
+       "percentile": 0.19741,
+       "flagged": null
+      },
+      "mood": {
+       "score": 0.463394,
+       "percentile": 0.344565,
+       "flagged": null
+      },
+      "margins": {
+       "score": 0.41396,
+       "percentile": 0.22532,
+       "flagged": null
+      },
+      "inflation": {
+       "score": 0.643123,
+       "percentile": 0.856815,
+       "flagged": null
+      },
+      "fedcuts": {
+       "score": 0.553755,
+       "percentile": 0.620467,
+       "flagged": null
+      },
+      "gold": {
+       "score": 0.634667,
+       "percentile": 0.800144,
+       "flagged": null
+      },
+      "euro": {
+       "score": 0.274155,
+       "percentile": 0.093834,
+       "flagged": null
+      },
+      "geopolitics": {
+       "score": 0.687681,
+       "percentile": 0.848821,
+       "flagged": null
+      },
+      "trade": {
+       "score": 0.40427,
+       "percentile": 0.276123,
+       "flagged": null
+      },
+      "volatility": {
+       "score": 0.503878,
+       "percentile": 0.573092,
+       "flagged": null
+      },
+      "f6": {
+       "score": 0.473,
+       "percentile": 0.353354,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

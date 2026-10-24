@@ -1,0 +1,1177 @@
+{
+ "pack": "thinkingtext/equity-mu",
+ "version": "0.1.0",
+ "engine": "fp_51319d2ff6",
+ "usage": {
+  "prompt_tokens": 1453,
+  "completion_tokens": 0,
+  "total_tokens": 1453,
+  "prompt_tokens_details": {
+   "content_tokens": 311,
+   "text_tokens": 311,
+   "query_tokens": 1142,
+   "floor_tokens": 0
+  },
+  "inputs": 2,
+  "content": {
+   "tokens": 311,
+   "text_tokens": 311,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 21,
+   "combinations": 21,
+   "options": 42,
+   "prompts": 42,
+   "floor_prompts": 0,
+   "query_tokens": 1142,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 810
+ },
+ "cases": [
+  {
+   "id": "syn-mu-1",
+   "text": "Micron Technology returned to profit in its latest quarter as prices for memory chips rebounded and demand from data centre customers for high-bandwidth memory used in AI systems outstripped supply.\n\nThe company said its high-bandwidth memory output for the year was sold out and that it had begun pricing contracts for the next year. Revenue rose strongly from the prior quarter and gross margin turned positive after several quarters of losses.\n\nThe chief executive said the memory industry's supply discipline, with producers holding back capacity additions, had helped prices recover faster than expected. Micron raised its capital spending plan to expand production of advanced memory.\n\nShares rose in after-hours trading. Analysts said the forecast for the coming quarter implied further margin expansion, though the memory market remains cyclical and consumer device demand is still soft.",
+   "context": "article",
+   "source": {
+    "title": "Micron returns to profit as memory prices rebound",
+    "license": "written by thinkingtext, illustrative (not a news report)"
+   },
+   "result": {
+    "input_id": "syn-mu-1",
+    "queries": [
+     {
+      "id": "mu:demand_for_micron_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.050697,
+          "p": 0.972048,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.599631,
+          "p": 0.027952,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.867656,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:memory_chip_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.623087,
+          "p": 0.921866,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.091068,
+          "p": 0.078134,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.78599,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.916044,
+          "p": 0.900153,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.114969,
+          "p": 0.099847,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.836485,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.675025,
+          "p": 0.991838,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.475111,
+          "p": 0.008162,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.811155,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.611242,
+          "p": 0.985613,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.838192,
+          "p": 0.014387,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.925485,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.194781,
+          "p": 0.959967,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.371975,
+          "p": 0.040033,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.883972,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.983612,
+          "p": 0.899646,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.176912,
+          "p": 0.100354,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943745,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.050501,
+          "p": 0.932919,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.682911,
+          "p": 0.067081,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.862078,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -2.823576,
+          "p": 0.985521,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -7.044056,
+          "p": 0.014479,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.939734,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.057524,
+          "p": 0.975191,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.728955,
+          "p": 0.024809,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.86898,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -0.9762,
+          "p": 0.923709,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.470047,
+          "p": 0.076291,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.592145,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:the_valuation_of_micron__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.873585,
+          "p": 0.946555,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.747765,
+          "p": 0.053445,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.837757,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "murep:micron_s_gross_margin__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -1.932697,
+          "p": 0.913126,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.285118,
+          "p": 0.086874,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.841471,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "murep:micron_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.660698,
+          "p": 0.837652,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -5.301558,
+          "p": 0.162348,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.969302,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "murep:micron_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.638874,
+          "p": 0.686657,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.423413,
+          "p": 0.313343,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.895957,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.184254,
+          "p": 0.879292,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.169993,
+          "p": 0.120708,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.652022,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.473645,
+          "p": 0.88906,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.55482,
+          "p": 0.11094,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.742325,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.598111,
+          "p": 0.806495,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.025507,
+          "p": 0.193505,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.907732,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.346806,
+          "p": 0.950848,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.309237,
+          "p": 0.049152,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.89938,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.292619,
+          "p": 0.835958,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.921075,
+          "p": 0.164042,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.879179,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "uspolicy:us_tariffs_on_imports__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -7.465306,
+          "p": 0.568796,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -7.742248,
+          "p": 0.431204,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.998993,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.984115,
+       "percentile": 1,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.999813,
+       "percentile": 1,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.988358,
+       "percentile": 1,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.998196,
+       "percentile": 1,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.999727,
+       "percentile": 1,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.984476,
+       "percentile": 0.997786,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.759306,
+       "percentile": 0.961298,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.99494,
+       "percentile": 1,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "syn-mu-2",
+   "text": "Contract prices for memory chips fell for the first time in a year, according to industry trackers, as smartphone and PC makers reduced orders after building up inventory in the first half.\n\nThe drop weighed on shares of Micron Technology and its Asian competitors. Analysts said the decline was concentrated in commodity memory for consumer devices, while demand for the high-bandwidth memory used in data centres remained strong and supply tight.\n\nMicron had said at its last earnings call that it expected pricing to hold through the year. One analyst cut his earnings forecasts for the company, citing the risk that weaker consumer demand would spread to other product lines, but kept a positive rating on the stock, pointing to the data centre business.\n\nThe company declined to comment ahead of its results next month.",
+   "context": "article",
+   "source": {
+    "title": "Memory prices slip as smartphone makers trim orders",
+    "license": "written by thinkingtext, illustrative (not a news report)"
+   },
+   "result": {
+    "input_id": "syn-mu-2",
+    "queries": [
+     {
+      "id": "mu:demand_for_micron_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -4.415148,
+          "p": 0.142652,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.621714,
+          "p": 0.857348,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.915229,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:memory_chip_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.579681,
+          "p": 0.030987,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.13698,
+          "p": 0.969013,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.668956,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.232049,
+          "p": 0.032103,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.825868,
+          "p": 0.967897,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.83358,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:capital_spending_on_artificial_intellige__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.566565,
+          "p": 0.941054,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.336953,
+          "p": 0.058946,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.918391,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.222926,
+          "p": 0.826499,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.783942,
+          "p": 0.173501,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951799,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -4.566978,
+          "p": 0.219303,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.297242,
+          "p": 0.780697,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.952626,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -6.459139,
+          "p": 0.015038,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.277102,
+          "p": 0.984962,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.895853,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.598429,
+          "p": 0.025143,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.940714,
+          "p": 0.974857,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.852695,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.550663,
+          "p": 0.663244,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.228447,
+          "p": 0.336756,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.984078,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.138172,
+          "p": 0.624814,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.648205,
+          "p": 0.375186,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.9306,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:micron_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.223114,
+          "p": 0.140979,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.41593,
+          "p": 0.859021,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.717469,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "mu:the_valuation_of_micron__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.912469,
+          "p": 0.184211,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.424392,
+          "p": 0.815789,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.891477,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "murep:micron_s_gross_margin__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.566335,
+          "p": 0.407552,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.192241,
+          "p": 0.592448,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.811517,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "murep:micron_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.892193,
+          "p": 0.515388,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.953764,
+          "p": 0.484612,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.960417,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "murep:micron_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.404986,
+          "p": 0.343792,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.758543,
+          "p": 0.656208,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903409,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.687556,
+          "p": 0.251662,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.59779,
+          "p": 0.748338,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.72961,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.931507,
+          "p": 0.267607,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.924711,
+          "p": 0.732393,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.800765,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.925883,
+          "p": 0.100216,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.731057,
+          "p": 0.899784,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.927593,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.768046,
+          "p": 0.855196,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.543994,
+          "p": 0.144804,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.926585,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.861362,
+          "p": 0.910055,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.175673,
+          "p": 0.089945,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.937157,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "uspolicy:us_tariffs_on_imports__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " tighten",
+          "logprob": -7.572309,
+          "p": 0.629576,
+          "floor_p": null
+         },
+         {
+          "text": " ease",
+          "logprob": -8.102706,
+          "p": 0.370424,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.999183,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.007113,
+       "percentile": 0,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.000854,
+       "percentile": 0,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.004535,
+       "percentile": 0.000589,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.044066,
+       "percentile": 0,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.087212,
+       "percentile": 0.031585,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.177012,
+       "percentile": 0.063761,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.317836,
+       "percentile": 0.098834,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.026893,
+       "percentile": 0,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

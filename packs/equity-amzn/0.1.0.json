@@ -1,0 +1,576 @@
+{
+ "pack": "thinkingtext/equity-amzn",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Amazon news",
+ "description": "The Amazon (AMZN) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Amazon",
+  "ticker": "AMZN",
+  "peers": [],
+  "weights": {
+   "company": 0.67,
+   "peers": 0,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "9c53c96f62ae6af52327372bd8868493",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "amzn:the_valuation_of_amazon__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the valuation of Amazon is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "amznrep:amazon_s_quarterly_results__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Amazon's quarterly results came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "amznrep:amazon_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Amazon's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "amznrep:aws_revenue_growth__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, AWS revenue growth came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:expectations_of_fed_rate_cuts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: expectations of Fed rate cuts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "amzn:the_valuation_of_amazon__sum": {
+   "phrase": "the valuation of Amazon",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "amzn"
+  },
+  "amznrep:amazon_s_quarterly_results__sum": {
+   "phrase": "Amazon's quarterly results",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "amznrep"
+  },
+  "amznrep:amazon_s_revenue_guidance__sum": {
+   "phrase": "Amazon's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "amznrep"
+  },
+  "amznrep:aws_revenue_growth__sum": {
+   "phrase": "AWS revenue growth",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "amznrep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  },
+  "fed:expectations_of_fed_rate_cuts__sum": {
+   "phrase": "expectations of Fed rate cuts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "fed"
+  }
+ },
+ "reads": [
+  {
+   "id": "reflectors/amzn:the_valuation_of_amazon__sum",
+   "query": "amzn:the_valuation_of_amazon__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": 0.07532,
+   "sd": 0.4788
+  },
+  {
+   "id": "company/reflectors/amzn:the_valuation_of_amazon__sum",
+   "query": "amzn:the_valuation_of_amazon__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": 0.07532,
+   "sd": 0.4788
+  },
+  {
+   "id": "surprise/amznrep:amazon_s_quarterly_results__sum",
+   "query": "amznrep:amazon_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.34246,
+   "sd": 0.23111
+  },
+  {
+   "id": "company/surprise/amznrep:amazon_s_quarterly_results__sum",
+   "query": "amznrep:amazon_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.34246,
+   "sd": 0.23111
+  },
+  {
+   "id": "surprise/amznrep:amazon_s_revenue_guidance__sum",
+   "query": "amznrep:amazon_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": -0.07373,
+   "sd": 0.22138
+  },
+  {
+   "id": "company/surprise/amznrep:amazon_s_revenue_guidance__sum",
+   "query": "amznrep:amazon_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": -0.07373,
+   "sd": 0.22138
+  },
+  {
+   "id": "surprise/amznrep:aws_revenue_growth__sum",
+   "query": "amznrep:aws_revenue_growth__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.13411,
+   "sd": 0.22538
+  },
+  {
+   "id": "company/surprise/amznrep:aws_revenue_growth__sum",
+   "query": "amznrep:aws_revenue_growth__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.13411,
+   "sd": 0.22538
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.27862,
+   "sd": 0.60098
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.27862,
+   "sd": 0.60098
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.15509,
+   "sd": 0.49253
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.15509,
+   "sd": 0.49253
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": -0.52462,
+   "sd": 0.76961
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": -0.52462,
+   "sd": 0.76961
+  },
+  {
+   "id": "macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": 0.123,
+   "sd": 0.2536
+  },
+  {
+   "id": "company/macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": 0.123,
+   "sd": 0.2536
+  }
+ ],
+ "categories": {
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.01449,
+     0.23308,
+     0.3289,
+     0.40292,
+     0.46356,
+     0.51631,
+     0.56787,
+     0.62434,
+     0.68579,
+     0.75518,
+     0.80899,
+     0.89019,
+     0.98057,
+     0.99574
+    ]
+   }
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00106,
+     0.26967,
+     0.36651,
+     0.42719,
+     0.47692,
+     0.52356,
+     0.56868,
+     0.61331,
+     0.66339,
+     0.72371,
+     0.76606,
+     0.84113,
+     0.90075,
+     0.93076
+    ]
+   }
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00221,
+     0.28332,
+     0.37603,
+     0.43126,
+     0.47544,
+     0.50766,
+     0.54176,
+     0.58332,
+     0.63274,
+     0.71157,
+     0.78398,
+     0.9265,
+     0.99336,
+     0.99771
+    ]
+   }
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.0053,
+     0.31329,
+     0.39099,
+     0.44218,
+     0.48432,
+     0.52091,
+     0.55061,
+     0.58949,
+     0.63299,
+     0.69324,
+     0.7321,
+     0.83461,
+     0.93534,
+     0.96557
+    ]
+   }
+  },
+  "company": {
+   "label": "Amazon news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "role": "composite",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.02196,
+     0.32421,
+     0.40216,
+     0.44691,
+     0.48356,
+     0.51394,
+     0.54565,
+     0.57599,
+     0.60667,
+     0.66109,
+     0.7045,
+     0.82652,
+     0.92936,
+     0.962
+    ]
+   }
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": [],
+  "per_category": {}
+ },
+ "engine": "fp_51319d2ff6",
+ "calibration": {
+  "sample": "calibration/wikinews_business.json.gz",
+  "n": 1500,
+  "statistic": "mean and sd of each read over the sample; no thresholds, no decision",
+  "date": "2026-10-24"
+ }
+}

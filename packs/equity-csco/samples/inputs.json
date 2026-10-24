@@ -1,0 +1,57 @@
+[
+ {
+  "id": "wn58383",
+  "context": "article",
+  "text": "The iPhone only made its appearance as a prototype and there have been controversies aroused.\nThe dispute has come up between the manufacturer of the iPhone (which was presented on Wednesday for the first time) — Apple Inc. — and a leader in network and communication systems, based in San Jose — Cisco. The company claims to possess the trademark for iPhone, and moreover, that it sells devices under the same brand through one of its divisions.\nThis became the reason for Cisco to file a lawsuit against Apple Inc. so that the latter would stop selling the device.\nCisco states that it has received the trademark in 2000, when the company overtook Infogear Technology Corp., which took place in 1996.\nThe Vice President and general counsel of the company, Mark Chandler, explained that there was no doubt about the excitement of the new device from Apple, but they should not use a trademark, which belongs to Cisco.\nThe iPhone developed by Cisco is a device which allows users to make phone calls over the voice over Internet protocol (VoIP).",
+  "source": {
+   "title": "Cisco sues Apple for iPhone trademark",
+   "url": "https://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark",
+   "revision": 4815984,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn28682",
+  "context": "article",
+  "text": "San Jose, California —\nDel Borgsdorf, the city manager of San Jose, California announced his resignation on Tuesday, citing \"personal reasons\" and the \"political environment\" for his decision. While he denies it is was a factor in his decision, the resignation comes one day after Santa Clara County District Attorney George Kennedy announced his office will investigate the city's contract with Norcal Waste Systems for possible criminal prosecution.  Borgsdorf has been criticized by the city council for not informing the council of the $11 million rate hike promised to the company by mayor Ron Gonzales.\nBorgsdorf's resignation follows the resignation of other city officials; Stephen Haase, the city's planning director, and John Bjurman, the city's director of information technology, resigned earlier in the week. In addition, the city council formally censured mayor Gonzales last week, and asked for formal apologies from Borgsdorf and city attorney Richard Doyle over the Norcal contract. In addition to the waste removal scandal, the city government has been criticized for a no-bid contract with Cisco Systems to provide IT equipment in the new City Hall; the Cisco deal cost city taxpayers over $3 million in equipment costs and construction delays.",
+  "source": {
+   "title": "San Jose, CA, USA, city manager resigns amid Norcal investigation",
+   "url": "https://en.wikinews.org/wiki/San_Jose,_CA,_USA,_city_manager_resigns_amid_Norcal_investigation",
+   "revision": 4825592,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn100524",
+  "context": "article",
+  "text": "The twelfth-annual Asia Pacific Regional Internet Conference on Operational Technologies (a.k.a APRICOT) returned to Taiwan this year at the Taipei Howard Plaza Hotel. This is the first appearance since the 2003 conference held by the Taiwan Network Information Center (TWNIC) at the Taipei International Convention Center and Grand Hyatt Taipei.\nWhen Wikinews journalist Rico Shen reported on the recent \"Edison Chen photo scandal\" incident, Philip Smith of Cisco Systems commented:\nWorkshops with varied topics and different technology levels took place from February 20 to 24, while several main seminars and speeches for industry, governmental, and academic executives ran from February 25 to 29. Several industry experts such as Wilfred Kwan (Chief Technology Officer of AsiaNetCom), Chung-laung Liu (Taiwan Chapter Chair of ISOC), and Maemura Akinori (EC Chair of APNIC) will give several speeches related to the Internet industry at the conference.",
+  "source": {
+   "title": "Executives from global Internet industry meet at 2008 APRICOT",
+   "url": "https://en.wikinews.org/wiki/Executives_from_global_Internet_industry_meet_at_2008_APRICOT",
+   "revision": 4817449,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn1530555",
+  "context": "article",
+  "text": "On Tuesday many internet routers, used to find the pathways to different parts of the web, reached their memory limit of 512,000 entries in the tables they use to store the routes, causing problems for many users.\nA router is used to direct a user towards the area of the internet where they will find the content they are looking for, e.g. a web page. The recent problem was caused by the arbitrary memory limit built into the design of many aging routers. A limit was needed to prevent the cost of hardware from becoming prohibitively expensive in the days when physical data storage was still comparatively expensive. This small amount of memory in turn limits the number of directions which can be stored on a single router leading to different parts of the internet. When this limit was reached, it caused outages of services among Internet Service Providers. Many routers, including older ones provided by Cisco Systems Inc., are limited to storing a total of 512,000 routes or paths.\nThis limit was reached on Tuesday, reported to have been triggered by Verizon publishing another 15,000 paths. Those affected included eBay, LastPass, and clients of the web hosting company Liquid Web, who lost much of their services until Verizon withdrew some of these new paths. Problems nevertheless continued throughout the day, even after the withdrawal.\nA longer term fix is possible, but it would require manually replacing old routers with newer, more capable ones. It is hard to tell what issues would temporarily cascade though the internet by taking down routers from part of the internet for maintenance. Many experts have warned that problems could continue until these difficult fixes have been implemented, although the recent switch to a newer form of IP Addresses, IPv6, will temporarily help the issue. Wired News reported that Andre Toonk, a network engineer, had stated that the number of network outages on the internet, typically around 1,500, yesterday peaked at 2,587, enough to become clearly noticeable.",
+  "source": {
+   "title": "Parts of internet break as '512k day' reached by routers",
+   "url": "https://en.wikinews.org/wiki/Parts_of_internet_break_as_%27512k_day%27_reached_by_routers",
+   "revision": 4823957,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn42520",
+  "context": "article",
+  "text": "IBM will expand its service, software, hardware and research divisions in India its chairman and chief executive officer has said. The plan would give the subcontinent $6 billion worth of investment over three years.\nAnnouncing the news in Bangalore to an audience of 10,000 employees, the package presented is three times as large as that invested by IBM over the previous three years, said Samuel J. Palmisano. \"We see India's role as central to our global enterprise,\" he said.\nThe $6 billion investment by IBM, also known by the nickname \"Big Blue,\" is larger than the $3.9 billion total foreign investment promised to India by Microsoft Corp., Intel Corp. and Cisco Systems Inc.\nIBM is currently the largest multinational in India employing 43,000 people in 14 Indian cities. 15,000 new jobs were added last year as the company took 10,000 out of Europe. The new foreign investment is expected to create more jobs in India's thriving telecommunications industry.\nEstimates put IBM's sales revenue in India at $1 billion. While the home market valuation of $15 billion is a figure expected to grow 25 per cent a year. In the first quarter of this year IBM's Indian wing grew 61 per cent compared to the year before.\n\"IBM is excited by the opportunities in India over the long term and we are also encouraged by the domestic opportunity that India offers,\" said Palmisano.\nAddressing specifically IBM's plans in India the head said he wanted to automate IT services, create a \"one-stop shop\" for hardware information and IT goods, build a new R&D centre in Delhi and forge links between IBM's consultants, developers, engineers and scientists.\n\"IBM is not going to miss this opportunity,\" said Palmisano.",
+  "source": {
+   "title": "India to get $6 billion out of the Big Blue",
+   "url": "https://en.wikinews.org/wiki/India_to_get_$6_billion_out_of_the_Big_Blue",
+   "revision": 4819850,
+   "license": "CC BY 2.5"
+  }
+ }
+]

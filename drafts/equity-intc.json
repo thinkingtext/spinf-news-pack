@@ -1,0 +1,840 @@
+{
+ "pack": "thinkingtext/equity-intc",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Intel news",
+ "description": "The Intel (INTC) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Intel",
+  "ticker": "INTC",
+  "peers": [
+   "NVDA",
+   "AMD",
+   "MU"
+  ],
+  "weights": {
+   "company": 0.52,
+   "peers": 0.15,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "4304d6a323ea96a7bbf8880db280c835",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "intc:demand_for_intel_s_products__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for Intel's products is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "intc:intel_s_chip_sales__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Intel's chip sales is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "intc:intel_s_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Intel's revenue is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tech:demand_for_ai_chips__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for AI chips is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:semiconductor_demand__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: semiconductor demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "intc:intel_s_profit_margins__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Intel's profit margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "intc:intel_s_profits__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Intel's profits is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "intc:intel_s_earnings_forecasts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Intel's earnings forecasts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "intc:intel_s_growth_prospects__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Intel's growth prospects is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "intc:intel_s_market_share__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Intel's market share is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "intc:intel__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for Intel shareholders, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "intc:intel_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Intel's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "intc:the_valuation_of_intel__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the valuation of Intel is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "intcrep:intel_s_gross_margin__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Intel's gross margin came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "intcrep:intel_s_quarterly_results__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Intel's quarterly results came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "intcrep:intel_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Intel's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:expectations_of_fed_rate_cuts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: expectations of Fed rate cuts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "funds:investor_risk_appetite__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: investor risk appetite is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "investors:news_inv_investors__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for investors, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "usa:the_risk_of_a_us_recession__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the risk of a US recession is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "intc:demand_for_intel_s_products__sum": {
+   "phrase": "demand for Intel's products",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "intc:intel_s_chip_sales__sum": {
+   "phrase": "Intel's chip sales",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "intc:intel_s_revenue__sum": {
+   "phrase": "Intel's revenue",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "tech:demand_for_ai_chips__sum": {
+   "phrase": "demand for AI chips",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "tech:semiconductor_demand__sum": {
+   "phrase": "semiconductor demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "intc:intel_s_profit_margins__sum": {
+   "phrase": "Intel's profit margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "intc:intel_s_profits__sum": {
+   "phrase": "Intel's profits",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "intc:intel_s_earnings_forecasts__sum": {
+   "phrase": "Intel's earnings forecasts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "intc:intel_s_growth_prospects__sum": {
+   "phrase": "Intel's growth prospects",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "intc:intel_s_market_share__sum": {
+   "phrase": "Intel's market share",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "intc:intel__sum": {
+   "phrase": "Intel",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_co",
+   "principal": "intc"
+  },
+  "intc:intel_s_share_price__sum": {
+   "phrase": "Intel's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "intc:the_valuation_of_intel__sum": {
+   "phrase": "the valuation of Intel",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "intc"
+  },
+  "intcrep:intel_s_gross_margin__sum": {
+   "phrase": "Intel's gross margin",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "intcrep"
+  },
+  "intcrep:intel_s_quarterly_results__sum": {
+   "phrase": "Intel's quarterly results",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "intcrep"
+  },
+  "intcrep:intel_s_revenue_guidance__sum": {
+   "phrase": "Intel's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "intcrep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  },
+  "fed:expectations_of_fed_rate_cuts__sum": {
+   "phrase": "expectations of Fed rate cuts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "fed"
+  },
+  "funds:investor_risk_appetite__sum": {
+   "phrase": "investor risk appetite",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "funds"
+  },
+  "investors:news_inv_investors__sum": {
+   "phrase": "investors",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_inv",
+   "principal": "investors"
+  },
+  "usa:the_risk_of_a_us_recession__sum": {
+   "phrase": "the risk of a US recession",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "usa"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/intc:demand_for_intel_s_products__sum",
+   "query": "intc:demand_for_intel_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/intc:demand_for_intel_s_products__sum",
+   "query": "intc:demand_for_intel_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/intc:intel_s_chip_sales__sum",
+   "query": "intc:intel_s_chip_sales__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/intc:intel_s_chip_sales__sum",
+   "query": "intc:intel_s_chip_sales__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/intc:intel_s_revenue__sum",
+   "query": "intc:intel_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/intc:intel_s_revenue__sum",
+   "query": "intc:intel_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/tech:demand_for_ai_chips__sum",
+   "query": "tech:demand_for_ai_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/tech:demand_for_ai_chips__sum",
+   "query": "tech:demand_for_ai_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/tech:semiconductor_demand__sum",
+   "query": "tech:semiconductor_demand__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/tech:semiconductor_demand__sum",
+   "query": "tech:semiconductor_demand__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "profits/intc:intel_s_profit_margins__sum",
+   "query": "intc:intel_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits"
+  },
+  {
+   "id": "company/profits/intc:intel_s_profit_margins__sum",
+   "query": "intc:intel_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits"
+  },
+  {
+   "id": "profits/intc:intel_s_profits__sum",
+   "query": "intc:intel_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits"
+  },
+  {
+   "id": "company/profits/intc:intel_s_profits__sum",
+   "query": "intc:intel_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits"
+  },
+  {
+   "id": "outlook/intc:intel_s_earnings_forecasts__sum",
+   "query": "intc:intel_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook"
+  },
+  {
+   "id": "company/outlook/intc:intel_s_earnings_forecasts__sum",
+   "query": "intc:intel_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook"
+  },
+  {
+   "id": "outlook/intc:intel_s_growth_prospects__sum",
+   "query": "intc:intel_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook"
+  },
+  {
+   "id": "company/outlook/intc:intel_s_growth_prospects__sum",
+   "query": "intc:intel_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook"
+  },
+  {
+   "id": "competition/intc:intel_s_market_share__sum",
+   "query": "intc:intel_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "competition"
+  },
+  {
+   "id": "company/competition/intc:intel_s_market_share__sum",
+   "query": "intc:intel_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "competition"
+  },
+  {
+   "id": "reflectors/intc:intel__sum",
+   "query": "intc:intel__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/intc:intel__sum",
+   "query": "intc:intel__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "reflectors/intc:intel_s_share_price__sum",
+   "query": "intc:intel_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/intc:intel_s_share_price__sum",
+   "query": "intc:intel_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "reflectors/intc:the_valuation_of_intel__sum",
+   "query": "intc:the_valuation_of_intel__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/intc:the_valuation_of_intel__sum",
+   "query": "intc:the_valuation_of_intel__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "surprise/intcrep:intel_s_gross_margin__sum",
+   "query": "intcrep:intel_s_gross_margin__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/intcrep:intel_s_gross_margin__sum",
+   "query": "intcrep:intel_s_gross_margin__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/intcrep:intel_s_quarterly_results__sum",
+   "query": "intcrep:intel_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/intcrep:intel_s_quarterly_results__sum",
+   "query": "intcrep:intel_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/intcrep:intel_s_revenue_guidance__sum",
+   "query": "intcrep:intel_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/intcrep:intel_s_revenue_guidance__sum",
+   "query": "intcrep:intel_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/funds:investor_risk_appetite__sum",
+   "query": "funds:investor_risk_appetite__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/funds:investor_risk_appetite__sum",
+   "query": "funds:investor_risk_appetite__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro"
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Demand for the company's products and its revenue",
+   "deciding": false,
+   "role": "slot"
+  },
+  "profits": {
+   "label": "Profits and margins",
+   "deciding": false,
+   "role": "slot"
+  },
+  "outlook": {
+   "label": "Earnings forecasts and growth prospects",
+   "deciding": false,
+   "role": "slot"
+  },
+  "competition": {
+   "label": "Market share and competitive pressure",
+   "deciding": false,
+   "role": "slot"
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "deciding": false,
+   "role": "slot"
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "deciding": false,
+   "role": "slot"
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "company": {
+   "label": "Intel news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "deciding": false,
+   "role": "composite"
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": []
+ }
+}

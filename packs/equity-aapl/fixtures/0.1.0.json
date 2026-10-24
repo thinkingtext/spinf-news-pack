@@ -1,0 +1,2199 @@
+{
+ "pack": "thinkingtext/equity-aapl",
+ "version": "0.1.0",
+ "engine": "fp_51319d2ff6",
+ "usage": {
+  "prompt_tokens": 4647,
+  "completion_tokens": 0,
+  "total_tokens": 4647,
+  "prompt_tokens_details": {
+   "content_tokens": 2602,
+   "text_tokens": 2602,
+   "query_tokens": 2045,
+   "floor_tokens": 0
+  },
+  "inputs": 5,
+  "content": {
+   "tokens": 2602,
+   "text_tokens": 2602,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 15,
+   "combinations": 15,
+   "options": 30,
+   "prompts": 75,
+   "floor_prompts": 0,
+   "query_tokens": 2045,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 3524
+ },
+ "cases": [
+  {
+   "id": "wn202496",
+   "text": "Apple Inc. will hold a music-centered event in San Francisco, California on September 1. It has been widely speculated that the company will introduce an updated line of iPod portable music players and a new Apple TV.\nThe company e-mailed invitations for the event to various media organizations on Wednesday. The message included a picture of a guitar and the time of the event. Apple did not release any information about what products would be involved.\nApple has released new iPods through previous similar events in September in anticipation of the holiday shopping season. This year, Apple may unveil a new iPod Touch with two cameras, similar to their recent iPhone 4 design. It will likely also update the iTunes music store and software.\nSpeculation about a new Apple TV is mixed. While many blogs are reporting that a refresh of the device will be announced, analysts say that it is unlikely to happen during next Wednesday's event. According to Reuters, sources are saying that Apple is negotiating with major television networks, including ABC and NBC, in order to provide shows for purchase on iTunes. However, they also reported that the deal has not been completed, and none of the companies involved have commented on the rumors.\nIt has also been rumored that Apple will introduce a new online music service. In 2009, Apple took over a company that allowed users to stream music online rather than download individual songs. Apple has not confirmed the rumors.\nLast September's media event saw the return of Apple CEO Steve Jobs after he took a break to undergo a liver transplant. This year, the event will be held in San Francisco's Yerba Buena Center for the Arts, previously used by Apple in April for the unveiling of the iPad.",
+   "context": "article",
+   "source": {
+    "title": "Apple to hold media event on September 1, may update iPods and Apple TV",
+    "url": "https://en.wikinews.org/wiki/Apple_to_hold_media_event_on_September_1,_may_update_iPods_and_Apple_TV",
+    "revision": 4813436,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn202496",
+    "queries": [
+     {
+      "id": "aapl:apple_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.874928,
+          "p": 0.594431,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.257242,
+          "p": 0.405569,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.905085,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:demand_for_apple_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.766585,
+          "p": 0.983996,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.885397,
+          "p": 0.016004,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.527847,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:iphone_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.136485,
+          "p": 0.825993,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.693976,
+          "p": 0.174007,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.857058,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.542525,
+          "p": 0.372188,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.019684,
+          "p": 0.627812,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.922243,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.521268,
+          "p": 0.730475,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.518304,
+          "p": 0.269525,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.889993,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.065392,
+          "p": 0.954594,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.111041,
+          "p": 0.045406,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951146,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.92913,
+          "p": 0.556078,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.154388,
+          "p": 0.443922,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903892,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.206761,
+          "p": 0.893287,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.331522,
+          "p": 0.106713,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.954676,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.400465,
+          "p": 0.642554,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.986933,
+          "p": 0.357446,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.616403,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:the_valuation_of_apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.521539,
+          "p": 0.658538,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.178327,
+          "p": 0.341462,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.878009,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aaplrep:apple_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.985826,
+          "p": 0.510668,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.028503,
+          "p": 0.489332,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.901114,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.81353,
+          "p": 0.532169,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.942383,
+          "p": 0.467831,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.693561,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.94917,
+          "p": 0.65746,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.601167,
+          "p": 0.34254,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.783421,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.867906,
+          "p": 0.471791,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.754949,
+          "p": 0.528209,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.87957,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.161022,
+          "p": 0.85284,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.918073,
+          "p": 0.14716,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.864913,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.883379,
+       "percentile": 0.986646,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.932517,
+       "percentile": 0.985698,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.877729,
+       "percentile": 0.977096,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.80841,
+       "percentile": 0.933693,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.829454,
+       "percentile": 0.966343,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.485569,
+       "percentile": 0.433205,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.761218,
+       "percentile": 0.934987,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.634336,
+       "percentile": 0.825748,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.804079,
+       "percentile": 0.973489,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn58772",
+   "text": "The American computer company Apple has reached 78 percent increase in its profits during the last quarter, which ended December 30, 2006. This fact is explained by great demand enjoyed by Apple's iPod digital music players during the Christmas and New Year sales period.\nAs a result of successful Christmas sales, the very beginning of the financial year marked a double increase of the Apple's sales if compared to the $ 565 million profit reaped during the same period of the last year. The company gained the record-breaking $ 1 billion. The overall annual revenue of the company made up $ 7.1 billion in 2006, having boosted from $5.8 billion in 2005. The company's revenue growth is partially explained by the fact that the laptops produced by Apple are also found among the bestsellers.\nEven the Wall Street experts have not broadcasted such remarkable results for the Apple computer company. Apple's results were way ahead of market expectations. Its net profit has made up $1.14 per share, while Wall Street expected just 77 cents.\nDuring the first quarter of the financial year Apple Inc. sold more than 21 million iPod players and about 1.6 million computers - it implies the respective growth of 28% and 50% again compared to the previous year. As soon as the results were announced at the New York Stock Exchange, the shares of the American computer company increased by 5 percent.\nIt should be mentioned that the stock capital of Apple Inc tripled in 2004, doubled in 2005 and increased by 16 percent in 2006. The steady growth is also due to considerable sales of its iPods and computers.\nLast week the company presented the iPhone.\n\"Cisco sues Apple for iPhone trademark\" — Wikinews, January 16, 2007\n\"Apple introduces iPhone and Apple TV\" — Wikinews, January 11, 2007",
+   "context": "article",
+   "source": {
+    "title": "Apple Inc. doubled its profits",
+    "url": "https://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits",
+    "revision": 4813408,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn58772",
+    "queries": [
+     {
+      "id": "aapl:apple_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.438161,
+          "p": 0.952639,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -6.439601,
+          "p": 0.047361,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.966279,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:demand_for_apple_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.290573,
+          "p": 0.985848,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.5342,
+          "p": 0.014152,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.720937,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:iphone_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.31935,
+          "p": 0.864902,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.175963,
+          "p": 0.135098,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.886302,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.46745,
+          "p": 0.62555,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.980622,
+          "p": 0.37445,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.95013,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.82937,
+          "p": 0.948653,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.745813,
+          "p": 0.051347,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.937754,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.620387,
+          "p": 0.936442,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.310513,
+          "p": 0.063558,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.971411,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.21688,
+          "p": 0.933129,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.852657,
+          "p": 0.066871,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.957048,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.299899,
+          "p": 0.983692,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -7.399562,
+          "p": 0.016308,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.962502,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.801745,
+          "p": 0.892999,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.923497,
+          "p": 0.107001,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.815217,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:the_valuation_of_apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.457178,
+          "p": 0.816627,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.950838,
+          "p": 0.183373,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.895085,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aaplrep:apple_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.442572,
+          "p": 0.760963,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.60054,
+          "p": 0.239037,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.885754,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.779763,
+          "p": 0.728396,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.766261,
+          "p": 0.271604,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.768425,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.006688,
+          "p": 0.788184,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.320699,
+          "p": 0.211816,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.829439,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.941087,
+          "p": 0.690298,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.742601,
+          "p": 0.309702,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.923499,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.816155,
+          "p": 0.895331,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.962543,
+          "p": 0.104669,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.933169,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.98379,
+       "percentile": 0.997988,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.997605,
+       "percentile": 0.998691,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.753836,
+       "percentile": 0.894304,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.989827,
+       "percentile": 0.997076,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.993248,
+       "percentile": 0.998458,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.980762,
+       "percentile": 0.999949,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.927097,
+       "percentile": 0.990342,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.701579,
+       "percentile": 0.926677,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.971234,
+       "percentile": 0.998255,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn190356",
+   "text": "Yesterday, at this year's Apple Worldwide Developers Conference (WWDC), company CEO Steve Jobs unveiled iPhone 4, along with the new iOS 4 operating system for Apple mobile devices.\nThe announcement was long-awaited but not a very big surprise. In April, the technology blog Gizmodo obtained a prototype of the new phone and published details of it online. While introducing iPhone 4, at the annual conference, Jobs started by hinting at the incident, saying, \"Stop me if you've already seen this.\"\nThe new iPhone was praised by Jobs as \"the biggest leap we've taken since the original iPhone.\" It is only 9.3 millimetres (0.37 inches) thick, making it \"the thinnest smartphone on the planet\", a 24 percent reduction from Apple's previous model, the iPhone 3GS. Structure-wise, iPhone 4 has a new stainless steel frame, which acts as an antenna, supposedly boosting its signal reception abilities and possibly reducing the amount of dropped calls. It also has a new screen, dubbed a \"retina display,\" which displays images at 326 pixels per inch. During the keynote, Jobs demoed the device's new internal gyroscope as well. Even though it now uses Apple's faster A4 processor (first used in its iPad tablet), iPhone 4 has a claimed seven hours of 3G talk time, up two hours from the 3GS.\nIn addition to its design features, Jobs showed off iPhone 4's new video calling abilities. This feature is called FaceTime, and connects with other iPhone 4s via Wi-Fi. The phone has two cameras: one on the front for video chats, and one on the back for taking pictures and other videos. The rear camera has a resolution of five megapixels, is capable of recording high-definition video, and has an LED flash.\nThe iPhone 4 will use Apple's latest mobile operating system, iOS 4. Formerly \"iPhone OS,\" iOS 4 was first introduced by Apple in April, and includes multitasking capabilities. Jobs called the new software \"the most advanced mobile operating system in the world.\" iOS will support Apple's new mobile advertising service, iAd, which goes live on July 1.\niPhone 4 will be available on June 24 in the United States, United Kingdom, France, Germany, and Japan. It comes in two colors—black and white—and two storage capacities. The 16GB version is priced at US$199 and the 32GB version at US$299. The iPhone 3GS's price will be reduced to US$99, and the iPhone 3G will be discontinued. iOS will be available as a free software update to users of compatible older Apple devices (including the 3GS) on June 21. In the U.S., iPhone 4 will only be available on AT&T's cellular network, despite calls for Apple to let the iPhone be used on other carriers, such as Verizon.\nCompetition-wise, the BlackBerry mobile device is still the most popular smartphone right now. Apple is also facing some serious competition from web giant Google's Android operating system, as well as Palm's webOS. Earlier this year, Android phones managed to outsell iPhones. iPhone users, however, account for over half of those surfing the Internet on a mobile browser in the U.S. Jobs also noted that over five billion iOS applications, commonly called \"apps,\" have been purchased from Apple's App Store. The App Store currently has around 225,000 different apps for sale.",
+   "context": "article",
+   "source": {
+    "title": "Apple unveils iPhone 4, iOS 4 at Worldwide Developers Conference 2010",
+    "url": "https://en.wikinews.org/wiki/Apple_unveils_iPhone_4,_iOS_4_at_Worldwide_Developers_Conference_2010",
+    "revision": 4813438,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn190356",
+    "queries": [
+     {
+      "id": "aapl:apple_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.545178,
+          "p": 0.882374,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.560281,
+          "p": 0.117626,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911082,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:demand_for_apple_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.039572,
+          "p": 0.980231,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.943264,
+          "p": 0.019769,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.639263,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:iphone_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.078897,
+          "p": 0.967229,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.46378,
+          "p": 0.032771,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.648511,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.129583,
+          "p": 0.586806,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.480362,
+          "p": 0.413194,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.925468,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.242306,
+          "p": 0.815871,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.730923,
+          "p": 0.184129,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.869816,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -2.603804,
+          "p": 0.95744,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.717148,
+          "p": 0.04256,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.922719,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.315032,
+          "p": 0.627322,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.835778,
+          "p": 0.372678,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.942083,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.268417,
+          "p": 0.945582,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -6.123514,
+          "p": 0.054418,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.959743,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.632066,
+          "p": 0.783214,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.916564,
+          "p": 0.216786,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.750355,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:the_valuation_of_apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.306191,
+          "p": 0.779925,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.571421,
+          "p": 0.220075,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.872244,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aaplrep:apple_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.565291,
+          "p": 0.425882,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.266617,
+          "p": 0.574118,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.933576,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.870225,
+          "p": 0.585417,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.215276,
+          "p": 0.414583,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.736788,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.698882,
+          "p": 0.734319,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.715527,
+          "p": 0.265681,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.750942,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.833218,
+          "p": 0.47104,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.717249,
+          "p": 0.52896,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.875121,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.333097,
+          "p": 0.901208,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.543814,
+          "p": 0.098792,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.892372,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.983291,
+       "percentile": 0.997943,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.986388,
+       "percentile": 0.99657,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.894099,
+       "percentile": 0.983691,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.861092,
+       "percentile": 0.956984,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.959221,
+       "percentile": 0.994247,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.217775,
+       "percentile": 0.100237,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.846547,
+       "percentile": 0.968324,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.552499,
+       "percentile": 0.611358,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.88228,
+       "percentile": 0.990924,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn249412",
+   "text": "The new version of Apple Inc.'s tablet computing device, the iPad 2, has gone on sale in the United States at Apple Stores and a number of other retailers (including Wal-Mart, Target, Sam's Club, Best Buy, Verizon, and AT&T), a shift from last year's launch which was only available through Apple's stores. The product will go on sale internationally on March 25.\nThe device was announced on March 2 at an event at the Yerba Buena Center for the Arts in San Francisco, California. CEO Steve Jobs emerged from sick leave to make the announcement.\nThe iPad 2 has an all-new design and has several improvements over the original iPad. The device runs on a dual-core Apple A5 CPU. According to Jobs, the CPU's new dual-core capability enhances multitasking and doubles the processing speed. Apple additionally introduced a magnetic 'Smart Cover' accessory that snaps to the front screen of the device along with several new apps ported from the Mac OS X operating system and the iPhone. These include iMovie, GarageBand, and Photo Booth. The new iPad introduces front and rear cameras which enable FaceTime and video. The new tablet is fifteen percent lighter and 33 percent thinner than the previous version—thinner than an iPhone 4—and has beveled edges. It is available in black and white and continues to be capable of ten hours of battery life on a single charge.\nThe announcement came after months of rumors about the successor to the original iPad. Competitors have designed tablets to compete with the iPad, such as Motorola's Xoom powered by the Android operating system. Apple, who normally follows a yearly product cycle, has pressed its iPad successor into the marketplace almost a full month earlier than usual.\nTablet computers have existed for years but, until recently, have not been popular amongst consumers. Tablet sales totaled 90,000 in 2009. Apple sold nearly fifteen million iPads worldwide in 2010, generating US$2 billion in revenue within three months. In 2010, Apple held a 75% share of the tablet computer market. According to one analyst, even with competition, iPads will still make up at least 20 million of the more than 24 million tablet computers sold in the United States in 2011. An analyst predicted 'conservatively' that 35 million iPad 2s will be sold in 2011. One analyst credits Apple's enormous App Store for the iPad's continued domination. Apple also holds an advantage in price over other tablets, many of which are still first generation devices. An analyst at J.P. Morgan predicts an overabundance of tablets caused by faltering demand. This could have drastic effects on competitors.\nThe iPad connects to the Internet over Wi-Fi and 3G models of the new device can connect to the wireless networks of AT&T or Verizon Wireless. The iPad 2 will start at US$499—the same starting price of the original iPad. The equivalent model of the original iPad has been reduced to US$399.\nTimeline of Apple touchscreen devices",
+   "context": "article",
+   "source": {
+    "title": "IPad 2 goes on sale in United States",
+    "url": "https://en.wikinews.org/wiki/IPad_2_goes_on_sale_in_United_States",
+    "revision": 4819708,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn249412",
+    "queries": [
+     {
+      "id": "aapl:apple_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.785098,
+          "p": 0.819798,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.30008,
+          "p": 0.180202,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.924709,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:demand_for_apple_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.00614,
+          "p": 0.907888,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.294257,
+          "p": 0.092112,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.851846,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:iphone_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -3.252728,
+          "p": 0.53612,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.39746,
+          "p": 0.46388,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.927873,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.227181,
+          "p": 0.227059,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.002189,
+          "p": 0.772941,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.935728,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.754679,
+          "p": 0.634279,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.305296,
+          "p": 0.365721,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.899682,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.220198,
+          "p": 0.946788,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.098992,
+          "p": 0.053212,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.957808,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.567694,
+          "p": 0.127958,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.648554,
+          "p": 0.872042,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.918865,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.134356,
+          "p": 0.925448,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.653131,
+          "p": 0.074552,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.952966,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.77676,
+          "p": 0.658233,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.432189,
+          "p": 0.341767,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.74297,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:the_valuation_of_apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.420076,
+          "p": 0.71364,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.333206,
+          "p": 0.28636,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.875407,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aaplrep:apple_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.385079,
+          "p": 0.451171,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.189139,
+          "p": 0.548829,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.924918,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.06628,
+          "p": 0.637063,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.62892,
+          "p": 0.362937,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.801188,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.053306,
+          "p": 0.691083,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.858492,
+          "p": 0.308917,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.814335,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.738076,
+          "p": 0.508889,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.773634,
+          "p": 0.491111,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.872871,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.222231,
+          "p": 0.896176,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.377666,
+          "p": 0.103824,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.879078,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.734367,
+       "percentile": 0.933715,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.775359,
+       "percentile": 0.95036,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.827965,
+       "percentile": 0.957048,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.205549,
+       "percentile": 0.083015,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.89175,
+       "percentile": 0.981783,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.286749,
+       "percentile": 0.16212,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.842347,
+       "percentile": 0.967155,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.586721,
+       "percentile": 0.71121,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.670919,
+       "percentile": 0.901361,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn142360",
+   "text": "Mobile phone and computer manufacturer Nokia is filing a lawsuit against Apple over patent infringements. The infringements include speech coding, wireless data, security and encryption technology Nokia claims is used in Apple iPhones.\nAccording to a Nokia press release, 40 other companies are paying royalties to them in return for the use of their patented technology. Therefore, Nokia wants Apple to also pay for its usage.\n\"The basic principle in the mobile industry is that those companies who contribute in technology development to establish standards create intellectual property, which others then need to compensate for,\" Ilkka Rahnasto, Nokia's Vice President of Legal & Intellectual Property, said in the press release. \"Apple is also expected to follow this principle. By refusing to agree appropriate terms for Nokia's intellectual property, Apple is attempting to get a free ride on the back of Nokia's innovation.\"\nOne industry analyst told PC World that that he believes Nokia is seeking 1–2% royalties per device. Based on the number of iPhones sold since its 2007 release date, that figure would amount to approximately 400 million USD.\nBen Wood, research director at CCS Insight, said, \"It is almost inconceivable that someone can produce a mobile phone without using Nokia patented technologies,\" showing how widespread Nokia's mobile technology is.\nIn Apple's SEC 10-K, Apple responded to Nokia claims. \"The complaint alleges that these patents are essential to one or more of the GSM, UMTS and 802.11 wireless communications standards, and that the Company [Apple] has the right to license these patents from plaintiff [Nokia] on fair, reasonable, and non-discriminatory terms and conditions. Plaintiff seeks unspecified FRAND compensation and other relief. The Company's response to the complaint is not yet due. The Company intends to defend the case vigorously,\" said Apple.\nThe Nokia v. Apple lawsuit is set to take place in a Delaware District Court.",
+   "context": "article",
+   "source": {
+    "title": "Nokia files lawsuit against Apple",
+    "url": "https://en.wikinews.org/wiki/Nokia_files_lawsuit_against_Apple",
+    "revision": 4823184,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn142360",
+    "queries": [
+     {
+      "id": "aapl:apple_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.25537,
+          "p": 0.0733,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.718304,
+          "p": 0.9267,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.928794,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:demand_for_apple_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.82305,
+          "p": 0.557083,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.052382,
+          "p": 0.442917,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.710039,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:iphone_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.678234,
+          "p": 0.559814,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.91864,
+          "p": 0.440186,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.877309,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.830278,
+          "p": 0.064168,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.150348,
+          "p": 0.935832,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.954226,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.35905,
+          "p": 0.083807,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.967345,
+          "p": 0.916193,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943855,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.532987,
+          "p": 0.721943,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.487107,
+          "p": 0.278057,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.985112,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.060425,
+          "p": 0.227926,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.840365,
+          "p": 0.772074,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.924354,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.481354,
+          "p": 0.637526,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.045995,
+          "p": 0.362474,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951742,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:apple_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.198402,
+          "p": 0.241933,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.056293,
+          "p": 0.758067,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.831245,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aapl:the_valuation_of_apple__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.750247,
+          "p": 0.130504,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.85374,
+          "p": 0.869496,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.933722,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "aaplrep:apple_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.129191,
+          "p": 0.514934,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.188947,
+          "p": 0.485066,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.915032,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.422976,
+          "p": 0.335066,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.737615,
+          "p": 0.664934,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.735403,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.532526,
+          "p": 0.372739,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.012043,
+          "p": 0.627261,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.786827,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.909476,
+          "p": 0.465373,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.770745,
+          "p": 0.534627,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.88288,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.302077,
+          "p": 0.899528,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.494063,
+          "p": 0.100472,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.888774,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.050802,
+       "percentile": 0.003149,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.021662,
+       "percentile": 0.004748,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.04562,
+       "percentile": 0.017901,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.391295,
+       "percentile": 0.319367,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.055667,
+       "percentile": 0.017707,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.500837,
+       "percentile": 0.460834,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.331088,
+       "percentile": 0.15166,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.552295,
+       "percentile": 0.610754,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.155421,
+       "percentile": 0.042401,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

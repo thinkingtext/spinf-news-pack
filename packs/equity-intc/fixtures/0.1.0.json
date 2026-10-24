@@ -1,0 +1,3159 @@
+{
+ "pack": "thinkingtext/equity-intc",
+ "version": "0.1.0",
+ "engine": "fp_51319d2ff6",
+ "usage": {
+  "prompt_tokens": 4992,
+  "completion_tokens": 0,
+  "total_tokens": 4992,
+  "prompt_tokens_details": {
+   "content_tokens": 1852,
+   "text_tokens": 1852,
+   "query_tokens": 3140,
+   "floor_tokens": 0
+  },
+  "inputs": 5,
+  "content": {
+   "tokens": 1852,
+   "text_tokens": 1852,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 23,
+   "combinations": 23,
+   "options": 46,
+   "prompts": 115,
+   "floor_prompts": 0,
+   "query_tokens": 3140,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 3094
+ },
+ "cases": [
+  {
+   "id": "wn13093",
+   "text": "AMD filed an antitrust complaint against Intel Corporation two days ago in U.S. federal district court for the district of Delaware under Section 2 of the Sherman Antitrust Act, Sections 4 and 16 of the Clayton Act, and the California Business and Professions Code.\nAccording to the complaint, Intel has unlawfully maintained its monopoly by, among other things:\nForcing major customers such as Dell, Sony, Toshiba, Gateway, and Hitachi into Intel-exclusive deals in return for outright cash payments, discriminatory pricing or marketing subsidies conditioned on the exclusion of AMD;\nAccording to industry reports, and as confirmed by the JFTC in Japan, Intel has paid Dell and Toshiba huge sums not to do business with AMD.\nIntel paid Sony millions for exclusivity. AMD’s share of Sony’s business went from 23 percent in ‘02 to 8% in ‘03, to 0%, where it remains today.\nForcing other major customers such as NEC, Acer, and Fujitsu into partial exclusivity agreements by conditioning rebates, allowances and market development funds (MDF) on customers’ agreement to severely limit or forego entirely purchases from AMD;\nIntel paid NEC several million dollars for caps on NEC’s purchases from AMD. Those caps assured Intel at least 90% of NEC’s business in Japan and imposed a worldwide cap on the amount of AMD business NEC could do.\nEstablishing a system of discriminatory and retroactive incentives triggered by purchases at such high levels as to have the intended effect of denying customers the freedom to purchase any significant volume of processors from AMD;\nWhen AMD succeeded in getting on the HP retail roadmap for mobile computers, and its products sold well, Intel responded by withholding HP’s fourth quarter 2004 rebate check and refusing to waive HP’s failure to achieve its targeted rebate goal; it allowed HP to make up the shortfall in succeeding quarters by promising Intel at least 90% of HP’s mainstream retail business.\nThreatening retaliation against customers for introducing AMD computer platforms, particularly in strategic market segments such as commercial desktop;\nThen-Compaq CEO Michael Capellas said in 2000 that because of the volume of business given to AMD, Intel withheld delivery of critical server chips. Saying \"he had a gun to his head,\" he told AMD he had to stop buying.\nAccording to Gateway executives, their company has paid a high price for even its limited AMD dealings. They claim that Intel has \"beaten them into ‘guacamole’\" in retaliation.\nEstablishing and enforcing quotas among key retailers such as Best Buy and Circuit City, effectively requiring them to stock overwhelmingly or exclusively, Intel computers, artificially limiting consumer choice;\nAMD has been entirely shut out from Media Markt, Europe's largest computer retailer, which accounts for 35 percent of Germany's retail sales.\nOffice Depot declined to stock AMD-powered notebooks regardless of the amount of financial support AMD offered, citing the risk of retaliation.\nForcing PC makers and tech partners to boycott AMD product launches or promotions;\nThen-Intel CEO Craig Barrett threatened Acer’s Chairman with \"severe consequences\" for supporting the AMD Athlon 64 launch. This coincided with an unexplained delay by Intel in providing $15-20M in market development funds owed to Acer. Acer withdrew from the launch in September 2003.\nAbusing its market power by forcing on the industry technical standards and products that have as their main purpose the handicapping of AMD in the marketplace.\nIntel denied AMD access to the highest level of membership for the Advanced DRAM technology consortium to limit AMD’s participation in critical industry standard decisions that would affect its business.\nIntel designed its compilers, which translate software programs into machine-readable language, to degrade a program’s performance if operated on a computer powered by an AMD microprocessor.",
+   "context": "article",
+   "source": {
+    "title": "AMD files antitrust lawsuit against Intel in US federal district court",
+    "url": "https://en.wikinews.org/wiki/AMD_files_antitrust_lawsuit_against_Intel_in_US_federal_district_court",
+    "revision": 4810660,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn13093",
+    "queries": [
+     {
+      "id": "intc:demand_for_intel_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.550262,
+          "p": 0.449083,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.345884,
+          "p": 0.550917,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.826176,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_chip_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.448368,
+          "p": 0.124977,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.502246,
+          "p": 0.875023,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.906402,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.692333,
+          "p": 0.076443,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.200653,
+          "p": 0.923557,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.880104,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.210972,
+          "p": 0.96798,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.61983,
+          "p": 0.03202,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.886781,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.833234,
+          "p": 0.850123,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.568801,
+          "p": 0.149877,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.930807,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.775922,
+          "p": 0.095524,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.527948,
+          "p": 0.904476,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.911747,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.125394,
+          "p": 0.166924,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.51781,
+          "p": 0.833076,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903207,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.589643,
+          "p": 0.064679,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.918195,
+          "p": 0.935321,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.942232,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -5.32401,
+          "p": 0.504008,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.340043,
+          "p": 0.495992,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.990331,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.033948,
+          "p": 0.133231,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.16126,
+          "p": 0.866769,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.867116,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -4.109106,
+          "p": 0.337734,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.435696,
+          "p": 0.662266,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.951375,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.007984,
+          "p": 0.064298,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.330211,
+          "p": 0.935702,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.717409,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:the_valuation_of_intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -6.175532,
+          "p": 0.02166,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.365119,
+          "p": 0.97834,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.903982,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_gross_margin__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.630464,
+          "p": 0.558372,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.865021,
+          "p": 0.441628,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.870973,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.952477,
+          "p": 0.429385,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.668118,
+          "p": 0.570615,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.955268,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.612784,
+          "p": 0.34481,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.97085,
+          "p": 0.65519,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.921764,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.067127,
+          "p": 0.225766,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.834751,
+          "p": 0.774234,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.793792,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.722929,
+          "p": 0.22413,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.48117,
+          "p": 0.77587,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.892192,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.996674,
+          "p": 0.231962,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.799409,
+          "p": 0.768038,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.920777,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.379475,
+          "p": 0.578424,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.695784,
+          "p": 0.421576,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.978334,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.112413,
+          "p": 0.927364,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.659292,
+          "p": 0.072636,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.98235,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.008034,
+          "p": 0.640074,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.583719,
+          "p": 0.359926,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.922839,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.749715,
+          "p": 0.960649,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.944804,
+          "p": 0.039351,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.933434,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.17404,
+       "percentile": 0.055709,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.176521,
+       "percentile": 0.065077,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.057517,
+       "percentile": 0.0163,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.48262,
+       "percentile": 0.494475,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.00174,
+       "percentile": 0,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.24359,
+       "percentile": 0.087006,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.130955,
+       "percentile": 0.046892,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.340062,
+       "percentile": 0.131016,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.119149,
+       "percentile": 0.022553,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn14831",
+   "text": "Local Law enforcement officials acting on behalf of the European Commission raided offices of Intel and several computer makers this morning, a spokesman for the EU said. He did not specify which countries or which other firms were involved. However, a spokesman for Intel Germany, Hans-Jürgen Werner, said that Intel's offices in Munich and Swindon were among those searched.\nIt emerged on Wednesday 13th, that raids also took place at Intel's facility in County Kildare, Ireland in relation to the firms anti-competitive business practices. Intel employs over 5,000 people at its Irish manufacturing facility.\nThe raids are most likely connected to an ongoing anti-trust investigation against Intel by the EU. It is alleged that the company used its market dominance to bully its clients into buying its chips instead of AMD ones. Intel is denying the allegations.",
+   "context": "article",
+   "source": {
+    "title": "Intel's offices across the EU raided",
+    "url": "https://en.wikinews.org/wiki/Intel%27s_offices_across_the_EU_raided",
+    "revision": 4811130,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn14831",
+    "queries": [
+     {
+      "id": "intc:demand_for_intel_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.72357,
+          "p": 0.459339,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.560565,
+          "p": 0.540661,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.857099,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_chip_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.476026,
+          "p": 0.148538,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.729915,
+          "p": 0.851462,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.923397,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.657054,
+          "p": 0.07328,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.119693,
+          "p": 0.92672,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.870437,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.244714,
+          "p": 0.92452,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.750126,
+          "p": 0.07548,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.885392,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.689629,
+          "p": 0.818509,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.195906,
+          "p": 0.181491,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.917037,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.765076,
+          "p": 0.114773,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.722189,
+          "p": 0.885227,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.925747,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.760197,
+          "p": 0.084192,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.37349,
+          "p": 0.915808,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.898281,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.043132,
+          "p": 0.095563,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.795606,
+          "p": 0.904437,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.932469,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.759205,
+          "p": 0.667716,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.457079,
+          "p": 0.332284,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.987162,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.469949,
+          "p": 0.078317,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.004512,
+          "p": 0.921683,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.853826,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.347209,
+          "p": 0.337895,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -2.674521,
+          "p": 0.662105,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.895878,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.988613,
+          "p": 0.056075,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.16525,
+          "p": 0.943925,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.66963,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:the_valuation_of_intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.698994,
+          "p": 0.061322,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.970665,
+          "p": 0.938678,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.851531,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_gross_margin__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.834766,
+          "p": 0.558428,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.069549,
+          "p": 0.441572,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.894826,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.067666,
+          "p": 0.529448,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.185594,
+          "p": 0.470552,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96767,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.476502,
+          "p": 0.468839,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.351697,
+          "p": 0.531161,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.93406,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.044157,
+          "p": 0.162017,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.400858,
+          "p": 0.837983,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.705978,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.058459,
+          "p": 0.133677,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.189624,
+          "p": 0.866323,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.870766,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.246509,
+          "p": 0.337071,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.570134,
+          "p": 0.662929,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.884565,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.461927,
+          "p": 0.510108,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.502362,
+          "p": 0.489892,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.938505,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.52369,
+          "p": 0.952755,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.527709,
+          "p": 0.047245,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.969047,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.954316,
+          "p": 0.442135,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -2.721814,
+          "p": 0.557865,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.88213,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.40066,
+          "p": 0.907641,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.685827,
+          "p": 0.092359,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.900117,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.130291,
+       "percentile": 0.04055,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.10779,
+       "percentile": 0.039216,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.179221,
+       "percentile": 0.06407,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.230649,
+       "percentile": 0.091987,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.003101,
+       "percentile": 0,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.546588,
+       "percentile": 0.581932,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.053659,
+       "percentile": 0.018647,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.368578,
+       "percentile": 0.169565,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.122758,
+       "percentile": 0.02386,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn22204",
+   "text": "An Intel spokesperson confirmed Thursday that Dell would no longer be offering servers with Intel Itanium CPUs.  The spokesperson said \"Losing Dell as an Itanium customer is unfortunate but frankly, we see their impact as negligible.\"  Servers with Itanium CPUs are no longer promoted on Dell's website, though a few can be found by searching.\nDell is the largest seller of computers with Intel processors. Dell currently sells 10.5 percent of all servers worldwide. The majority of Dell servers use an IA-32 (colloquially \"x86\") chip, but a growing number use the 64-bit Intel Xeon. Sales of Itanium servers have been very poor; last year Dell sold only 1,371 Itanium servers, up from 12 the previous year. In February, IBM also phased out Itanium-based servers, replacing them with IBM Power CPUs. Fujitsu, HP, Hitachi NEC, SGI and Unisys are the only major manufacturers to still offer Itanium-based servers.\nThe Intel Itanium was designed in the early 1990s. It was intended to be the processor of choice for 64-bit computers, but the processor suffered from several major flaws preventing widespread adoption. Unlike competing AMD64 chips, the Intel Itanium uses a different instruction set from IA-32 chips. An emulation feature allows them to run IA-32 code, but only very slowly; users were forced to choose between accepting greatly-reduced performance and expending time and programmers' salaries porting their software.  Even Intel has acquiesced to AMD's leadership in this field, designing chips with a compatible EM64T technology.",
+   "context": "article",
+   "source": {
+    "title": "Dell to drop Itanium-based servers",
+    "url": "https://en.wikinews.org/wiki/Dell_to_drop_Itanium-based_servers",
+    "revision": 4816669,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn22204",
+    "queries": [
+     {
+      "id": "intc:demand_for_intel_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.128848,
+          "p": 0.577565,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.441634,
+          "p": 0.422435,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.794007,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_chip_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.288921,
+          "p": 0.178518,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.762501,
+          "p": 0.821482,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.923147,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.184793,
+          "p": 0.054772,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.336537,
+          "p": 0.945228,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.897737,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.070195,
+          "p": 0.942672,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.870122,
+          "p": 0.057328,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.866166,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.481915,
+          "p": 0.767827,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.677996,
+          "p": 0.232173,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.891143,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.636792,
+          "p": 0.293195,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.756875,
+          "p": 0.706805,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910173,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.396441,
+          "p": 0.295667,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.528422,
+          "p": 0.704333,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.886723,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.903309,
+          "p": 0.085371,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.531794,
+          "p": 0.914629,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.913062,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.79382,
+          "p": 0.77224,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.014821,
+          "p": 0.22776,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.970852,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.332424,
+          "p": 0.374929,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.821296,
+          "p": 0.625071,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.904765,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.692227,
+          "p": 0.688711,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.486329,
+          "p": 0.311289,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.963822,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.18635,
+          "p": 0.414148,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.839507,
+          "p": 0.585852,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.728778,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:the_valuation_of_intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.583287,
+          "p": 0.19883,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.189662,
+          "p": 0.80117,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.860261,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_gross_margin__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.537334,
+          "p": 0.542557,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.707975,
+          "p": 0.457443,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.854251,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.874997,
+          "p": 0.493169,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.847672,
+          "p": 0.506831,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.957916,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.280461,
+          "p": 0.418598,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.951928,
+          "p": 0.581402,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.91015,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.023914,
+          "p": 0.449296,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.8204,
+          "p": 0.550704,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.705902,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.814348,
+          "p": 0.418237,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.484335,
+          "p": 0.581763,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.856675,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.148654,
+          "p": 0.367371,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.605144,
+          "p": 0.632629,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.883198,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.91564,
+          "p": 0.477339,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.824932,
+          "p": 0.522661,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.958252,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.590921,
+          "p": 0.954801,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.641357,
+          "p": 0.045199,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.971122,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.386901,
+          "p": 0.688311,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.179135,
+          "p": 0.311689,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.950875,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.143342,
+          "p": 0.930149,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.732322,
+          "p": 0.069851,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.873932,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.148803,
+       "percentile": 0.046964,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.741608,
+       "percentile": 0.916181,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.268274,
+       "percentile": 0.099024,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.92675,
+       "percentile": 0.978765,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.247727,
+       "percentile": 0.090841,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.397073,
+       "percentile": 0.243542,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.4714,
+       "percentile": 0.39831,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.39069,
+       "percentile": 0.19946,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.461245,
+       "percentile": 0.370172,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn109785",
+   "text": "After the launch of Intel Atom for low-price PCs during the 2008 COMPUTEX Taipei, Intel globally unveiled the Centrino 2 Processor Technology (formerly codenamed \"Montevina\") products for laptops yesterday July 15.\nThis Centrino 2 continues support for features on the earlier-released 45 nanometer (45nm) \"Penryn\" processor, and implements enhanced security and management features to the Vpro version. \"HD-to-Go\" for mobile entertainment and \"802.11n\" for wireless networking were embedded into this new processor technology. Due to the difference on networking infrastructure in several nations, the WiMAX feature will be added in Europe and North America before this December.\nAccording to Intel Corp., wireless network transmission with 802.11 draft-N feature will be up to 450 Mbps, it delivered five times the speed and twice the range of older 802.11a/g technology in this processor technology. In addition, Intel Centrino 2 also provided the horsepower and battery life for mobile entertainment and mobile business.\n\"Intel launches 45nm \"Penryn\" processor aiming for energy-efficiency\" — Wikinews, November 13, 2007",
+   "context": "article",
+   "source": {
+    "title": "Intel launches Centrino 2 aiming for performance and mobility",
+    "url": "https://en.wikinews.org/wiki/Intel_launches_Centrino_2_aiming_for_performance_and_mobility",
+    "revision": 4820029,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn109785",
+    "queries": [
+     {
+      "id": "intc:demand_for_intel_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.527845,
+          "p": 0.810984,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.984264,
+          "p": 0.189016,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.73242,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_chip_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.322907,
+          "p": 0.316393,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.552508,
+          "p": 0.683607,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.886066,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.342342,
+          "p": 0.236771,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.171877,
+          "p": 0.763229,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.850682,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.832504,
+          "p": 0.971578,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -5.36425,
+          "p": 0.028422,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.835307,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.301881,
+          "p": 0.817495,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.801351,
+          "p": 0.182505,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.877589,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.734336,
+          "p": 0.222438,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.482823,
+          "p": 0.777562,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.892604,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.020543,
+          "p": 0.343157,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.371285,
+          "p": 0.656843,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.857865,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.372097,
+          "p": 0.115744,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.338736,
+          "p": 0.884256,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.890926,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.456708,
+          "p": 0.803262,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -4.863519,
+          "p": 0.196738,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.960743,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.617636,
+          "p": 0.221424,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.36025,
+          "p": 0.778576,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.878757,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.403275,
+          "p": 0.760641,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.55947,
+          "p": 0.239359,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.956268,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.058418,
+          "p": 0.463709,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.913,
+          "p": 0.536291,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.724707,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:the_valuation_of_intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.780449,
+          "p": 0.465196,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.641007,
+          "p": 0.534804,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.8667,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_gross_margin__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.482071,
+          "p": 0.469303,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.359127,
+          "p": 0.530697,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.821927,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.768851,
+          "p": 0.376487,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.264365,
+          "p": 0.623513,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.9387,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.4224,
+          "p": 0.281475,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.485245,
+          "p": 0.718525,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.884061,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.235268,
+          "p": 0.389706,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.786718,
+          "p": 0.610294,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.725528,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.93451,
+          "p": 0.450275,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.73495,
+          "p": 0.549725,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.881946,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.268486,
+          "p": 0.295822,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.401213,
+          "p": 0.704178,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.871328,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.39844,
+          "p": 0.514003,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.454467,
+          "p": 0.485997,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.93497,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.819724,
+          "p": 0.940031,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.57181,
+          "p": 0.059969,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.976667,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.094554,
+          "p": 0.799687,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.478894,
+          "p": 0.200313,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.943359,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.557872,
+          "p": 0.862605,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.394966,
+          "p": 0.137395,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910191,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.548813,
+       "percentile": 0.604279,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.690702,
+       "percentile": 0.853689,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.394576,
+       "percentile": 0.26049,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.751894,
+       "percentile": 0.902815,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.561067,
+       "percentile": 0.61335,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.079889,
+       "percentile": 0.027571,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.453971,
+       "percentile": 0.354353,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.467217,
+       "percentile": 0.382241,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.473948,
+       "percentile": 0.407237,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn110447",
+   "text": "From the middle of July, Sony Corporation refreshed their senior laptop brand VAIO from \"Video Audio Integrated Operation\" to \"Visual Audio Intelligent Organizer\". According to Sony Taiwan Limited, this refreshment is an attempt to relocate the laptop consuming market for business and entertainment factors.\nIn the \"VAIO Experience 2008\" press conference in Europe, Sony promoted their new product series for different populations including BZ for business, FW for home entertainment, Z for ultra-slim, and SR for complex applications.\nDifferent with past series, Sony added \"Clear Bright\" screening technology for high-definition display, and \"full-carbon production\" features. BD-burning and Intel Centrino 2 processing technologies will be featured in all the new models. For security issue, Sony also embedded fingerprint system to prevent personal data to be stolen. Continued from TZ series, innovative designs including \"Green Power Button\", \"Situational Switch\" are also added in newly-launched series.\n\"Due to consuming market differences, Sony only promoted BZ series in Europe and America but not included Asia. Although the TICA Show in Taipei will be different, functionality will be the greatest issue when a consumers choose a notebook [computer] before buying.\" addressed by executives from Sony Taiwan Limited, during the \"VAIO Experience 2008\" press conference in Taiwan.",
+   "context": "article",
+   "source": {
+    "title": "Sony refreshes VAIO brand for business and entertainment",
+    "url": "https://en.wikinews.org/wiki/Sony_refreshes_VAIO_brand_for_business_and_entertainment",
+    "revision": 4826316,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn110447",
+    "queries": [
+     {
+      "id": "intc:demand_for_intel_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.090343,
+          "p": 0.923046,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.574808,
+          "p": 0.076954,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.635878,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_chip_sales__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.28877,
+          "p": 0.431281,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.012144,
+          "p": 0.568719,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.913514,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.947275,
+          "p": 0.434373,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.683243,
+          "p": 0.565627,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.879176,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:demand_for_ai_chips__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.668574,
+          "p": 0.899391,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.859049,
+          "p": 0.100609,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.790396,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "tech:semiconductor_demand__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.403471,
+          "p": 0.814854,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.885333,
+          "p": 0.185146,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.889055,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.575695,
+          "p": 0.236741,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.405061,
+          "p": 0.763259,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.881744,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.872509,
+          "p": 0.45569,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.694803,
+          "p": 0.54431,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.875888,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.458424,
+          "p": 0.138848,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.63353,
+          "p": 0.861152,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.916595,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -2.684414,
+          "p": 0.93515,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -5.353043,
+          "p": 0.06485,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.927005,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.542347,
+          "p": 0.314316,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.762327,
+          "p": 0.685684,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.90791,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.873827,
+          "p": 0.714779,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.792534,
+          "p": 0.285221,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.920979,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:intel_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.652578,
+          "p": 0.639853,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.227302,
+          "p": 0.360147,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.700626,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intc:the_valuation_of_intel__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.545241,
+          "p": 0.562443,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.796324,
+          "p": 0.437557,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.860512,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_gross_margin__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.001466,
+          "p": 0.413806,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.653211,
+          "p": 0.586194,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.879861,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.186723,
+          "p": 0.36811,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.646388,
+          "p": 0.63189,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.958719,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "intcrep:intel_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.665397,
+          "p": 0.284356,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.742442,
+          "p": 0.715644,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.909993,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.969015,
+          "p": 0.462054,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.816941,
+          "p": 0.537946,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.697884,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.924101,
+          "p": 0.466451,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.789701,
+          "p": 0.533549,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.884847,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.579195,
+          "p": 0.310977,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.78364,
+          "p": 0.689023,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.910289,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.405835,
+          "p": 0.524988,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.505871,
+          "p": 0.475012,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.97675,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "funds:investor_risk_appetite__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -3.195999,
+          "p": 0.970415,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.686468,
+          "p": 0.029585,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.957827,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.93422,
+          "p": 0.799915,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.319983,
+          "p": 0.200085,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.933528,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:the_risk_of_a_us_recession__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.402536,
+          "p": 0.84254,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.079784,
+          "p": 0.15746,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96049,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.673609,
+       "percentile": 0.860755,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.805245,
+       "percentile": 0.958613,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.792723,
+       "percentile": 0.961327,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.883179,
+       "percentile": 0.965523,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.737359,
+       "percentile": 0.912881,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.055764,
+       "percentile": 0.018812,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.531677,
+       "percentile": 0.580745,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.542349,
+       "percentile": 0.604606,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.622694,
+       "percentile": 0.825072,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

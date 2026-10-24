@@ -1,0 +1,549 @@
+{
+ "pack": "thinkingtext/equity-msft",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Microsoft news",
+ "description": "The Microsoft (MSFT) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Microsoft",
+  "ticker": "MSFT",
+  "peers": [],
+  "weights": {
+   "company": 0.67,
+   "peers": 0,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "a665c39844db70d560726b8d4b79b5ed",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "msft:microsoft_s_profits__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Microsoft's profits is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "msft:microsoft_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Microsoft's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "msftrep:microsoft_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Microsoft's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "msft:microsoft_s_profits__sum": {
+   "phrase": "Microsoft's profits",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "msft"
+  },
+  "msft:microsoft_s_share_price__sum": {
+   "phrase": "Microsoft's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "msft"
+  },
+  "msftrep:microsoft_s_revenue_guidance__sum": {
+   "phrase": "Microsoft's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "msftrep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  }
+ },
+ "reads": [
+  {
+   "id": "profits/msft:microsoft_s_profits__sum",
+   "query": "msft:microsoft_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits",
+   "mean": -0.69883,
+   "sd": 0.5817
+  },
+  {
+   "id": "company/profits/msft:microsoft_s_profits__sum",
+   "query": "msft:microsoft_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits",
+   "mean": -0.69883,
+   "sd": 0.5817
+  },
+  {
+   "id": "reflectors/msft:microsoft_s_share_price__sum",
+   "query": "msft:microsoft_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": -0.1476,
+   "sd": 0.40058
+  },
+  {
+   "id": "company/reflectors/msft:microsoft_s_share_price__sum",
+   "query": "msft:microsoft_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": -0.1476,
+   "sd": 0.40058
+  },
+  {
+   "id": "surprise/msftrep:microsoft_s_revenue_guidance__sum",
+   "query": "msftrep:microsoft_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": -0.10569,
+   "sd": 0.20611
+  },
+  {
+   "id": "company/surprise/msftrep:microsoft_s_revenue_guidance__sum",
+   "query": "msftrep:microsoft_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": -0.10569,
+   "sd": 0.20611
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.28183,
+   "sd": 0.59959
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.28183,
+   "sd": 0.59959
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.15544,
+   "sd": 0.49171
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.15544,
+   "sd": 0.49171
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": -0.52485,
+   "sd": 0.77401
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": -0.52485,
+   "sd": 0.77401
+  }
+ ],
+ "categories": {
+  "profits": {
+   "label": "Profits and margins",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00156,
+     0.29037,
+     0.36988,
+     0.41784,
+     0.46265,
+     0.50273,
+     0.54147,
+     0.58078,
+     0.63557,
+     0.70915,
+     0.79568,
+     0.94889,
+     0.99805,
+     0.99813
+    ]
+   }
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00275,
+     0.25449,
+     0.35587,
+     0.41781,
+     0.46928,
+     0.51609,
+     0.5573,
+     0.60133,
+     0.65048,
+     0.72877,
+     0.80042,
+     0.93413,
+     0.98949,
+     0.99364
+    ]
+   }
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00094,
+     0.25134,
+     0.34868,
+     0.42033,
+     0.47587,
+     0.52815,
+     0.57868,
+     0.61898,
+     0.67465,
+     0.74462,
+     0.7946,
+     0.87013,
+     0.91329,
+     0.93089
+    ]
+   }
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00232,
+     0.28575,
+     0.37309,
+     0.43202,
+     0.4731,
+     0.50542,
+     0.54046,
+     0.58164,
+     0.63506,
+     0.715,
+     0.7832,
+     0.93049,
+     0.99307,
+     0.99815
+    ]
+   }
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00416,
+     0.27088,
+     0.42388,
+     0.47435,
+     0.51257,
+     0.54131,
+     0.56947,
+     0.59956,
+     0.63779,
+     0.6955,
+     0.74489,
+     0.88003,
+     0.97372,
+     0.98876
+    ]
+   }
+  },
+  "company": {
+   "label": "Microsoft news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "role": "composite",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.02295,
+     0.32818,
+     0.40373,
+     0.44453,
+     0.48179,
+     0.51255,
+     0.54731,
+     0.5769,
+     0.61002,
+     0.66735,
+     0.71045,
+     0.84637,
+     0.92831,
+     0.98121
+    ]
+   }
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": [],
+  "per_category": {}
+ },
+ "engine": "fp_51319d2ff6",
+ "calibration": {
+  "sample": "calibration/wikinews_business.json.gz",
+  "n": 1500,
+  "statistic": "mean and sd of each read over the sample; no thresholds, no decision",
+  "date": "2026-10-24"
+ }
+}

@@ -1,0 +1,904 @@
+{
+ "pack": "thinkingtext/equity-amd",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "AMD news",
+ "description": "The AMD (AMD) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "AMD",
+  "ticker": "AMD",
+  "peers": [
+   "NVDA",
+   "INTC",
+   "MU"
+  ],
+  "weights": {
+   "company": 0.52,
+   "peers": 0.15,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "1b4bc36f1d7687d368a22628429c5b6f",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "amd:amd_s_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: AMD's revenue is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "amd:demand_for_amd_s_data_centre_chips__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for AMD's data centre chips is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "amd:demand_for_amd_s_products__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for AMD's products is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:capital_spending_on_artificial_intellige__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: capital spending on artificial intelligence is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:demand_for_ai_chips__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for AI chips is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:semiconductor_demand__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: semiconductor demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "amd:amd_s_profit_margins__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: AMD's profit margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "amd:amd_s_profits__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: AMD's profits is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "amd:amd_s_earnings_forecasts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: AMD's earnings forecasts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "amd:amd_s_growth_prospects__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: AMD's growth prospects is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "amd:amd_s_market_share__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: AMD's market share is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "amd:amd__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for AMD shareholders, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "amd:amd_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: AMD's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "amd:the_valuation_of_amd__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the valuation of AMD is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "amdrep:amd_s_data_centre_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, AMD's data centre revenue came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "amdrep:amd_s_quarterly_results__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, AMD's quarterly results came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "amdrep:amd_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, AMD's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:expectations_of_fed_rate_cuts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: expectations of Fed rate cuts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "haven:financial_market_volatility__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: financial market volatility is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "investors:news_inv_investors__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for investors, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "usa:the_risk_of_a_us_recession__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the risk of a US recession is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "uspolicy:us_tariffs_on_imports__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US tariffs on imports is likely to{?}",
+    "options": [
+     " tighten",
+     " ease"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "amd:amd_s_revenue__sum": {
+   "phrase": "AMD's revenue",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "amd:demand_for_amd_s_data_centre_chips__sum": {
+   "phrase": "demand for AMD's data centre chips",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "amd:demand_for_amd_s_products__sum": {
+   "phrase": "demand for AMD's products",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "tech:capital_spending_on_artificial_intellige__sum": {
+   "phrase": "capital spending on artificial intelligence",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "tech:demand_for_ai_chips__sum": {
+   "phrase": "demand for AI chips",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "tech:semiconductor_demand__sum": {
+   "phrase": "semiconductor demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "amd:amd_s_profit_margins__sum": {
+   "phrase": "AMD's profit margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "amd:amd_s_profits__sum": {
+   "phrase": "AMD's profits",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "amd:amd_s_earnings_forecasts__sum": {
+   "phrase": "AMD's earnings forecasts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "amd:amd_s_growth_prospects__sum": {
+   "phrase": "AMD's growth prospects",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "amd:amd_s_market_share__sum": {
+   "phrase": "AMD's market share",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "amd:amd__sum": {
+   "phrase": "AMD",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_co",
+   "principal": "amd"
+  },
+  "amd:amd_s_share_price__sum": {
+   "phrase": "AMD's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "amd:the_valuation_of_amd__sum": {
+   "phrase": "the valuation of AMD",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "amd"
+  },
+  "amdrep:amd_s_data_centre_revenue__sum": {
+   "phrase": "AMD's data centre revenue",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "amdrep"
+  },
+  "amdrep:amd_s_quarterly_results__sum": {
+   "phrase": "AMD's quarterly results",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "amdrep"
+  },
+  "amdrep:amd_s_revenue_guidance__sum": {
+   "phrase": "AMD's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "amdrep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  },
+  "fed:expectations_of_fed_rate_cuts__sum": {
+   "phrase": "expectations of Fed rate cuts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "fed"
+  },
+  "haven:financial_market_volatility__sum": {
+   "phrase": "financial market volatility",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "haven"
+  },
+  "investors:news_inv_investors__sum": {
+   "phrase": "investors",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_inv",
+   "principal": "investors"
+  },
+  "usa:the_risk_of_a_us_recession__sum": {
+   "phrase": "the risk of a US recession",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "usa"
+  },
+  "uspolicy:us_tariffs_on_imports__sum": {
+   "phrase": "US tariffs on imports",
+   "pair": [
+    "tighten",
+    "ease"
+   ],
+   "wording": "summary",
+   "principal": "uspolicy"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/amd:amd_s_revenue__sum",
+   "query": "amd:amd_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/amd:amd_s_revenue__sum",
+   "query": "amd:amd_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/amd:demand_for_amd_s_data_centre_chips__sum",
+   "query": "amd:demand_for_amd_s_data_centre_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/amd:demand_for_amd_s_data_centre_chips__sum",
+   "query": "amd:demand_for_amd_s_data_centre_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/amd:demand_for_amd_s_products__sum",
+   "query": "amd:demand_for_amd_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/amd:demand_for_amd_s_products__sum",
+   "query": "amd:demand_for_amd_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/tech:capital_spending_on_artificial_intellige__sum",
+   "query": "tech:capital_spending_on_artificial_intellige__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/tech:capital_spending_on_artificial_intellige__sum",
+   "query": "tech:capital_spending_on_artificial_intellige__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/tech:demand_for_ai_chips__sum",
+   "query": "tech:demand_for_ai_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/tech:demand_for_ai_chips__sum",
+   "query": "tech:demand_for_ai_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/tech:semiconductor_demand__sum",
+   "query": "tech:semiconductor_demand__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/tech:semiconductor_demand__sum",
+   "query": "tech:semiconductor_demand__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "profits/amd:amd_s_profit_margins__sum",
+   "query": "amd:amd_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits"
+  },
+  {
+   "id": "company/profits/amd:amd_s_profit_margins__sum",
+   "query": "amd:amd_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits"
+  },
+  {
+   "id": "profits/amd:amd_s_profits__sum",
+   "query": "amd:amd_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits"
+  },
+  {
+   "id": "company/profits/amd:amd_s_profits__sum",
+   "query": "amd:amd_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits"
+  },
+  {
+   "id": "outlook/amd:amd_s_earnings_forecasts__sum",
+   "query": "amd:amd_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook"
+  },
+  {
+   "id": "company/outlook/amd:amd_s_earnings_forecasts__sum",
+   "query": "amd:amd_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook"
+  },
+  {
+   "id": "outlook/amd:amd_s_growth_prospects__sum",
+   "query": "amd:amd_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook"
+  },
+  {
+   "id": "company/outlook/amd:amd_s_growth_prospects__sum",
+   "query": "amd:amd_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook"
+  },
+  {
+   "id": "competition/amd:amd_s_market_share__sum",
+   "query": "amd:amd_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "competition"
+  },
+  {
+   "id": "company/competition/amd:amd_s_market_share__sum",
+   "query": "amd:amd_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "competition"
+  },
+  {
+   "id": "reflectors/amd:amd__sum",
+   "query": "amd:amd__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/amd:amd__sum",
+   "query": "amd:amd__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "reflectors/amd:amd_s_share_price__sum",
+   "query": "amd:amd_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/amd:amd_s_share_price__sum",
+   "query": "amd:amd_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "reflectors/amd:the_valuation_of_amd__sum",
+   "query": "amd:the_valuation_of_amd__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/amd:the_valuation_of_amd__sum",
+   "query": "amd:the_valuation_of_amd__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "surprise/amdrep:amd_s_data_centre_revenue__sum",
+   "query": "amdrep:amd_s_data_centre_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/amdrep:amd_s_data_centre_revenue__sum",
+   "query": "amdrep:amd_s_data_centre_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/amdrep:amd_s_quarterly_results__sum",
+   "query": "amdrep:amd_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/amdrep:amd_s_quarterly_results__sum",
+   "query": "amdrep:amd_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/amdrep:amd_s_revenue_guidance__sum",
+   "query": "amdrep:amd_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/amdrep:amd_s_revenue_guidance__sum",
+   "query": "amdrep:amd_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/haven:financial_market_volatility__sum",
+   "query": "haven:financial_market_volatility__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/haven:financial_market_volatility__sum",
+   "query": "haven:financial_market_volatility__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/uspolicy:us_tariffs_on_imports__sum",
+   "query": "uspolicy:us_tariffs_on_imports__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/uspolicy:us_tariffs_on_imports__sum",
+   "query": "uspolicy:us_tariffs_on_imports__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro"
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Demand for the company's products and its revenue",
+   "deciding": false,
+   "role": "slot"
+  },
+  "profits": {
+   "label": "Profits and margins",
+   "deciding": false,
+   "role": "slot"
+  },
+  "outlook": {
+   "label": "Earnings forecasts and growth prospects",
+   "deciding": false,
+   "role": "slot"
+  },
+  "competition": {
+   "label": "Market share and competitive pressure",
+   "deciding": false,
+   "role": "slot"
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "deciding": false,
+   "role": "slot"
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "deciding": false,
+   "role": "slot"
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "company": {
+   "label": "AMD news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "deciding": false,
+   "role": "composite"
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": []
+ }
+}

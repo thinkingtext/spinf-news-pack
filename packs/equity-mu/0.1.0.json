@@ -1,0 +1,1183 @@
+{
+ "pack": "thinkingtext/equity-mu",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Micron news",
+ "description": "The Micron (MU) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Micron",
+  "ticker": "MU",
+  "peers": [
+   "NVDA",
+   "AMD",
+   "INTC"
+  ],
+  "weights": {
+   "company": 0.52,
+   "peers": 0.15,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "61b7045c5d09ad4ec585dce8ad3c433e",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "mu:demand_for_micron_s_products__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for Micron's products is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "mu:memory_chip_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: memory chip prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "mu:micron_s_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Micron's revenue is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tech:capital_spending_on_artificial_intellige__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: capital spending on artificial intelligence is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:demand_for_ai_chips__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for AI chips is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:semiconductor_demand__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: semiconductor demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "mu:micron_s_profit_margins__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Micron's profit margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "mu:micron_s_profits__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Micron's profits is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "mu:micron_s_growth_prospects__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Micron's growth prospects is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "mu:micron__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for Micron shareholders, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "mu:micron_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Micron's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "mu:the_valuation_of_micron__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the valuation of Micron is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "murep:micron_s_gross_margin__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Micron's gross margin came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "murep:micron_s_quarterly_results__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Micron's quarterly results came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "murep:micron_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Micron's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "investors:news_inv_investors__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for investors, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "usa:the_risk_of_a_us_recession__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the risk of a US recession is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "uspolicy:us_tariffs_on_imports__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US tariffs on imports is likely to{?}",
+    "options": [
+     " tighten",
+     " ease"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "mu:demand_for_micron_s_products__sum": {
+   "phrase": "demand for Micron's products",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "mu"
+  },
+  "mu:memory_chip_prices__sum": {
+   "phrase": "memory chip prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "mu"
+  },
+  "mu:micron_s_revenue__sum": {
+   "phrase": "Micron's revenue",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "mu"
+  },
+  "tech:capital_spending_on_artificial_intellige__sum": {
+   "phrase": "capital spending on artificial intelligence",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "tech:demand_for_ai_chips__sum": {
+   "phrase": "demand for AI chips",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "tech:semiconductor_demand__sum": {
+   "phrase": "semiconductor demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  },
+  "mu:micron_s_profit_margins__sum": {
+   "phrase": "Micron's profit margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "mu"
+  },
+  "mu:micron_s_profits__sum": {
+   "phrase": "Micron's profits",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "mu"
+  },
+  "mu:micron_s_growth_prospects__sum": {
+   "phrase": "Micron's growth prospects",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "mu"
+  },
+  "mu:micron__sum": {
+   "phrase": "Micron",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_co",
+   "principal": "mu"
+  },
+  "mu:micron_s_share_price__sum": {
+   "phrase": "Micron's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "mu"
+  },
+  "mu:the_valuation_of_micron__sum": {
+   "phrase": "the valuation of Micron",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "mu"
+  },
+  "murep:micron_s_gross_margin__sum": {
+   "phrase": "Micron's gross margin",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "murep"
+  },
+  "murep:micron_s_quarterly_results__sum": {
+   "phrase": "Micron's quarterly results",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "murep"
+  },
+  "murep:micron_s_revenue_guidance__sum": {
+   "phrase": "Micron's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "murep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  },
+  "investors:news_inv_investors__sum": {
+   "phrase": "investors",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_inv",
+   "principal": "investors"
+  },
+  "usa:the_risk_of_a_us_recession__sum": {
+   "phrase": "the risk of a US recession",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "usa"
+  },
+  "uspolicy:us_tariffs_on_imports__sum": {
+   "phrase": "US tariffs on imports",
+   "pair": [
+    "tighten",
+    "ease"
+   ],
+   "wording": "summary",
+   "principal": "uspolicy"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/mu:demand_for_micron_s_products__sum",
+   "query": "mu:demand_for_micron_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 1.95095,
+   "sd": 0.60463
+  },
+  {
+   "id": "company/demand/mu:demand_for_micron_s_products__sum",
+   "query": "mu:demand_for_micron_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 1.95095,
+   "sd": 0.60463
+  },
+  {
+   "id": "demand/mu:memory_chip_prices__sum",
+   "query": "mu:memory_chip_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 0.21133,
+   "sd": 0.39916
+  },
+  {
+   "id": "company/demand/mu:memory_chip_prices__sum",
+   "query": "mu:memory_chip_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 0.21133,
+   "sd": 0.39916
+  },
+  {
+   "id": "demand/mu:micron_s_revenue__sum",
+   "query": "mu:micron_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": -1.0471,
+   "sd": 0.44241
+  },
+  {
+   "id": "company/demand/mu:micron_s_revenue__sum",
+   "query": "mu:micron_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": -1.0471,
+   "sd": 0.44241
+  },
+  {
+   "id": "demand/tech:capital_spending_on_artificial_intellige__sum",
+   "query": "tech:capital_spending_on_artificial_intellige__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 3.28029,
+   "sd": 0.42523
+  },
+  {
+   "id": "company/demand/tech:capital_spending_on_artificial_intellige__sum",
+   "query": "tech:capital_spending_on_artificial_intellige__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 3.28029,
+   "sd": 0.42523
+  },
+  {
+   "id": "demand/tech:demand_for_ai_chips__sum",
+   "query": "tech:demand_for_ai_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 2.7437,
+   "sd": 0.5269
+  },
+  {
+   "id": "company/demand/tech:demand_for_ai_chips__sum",
+   "query": "tech:demand_for_ai_chips__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 2.7437,
+   "sd": 0.5269
+  },
+  {
+   "id": "demand/tech:semiconductor_demand__sum",
+   "query": "tech:semiconductor_demand__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 1.70177,
+   "sd": 0.53937
+  },
+  {
+   "id": "company/demand/tech:semiconductor_demand__sum",
+   "query": "tech:semiconductor_demand__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 1.70177,
+   "sd": 0.53937
+  },
+  {
+   "id": "profits/mu:micron_s_profit_margins__sum",
+   "query": "mu:micron_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits",
+   "mean": -1.28644,
+   "sd": 0.36261
+  },
+  {
+   "id": "company/profits/mu:micron_s_profit_margins__sum",
+   "query": "mu:micron_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits",
+   "mean": -1.28644,
+   "sd": 0.36261
+  },
+  {
+   "id": "profits/mu:micron_s_profits__sum",
+   "query": "mu:micron_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits",
+   "mean": -0.8397,
+   "sd": 0.45868
+  },
+  {
+   "id": "company/profits/mu:micron_s_profits__sum",
+   "query": "mu:micron_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits",
+   "mean": -0.8397,
+   "sd": 0.45868
+  },
+  {
+   "id": "outlook/mu:micron_s_growth_prospects__sum",
+   "query": "mu:micron_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook",
+   "mean": 2.62027,
+   "sd": 0.36029
+  },
+  {
+   "id": "company/outlook/mu:micron_s_growth_prospects__sum",
+   "query": "mu:micron_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook",
+   "mean": 2.62027,
+   "sd": 0.36029
+  },
+  {
+   "id": "reflectors/mu:micron__sum",
+   "query": "mu:micron__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": 1.30017,
+   "sd": 0.39715
+  },
+  {
+   "id": "company/reflectors/mu:micron__sum",
+   "query": "mu:micron__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": 1.30017,
+   "sd": 0.39715
+  },
+  {
+   "id": "reflectors/mu:micron_s_share_price__sum",
+   "query": "mu:micron_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": 0.00097,
+   "sd": 0.342
+  },
+  {
+   "id": "company/reflectors/mu:micron_s_share_price__sum",
+   "query": "mu:micron_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": 0.00097,
+   "sd": 0.342
+  },
+  {
+   "id": "reflectors/mu:the_valuation_of_micron__sum",
+   "query": "mu:the_valuation_of_micron__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": -0.37236,
+   "sd": 0.57084
+  },
+  {
+   "id": "company/reflectors/mu:the_valuation_of_micron__sum",
+   "query": "mu:the_valuation_of_micron__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": -0.37236,
+   "sd": 0.57084
+  },
+  {
+   "id": "surprise/murep:micron_s_gross_margin__sum",
+   "query": "murep:micron_s_gross_margin__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.14489,
+   "sd": 0.16637
+  },
+  {
+   "id": "company/surprise/murep:micron_s_gross_margin__sum",
+   "query": "murep:micron_s_gross_margin__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.14489,
+   "sd": 0.16637
+  },
+  {
+   "id": "surprise/murep:micron_s_quarterly_results__sum",
+   "query": "murep:micron_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.1544,
+   "sd": 0.21048
+  },
+  {
+   "id": "company/surprise/murep:micron_s_quarterly_results__sum",
+   "query": "murep:micron_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.1544,
+   "sd": 0.21048
+  },
+  {
+   "id": "surprise/murep:micron_s_revenue_guidance__sum",
+   "query": "murep:micron_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": -0.00445,
+   "sd": 0.18427
+  },
+  {
+   "id": "company/surprise/murep:micron_s_revenue_guidance__sum",
+   "query": "murep:micron_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": -0.00445,
+   "sd": 0.18427
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.27865,
+   "sd": 0.60389
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.27865,
+   "sd": 0.60389
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.15599,
+   "sd": 0.49171
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.15599,
+   "sd": 0.49171
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": -0.52728,
+   "sd": 0.76734
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": -0.52728,
+   "sd": 0.76734
+  },
+  {
+   "id": "macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": 1.21698,
+   "sd": 0.85311
+  },
+  {
+   "id": "company/macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": 1.21698,
+   "sd": 0.85311
+  },
+  {
+   "id": "macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro",
+   "mean": -2.13735,
+   "sd": 0.67145
+  },
+  {
+   "id": "company/macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro",
+   "mean": -2.13735,
+   "sd": 0.67145
+  },
+  {
+   "id": "macro/uspolicy:us_tariffs_on_imports__sum",
+   "query": "uspolicy:us_tariffs_on_imports__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro",
+   "mean": 0.09301,
+   "sd": 0.48954
+  },
+  {
+   "id": "company/macro/uspolicy:us_tariffs_on_imports__sum",
+   "query": "uspolicy:us_tariffs_on_imports__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro",
+   "mean": 0.09301,
+   "sd": 0.48954
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Demand for the company's products and its revenue",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.02054,
+     0.30799,
+     0.40939,
+     0.45887,
+     0.49599,
+     0.52618,
+     0.55121,
+     0.58266,
+     0.6174,
+     0.66876,
+     0.71214,
+     0.79709,
+     0.88316,
+     0.95788
+    ]
+   }
+  },
+  "profits": {
+   "label": "Profits and margins",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00168,
+     0.26206,
+     0.36594,
+     0.43421,
+     0.48087,
+     0.5277,
+     0.57318,
+     0.62521,
+     0.66905,
+     0.72148,
+     0.77829,
+     0.8538,
+     0.95495,
+     0.97529
+    ]
+   }
+  },
+  "outlook": {
+   "label": "Earnings forecasts and growth prospects",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00313,
+     0.24147,
+     0.3423,
+     0.41646,
+     0.47641,
+     0.52976,
+     0.57708,
+     0.629,
+     0.67908,
+     0.74825,
+     0.79584,
+     0.87725,
+     0.92679,
+     0.94306
+    ]
+   }
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.05052,
+     0.24465,
+     0.33796,
+     0.3986,
+     0.45244,
+     0.50827,
+     0.5662,
+     0.61888,
+     0.67086,
+     0.73435,
+     0.78594,
+     0.86248,
+     0.94619,
+     0.95772
+    ]
+   }
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00172,
+     0.27239,
+     0.36307,
+     0.42598,
+     0.47737,
+     0.5272,
+     0.57182,
+     0.61111,
+     0.66196,
+     0.72909,
+     0.76732,
+     0.83488,
+     0.91943,
+     0.97368
+    ]
+   }
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00262,
+     0.27613,
+     0.3742,
+     0.43225,
+     0.47148,
+     0.50641,
+     0.53762,
+     0.58188,
+     0.63322,
+     0.72002,
+     0.78254,
+     0.92461,
+     0.99381,
+     0.99798
+    ]
+   }
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.06222,
+     0.32085,
+     0.38082,
+     0.42189,
+     0.4612,
+     0.4979,
+     0.53295,
+     0.57461,
+     0.62523,
+     0.68121,
+     0.72209,
+     0.85385,
+     0.94268,
+     0.9498
+    ]
+   }
+  },
+  "company": {
+   "label": "Micron news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "role": "composite",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.04521,
+     0.32696,
+     0.39849,
+     0.44927,
+     0.48891,
+     0.52439,
+     0.55039,
+     0.58054,
+     0.60958,
+     0.65313,
+     0.68865,
+     0.79654,
+     0.89227,
+     0.96535
+    ]
+   }
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": [],
+  "per_category": {}
+ },
+ "engine": "fp_51319d2ff6",
+ "calibration": {
+  "sample": "calibration/wikinews_business.json.gz",
+  "n": 1500,
+  "statistic": "mean and sd of each read over the sample; no thresholds, no decision",
+  "date": "2026-10-24"
+ }
+}

@@ -1,0 +1,639 @@
+{
+ "pack": "thinkingtext/equity-googl",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Alphabet news",
+ "description": "The Alphabet (GOOGL) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Alphabet",
+  "ticker": "GOOGL",
+  "peers": [],
+  "weights": {
+   "company": 0.67,
+   "peers": 0,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "93f65d3a8d0c6140897f692de3aa67bf",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "googl:alphabet_s_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Alphabet's revenue is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "googl:demand_for_google_s_products__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for Google's products is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "googl:alphabet_s_profit_margins__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Alphabet's profit margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "googl:alphabet_s_profits__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Alphabet's profits is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "googl:alphabet_s_earnings_forecasts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Alphabet's earnings forecasts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "googl:alphabet_s_growth_prospects__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Alphabet's growth prospects is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "googl:alphabet__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for Alphabet shareholders, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "googl:alphabet_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Alphabet's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "googl:the_valuation_of_alphabet__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the valuation of Alphabet is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "googlrep:alphabet_s_quarterly_results__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Alphabet's quarterly results came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "googlrep:alphabet_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Alphabet's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "googlrep:google_cloud_revenue_growth__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Google Cloud revenue growth came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:expectations_of_fed_rate_cuts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: expectations of Fed rate cuts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tech:big_tech_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: big tech earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "googl:alphabet_s_revenue__sum": {
+   "phrase": "Alphabet's revenue",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "googl"
+  },
+  "googl:demand_for_google_s_products__sum": {
+   "phrase": "demand for Google's products",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "googl"
+  },
+  "googl:alphabet_s_profit_margins__sum": {
+   "phrase": "Alphabet's profit margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "googl"
+  },
+  "googl:alphabet_s_profits__sum": {
+   "phrase": "Alphabet's profits",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "googl"
+  },
+  "googl:alphabet_s_earnings_forecasts__sum": {
+   "phrase": "Alphabet's earnings forecasts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "googl"
+  },
+  "googl:alphabet_s_growth_prospects__sum": {
+   "phrase": "Alphabet's growth prospects",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "googl"
+  },
+  "googl:alphabet__sum": {
+   "phrase": "Alphabet",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_co",
+   "principal": "googl"
+  },
+  "googl:alphabet_s_share_price__sum": {
+   "phrase": "Alphabet's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "googl"
+  },
+  "googl:the_valuation_of_alphabet__sum": {
+   "phrase": "the valuation of Alphabet",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "googl"
+  },
+  "googlrep:alphabet_s_quarterly_results__sum": {
+   "phrase": "Alphabet's quarterly results",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "googlrep"
+  },
+  "googlrep:alphabet_s_revenue_guidance__sum": {
+   "phrase": "Alphabet's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "googlrep"
+  },
+  "googlrep:google_cloud_revenue_growth__sum": {
+   "phrase": "Google Cloud revenue growth",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "googlrep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  },
+  "fed:expectations_of_fed_rate_cuts__sum": {
+   "phrase": "expectations of Fed rate cuts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "fed"
+  },
+  "tech:big_tech_earnings__sum": {
+   "phrase": "big tech earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "tech"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/googl:alphabet_s_revenue__sum",
+   "query": "googl:alphabet_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/googl:alphabet_s_revenue__sum",
+   "query": "googl:alphabet_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "demand/googl:demand_for_google_s_products__sum",
+   "query": "googl:demand_for_google_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand"
+  },
+  {
+   "id": "company/demand/googl:demand_for_google_s_products__sum",
+   "query": "googl:demand_for_google_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand"
+  },
+  {
+   "id": "profits/googl:alphabet_s_profit_margins__sum",
+   "query": "googl:alphabet_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits"
+  },
+  {
+   "id": "company/profits/googl:alphabet_s_profit_margins__sum",
+   "query": "googl:alphabet_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits"
+  },
+  {
+   "id": "profits/googl:alphabet_s_profits__sum",
+   "query": "googl:alphabet_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits"
+  },
+  {
+   "id": "company/profits/googl:alphabet_s_profits__sum",
+   "query": "googl:alphabet_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits"
+  },
+  {
+   "id": "outlook/googl:alphabet_s_earnings_forecasts__sum",
+   "query": "googl:alphabet_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook"
+  },
+  {
+   "id": "company/outlook/googl:alphabet_s_earnings_forecasts__sum",
+   "query": "googl:alphabet_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook"
+  },
+  {
+   "id": "outlook/googl:alphabet_s_growth_prospects__sum",
+   "query": "googl:alphabet_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook"
+  },
+  {
+   "id": "company/outlook/googl:alphabet_s_growth_prospects__sum",
+   "query": "googl:alphabet_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook"
+  },
+  {
+   "id": "reflectors/googl:alphabet__sum",
+   "query": "googl:alphabet__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/googl:alphabet__sum",
+   "query": "googl:alphabet__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "reflectors/googl:alphabet_s_share_price__sum",
+   "query": "googl:alphabet_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/googl:alphabet_s_share_price__sum",
+   "query": "googl:alphabet_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "reflectors/googl:the_valuation_of_alphabet__sum",
+   "query": "googl:the_valuation_of_alphabet__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors"
+  },
+  {
+   "id": "company/reflectors/googl:the_valuation_of_alphabet__sum",
+   "query": "googl:the_valuation_of_alphabet__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors"
+  },
+  {
+   "id": "surprise/googlrep:alphabet_s_quarterly_results__sum",
+   "query": "googlrep:alphabet_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/googlrep:alphabet_s_quarterly_results__sum",
+   "query": "googlrep:alphabet_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/googlrep:alphabet_s_revenue_guidance__sum",
+   "query": "googlrep:alphabet_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/googlrep:alphabet_s_revenue_guidance__sum",
+   "query": "googlrep:alphabet_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "surprise/googlrep:google_cloud_revenue_growth__sum",
+   "query": "googlrep:google_cloud_revenue_growth__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise"
+  },
+  {
+   "id": "company/surprise/googlrep:google_cloud_revenue_growth__sum",
+   "query": "googlrep:google_cloud_revenue_growth__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise"
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market"
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market"
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  },
+  {
+   "id": "macro/tech:big_tech_earnings__sum",
+   "query": "tech:big_tech_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro"
+  },
+  {
+   "id": "company/macro/tech:big_tech_earnings__sum",
+   "query": "tech:big_tech_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro"
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Demand for the company's products and its revenue",
+   "deciding": false,
+   "role": "slot"
+  },
+  "profits": {
+   "label": "Profits and margins",
+   "deciding": false,
+   "role": "slot"
+  },
+  "outlook": {
+   "label": "Earnings forecasts and growth prospects",
+   "deciding": false,
+   "role": "slot"
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "deciding": false,
+   "role": "slot"
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "deciding": false,
+   "role": "slot"
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "deciding": false,
+   "role": "slot"
+  },
+  "company": {
+   "label": "Alphabet news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "deciding": false,
+   "role": "composite"
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": []
+ }
+}

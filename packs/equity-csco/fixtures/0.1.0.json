@@ -1,0 +1,1549 @@
+{
+ "pack": "thinkingtext/equity-csco",
+ "version": "0.1.0",
+ "engine": "fp_51319d2ff6",
+ "usage": {
+  "prompt_tokens": 2830,
+  "completion_tokens": 0,
+  "total_tokens": 2830,
+  "prompt_tokens_details": {
+   "content_tokens": 1465,
+   "text_tokens": 1465,
+   "query_tokens": 1365,
+   "floor_tokens": 0
+  },
+  "inputs": 5,
+  "content": {
+   "tokens": 1465,
+   "text_tokens": 1465,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 10,
+   "combinations": 10,
+   "options": 20,
+   "prompts": 50,
+   "floor_prompts": 0,
+   "query_tokens": 1365,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 2217
+ },
+ "cases": [
+  {
+   "id": "wn58383",
+   "text": "The iPhone only made its appearance as a prototype and there have been controversies aroused.\nThe dispute has come up between the manufacturer of the iPhone (which was presented on Wednesday for the first time) — Apple Inc. — and a leader in network and communication systems, based in San Jose — Cisco. The company claims to possess the trademark for iPhone, and moreover, that it sells devices under the same brand through one of its divisions.\nThis became the reason for Cisco to file a lawsuit against Apple Inc. so that the latter would stop selling the device.\nCisco states that it has received the trademark in 2000, when the company overtook Infogear Technology Corp., which took place in 1996.\nThe Vice President and general counsel of the company, Mark Chandler, explained that there was no doubt about the excitement of the new device from Apple, but they should not use a trademark, which belongs to Cisco.\nThe iPhone developed by Cisco is a device which allows users to make phone calls over the voice over Internet protocol (VoIP).",
+   "context": "article",
+   "source": {
+    "title": "Cisco sues Apple for iPhone trademark",
+    "url": "https://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark",
+    "revision": 4815984,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn58383",
+    "queries": [
+     {
+      "id": "csco:corporate_spending_on_networking_equipme__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.177062,
+          "p": 0.690183,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.978038,
+          "p": 0.309817,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.835733,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.873832,
+          "p": 0.296218,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.008459,
+          "p": 0.703782,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.929854,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.276697,
+          "p": 0.629324,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.806016,
+          "p": 0.370676,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.940011,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.308916,
+          "p": 0.558605,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.544419,
+          "p": 0.441395,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.822112,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_product_orders__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.010671,
+          "p": 0.45181,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.81731,
+          "p": 0.54819,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.890975,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.074767,
+          "p": 0.384734,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.605263,
+          "p": 0.615266,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.955824,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.563841,
+          "p": 0.285881,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.648365,
+          "p": 0.714119,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.900903,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.783514,
+          "p": 0.250729,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.688785,
+          "p": 0.749271,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.753435,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.955499,
+          "p": 0.290152,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.060852,
+          "p": 0.709848,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.820602,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.839947,
+          "p": 0.485441,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.781694,
+          "p": 0.514559,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.879638,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.212365,
+       "percentile": 0.08037,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.781202,
+       "percentile": 0.928682,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.406195,
+       "percentile": 0.290797,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.09602,
+       "percentile": 0.03539,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.193336,
+       "percentile": 0.068089,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.646669,
+       "percentile": 0.815386,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.358777,
+       "percentile": 0.14039,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn28682",
+   "text": "San Jose, California —\nDel Borgsdorf, the city manager of San Jose, California announced his resignation on Tuesday, citing \"personal reasons\" and the \"political environment\" for his decision. While he denies it is was a factor in his decision, the resignation comes one day after Santa Clara County District Attorney George Kennedy announced his office will investigate the city's contract with Norcal Waste Systems for possible criminal prosecution.  Borgsdorf has been criticized by the city council for not informing the council of the $11 million rate hike promised to the company by mayor Ron Gonzales.\nBorgsdorf's resignation follows the resignation of other city officials; Stephen Haase, the city's planning director, and John Bjurman, the city's director of information technology, resigned earlier in the week. In addition, the city council formally censured mayor Gonzales last week, and asked for formal apologies from Borgsdorf and city attorney Richard Doyle over the Norcal contract. In addition to the waste removal scandal, the city government has been criticized for a no-bid contract with Cisco Systems to provide IT equipment in the new City Hall; the Cisco deal cost city taxpayers over $3 million in equipment costs and construction delays.",
+   "context": "article",
+   "source": {
+    "title": "San Jose, CA, USA, city manager resigns amid Norcal investigation",
+    "url": "https://en.wikinews.org/wiki/San_Jose,_CA,_USA,_city_manager_resigns_amid_Norcal_investigation",
+    "revision": 4825592,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn28682",
+    "queries": [
+     {
+      "id": "csco:corporate_spending_on_networking_equipme__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.564555,
+          "p": 0.786271,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.867149,
+          "p": 0.213729,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.733958,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.653628,
+          "p": 0.481648,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.580188,
+          "p": 0.518352,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946233,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.35613,
+          "p": 0.65354,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.990767,
+          "p": 0.34646,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946645,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.046023,
+          "p": 0.203766,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.683104,
+          "p": 0.796234,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.766656,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_product_orders__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.101274,
+          "p": 0.612198,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.557837,
+          "p": 0.387802,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.926508,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.842872,
+          "p": 0.626871,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.361691,
+          "p": 0.373129,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.965811,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.250634,
+          "p": 0.521656,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.337311,
+          "p": 0.478344,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.925718,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.378268,
+          "p": 0.382391,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.898858,
+          "p": 0.617609,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.757549,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.118968,
+          "p": 0.331873,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.419244,
+          "p": 0.668127,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.866808,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.247992,
+          "p": 0.350417,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.630786,
+          "p": 0.649583,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.889126,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.482165,
+       "percentile": 0.41767,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.963086,
+       "percentile": 0.999506,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.058697,
+       "percentile": 0.012172,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.839707,
+       "percentile": 0.986771,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.327857,
+       "percentile": 0.149831,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.470377,
+       "percentile": 0.296466,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.551271,
+       "percentile": 0.60744,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn100524",
+   "text": "The twelfth-annual Asia Pacific Regional Internet Conference on Operational Technologies (a.k.a APRICOT) returned to Taiwan this year at the Taipei Howard Plaza Hotel. This is the first appearance since the 2003 conference held by the Taiwan Network Information Center (TWNIC) at the Taipei International Convention Center and Grand Hyatt Taipei.\nWhen Wikinews journalist Rico Shen reported on the recent \"Edison Chen photo scandal\" incident, Philip Smith of Cisco Systems commented:\nWorkshops with varied topics and different technology levels took place from February 20 to 24, while several main seminars and speeches for industry, governmental, and academic executives ran from February 25 to 29. Several industry experts such as Wilfred Kwan (Chief Technology Officer of AsiaNetCom), Chung-laung Liu (Taiwan Chapter Chair of ISOC), and Maemura Akinori (EC Chair of APNIC) will give several speeches related to the Internet industry at the conference.",
+   "context": "article",
+   "source": {
+    "title": "Executives from global Internet industry meet at 2008 APRICOT",
+    "url": "https://en.wikinews.org/wiki/Executives_from_global_Internet_industry_meet_at_2008_APRICOT",
+    "revision": 4817449,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn100524",
+    "queries": [
+     {
+      "id": "csco:corporate_spending_on_networking_equipme__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.873384,
+          "p": 0.697837,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -2.710402,
+          "p": 0.302163,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.779887,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.294106,
+          "p": 0.118114,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.283698,
+          "p": 0.881886,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.884445,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.418343,
+          "p": 0.635235,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.973083,
+          "p": 0.364765,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.948418,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.969168,
+          "p": 0.165846,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.353808,
+          "p": 0.834154,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.690399,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_product_orders__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.030857,
+          "p": 0.390618,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.586143,
+          "p": 0.609382,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.876416,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.798619,
+          "p": 0.402877,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.405127,
+          "p": 0.597123,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.944396,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.239132,
+          "p": 0.360195,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.664616,
+          "p": 0.639805,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.891176,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.495921,
+          "p": 0.300026,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.648747,
+          "p": 0.699974,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.725289,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.002041,
+          "p": 0.33237,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.304556,
+          "p": 0.66763,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.850511,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.164034,
+          "p": 0.329922,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.455496,
+          "p": 0.670078,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.871924,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.227641,
+       "percentile": 0.086186,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.167564,
+       "percentile": 0.068374,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.036302,
+       "percentile": 0.001771,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.1208,
+       "percentile": 0.044586,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.264643,
+       "percentile": 0.093509,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.441081,
+       "percentile": 0.237053,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.173953,
+       "percentile": 0.051544,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn1530555",
+   "text": "On Tuesday many internet routers, used to find the pathways to different parts of the web, reached their memory limit of 512,000 entries in the tables they use to store the routes, causing problems for many users.\nA router is used to direct a user towards the area of the internet where they will find the content they are looking for, e.g. a web page. The recent problem was caused by the arbitrary memory limit built into the design of many aging routers. A limit was needed to prevent the cost of hardware from becoming prohibitively expensive in the days when physical data storage was still comparatively expensive. This small amount of memory in turn limits the number of directions which can be stored on a single router leading to different parts of the internet. When this limit was reached, it caused outages of services among Internet Service Providers. Many routers, including older ones provided by Cisco Systems Inc., are limited to storing a total of 512,000 routes or paths.\nThis limit was reached on Tuesday, reported to have been triggered by Verizon publishing another 15,000 paths. Those affected included eBay, LastPass, and clients of the web hosting company Liquid Web, who lost much of their services until Verizon withdrew some of these new paths. Problems nevertheless continued throughout the day, even after the withdrawal.\nA longer term fix is possible, but it would require manually replacing old routers with newer, more capable ones. It is hard to tell what issues would temporarily cascade though the internet by taking down routers from part of the internet for maintenance. Many experts have warned that problems could continue until these difficult fixes have been implemented, although the recent switch to a newer form of IP Addresses, IPv6, will temporarily help the issue. Wired News reported that Andre Toonk, a network engineer, had stated that the number of network outages on the internet, typically around 1,500, yesterday peaked at 2,587, enough to become clearly noticeable.",
+   "context": "article",
+   "source": {
+    "title": "Parts of internet break as '512k day' reached by routers",
+    "url": "https://en.wikinews.org/wiki/Parts_of_internet_break_as_%27512k_day%27_reached_by_routers",
+    "revision": 4823957,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn1530555",
+    "queries": [
+     {
+      "id": "csco:corporate_spending_on_networking_equipme__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.800959,
+          "p": 0.975668,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.49229,
+          "p": 0.024332,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.539907,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.82285,
+          "p": 0.587224,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.175353,
+          "p": 0.412776,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.898784,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.40839,
+          "p": 0.664216,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.09053,
+          "p": 0.335784,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.950175,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.450327,
+          "p": 0.260509,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.407001,
+          "p": 0.739491,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.668858,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_product_orders__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.833863,
+          "p": 0.552218,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.0435,
+          "p": 0.447782,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.893547,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.790916,
+          "p": 0.592625,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.165745,
+          "p": 0.407375,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.961907,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.255195,
+          "p": 0.445151,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.034913,
+          "p": 0.554849,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.913348,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.128714,
+          "p": 0.38735,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.67025,
+          "p": 0.61265,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.69281,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.623912,
+          "p": 0.420841,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.304591,
+          "p": 0.579159,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.827682,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.881673,
+          "p": 0.396929,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.463396,
+          "p": 0.603071,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.858814,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.997072,
+       "percentile": 0.999991,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.98702,
+       "percentile": 1,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.099154,
+       "percentile": 0.030962,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.65045,
+       "percentile": 0.768657,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.422133,
+       "percentile": 0.286052,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.53462,
+       "percentile": 0.476243,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.802207,
+       "percentile": 0.990777,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "wn42520",
+   "text": "IBM will expand its service, software, hardware and research divisions in India its chairman and chief executive officer has said. The plan would give the subcontinent $6 billion worth of investment over three years.\nAnnouncing the news in Bangalore to an audience of 10,000 employees, the package presented is three times as large as that invested by IBM over the previous three years, said Samuel J. Palmisano. \"We see India's role as central to our global enterprise,\" he said.\nThe $6 billion investment by IBM, also known by the nickname \"Big Blue,\" is larger than the $3.9 billion total foreign investment promised to India by Microsoft Corp., Intel Corp. and Cisco Systems Inc.\nIBM is currently the largest multinational in India employing 43,000 people in 14 Indian cities. 15,000 new jobs were added last year as the company took 10,000 out of Europe. The new foreign investment is expected to create more jobs in India's thriving telecommunications industry.\nEstimates put IBM's sales revenue in India at $1 billion. While the home market valuation of $15 billion is a figure expected to grow 25 per cent a year. In the first quarter of this year IBM's Indian wing grew 61 per cent compared to the year before.\n\"IBM is excited by the opportunities in India over the long term and we are also encouraged by the domestic opportunity that India offers,\" said Palmisano.\nAddressing specifically IBM's plans in India the head said he wanted to automate IT services, create a \"one-stop shop\" for hardware information and IT goods, build a new R&D centre in Delhi and forge links between IBM's consultants, developers, engineers and scientists.\n\"IBM is not going to miss this opportunity,\" said Palmisano.",
+   "context": "article",
+   "source": {
+    "title": "India to get $6 billion out of the Big Blue",
+    "url": "https://en.wikinews.org/wiki/India_to_get_$6_billion_out_of_the_Big_Blue",
+    "revision": 4819850,
+    "license": "CC BY 2.5"
+   },
+   "result": {
+    "input_id": "wn42520",
+    "queries": [
+     {
+      "id": "csco:corporate_spending_on_networking_equipme__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.754386,
+          "p": 0.93192,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.370945,
+          "p": 0.06808,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.814347,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.413767,
+          "p": 0.260011,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.367857,
+          "p": 0.739989,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.873402,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.082399,
+          "p": 0.850707,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.822556,
+          "p": 0.149293,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.946105,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "csco:cisco_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.614731,
+          "p": 0.522012,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.702835,
+          "p": 0.477988,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.618889,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_product_orders__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.888392,
+          "p": 0.618441,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.371329,
+          "p": 0.381559,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.90999,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.820463,
+          "p": 0.606983,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.25511,
+          "p": 0.393017,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.963891,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "cscorep:cisco_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.232339,
+          "p": 0.516143,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.296934,
+          "p": 0.483857,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.923538,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.489922,
+          "p": 0.613808,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.953268,
+          "p": 0.386192,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.6328,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.202903,
+          "p": 0.594373,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.584977,
+          "p": 0.405627,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.81412,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.494636,
+          "p": 0.532532,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.624948,
+          "p": 0.467468,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.84503,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.959885,
+       "percentile": 0.996796,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.694083,
+       "percentile": 0.822466,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.723952,
+       "percentile": 0.8891,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.823428,
+       "percentile": 0.975825,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.762488,
+       "percentile": 0.935934,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.700222,
+       "percentile": 0.904692,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.805155,
+       "percentile": 0.991049,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

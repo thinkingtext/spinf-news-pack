@@ -1,0 +1,1187 @@
+{
+ "pack": "thinkingtext/equity-pltr",
+ "version": "0.1.0",
+ "engine": "fp_51319d2ff6",
+ "usage": {
+  "prompt_tokens": 1501,
+  "completion_tokens": 0,
+  "total_tokens": 1501,
+  "prompt_tokens_details": {
+   "content_tokens": 299,
+   "text_tokens": 299,
+   "query_tokens": 1202,
+   "floor_tokens": 0
+  },
+  "inputs": 2,
+  "content": {
+   "tokens": 299,
+   "text_tokens": 299,
+   "images": 0,
+   "image_tokens": 0,
+   "video_frames": 0,
+   "video_tokens": 0,
+   "audio_seconds": 0.0,
+   "audio_tokens": 0
+  },
+  "scoring": {
+   "queries": 21,
+   "combinations": 21,
+   "options": 42,
+   "prompts": 42,
+   "floor_prompts": 0,
+   "query_tokens": 1202,
+   "floor_tokens": 0
+  },
+  "processed_tokens": 832
+ },
+ "cases": [
+  {
+   "id": "syn-pltr-1",
+   "text": "Palantir Technologies raised its revenue forecast for the year on Monday after a quarter in which its US commercial business grew faster than expected, driven by customers adopting its artificial intelligence platform.\n\nThe company reported quarterly revenue above analysts' estimates and its largest ever operating profit. The number of US commercial customers rose sharply from a year earlier, and government revenue also grew, helped by new defence contracts.\n\nThe chief executive said demand for the AI platform was unprecedented and that the company was adding sales capacity to keep up. Palantir expects to remain profitable on an adjusted basis every quarter this year.\n\nShares jumped in extended trading. Some analysts said the valuation of Palantir already assumes years of rapid growth, and that the stock's rise leaves little room for a slowdown.",
+   "context": "article",
+   "source": {
+    "title": "Palantir lifts forecast on US commercial demand for AI platform",
+    "license": "written by thinkingtext, illustrative (not a news report)"
+   },
+   "result": {
+    "input_id": "syn-pltr-1",
+    "queries": [
+     {
+      "id": "pltr:demand_for_palantir_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.41651,
+          "p": 0.974735,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.069237,
+          "p": 0.025265,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.908455,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.358414,
+          "p": 0.973946,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -5.979584,
+          "p": 0.026054,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.9029,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.087576,
+          "p": 0.700581,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.937643,
+          "p": 0.299419,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.934894,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.063025,
+          "p": 0.877871,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.035445,
+          "p": 0.122129,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.855253,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.617939,
+          "p": 0.9117,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.952507,
+          "p": 0.0883,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.919981,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.863541,
+          "p": 0.954758,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -7.912977,
+          "p": 0.045242,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.991911,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:competitive_pressure_on_palantir__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -1.118984,
+          "p": 0.973342,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -4.716621,
+          "p": 0.026658,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.664443,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.015493,
+          "p": 0.86366,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.861521,
+          "p": 0.13634,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.94324,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.231534,
+          "p": 0.955617,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.301045,
+          "p": 0.044383,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.88765,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.189292,
+          "p": 0.732016,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.194169,
+          "p": 0.267984,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.584112,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:the_valuation_of_palantir__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.012352,
+          "p": 0.682604,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.778118,
+          "p": 0.317396,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.927958,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltrrep:palantir_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.999193,
+          "p": 0.944956,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -5.842206,
+          "p": 0.055044,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.94727,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltrrep:palantir_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -1.410691,
+          "p": 0.95798,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -4.537381,
+          "p": 0.04202,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.745324,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltrrep:palantir_s_us_commercial_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -1.407372,
+          "p": 0.981143,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -5.359202,
+          "p": 0.018857,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.75051,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.244409,
+          "p": 0.792554,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.584798,
+          "p": 0.207446,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.636478,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -1.595261,
+          "p": 0.882901,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.615458,
+          "p": 0.117099,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.77024,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.685474,
+          "p": 0.745468,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.760057,
+          "p": 0.254532,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.908529,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.250423,
+          "p": 0.663772,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.930571,
+          "p": 0.336228,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.978519,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.180685,
+          "p": 0.979049,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.025066,
+          "p": 0.020951,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.957554,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -2.517191,
+          "p": 0.932021,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -5.135347,
+          "p": 0.067979,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.913429,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.787558,
+          "p": 0.400051,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.382308,
+          "p": 0.599949,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.979171,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.989634,
+       "percentile": 0.999412,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.978323,
+       "percentile": 0.99791,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.989408,
+       "percentile": 0.998834,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.813643,
+       "percentile": 0.97177,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.923647,
+       "percentile": 0.996357,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 1.0,
+       "percentile": 1,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.972142,
+       "percentile": 0.996184,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.752939,
+       "percentile": 0.965078,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.990287,
+       "percentile": 1,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  },
+  {
+   "id": "syn-pltr-2",
+   "text": "Shares of enterprise software companies fell on Wednesday after a widely followed analyst report questioned how quickly businesses would see returns on their spending on artificial intelligence tools.\n\nPalantir Technologies was among the biggest decliners, giving back part of a large gain this year. The report argued that many pilot projects had not yet turned into paid deployments and that budgets for next year were being set cautiously.\n\nPalantir has said its own commercial pipeline is strong, and recently reported accelerating growth in the United States. An analyst who follows the company said the sell-off reflected its valuation more than any change in its business, but added that competitive pressure from larger software vendors adding AI features is increasing.\n\nThe broader market was little changed.",
+   "context": "article",
+   "source": {
+    "title": "Software stocks fall as investors question AI spending returns",
+    "license": "written by thinkingtext, illustrative (not a news report)"
+   },
+   "result": {
+    "input_id": "syn-pltr-2",
+    "queries": [
+     {
+      "id": "pltr:demand_for_palantir_s_products__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -2.464472,
+          "p": 0.686914,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -3.250204,
+          "p": 0.313086,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.87618,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.042774,
+          "p": 0.252037,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.954998,
+          "p": 0.747963,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.930373,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_profit_margins__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.674407,
+          "p": 0.15747,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.997232,
+          "p": 0.84253,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.940744,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_profits__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.873174,
+          "p": 0.188239,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.411678,
+          "p": 0.811761,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.889543,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_earnings_forecasts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.823731,
+          "p": 0.141542,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.021194,
+          "p": 0.858458,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.94322,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_growth_prospects__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " improve",
+          "logprob": -4.91585,
+          "p": 0.825802,
+          "floor_p": null
+         },
+         {
+          "text": " worsen",
+          "logprob": -6.472012,
+          "p": 0.174198,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.991124,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:competitive_pressure_on_palantir__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " increase",
+          "logprob": -0.653188,
+          "p": 0.997052,
+          "floor_p": null
+         },
+         {
+          "text": " decrease",
+          "logprob": -6.47682,
+          "p": 0.002948,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.478077,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_market_share__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.123436,
+          "p": 0.280009,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.179018,
+          "p": 0.719991,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.978731,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.551991,
+          "p": 0.41133,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -3.193522,
+          "p": 0.58867,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.930305,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:palantir_s_share_price__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.932192,
+          "p": 0.116469,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.905892,
+          "p": 0.883531,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.831709,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltr:the_valuation_of_palantir__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.628155,
+          "p": 0.077275,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.148196,
+          "p": 0.922725,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.953475,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltrrep:palantir_s_quarterly_results__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -4.079792,
+          "p": 0.432401,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.807729,
+          "p": 0.567599,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96089,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltrrep:palantir_s_revenue_guidance__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -3.236305,
+          "p": 0.352146,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -2.626684,
+          "p": 0.647854,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.888373,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "pltrrep:palantir_s_us_commercial_revenue__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " higher",
+          "logprob": -2.78922,
+          "p": 0.64703,
+          "floor_p": null
+         },
+         {
+          "text": " lower",
+          "logprob": -3.395229,
+          "p": 0.35297,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.904998,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_stock_prices__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -2.872365,
+          "p": 0.240663,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -1.723316,
+          "p": 0.759337,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.764962,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "stocks:us_technology_stocks__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.434636,
+          "p": 0.224672,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -2.195989,
+          "p": 0.775328,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.856514,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "earnings:us_corporate_earnings__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.515798,
+          "p": 0.453086,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -3.327588,
+          "p": 0.546914,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.934396,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "fed:expectations_of_fed_rate_cuts__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -4.789028,
+          "p": 0.451721,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.595308,
+          "p": 0.548279,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.98158,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "haven:financial_market_volatility__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -3.881865,
+          "p": 0.982929,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -7.935041,
+          "p": 0.017071,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.97903,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "investors:news_inv_investors__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " positive",
+          "logprob": -3.471674,
+          "p": 0.806048,
+          "floor_p": null
+         },
+         {
+          "text": " negative",
+          "logprob": -4.896208,
+          "p": 0.193952,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.96146,
+        "floor_residual": null
+       }
+      ]
+     },
+     {
+      "id": "usa:us_economic_growth__sum",
+      "combinations": [
+       {
+        "values": {},
+        "options": [
+         {
+          "text": " rise",
+          "logprob": -5.398517,
+          "p": 0.270403,
+          "floor_p": null
+         },
+         {
+          "text": " fall",
+          "logprob": -4.405941,
+          "p": 0.729597,
+          "floor_p": null
+         }
+        ],
+        "residual": 0.983272,
+        "floor_residual": null
+       }
+      ]
+     }
+    ]
+   },
+   "expected": {
+    "per_category": {
+     "categories": {
+      "demand": {
+       "score": 0.028636,
+       "percentile": 0,
+       "flagged": null
+      },
+      "profits": {
+       "score": 0.017145,
+       "percentile": 0.004744,
+       "flagged": null
+      },
+      "outlook": {
+       "score": 0.067137,
+       "percentile": 0.000156,
+       "flagged": null
+      },
+      "competition": {
+       "score": 0.003067,
+       "percentile": 0,
+       "flagged": null
+      },
+      "reflectors": {
+       "score": 0.003471,
+       "percentile": 0,
+       "flagged": null
+      },
+      "surprise": {
+       "score": 0.165562,
+       "percentile": 0.058333,
+       "flagged": null
+      },
+      "market": {
+       "score": 0.139264,
+       "percentile": 0.04981,
+       "flagged": null
+      },
+      "macro": {
+       "score": 0.40116,
+       "percentile": 0.196031,
+       "flagged": null
+      },
+      "company": {
+       "score": 0.039697,
+       "percentile": 0,
+       "flagged": null
+      }
+     },
+     "decision": {
+      "unsafe": false,
+      "mode": "per_category",
+      "categories": []
+     }
+    }
+   }
+  }
+ ]
+}

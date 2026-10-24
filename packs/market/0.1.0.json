@@ -1,0 +1,3376 @@
+{
+ "pack": "thinkingtext/market",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Market news",
+ "description": "The general market read of the EQ-S10 equity news index: 126 macro and market cells, signed toward higher US stock prices, read on business news.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "part": "market_read",
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "c46b2b1a6e432d2f0e3ba8904749d39d",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "asia:asian_oil_demand",
+    "template": "\n\nAs a result, Asian oil demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "australia:australia_s_economic_growth",
+    "template": "\n\nAs a result, Australia's economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "australia:australian_commodity_exports",
+    "template": "\n\nAs a result, Australian commodity exports is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "australia:australian_consumer_spending",
+    "template": "\n\nAs a result, Australian consumer spending is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "australia:australian_iron_ore_exports",
+    "template": "\n\nAs a result, Australian iron ore exports is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "australia:the_australian_dollar",
+    "template": "\n\nAs a result, the Australian dollar is likely to{?}",
+    "options": [
+     " strengthen",
+     " weaken"
+    ]
+   },
+   {
+    "id": "australia:the_australian_dollar_against_the_us_dol",
+    "template": "\n\nAs a result, the Australian dollar against the US dollar is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "autos:european_car_sales",
+    "template": "\n\nAs a result, European car sales is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "banks:european_bank_earnings",
+    "template": "\n\nAs a result, European bank earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "banks:us_bank_lending",
+    "template": "\n\nAs a result, US bank lending is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "boe:uk_inflation",
+    "template": "\n\nAs a result, UK inflation is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "cad:canada_s_economic_growth",
+    "template": "\n\nAs a result, Canada's economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "cad:the_canadian_dollar",
+    "template": "\n\nAs a result, the Canadian dollar is likely to{?}",
+    "options": [
+     " strengthen",
+     " weaken"
+    ]
+   },
+   {
+    "id": "china:china_s_economic_growth",
+    "template": "\n\nAs a result, China's economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "china:china_s_property_market",
+    "template": "\n\nAs a result, China's property market is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "china:chinese_consumer_spending",
+    "template": "\n\nAs a result, Chinese consumer spending is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "china:chinese_holdings_of_us_treasuries",
+    "template": "\n\nAs a result, Chinese holdings of US Treasuries is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "credit:us_credit_spreads",
+    "template": "\n\nAs a result, US credit spreads is likely to{?}",
+    "options": [
+     " widen",
+     " narrow"
+    ]
+   },
+   {
+    "id": "crypto:bitcoin_prices",
+    "template": "\n\nAs a result, Bitcoin prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "dollar:the_canadian_dollar",
+    "template": "\n\nAs a result, the Canadian dollar is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "dollar:the_dollar",
+    "template": "\n\nAs a result, the dollar is likely to{?}",
+    "options": [
+     " strengthen",
+     " weaken"
+    ]
+   },
+   {
+    "id": "dollar:the_us_dollar",
+    "template": "\n\nAs a result, the US dollar is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:corporate_share_buybacks",
+    "template": "\n\nAs a result, corporate share buybacks is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "earnings:european_corporate_earnings",
+    "template": "\n\nAs a result, European corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings",
+    "template": "\n\nAs a result, US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings_forecasts",
+    "template": "\n\nAs a result, US corporate earnings forecasts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "ecb:eurozone_manufacturing_activity",
+    "template": "\n\nAs a result, eurozone manufacturing activity is likely to{?}",
+    "options": [
+     " expand",
+     " contract"
+    ]
+   },
+   {
+    "id": "euro:the_euro",
+    "template": "\n\nAs a result, the euro is likely to{?}",
+    "options": [
+     " strengthen",
+     " weaken"
+    ]
+   },
+   {
+    "id": "euro:the_euro_against_the_us_dollar",
+    "template": "\n\nAs a result, the euro against the US dollar is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "europe:european_economic_growth",
+    "template": "\n\nAs a result, European economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "europe:european_manufacturing_activity",
+    "template": "\n\nAs a result, European manufacturing activity is likely to{?}",
+    "options": [
+     " expand",
+     " contract"
+    ]
+   },
+   {
+    "id": "europe:european_oil_demand",
+    "template": "\n\nAs a result, European oil demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "eustocks:european_stock_prices",
+    "template": "\n\nAs a result, European stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "eustocks:the_dax",
+    "template": "\n\nAs a result, the DAX is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "eustocks:the_stoxx_600",
+    "template": "\n\nAs a result, the Stoxx 600 is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:expectations_of_fed_rate_cuts",
+    "template": "\n\nAs a result, expectations of Fed rate cuts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:the_federal_funds_rate",
+    "template": "\n\nAs a result, the federal funds rate is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:the_federal_reserve",
+    "template": "\n\nAs a result, the Federal Reserve is likely to{?}",
+    "options": [
+     " cut",
+     " raise"
+    ]
+   },
+   {
+    "id": "fed:us_inflation",
+    "template": "\n\nAs a result, US inflation is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:us_interest_rates",
+    "template": "\n\nAs a result, US interest rates is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:us_monetary_policy",
+    "template": "\n\nAs a result, US monetary policy is likely to{?}",
+    "options": [
+     " tighten",
+     " ease"
+    ]
+   },
+   {
+    "id": "fedind:political_pressure_on_the_federal_reserv",
+    "template": "\n\nAs a result, political pressure on the Federal Reserve is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "funds:investor_risk_appetite",
+    "template": "\n\nAs a result, investor risk appetite is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "germany:german_manufacturing_activity",
+    "template": "\n\nAs a result, German manufacturing activity is likely to{?}",
+    "options": [
+     " expand",
+     " contract"
+    ]
+   },
+   {
+    "id": "gold:gold_mine_production",
+    "template": "\n\nAs a result, gold mine production is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "gold:jewellery_demand_for_gold",
+    "template": "\n\nAs a result, jewellery demand for gold is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "haven:financial_market_volatility",
+    "template": "\n\nAs a result, financial market volatility is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "haven:safe_haven_demand",
+    "template": "\n\nAs a result, safe-haven demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "household:consumer_spending",
+    "template": "\n\nAs a result, consumer spending is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "housing:australian_house_prices",
+    "template": "\n\nAs a result, Australian house prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "housing:canadian_home_sales",
+    "template": "\n\nAs a result, Canadian home sales is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "housing:new_zealand_house_prices",
+    "template": "\n\nAs a result, New Zealand house prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "housing:uk_house_prices",
+    "template": "\n\nAs a result, UK house prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "housing:us_home_sales",
+    "template": "\n\nAs a result, US home sales is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "housing:us_mortgage_rates",
+    "template": "\n\nAs a result, US mortgage rates is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "india:indian_gold_demand",
+    "template": "\n\nAs a result, Indian gold demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "india:indian_gold_imports",
+    "template": "\n\nAs a result, Indian gold imports is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "ironore:chinese_demand_for_iron_ore",
+    "template": "\n\nAs a result, Chinese demand for iron ore is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "ironore:iron_ore_prices",
+    "template": "\n\nAs a result, iron ore prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "japan:foreign_investment_in_japanese_stocks",
+    "template": "\n\nAs a result, foreign investment in Japanese stocks is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "japan:japan_s_economic_growth",
+    "template": "\n\nAs a result, Japan's economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "japan:japanese_car_exports_to_the_united_state",
+    "template": "\n\nAs a result, Japanese car exports to the United States is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "japan:japanese_corporate_earnings",
+    "template": "\n\nAs a result, Japanese corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "japan:japanese_exports",
+    "template": "\n\nAs a result, Japanese exports is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "japan:japanese_inflation",
+    "template": "\n\nAs a result, Japanese inflation is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "japan:japanese_investors_demand_for_us_treasur",
+    "template": "\n\nAs a result, Japanese investors' demand for US Treasuries is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "japan:japanese_share_buybacks",
+    "template": "\n\nAs a result, Japanese share buybacks is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "japan:the_nikkei",
+    "template": "\n\nAs a result, the Nikkei is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "luxury:luxury_goods_demand_in_china",
+    "template": "\n\nAs a result, luxury goods demand in China is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "nz:new_zealand_s_economic_growth",
+    "template": "\n\nAs a result, New Zealand's economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "nz:the_new_zealand_dollar",
+    "template": "\n\nAs a result, the New Zealand dollar is likely to{?}",
+    "options": [
+     " strengthen",
+     " weaken"
+    ]
+   },
+   {
+    "id": "nz:the_new_zealand_dollar_against_the_us_do",
+    "template": "\n\nAs a result, the New Zealand dollar against the US dollar is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "rba:the_reserve_bank_of_australia",
+    "template": "\n\nAs a result, the Reserve Bank of Australia is likely to{?}",
+    "options": [
+     " cut",
+     " raise"
+    ]
+   },
+   {
+    "id": "rbnz:new_zealand_inflation",
+    "template": "\n\nAs a result, New Zealand inflation is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "rbnz:the_reserve_bank_of_new_zealand",
+    "template": "\n\nAs a result, the Reserve Bank of New Zealand is likely to{?}",
+    "options": [
+     " cut",
+     " raise"
+    ]
+   },
+   {
+    "id": "redsea:the_risk_of_attacks_on_shipping_in_the_r",
+    "template": "\n\nAs a result, the risk of attacks on shipping in the Red Sea is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "silver:silver_prices",
+    "template": "\n\nAs a result, silver prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "smallcap:us_regional_bank_earnings",
+    "template": "\n\nAs a result, US regional bank earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "smallcap:us_small_business_confidence",
+    "template": "\n\nAs a result, US small business confidence is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "smallcap:us_small_cap_stocks",
+    "template": "\n\nAs a result, US small-cap stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "snb:swiss_inflation",
+    "template": "\n\nAs a result, Swiss inflation is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "snb:the_swiss_national_bank",
+    "template": "\n\nAs a result, the Swiss National Bank is likely to{?}",
+    "options": [
+     " cut",
+     " raise"
+    ]
+   },
+   {
+    "id": "stocks:the_s_p_500",
+    "template": "\n\nAs a result, the S&P 500 is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices",
+    "template": "\n\nAs a result, US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks",
+    "template": "\n\nAs a result, US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "swiss:swiss_exports",
+    "template": "\n\nAs a result, Swiss exports is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "swiss:swiss_pharmaceutical_exports",
+    "template": "\n\nAs a result, Swiss pharmaceutical exports is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "swiss:switzerland_s_economic_growth",
+    "template": "\n\nAs a result, Switzerland's economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "swiss:the_swiss_franc",
+    "template": "\n\nAs a result, the Swiss franc is likely to{?}",
+    "options": [
+     " strengthen",
+     " weaken"
+    ]
+   },
+   {
+    "id": "taiwan:the_risk_of_a_conflict_between_china_and",
+    "template": "\n\nAs a result, the risk of a conflict between China and Taiwan is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tech:big_tech_earnings",
+    "template": "\n\nAs a result, big tech earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "tech:capital_spending_on_artificial_intellige",
+    "template": "\n\nAs a result, capital spending on artificial intelligence is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:demand_for_ai_chips",
+    "template": "\n\nAs a result, demand for AI chips is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "tech:semiconductor_demand",
+    "template": "\n\nAs a result, semiconductor demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "treasury:10_year_us_treasury_yields",
+    "template": "\n\nAs a result, 10-year US Treasury yields is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "treasury:2_year_us_treasury_yields",
+    "template": "\n\nAs a result, 2-year US Treasury yields is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "treasury:30_year_us_treasury_yields",
+    "template": "\n\nAs a result, 30-year US Treasury yields is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "treasury:the_us_treasury_term_premium",
+    "template": "\n\nAs a result, the US Treasury term premium is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "treasury:us_bond_market_volatility",
+    "template": "\n\nAs a result, US bond market volatility is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "treasury:us_real_yields",
+    "template": "\n\nAs a result, US real yields is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "treasury:us_treasury_yields",
+    "template": "\n\nAs a result, US Treasury yields is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "uk:sterling_against_the_us_dollar",
+    "template": "\n\nAs a result, sterling against the US dollar is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "uk:the_pound",
+    "template": "\n\nAs a result, the pound is likely to{?}",
+    "options": [
+     " strengthen",
+     " weaken"
+    ]
+   },
+   {
+    "id": "uk:the_uk_unemployment_rate",
+    "template": "\n\nAs a result, the UK unemployment rate is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "uk:uk_economic_growth",
+    "template": "\n\nAs a result, UK economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "uk:uk_eu_trade_relations",
+    "template": "\n\nAs a result, UK-EU trade relations is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "uk:uk_public_finances",
+    "template": "\n\nAs a result, UK public finances is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "uk:uk_retail_sales",
+    "template": "\n\nAs a result, UK retail sales is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "uk:uk_services_activity",
+    "template": "\n\nAs a result, UK services activity is likely to{?}",
+    "options": [
+     " expand",
+     " contract"
+    ]
+   },
+   {
+    "id": "usa:consumer_confidence",
+    "template": "\n\nAs a result, consumer confidence is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usa:the_risk_of_a_us_recession",
+    "template": "\n\nAs a result, the risk of a US recession is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usa:us_business_investment",
+    "template": "\n\nAs a result, US business investment is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "usa:us_economic_growth",
+    "template": "\n\nAs a result, US economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usa:us_manufacturing_activity",
+    "template": "\n\nAs a result, US manufacturing activity is likely to{?}",
+    "options": [
+     " expand",
+     " contract"
+    ]
+   },
+   {
+    "id": "usa:us_oil_demand",
+    "template": "\n\nAs a result, US oil demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "usa:us_retail_sales",
+    "template": "\n\nAs a result, US retail sales is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usa:us_services_activity",
+    "template": "\n\nAs a result, US services activity is likely to{?}",
+    "options": [
+     " expand",
+     " contract"
+    ]
+   },
+   {
+    "id": "usdata:the_us_cpi_inflation_print",
+    "template": "\n\nRelative to market expectations, the US CPI inflation print came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "usfiscal:the_risk_of_a_us_government_shutdown",
+    "template": "\n\nAs a result, the risk of a US government shutdown is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usjobs:the_us_labour_market",
+    "template": "\n\nAs a result, the US labour market is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "usjobs:us_layoffs",
+    "template": "\n\nAs a result, US layoffs is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "uspolicy:us_export_controls_on_semiconductors",
+    "template": "\n\nAs a result, US export controls on semiconductors is likely to{?}",
+    "options": [
+     " tighten",
+     " ease"
+    ]
+   },
+   {
+    "id": "uspolicy:us_tariffs_on_imports",
+    "template": "\n\nAs a result, US tariffs on imports is likely to{?}",
+    "options": [
+     " tighten",
+     " ease"
+    ]
+   },
+   {
+    "id": "world:global_economic_growth",
+    "template": "\n\nAs a result, global economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "world:global_oil_demand",
+    "template": "\n\nAs a result, global oil demand is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "world:the_risk_of_a_global_recession",
+    "template": "\n\nAs a result, the risk of a global recession is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "asia:asian_oil_demand": {
+   "phrase": "Asian oil demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "asia"
+  },
+  "australia:australia_s_economic_growth": {
+   "phrase": "Australia's economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "australia"
+  },
+  "australia:australian_commodity_exports": {
+   "phrase": "Australian commodity exports",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "australia"
+  },
+  "australia:australian_consumer_spending": {
+   "phrase": "Australian consumer spending",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "australia"
+  },
+  "australia:australian_iron_ore_exports": {
+   "phrase": "Australian iron ore exports",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "australia"
+  },
+  "australia:the_australian_dollar": {
+   "phrase": "the Australian dollar",
+   "pair": [
+    "strengthen",
+    "weaken"
+   ],
+   "wording": "default",
+   "principal": "australia"
+  },
+  "australia:the_australian_dollar_against_the_us_dol": {
+   "phrase": "the Australian dollar against the US dollar",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "australia"
+  },
+  "autos:european_car_sales": {
+   "phrase": "European car sales",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "autos"
+  },
+  "banks:european_bank_earnings": {
+   "phrase": "European bank earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "banks"
+  },
+  "banks:us_bank_lending": {
+   "phrase": "US bank lending",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "banks"
+  },
+  "boe:uk_inflation": {
+   "phrase": "UK inflation",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "boe"
+  },
+  "cad:canada_s_economic_growth": {
+   "phrase": "Canada's economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "cad"
+  },
+  "cad:the_canadian_dollar": {
+   "phrase": "the Canadian dollar",
+   "pair": [
+    "strengthen",
+    "weaken"
+   ],
+   "wording": "default",
+   "principal": "cad"
+  },
+  "china:china_s_economic_growth": {
+   "phrase": "China's economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "china"
+  },
+  "china:china_s_property_market": {
+   "phrase": "China's property market",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "default",
+   "principal": "china"
+  },
+  "china:chinese_consumer_spending": {
+   "phrase": "Chinese consumer spending",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "china"
+  },
+  "china:chinese_holdings_of_us_treasuries": {
+   "phrase": "Chinese holdings of US Treasuries",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "china"
+  },
+  "credit:us_credit_spreads": {
+   "phrase": "US credit spreads",
+   "pair": [
+    "widen",
+    "narrow"
+   ],
+   "wording": "default",
+   "principal": "credit"
+  },
+  "crypto:bitcoin_prices": {
+   "phrase": "Bitcoin prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "crypto"
+  },
+  "dollar:the_canadian_dollar": {
+   "phrase": "the Canadian dollar",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "dollar"
+  },
+  "dollar:the_dollar": {
+   "phrase": "the dollar",
+   "pair": [
+    "strengthen",
+    "weaken"
+   ],
+   "wording": "default",
+   "principal": "dollar"
+  },
+  "dollar:the_us_dollar": {
+   "phrase": "the US dollar",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "dollar"
+  },
+  "earnings:corporate_share_buybacks": {
+   "phrase": "corporate share buybacks",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "earnings"
+  },
+  "earnings:european_corporate_earnings": {
+   "phrase": "European corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "earnings"
+  },
+  "earnings:us_corporate_earnings": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "earnings"
+  },
+  "earnings:us_corporate_earnings_forecasts": {
+   "phrase": "US corporate earnings forecasts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "earnings"
+  },
+  "ecb:eurozone_manufacturing_activity": {
+   "phrase": "eurozone manufacturing activity",
+   "pair": [
+    "expand",
+    "contract"
+   ],
+   "wording": "default",
+   "principal": "ecb"
+  },
+  "euro:the_euro": {
+   "phrase": "the euro",
+   "pair": [
+    "strengthen",
+    "weaken"
+   ],
+   "wording": "default",
+   "principal": "euro"
+  },
+  "euro:the_euro_against_the_us_dollar": {
+   "phrase": "the euro against the US dollar",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "euro"
+  },
+  "europe:european_economic_growth": {
+   "phrase": "European economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "europe"
+  },
+  "europe:european_manufacturing_activity": {
+   "phrase": "European manufacturing activity",
+   "pair": [
+    "expand",
+    "contract"
+   ],
+   "wording": "default",
+   "principal": "europe"
+  },
+  "europe:european_oil_demand": {
+   "phrase": "European oil demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "europe"
+  },
+  "eustocks:european_stock_prices": {
+   "phrase": "European stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "eustocks"
+  },
+  "eustocks:the_dax": {
+   "phrase": "the DAX",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "eustocks"
+  },
+  "eustocks:the_stoxx_600": {
+   "phrase": "the Stoxx 600",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "eustocks"
+  },
+  "fed:expectations_of_fed_rate_cuts": {
+   "phrase": "expectations of Fed rate cuts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "fed:the_federal_funds_rate": {
+   "phrase": "the federal funds rate",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "fed:the_federal_reserve": {
+   "phrase": "the Federal Reserve",
+   "pair": [
+    "cut",
+    "raise"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "fed:us_inflation": {
+   "phrase": "US inflation",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "fed:us_interest_rates": {
+   "phrase": "US interest rates",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "fed:us_monetary_policy": {
+   "phrase": "US monetary policy",
+   "pair": [
+    "tighten",
+    "ease"
+   ],
+   "wording": "default",
+   "principal": "fed"
+  },
+  "fedind:political_pressure_on_the_federal_reserv": {
+   "phrase": "political pressure on the Federal Reserve",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "fedind"
+  },
+  "funds:investor_risk_appetite": {
+   "phrase": "investor risk appetite",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "default",
+   "principal": "funds"
+  },
+  "germany:german_manufacturing_activity": {
+   "phrase": "German manufacturing activity",
+   "pair": [
+    "expand",
+    "contract"
+   ],
+   "wording": "default",
+   "principal": "germany"
+  },
+  "gold:gold_mine_production": {
+   "phrase": "gold mine production",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "gold"
+  },
+  "gold:jewellery_demand_for_gold": {
+   "phrase": "jewellery demand for gold",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "gold"
+  },
+  "haven:financial_market_volatility": {
+   "phrase": "financial market volatility",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "haven"
+  },
+  "haven:safe_haven_demand": {
+   "phrase": "safe-haven demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "haven"
+  },
+  "household:consumer_spending": {
+   "phrase": "consumer spending",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "household"
+  },
+  "housing:australian_house_prices": {
+   "phrase": "Australian house prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "housing"
+  },
+  "housing:canadian_home_sales": {
+   "phrase": "Canadian home sales",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "housing"
+  },
+  "housing:new_zealand_house_prices": {
+   "phrase": "New Zealand house prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "housing"
+  },
+  "housing:uk_house_prices": {
+   "phrase": "UK house prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "housing"
+  },
+  "housing:us_home_sales": {
+   "phrase": "US home sales",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "housing"
+  },
+  "housing:us_mortgage_rates": {
+   "phrase": "US mortgage rates",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "housing"
+  },
+  "india:indian_gold_demand": {
+   "phrase": "Indian gold demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "india"
+  },
+  "india:indian_gold_imports": {
+   "phrase": "Indian gold imports",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "india"
+  },
+  "ironore:chinese_demand_for_iron_ore": {
+   "phrase": "Chinese demand for iron ore",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "ironore"
+  },
+  "ironore:iron_ore_prices": {
+   "phrase": "iron ore prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "ironore"
+  },
+  "japan:foreign_investment_in_japanese_stocks": {
+   "phrase": "foreign investment in Japanese stocks",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "japan"
+  },
+  "japan:japan_s_economic_growth": {
+   "phrase": "Japan's economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "japan"
+  },
+  "japan:japanese_car_exports_to_the_united_state": {
+   "phrase": "Japanese car exports to the United States",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "japan"
+  },
+  "japan:japanese_corporate_earnings": {
+   "phrase": "Japanese corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "japan"
+  },
+  "japan:japanese_exports": {
+   "phrase": "Japanese exports",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "japan"
+  },
+  "japan:japanese_inflation": {
+   "phrase": "Japanese inflation",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "japan"
+  },
+  "japan:japanese_investors_demand_for_us_treasur": {
+   "phrase": "Japanese investors' demand for US Treasuries",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "japan"
+  },
+  "japan:japanese_share_buybacks": {
+   "phrase": "Japanese share buybacks",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "japan"
+  },
+  "japan:the_nikkei": {
+   "phrase": "the Nikkei",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "japan"
+  },
+  "luxury:luxury_goods_demand_in_china": {
+   "phrase": "luxury goods demand in China",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "luxury"
+  },
+  "nz:new_zealand_s_economic_growth": {
+   "phrase": "New Zealand's economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "nz"
+  },
+  "nz:the_new_zealand_dollar": {
+   "phrase": "the New Zealand dollar",
+   "pair": [
+    "strengthen",
+    "weaken"
+   ],
+   "wording": "default",
+   "principal": "nz"
+  },
+  "nz:the_new_zealand_dollar_against_the_us_do": {
+   "phrase": "the New Zealand dollar against the US dollar",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "nz"
+  },
+  "rba:the_reserve_bank_of_australia": {
+   "phrase": "the Reserve Bank of Australia",
+   "pair": [
+    "cut",
+    "raise"
+   ],
+   "wording": "default",
+   "principal": "rba"
+  },
+  "rbnz:new_zealand_inflation": {
+   "phrase": "New Zealand inflation",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "rbnz"
+  },
+  "rbnz:the_reserve_bank_of_new_zealand": {
+   "phrase": "the Reserve Bank of New Zealand",
+   "pair": [
+    "cut",
+    "raise"
+   ],
+   "wording": "default",
+   "principal": "rbnz"
+  },
+  "redsea:the_risk_of_attacks_on_shipping_in_the_r": {
+   "phrase": "the risk of attacks on shipping in the Red Sea",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "redsea"
+  },
+  "silver:silver_prices": {
+   "phrase": "silver prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "silver"
+  },
+  "smallcap:us_regional_bank_earnings": {
+   "phrase": "US regional bank earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "smallcap"
+  },
+  "smallcap:us_small_business_confidence": {
+   "phrase": "US small business confidence",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "smallcap"
+  },
+  "smallcap:us_small_cap_stocks": {
+   "phrase": "US small-cap stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "smallcap"
+  },
+  "snb:swiss_inflation": {
+   "phrase": "Swiss inflation",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "snb"
+  },
+  "snb:the_swiss_national_bank": {
+   "phrase": "the Swiss National Bank",
+   "pair": [
+    "cut",
+    "raise"
+   ],
+   "wording": "default",
+   "principal": "snb"
+  },
+  "stocks:the_s_p_500": {
+   "phrase": "the S&P 500",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "stocks"
+  },
+  "stocks:us_stock_prices": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "stocks"
+  },
+  "swiss:swiss_exports": {
+   "phrase": "Swiss exports",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "swiss"
+  },
+  "swiss:swiss_pharmaceutical_exports": {
+   "phrase": "Swiss pharmaceutical exports",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "swiss"
+  },
+  "swiss:switzerland_s_economic_growth": {
+   "phrase": "Switzerland's economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "swiss"
+  },
+  "swiss:the_swiss_franc": {
+   "phrase": "the Swiss franc",
+   "pair": [
+    "strengthen",
+    "weaken"
+   ],
+   "wording": "default",
+   "principal": "swiss"
+  },
+  "taiwan:the_risk_of_a_conflict_between_china_and": {
+   "phrase": "the risk of a conflict between China and Taiwan",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "taiwan"
+  },
+  "tech:big_tech_earnings": {
+   "phrase": "big tech earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "tech"
+  },
+  "tech:capital_spending_on_artificial_intellige": {
+   "phrase": "capital spending on artificial intelligence",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "tech"
+  },
+  "tech:demand_for_ai_chips": {
+   "phrase": "demand for AI chips",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "tech"
+  },
+  "tech:semiconductor_demand": {
+   "phrase": "semiconductor demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "tech"
+  },
+  "treasury:10_year_us_treasury_yields": {
+   "phrase": "10-year US Treasury yields",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "treasury"
+  },
+  "treasury:2_year_us_treasury_yields": {
+   "phrase": "2-year US Treasury yields",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "treasury"
+  },
+  "treasury:30_year_us_treasury_yields": {
+   "phrase": "30-year US Treasury yields",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "treasury"
+  },
+  "treasury:the_us_treasury_term_premium": {
+   "phrase": "the US Treasury term premium",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "treasury"
+  },
+  "treasury:us_bond_market_volatility": {
+   "phrase": "US bond market volatility",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "treasury"
+  },
+  "treasury:us_real_yields": {
+   "phrase": "US real yields",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "treasury"
+  },
+  "treasury:us_treasury_yields": {
+   "phrase": "US Treasury yields",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "treasury"
+  },
+  "uk:sterling_against_the_us_dollar": {
+   "phrase": "sterling against the US dollar",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "uk"
+  },
+  "uk:the_pound": {
+   "phrase": "the pound",
+   "pair": [
+    "strengthen",
+    "weaken"
+   ],
+   "wording": "default",
+   "principal": "uk"
+  },
+  "uk:the_uk_unemployment_rate": {
+   "phrase": "the UK unemployment rate",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "uk"
+  },
+  "uk:uk_economic_growth": {
+   "phrase": "UK economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "uk"
+  },
+  "uk:uk_eu_trade_relations": {
+   "phrase": "UK-EU trade relations",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "default",
+   "principal": "uk"
+  },
+  "uk:uk_public_finances": {
+   "phrase": "UK public finances",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "default",
+   "principal": "uk"
+  },
+  "uk:uk_retail_sales": {
+   "phrase": "UK retail sales",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "uk"
+  },
+  "uk:uk_services_activity": {
+   "phrase": "UK services activity",
+   "pair": [
+    "expand",
+    "contract"
+   ],
+   "wording": "default",
+   "principal": "uk"
+  },
+  "usa:consumer_confidence": {
+   "phrase": "consumer confidence",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "usa:the_risk_of_a_us_recession": {
+   "phrase": "the risk of a US recession",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "usa:us_business_investment": {
+   "phrase": "US business investment",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "usa:us_economic_growth": {
+   "phrase": "US economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "usa:us_manufacturing_activity": {
+   "phrase": "US manufacturing activity",
+   "pair": [
+    "expand",
+    "contract"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "usa:us_oil_demand": {
+   "phrase": "US oil demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "usa:us_retail_sales": {
+   "phrase": "US retail sales",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "usa:us_services_activity": {
+   "phrase": "US services activity",
+   "pair": [
+    "expand",
+    "contract"
+   ],
+   "wording": "default",
+   "principal": "usa"
+  },
+  "usdata:the_us_cpi_inflation_print": {
+   "phrase": "the US CPI inflation print",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "expect",
+   "principal": "usdata"
+  },
+  "usfiscal:the_risk_of_a_us_government_shutdown": {
+   "phrase": "the risk of a US government shutdown",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "usfiscal"
+  },
+  "usjobs:the_us_labour_market": {
+   "phrase": "the US labour market",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "default",
+   "principal": "usjobs"
+  },
+  "usjobs:us_layoffs": {
+   "phrase": "US layoffs",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "usjobs"
+  },
+  "uspolicy:us_export_controls_on_semiconductors": {
+   "phrase": "US export controls on semiconductors",
+   "pair": [
+    "tighten",
+    "ease"
+   ],
+   "wording": "default",
+   "principal": "uspolicy"
+  },
+  "uspolicy:us_tariffs_on_imports": {
+   "phrase": "US tariffs on imports",
+   "pair": [
+    "tighten",
+    "ease"
+   ],
+   "wording": "default",
+   "principal": "uspolicy"
+  },
+  "world:global_economic_growth": {
+   "phrase": "global economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "world"
+  },
+  "world:global_oil_demand": {
+   "phrase": "global oil demand",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "default",
+   "principal": "world"
+  },
+  "world:the_risk_of_a_global_recession": {
+   "phrase": "the risk of a global recession",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "default",
+   "principal": "world"
+  }
+ },
+ "reads": [
+  {
+   "id": "market/asia:asian_oil_demand",
+   "query": "asia:asian_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.73118,
+   "sd": 0.82531
+  },
+  {
+   "id": "market/australia:australia_s_economic_growth",
+   "query": "australia:australia_s_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -1.7538,
+   "sd": 0.69848
+  },
+  {
+   "id": "market/australia:australian_commodity_exports",
+   "query": "australia:australian_commodity_exports",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.32046,
+   "sd": 0.69539
+  },
+  {
+   "id": "market/australia:australian_consumer_spending",
+   "query": "australia:australian_consumer_spending",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.99816,
+   "sd": 0.68593
+  },
+  {
+   "id": "market/australia:australian_iron_ore_exports",
+   "query": "australia:australian_iron_ore_exports",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.40134,
+   "sd": 0.65974
+  },
+  {
+   "id": "market/australia:the_australian_dollar",
+   "query": "australia:the_australian_dollar",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.14943,
+   "sd": 0.55154
+  },
+  {
+   "id": "market/australia:the_australian_dollar_against_the_us_dol",
+   "query": "australia:the_australian_dollar_against_the_us_dol",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.42083,
+   "sd": 0.66132
+  },
+  {
+   "id": "market/autos:european_car_sales",
+   "query": "autos:european_car_sales",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.09473,
+   "sd": 0.82037
+  },
+  {
+   "id": "market/banks:european_bank_earnings",
+   "query": "banks:european_bank_earnings",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -1.06037,
+   "sd": 0.85595
+  },
+  {
+   "id": "market/banks:us_bank_lending",
+   "query": "banks:us_bank_lending",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.39947,
+   "sd": 0.67599
+  },
+  {
+   "id": "market/boe:uk_inflation",
+   "query": "boe:uk_inflation",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.31272,
+   "sd": 0.66365
+  },
+  {
+   "id": "market/cad:canada_s_economic_growth",
+   "query": "cad:canada_s_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -1.62201,
+   "sd": 0.68921
+  },
+  {
+   "id": "market/cad:the_canadian_dollar",
+   "query": "cad:the_canadian_dollar",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.08482,
+   "sd": 0.53724
+  },
+  {
+   "id": "market/china:china_s_economic_growth",
+   "query": "china:china_s_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -1.64181,
+   "sd": 0.66497
+  },
+  {
+   "id": "market/china:china_s_property_market",
+   "query": "china:china_s_property_market",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.9751,
+   "sd": 0.59911
+  },
+  {
+   "id": "market/china:chinese_consumer_spending",
+   "query": "china:chinese_consumer_spending",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.72533,
+   "sd": 0.84366
+  },
+  {
+   "id": "market/china:chinese_holdings_of_us_treasuries",
+   "query": "china:chinese_holdings_of_us_treasuries",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.44837,
+   "sd": 0.67437
+  },
+  {
+   "id": "market/credit:us_credit_spreads",
+   "query": "credit:us_credit_spreads",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -1.51061,
+   "sd": 0.82272
+  },
+  {
+   "id": "market/crypto:bitcoin_prices",
+   "query": "crypto:bitcoin_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.31371,
+   "sd": 0.38073
+  },
+  {
+   "id": "market/dollar:the_canadian_dollar",
+   "query": "dollar:the_canadian_dollar",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.19968,
+   "sd": 0.68156
+  },
+  {
+   "id": "market/dollar:the_dollar",
+   "query": "dollar:the_dollar",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": 0.18969,
+   "sd": 0.70768
+  },
+  {
+   "id": "market/dollar:the_us_dollar",
+   "query": "dollar:the_us_dollar",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": 0.44534,
+   "sd": 0.86741
+  },
+  {
+   "id": "market/earnings:corporate_share_buybacks",
+   "query": "earnings:corporate_share_buybacks",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.35697,
+   "sd": 0.66855
+  },
+  {
+   "id": "market/earnings:european_corporate_earnings",
+   "query": "earnings:european_corporate_earnings",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.62678,
+   "sd": 0.9352
+  },
+  {
+   "id": "market/earnings:us_corporate_earnings",
+   "query": "earnings:us_corporate_earnings",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.4759,
+   "sd": 1.07803
+  },
+  {
+   "id": "market/earnings:us_corporate_earnings_forecasts",
+   "query": "earnings:us_corporate_earnings_forecasts",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -1.01315,
+   "sd": 1.03575
+  },
+  {
+   "id": "market/ecb:eurozone_manufacturing_activity",
+   "query": "ecb:eurozone_manufacturing_activity",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.99789,
+   "sd": 0.83442
+  },
+  {
+   "id": "market/euro:the_euro",
+   "query": "euro:the_euro",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.35347,
+   "sd": 0.59966
+  },
+  {
+   "id": "market/euro:the_euro_against_the_us_dollar",
+   "query": "euro:the_euro_against_the_us_dollar",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.32779,
+   "sd": 0.70223
+  },
+  {
+   "id": "market/europe:european_economic_growth",
+   "query": "europe:european_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -2.04688,
+   "sd": 0.9952
+  },
+  {
+   "id": "market/europe:european_manufacturing_activity",
+   "query": "europe:european_manufacturing_activity",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.5076,
+   "sd": 0.95407
+  },
+  {
+   "id": "market/europe:european_oil_demand",
+   "query": "europe:european_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.19375,
+   "sd": 0.69168
+  },
+  {
+   "id": "market/eustocks:european_stock_prices",
+   "query": "eustocks:european_stock_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.45947,
+   "sd": 0.99411
+  },
+  {
+   "id": "market/eustocks:the_dax",
+   "query": "eustocks:the_dax",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.12894,
+   "sd": 0.72894
+  },
+  {
+   "id": "market/eustocks:the_stoxx_600",
+   "query": "eustocks:the_stoxx_600",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.35014,
+   "sd": 0.85879
+  },
+  {
+   "id": "market/fed:expectations_of_fed_rate_cuts",
+   "query": "fed:expectations_of_fed_rate_cuts",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.81747,
+   "sd": 0.40203
+  },
+  {
+   "id": "market/fed:the_federal_funds_rate",
+   "query": "fed:the_federal_funds_rate",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -1.10761,
+   "sd": 0.94075
+  },
+  {
+   "id": "market/fed:the_federal_reserve",
+   "query": "fed:the_federal_reserve",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.9366,
+   "sd": 1.12938
+  },
+  {
+   "id": "market/fed:us_inflation",
+   "query": "fed:us_inflation",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -1.03826,
+   "sd": 0.77859
+  },
+  {
+   "id": "market/fed:us_interest_rates",
+   "query": "fed:us_interest_rates",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -1.18557,
+   "sd": 0.84996
+  },
+  {
+   "id": "market/fed:us_monetary_policy",
+   "query": "fed:us_monetary_policy",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -2.1111,
+   "sd": 0.71435
+  },
+  {
+   "id": "market/fedind:political_pressure_on_the_federal_reserv",
+   "query": "fedind:political_pressure_on_the_federal_reserv",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -4.15224,
+   "sd": 0.68495
+  },
+  {
+   "id": "market/funds:investor_risk_appetite",
+   "query": "funds:investor_risk_appetite",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 3.86918,
+   "sd": 1.14774
+  },
+  {
+   "id": "market/germany:german_manufacturing_activity",
+   "query": "germany:german_manufacturing_activity",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.80352,
+   "sd": 0.79055
+  },
+  {
+   "id": "market/gold:gold_mine_production",
+   "query": "gold:gold_mine_production",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.52663,
+   "sd": 0.65389
+  },
+  {
+   "id": "market/gold:jewellery_demand_for_gold",
+   "query": "gold:jewellery_demand_for_gold",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.04888,
+   "sd": 0.52615
+  },
+  {
+   "id": "market/haven:financial_market_volatility",
+   "query": "haven:financial_market_volatility",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -2.73605,
+   "sd": 1.07732
+  },
+  {
+   "id": "market/haven:safe_haven_demand",
+   "query": "haven:safe_haven_demand",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -3.07307,
+   "sd": 0.9001
+  },
+  {
+   "id": "market/household:consumer_spending",
+   "query": "household:consumer_spending",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.39918,
+   "sd": 1.34097
+  },
+  {
+   "id": "market/housing:australian_house_prices",
+   "query": "housing:australian_house_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.0588,
+   "sd": 0.63937
+  },
+  {
+   "id": "market/housing:canadian_home_sales",
+   "query": "housing:canadian_home_sales",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.61289,
+   "sd": 0.60818
+  },
+  {
+   "id": "market/housing:new_zealand_house_prices",
+   "query": "housing:new_zealand_house_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.30084,
+   "sd": 0.60139
+  },
+  {
+   "id": "market/housing:uk_house_prices",
+   "query": "housing:uk_house_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.57313,
+   "sd": 0.85988
+  },
+  {
+   "id": "market/housing:us_home_sales",
+   "query": "housing:us_home_sales",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.46037,
+   "sd": 0.68931
+  },
+  {
+   "id": "market/housing:us_mortgage_rates",
+   "query": "housing:us_mortgage_rates",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.5924,
+   "sd": 0.54209
+  },
+  {
+   "id": "market/india:indian_gold_demand",
+   "query": "india:indian_gold_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.06175,
+   "sd": 0.47056
+  },
+  {
+   "id": "market/india:indian_gold_imports",
+   "query": "india:indian_gold_imports",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.27893,
+   "sd": 0.44546
+  },
+  {
+   "id": "market/ironore:chinese_demand_for_iron_ore",
+   "query": "ironore:chinese_demand_for_iron_ore",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.26399,
+   "sd": 0.99043
+  },
+  {
+   "id": "market/ironore:iron_ore_prices",
+   "query": "ironore:iron_ore_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.6009,
+   "sd": 0.74448
+  },
+  {
+   "id": "market/japan:foreign_investment_in_japanese_stocks",
+   "query": "japan:foreign_investment_in_japanese_stocks",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.68935,
+   "sd": 0.63013
+  },
+  {
+   "id": "market/japan:japan_s_economic_growth",
+   "query": "japan:japan_s_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -2.06169,
+   "sd": 0.63965
+  },
+  {
+   "id": "market/japan:japanese_car_exports_to_the_united_state",
+   "query": "japan:japanese_car_exports_to_the_united_state",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.89173,
+   "sd": 0.66844
+  },
+  {
+   "id": "market/japan:japanese_corporate_earnings",
+   "query": "japan:japanese_corporate_earnings",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.63038,
+   "sd": 0.85818
+  },
+  {
+   "id": "market/japan:japanese_exports",
+   "query": "japan:japanese_exports",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.24383,
+   "sd": 0.71928
+  },
+  {
+   "id": "market/japan:japanese_inflation",
+   "query": "japan:japanese_inflation",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.69452,
+   "sd": 0.54366
+  },
+  {
+   "id": "market/japan:japanese_investors_demand_for_us_treasur",
+   "query": "japan:japanese_investors_demand_for_us_treasur",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.13066,
+   "sd": 0.4247
+  },
+  {
+   "id": "market/japan:japanese_share_buybacks",
+   "query": "japan:japanese_share_buybacks",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 3.09929,
+   "sd": 0.49006
+  },
+  {
+   "id": "market/japan:the_nikkei",
+   "query": "japan:the_nikkei",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.41721,
+   "sd": 0.74651
+  },
+  {
+   "id": "market/luxury:luxury_goods_demand_in_china",
+   "query": "luxury:luxury_goods_demand_in_china",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.56457,
+   "sd": 1.10848
+  },
+  {
+   "id": "market/nz:new_zealand_s_economic_growth",
+   "query": "nz:new_zealand_s_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -1.46583,
+   "sd": 0.68288
+  },
+  {
+   "id": "market/nz:the_new_zealand_dollar",
+   "query": "nz:the_new_zealand_dollar",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.18461,
+   "sd": 0.42338
+  },
+  {
+   "id": "market/nz:the_new_zealand_dollar_against_the_us_do",
+   "query": "nz:the_new_zealand_dollar_against_the_us_do",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.44127,
+   "sd": 0.51395
+  },
+  {
+   "id": "market/rba:the_reserve_bank_of_australia",
+   "query": "rba:the_reserve_bank_of_australia",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.38479,
+   "sd": 1.16872
+  },
+  {
+   "id": "market/rbnz:new_zealand_inflation",
+   "query": "rbnz:new_zealand_inflation",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.38973,
+   "sd": 0.47697
+  },
+  {
+   "id": "market/rbnz:the_reserve_bank_of_new_zealand",
+   "query": "rbnz:the_reserve_bank_of_new_zealand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.18118,
+   "sd": 0.95678
+  },
+  {
+   "id": "market/redsea:the_risk_of_attacks_on_shipping_in_the_r",
+   "query": "redsea:the_risk_of_attacks_on_shipping_in_the_r",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -3.21436,
+   "sd": 0.79796
+  },
+  {
+   "id": "market/silver:silver_prices",
+   "query": "silver:silver_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.64241,
+   "sd": 0.52205
+  },
+  {
+   "id": "market/smallcap:us_regional_bank_earnings",
+   "query": "smallcap:us_regional_bank_earnings",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.74002,
+   "sd": 0.7384
+  },
+  {
+   "id": "market/smallcap:us_small_business_confidence",
+   "query": "smallcap:us_small_business_confidence",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.41601,
+   "sd": 0.88115
+  },
+  {
+   "id": "market/smallcap:us_small_cap_stocks",
+   "query": "smallcap:us_small_cap_stocks",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.23232,
+   "sd": 0.66765
+  },
+  {
+   "id": "market/snb:swiss_inflation",
+   "query": "snb:swiss_inflation",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.58252,
+   "sd": 0.51897
+  },
+  {
+   "id": "market/snb:the_swiss_national_bank",
+   "query": "snb:the_swiss_national_bank",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.03957,
+   "sd": 0.81416
+  },
+  {
+   "id": "market/stocks:the_s_p_500",
+   "query": "stocks:the_s_p_500",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.19284,
+   "sd": 0.96015
+  },
+  {
+   "id": "market/stocks:us_stock_prices",
+   "query": "stocks:us_stock_prices",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.39682,
+   "sd": 0.99263
+  },
+  {
+   "id": "market/stocks:us_technology_stocks",
+   "query": "stocks:us_technology_stocks",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.20002,
+   "sd": 0.98551
+  },
+  {
+   "id": "market/swiss:swiss_exports",
+   "query": "swiss:swiss_exports",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.4947,
+   "sd": 0.66846
+  },
+  {
+   "id": "market/swiss:swiss_pharmaceutical_exports",
+   "query": "swiss:swiss_pharmaceutical_exports",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.8702,
+   "sd": 0.55542
+  },
+  {
+   "id": "market/swiss:switzerland_s_economic_growth",
+   "query": "swiss:switzerland_s_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -1.5172,
+   "sd": 0.69293
+  },
+  {
+   "id": "market/swiss:the_swiss_franc",
+   "query": "swiss:the_swiss_franc",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.67438,
+   "sd": 0.43854
+  },
+  {
+   "id": "market/taiwan:the_risk_of_a_conflict_between_china_and",
+   "query": "taiwan:the_risk_of_a_conflict_between_china_and",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -3.65742,
+   "sd": 0.55768
+  },
+  {
+   "id": "market/tech:big_tech_earnings",
+   "query": "tech:big_tech_earnings",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.65394,
+   "sd": 0.7641
+  },
+  {
+   "id": "market/tech:capital_spending_on_artificial_intellige",
+   "query": "tech:capital_spending_on_artificial_intellige",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 3.77792,
+   "sd": 0.81711
+  },
+  {
+   "id": "market/tech:demand_for_ai_chips",
+   "query": "tech:demand_for_ai_chips",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 3.36036,
+   "sd": 0.77875
+  },
+  {
+   "id": "market/tech:semiconductor_demand",
+   "query": "tech:semiconductor_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.92015,
+   "sd": 0.79198
+  },
+  {
+   "id": "market/treasury:10_year_us_treasury_yields",
+   "query": "treasury:10_year_us_treasury_yields",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.09802,
+   "sd": 0.46711
+  },
+  {
+   "id": "market/treasury:2_year_us_treasury_yields",
+   "query": "treasury:2_year_us_treasury_yields",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.0621,
+   "sd": 0.46126
+  },
+  {
+   "id": "market/treasury:30_year_us_treasury_yields",
+   "query": "treasury:30_year_us_treasury_yields",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": 0.15165,
+   "sd": 0.44383
+  },
+  {
+   "id": "market/treasury:the_us_treasury_term_premium",
+   "query": "treasury:the_us_treasury_term_premium",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.31249,
+   "sd": 0.36092
+  },
+  {
+   "id": "market/treasury:us_bond_market_volatility",
+   "query": "treasury:us_bond_market_volatility",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -1.26637,
+   "sd": 0.64889
+  },
+  {
+   "id": "market/treasury:us_real_yields",
+   "query": "treasury:us_real_yields",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.20976,
+   "sd": 0.3865
+  },
+  {
+   "id": "market/treasury:us_treasury_yields",
+   "query": "treasury:us_treasury_yields",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.26113,
+   "sd": 0.37304
+  },
+  {
+   "id": "market/uk:sterling_against_the_us_dollar",
+   "query": "uk:sterling_against_the_us_dollar",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.65275,
+   "sd": 0.69458
+  },
+  {
+   "id": "market/uk:the_pound",
+   "query": "uk:the_pound",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.4541,
+   "sd": 0.59633
+  },
+  {
+   "id": "market/uk:the_uk_unemployment_rate",
+   "query": "uk:the_uk_unemployment_rate",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -1.30419,
+   "sd": 0.94168
+  },
+  {
+   "id": "market/uk:uk_economic_growth",
+   "query": "uk:uk_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -2.14698,
+   "sd": 0.91054
+  },
+  {
+   "id": "market/uk:uk_eu_trade_relations",
+   "query": "uk:uk_eu_trade_relations",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.37871,
+   "sd": 1.01279
+  },
+  {
+   "id": "market/uk:uk_public_finances",
+   "query": "uk:uk_public_finances",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.92163,
+   "sd": 1.24569
+  },
+  {
+   "id": "market/uk:uk_retail_sales",
+   "query": "uk:uk_retail_sales",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.60651,
+   "sd": 0.7734
+  },
+  {
+   "id": "market/uk:uk_services_activity",
+   "query": "uk:uk_services_activity",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.39216,
+   "sd": 0.75453
+  },
+  {
+   "id": "market/usa:consumer_confidence",
+   "query": "usa:consumer_confidence",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.50514,
+   "sd": 1.71034
+  },
+  {
+   "id": "market/usa:the_risk_of_a_us_recession",
+   "query": "usa:the_risk_of_a_us_recession",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -1.3984,
+   "sd": 0.88841
+  },
+  {
+   "id": "market/usa:us_business_investment",
+   "query": "usa:us_business_investment",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.58806,
+   "sd": 1.13784
+  },
+  {
+   "id": "market/usa:us_economic_growth",
+   "query": "usa:us_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -1.41363,
+   "sd": 0.90961
+  },
+  {
+   "id": "market/usa:us_manufacturing_activity",
+   "query": "usa:us_manufacturing_activity",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.17193,
+   "sd": 0.89358
+  },
+  {
+   "id": "market/usa:us_oil_demand",
+   "query": "usa:us_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 1.38761,
+   "sd": 0.7153
+  },
+  {
+   "id": "market/usa:us_retail_sales",
+   "query": "usa:us_retail_sales",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.2383,
+   "sd": 0.89916
+  },
+  {
+   "id": "market/usa:us_services_activity",
+   "query": "usa:us_services_activity",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 0.31437,
+   "sd": 0.69051
+  },
+  {
+   "id": "market/usdata:the_us_cpi_inflation_print",
+   "query": "usdata:the_us_cpi_inflation_print",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.07147,
+   "sd": 0.18359
+  },
+  {
+   "id": "market/usfiscal:the_risk_of_a_us_government_shutdown",
+   "query": "usfiscal:the_risk_of_a_us_government_shutdown",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -2.17456,
+   "sd": 0.48364
+  },
+  {
+   "id": "market/usjobs:the_us_labour_market",
+   "query": "usjobs:the_us_labour_market",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.12482,
+   "sd": 1.1087
+  },
+  {
+   "id": "market/usjobs:us_layoffs",
+   "query": "usjobs:us_layoffs",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -3.33531,
+   "sd": 0.92303
+  },
+  {
+   "id": "market/uspolicy:us_export_controls_on_semiconductors",
+   "query": "uspolicy:us_export_controls_on_semiconductors",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -0.36547,
+   "sd": 0.6858
+  },
+  {
+   "id": "market/uspolicy:us_tariffs_on_imports",
+   "query": "uspolicy:us_tariffs_on_imports",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": 1.23498,
+   "sd": 0.6447
+  },
+  {
+   "id": "market/world:global_economic_growth",
+   "query": "world:global_economic_growth",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -1.70649,
+   "sd": 1.16336
+  },
+  {
+   "id": "market/world:global_oil_demand",
+   "query": "world:global_oil_demand",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": 2.07469,
+   "sd": 0.81377
+  },
+  {
+   "id": "market/world:the_risk_of_a_global_recession",
+   "query": "world:the_risk_of_a_global_recession",
+   "kind": "pair",
+   "sign": -1,
+   "category": "market",
+   "mean": -1.85412,
+   "sd": 1.17727
+  }
+ ],
+ "categories": {
+  "market": {
+   "label": "General market read",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "role": "composite",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.08822,
+     0.35439,
+     0.42665,
+     0.4622,
+     0.48793,
+     0.5113,
+     0.53531,
+     0.55901,
+     0.59032,
+     0.63023,
+     0.66012,
+     0.74299,
+     0.82124,
+     0.85235
+    ]
+   }
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": [],
+  "per_category": {}
+ },
+ "engine": "fp_51319d2ff6",
+ "calibration": {
+  "sample": "calibration/wikinews_business.json.gz",
+  "n": 1500,
+  "statistic": "mean and sd of each read over the sample; no thresholds, no decision",
+  "date": "2026-10-24"
+ }
+}

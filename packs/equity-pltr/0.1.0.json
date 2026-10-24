@@ -1,0 +1,1224 @@
+{
+ "pack": "thinkingtext/equity-pltr",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Palantir news",
+ "description": "The Palantir (PLTR) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Palantir",
+  "ticker": "PLTR",
+  "peers": [],
+  "weights": {
+   "company": 0.67,
+   "peers": 0,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "85a42031e7a561130c44e6b7b14c9f69",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "pltr:demand_for_palantir_s_products__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for Palantir's products is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "pltr:palantir_s_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Palantir's revenue is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "pltr:palantir_s_profit_margins__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Palantir's profit margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "pltr:palantir_s_profits__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Palantir's profits is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "pltr:palantir_s_earnings_forecasts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Palantir's earnings forecasts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "pltr:palantir_s_growth_prospects__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Palantir's growth prospects is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "pltr:competitive_pressure_on_palantir__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: competitive pressure on Palantir is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "pltr:palantir_s_market_share__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Palantir's market share is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "pltr:palantir__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for Palantir shareholders, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "pltr:palantir_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Palantir's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "pltr:the_valuation_of_palantir__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the valuation of Palantir is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "pltrrep:palantir_s_quarterly_results__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Palantir's quarterly results came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "pltrrep:palantir_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Palantir's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "pltrrep:palantir_s_us_commercial_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Palantir's US commercial revenue came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "fed:expectations_of_fed_rate_cuts__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: expectations of Fed rate cuts is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "haven:financial_market_volatility__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: financial market volatility is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "investors:news_inv_investors__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for investors, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "usa:us_economic_growth__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US economic growth is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "pltr:demand_for_palantir_s_products__sum": {
+   "phrase": "demand for Palantir's products",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltr:palantir_s_revenue__sum": {
+   "phrase": "Palantir's revenue",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltr:palantir_s_profit_margins__sum": {
+   "phrase": "Palantir's profit margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltr:palantir_s_profits__sum": {
+   "phrase": "Palantir's profits",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltr:palantir_s_earnings_forecasts__sum": {
+   "phrase": "Palantir's earnings forecasts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltr:palantir_s_growth_prospects__sum": {
+   "phrase": "Palantir's growth prospects",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltr:competitive_pressure_on_palantir__sum": {
+   "phrase": "competitive pressure on Palantir",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltr:palantir_s_market_share__sum": {
+   "phrase": "Palantir's market share",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltr:palantir__sum": {
+   "phrase": "Palantir",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_co",
+   "principal": "pltr"
+  },
+  "pltr:palantir_s_share_price__sum": {
+   "phrase": "Palantir's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltr:the_valuation_of_palantir__sum": {
+   "phrase": "the valuation of Palantir",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "pltr"
+  },
+  "pltrrep:palantir_s_quarterly_results__sum": {
+   "phrase": "Palantir's quarterly results",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "pltrrep"
+  },
+  "pltrrep:palantir_s_revenue_guidance__sum": {
+   "phrase": "Palantir's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "pltrrep"
+  },
+  "pltrrep:palantir_s_us_commercial_revenue__sum": {
+   "phrase": "Palantir's US commercial revenue",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "pltrrep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  },
+  "fed:expectations_of_fed_rate_cuts__sum": {
+   "phrase": "expectations of Fed rate cuts",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "fed"
+  },
+  "haven:financial_market_volatility__sum": {
+   "phrase": "financial market volatility",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "haven"
+  },
+  "investors:news_inv_investors__sum": {
+   "phrase": "investors",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_inv",
+   "principal": "investors"
+  },
+  "usa:us_economic_growth__sum": {
+   "phrase": "US economic growth",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "usa"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/pltr:demand_for_palantir_s_products__sum",
+   "query": "pltr:demand_for_palantir_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 3.89263,
+   "sd": 0.75542
+  },
+  {
+   "id": "company/demand/pltr:demand_for_palantir_s_products__sum",
+   "query": "pltr:demand_for_palantir_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 3.89263,
+   "sd": 0.75542
+  },
+  {
+   "id": "demand/pltr:palantir_s_revenue__sum",
+   "query": "pltr:palantir_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 0.02955,
+   "sd": 0.38066
+  },
+  {
+   "id": "company/demand/pltr:palantir_s_revenue__sum",
+   "query": "pltr:palantir_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 0.02955,
+   "sd": 0.38066
+  },
+  {
+   "id": "profits/pltr:palantir_s_profit_margins__sum",
+   "query": "pltr:palantir_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits",
+   "mean": -0.54715,
+   "sd": 0.30931
+  },
+  {
+   "id": "company/profits/pltr:palantir_s_profit_margins__sum",
+   "query": "pltr:palantir_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits",
+   "mean": -0.54715,
+   "sd": 0.30931
+  },
+  {
+   "id": "profits/pltr:palantir_s_profits__sum",
+   "query": "pltr:palantir_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits",
+   "mean": 0.56083,
+   "sd": 0.45506
+  },
+  {
+   "id": "company/profits/pltr:palantir_s_profits__sum",
+   "query": "pltr:palantir_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits",
+   "mean": 0.56083,
+   "sd": 0.45506
+  },
+  {
+   "id": "outlook/pltr:palantir_s_earnings_forecasts__sum",
+   "query": "pltr:palantir_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook",
+   "mean": -1.37827,
+   "sd": 0.4639
+  },
+  {
+   "id": "company/outlook/pltr:palantir_s_earnings_forecasts__sum",
+   "query": "pltr:palantir_s_earnings_forecasts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook",
+   "mean": -1.37827,
+   "sd": 0.4639
+  },
+  {
+   "id": "outlook/pltr:palantir_s_growth_prospects__sum",
+   "query": "pltr:palantir_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook",
+   "mean": 2.75443,
+   "sd": 0.27556
+  },
+  {
+   "id": "company/outlook/pltr:palantir_s_growth_prospects__sum",
+   "query": "pltr:palantir_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook",
+   "mean": 2.75443,
+   "sd": 0.27556
+  },
+  {
+   "id": "competition/pltr:competitive_pressure_on_palantir__sum",
+   "query": "pltr:competitive_pressure_on_palantir__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "competition",
+   "mean": -3.3742,
+   "sd": 0.33881
+  },
+  {
+   "id": "company/competition/pltr:competitive_pressure_on_palantir__sum",
+   "query": "pltr:competitive_pressure_on_palantir__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "competition",
+   "mean": -3.3742,
+   "sd": 0.33881
+  },
+  {
+   "id": "competition/pltr:palantir_s_market_share__sum",
+   "query": "pltr:palantir_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "competition",
+   "mean": 0.57922,
+   "sd": 0.35119
+  },
+  {
+   "id": "company/competition/pltr:palantir_s_market_share__sum",
+   "query": "pltr:palantir_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "competition",
+   "mean": 0.57922,
+   "sd": 0.35119
+  },
+  {
+   "id": "reflectors/pltr:palantir__sum",
+   "query": "pltr:palantir__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": 1.40783,
+   "sd": 0.41488
+  },
+  {
+   "id": "company/reflectors/pltr:palantir__sum",
+   "query": "pltr:palantir__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": 1.40783,
+   "sd": 0.41488
+  },
+  {
+   "id": "reflectors/pltr:palantir_s_share_price__sum",
+   "query": "pltr:palantir_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": 0.1256,
+   "sd": 0.30535
+  },
+  {
+   "id": "company/reflectors/pltr:palantir_s_share_price__sum",
+   "query": "pltr:palantir_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": 0.1256,
+   "sd": 0.30535
+  },
+  {
+   "id": "reflectors/pltr:the_valuation_of_palantir__sum",
+   "query": "pltr:the_valuation_of_palantir__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": 0.45818,
+   "sd": 0.51772
+  },
+  {
+   "id": "company/reflectors/pltr:the_valuation_of_palantir__sum",
+   "query": "pltr:the_valuation_of_palantir__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": 0.45818,
+   "sd": 0.51772
+  },
+  {
+   "id": "surprise/pltrrep:palantir_s_quarterly_results__sum",
+   "query": "pltrrep:palantir_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.42667,
+   "sd": 0.23188
+  },
+  {
+   "id": "company/surprise/pltrrep:palantir_s_quarterly_results__sum",
+   "query": "pltrrep:palantir_s_quarterly_results__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.42667,
+   "sd": 0.23188
+  },
+  {
+   "id": "surprise/pltrrep:palantir_s_revenue_guidance__sum",
+   "query": "pltrrep:palantir_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.14001,
+   "sd": 0.19856
+  },
+  {
+   "id": "company/surprise/pltrrep:palantir_s_revenue_guidance__sum",
+   "query": "pltrrep:palantir_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.14001,
+   "sd": 0.19856
+  },
+  {
+   "id": "surprise/pltrrep:palantir_s_us_commercial_revenue__sum",
+   "query": "pltrrep:palantir_s_us_commercial_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.2645,
+   "sd": 0.17636
+  },
+  {
+   "id": "company/surprise/pltrrep:palantir_s_us_commercial_revenue__sum",
+   "query": "pltrrep:palantir_s_us_commercial_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.2645,
+   "sd": 0.17636
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.27866,
+   "sd": 0.60391
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.27866,
+   "sd": 0.60391
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.15576,
+   "sd": 0.49187
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.15576,
+   "sd": 0.49187
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": -0.52694,
+   "sd": 0.76718
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": -0.52694,
+   "sd": 0.76718
+  },
+  {
+   "id": "macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": 0.12475,
+   "sd": 0.2554
+  },
+  {
+   "id": "company/macro/fed:expectations_of_fed_rate_cuts__sum",
+   "query": "fed:expectations_of_fed_rate_cuts__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": 0.12475,
+   "sd": 0.2554
+  },
+  {
+   "id": "macro/haven:financial_market_volatility__sum",
+   "query": "haven:financial_market_volatility__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro",
+   "mean": -2.61516,
+   "sd": 0.64491
+  },
+  {
+   "id": "company/macro/haven:financial_market_volatility__sum",
+   "query": "haven:financial_market_volatility__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro",
+   "mean": -2.61516,
+   "sd": 0.64491
+  },
+  {
+   "id": "macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": 1.21667,
+   "sd": 0.85345
+  },
+  {
+   "id": "company/macro/investors:news_inv_investors__sum",
+   "query": "investors:news_inv_investors__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": 1.21667,
+   "sd": 0.85345
+  },
+  {
+   "id": "macro/usa:us_economic_growth__sum",
+   "query": "usa:us_economic_growth__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": -1.58252,
+   "sd": 0.7482
+  },
+  {
+   "id": "company/macro/usa:us_economic_growth__sum",
+   "query": "usa:us_economic_growth__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": -1.58252,
+   "sd": 0.7482
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Demand for the company's products and its revenue",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.03106,
+     0.27787,
+     0.35078,
+     0.40011,
+     0.44403,
+     0.49429,
+     0.53511,
+     0.58108,
+     0.64281,
+     0.72472,
+     0.79154,
+     0.8864,
+     0.98351,
+     0.99837
+    ]
+   }
+  },
+  "profits": {
+   "label": "Profits and margins",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00414,
+     0.27828,
+     0.34506,
+     0.39711,
+     0.43936,
+     0.48412,
+     0.53003,
+     0.5883,
+     0.64713,
+     0.73355,
+     0.80067,
+     0.91971,
+     0.9864,
+     0.98845
+    ]
+   }
+  },
+  "outlook": {
+   "label": "Earnings forecasts and growth prospects",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.06682,
+     0.26947,
+     0.34255,
+     0.39425,
+     0.45539,
+     0.50564,
+     0.54711,
+     0.5916,
+     0.65296,
+     0.72758,
+     0.7784,
+     0.87627,
+     0.99154,
+     0.99299
+    ]
+   }
+  },
+  "competition": {
+   "label": "Market share and competitive pressure",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.04433,
+     0.29958,
+     0.37172,
+     0.42119,
+     0.46495,
+     0.50165,
+     0.54094,
+     0.57896,
+     0.62315,
+     0.6853,
+     0.74954,
+     0.86732,
+     0.93596,
+     0.96788
+    ]
+   }
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.0375,
+     0.26411,
+     0.34481,
+     0.39887,
+     0.45461,
+     0.50254,
+     0.54877,
+     0.6065,
+     0.6537,
+     0.73515,
+     0.79092,
+     0.86548,
+     0.94783,
+     0.96947
+    ]
+   }
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00076,
+     0.28328,
+     0.37013,
+     0.42074,
+     0.47135,
+     0.51762,
+     0.56146,
+     0.60915,
+     0.66809,
+     0.72983,
+     0.77254,
+     0.85114,
+     0.88522,
+     0.90643
+    ]
+   }
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00262,
+     0.27695,
+     0.37208,
+     0.43296,
+     0.47145,
+     0.50627,
+     0.53843,
+     0.58288,
+     0.63418,
+     0.71798,
+     0.78246,
+     0.92456,
+     0.99381,
+     0.99797
+    ]
+   }
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.02816,
+     0.32543,
+     0.40429,
+     0.4466,
+     0.47669,
+     0.51187,
+     0.54317,
+     0.57642,
+     0.61056,
+     0.66275,
+     0.70704,
+     0.8288,
+     0.94372,
+     0.98062
+    ]
+   }
+  },
+  "company": {
+   "label": "Palantir news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "role": "composite",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.08025,
+     0.34686,
+     0.40128,
+     0.44471,
+     0.4733,
+     0.50354,
+     0.53377,
+     0.56214,
+     0.59725,
+     0.65041,
+     0.6921,
+     0.79984,
+     0.91099,
+     0.93226
+    ]
+   }
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": [],
+  "per_category": {}
+ },
+ "engine": "fp_51319d2ff6",
+ "calibration": {
+  "sample": "calibration/wikinews_business.json.gz",
+  "n": 1500,
+  "statistic": "mean and sd of each read over the sample; no thresholds, no decision",
+  "date": "2026-10-24"
+ }
+}

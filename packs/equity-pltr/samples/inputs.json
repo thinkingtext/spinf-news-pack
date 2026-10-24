@@ -1,0 +1,20 @@
+[
+ {
+  "id": "syn-pltr-1",
+  "context": "article",
+  "text": "Palantir Technologies raised its revenue forecast for the year on Monday after a quarter in which its US commercial business grew faster than expected, driven by customers adopting its artificial intelligence platform.\n\nThe company reported quarterly revenue above analysts' estimates and its largest ever operating profit. The number of US commercial customers rose sharply from a year earlier, and government revenue also grew, helped by new defence contracts.\n\nThe chief executive said demand for the AI platform was unprecedented and that the company was adding sales capacity to keep up. Palantir expects to remain profitable on an adjusted basis every quarter this year.\n\nShares jumped in extended trading. Some analysts said the valuation of Palantir already assumes years of rapid growth, and that the stock's rise leaves little room for a slowdown.",
+  "source": {
+   "title": "Palantir lifts forecast on US commercial demand for AI platform",
+   "license": "written by thinkingtext, illustrative (not a news report)"
+  }
+ },
+ {
+  "id": "syn-pltr-2",
+  "context": "article",
+  "text": "Shares of enterprise software companies fell on Wednesday after a widely followed analyst report questioned how quickly businesses would see returns on their spending on artificial intelligence tools.\n\nPalantir Technologies was among the biggest decliners, giving back part of a large gain this year. The report argued that many pilot projects had not yet turned into paid deployments and that budgets for next year were being set cautiously.\n\nPalantir has said its own commercial pipeline is strong, and recently reported accelerating growth in the United States. An analyst who follows the company said the sell-off reflected its valuation more than any change in its business, but added that competitive pressure from larger software vendors adding AI features is increasing.\n\nThe broader market was little changed.",
+  "source": {
+   "title": "Software stocks fall as investors question AI spending returns",
+   "license": "written by thinkingtext, illustrative (not a news report)"
+  }
+ }
+]

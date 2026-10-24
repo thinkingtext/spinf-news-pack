@@ -1,0 +1,1008 @@
+{
+ "pack": "thinkingtext/equity-aapl",
+ "version": "0.1.0",
+ "model": "spinf/gemma-4-12b-fp8",
+ "media": [
+  "text"
+ ],
+ "answers": "logprob",
+ "name": "Apple news",
+ "description": "The Apple (AAPL) questions of the EQ-S10 equity news index: the company's steady cells by slot family, read on an article about the company, and their composite.",
+ "origin": {
+  "index": "EQ-S10",
+  "long_name": "Equity News Index",
+  "spec_version": "1.2",
+  "company": "Apple",
+  "ticker": "AAPL",
+  "peers": [],
+  "weights": {
+   "company": 0.67,
+   "peers": 0,
+   "market": 0.33
+  },
+  "registry": "thinkingtext/tt-news-index",
+  "registry_md5": "69f13e0bb81eae92397cba689564de3a",
+  "exported": "2026-10-24"
+ },
+ "contexts": {
+  "article": "{X}"
+ },
+ "scoring": {
+  "empty_floor": false,
+  "case_insensitive": false,
+  "queries": [
+   {
+    "id": "aapl:apple_s_revenue__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Apple's revenue is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "aapl:demand_for_apple_s_products__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: demand for Apple's products is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "aapl:iphone_sales__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: iPhone sales is likely to{?}",
+    "options": [
+     " increase",
+     " decrease"
+    ]
+   },
+   {
+    "id": "aapl:apple_s_profit_margins__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Apple's profit margins is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "aapl:apple_s_profits__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Apple's profits is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "aapl:apple_s_growth_prospects__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Apple's growth prospects is likely to{?}",
+    "options": [
+     " improve",
+     " worsen"
+    ]
+   },
+   {
+    "id": "aapl:apple_s_market_share__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Apple's market share is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "aapl:apple__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: for Apple shareholders, this news is{?}",
+    "options": [
+     " positive",
+     " negative"
+    ]
+   },
+   {
+    "id": "aapl:apple_s_share_price__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: Apple's share price is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "aapl:the_valuation_of_apple__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the valuation of Apple is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "aaplrep:apple_s_revenue_guidance__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end: relative to market expectations, Apple's revenue guidance came in{?}",
+    "options": [
+     " higher",
+     " lower"
+    ]
+   },
+   {
+    "id": "stocks:us_stock_prices__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US stock prices is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "stocks:us_technology_stocks__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US technology stocks is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "earnings:us_corporate_earnings__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: US corporate earnings is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   },
+   {
+    "id": "usa:the_risk_of_a_us_recession__sum",
+    "template": "\n\nSummary of the key facts in the article above, from beginning to end, and their consequence: the risk of a US recession is likely to{?}",
+    "options": [
+     " rise",
+     " fall"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "aapl:apple_s_revenue__sum": {
+   "phrase": "Apple's revenue",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "aapl"
+  },
+  "aapl:demand_for_apple_s_products__sum": {
+   "phrase": "demand for Apple's products",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "aapl"
+  },
+  "aapl:iphone_sales__sum": {
+   "phrase": "iPhone sales",
+   "pair": [
+    "increase",
+    "decrease"
+   ],
+   "wording": "summary",
+   "principal": "aapl"
+  },
+  "aapl:apple_s_profit_margins__sum": {
+   "phrase": "Apple's profit margins",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "aapl"
+  },
+  "aapl:apple_s_profits__sum": {
+   "phrase": "Apple's profits",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "aapl"
+  },
+  "aapl:apple_s_growth_prospects__sum": {
+   "phrase": "Apple's growth prospects",
+   "pair": [
+    "improve",
+    "worsen"
+   ],
+   "wording": "summary",
+   "principal": "aapl"
+  },
+  "aapl:apple_s_market_share__sum": {
+   "phrase": "Apple's market share",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "aapl"
+  },
+  "aapl:apple__sum": {
+   "phrase": "Apple",
+   "pair": [
+    "positive",
+    "negative"
+   ],
+   "wording": "sum_news_co",
+   "principal": "aapl"
+  },
+  "aapl:apple_s_share_price__sum": {
+   "phrase": "Apple's share price",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "aapl"
+  },
+  "aapl:the_valuation_of_apple__sum": {
+   "phrase": "the valuation of Apple",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "aapl"
+  },
+  "aaplrep:apple_s_revenue_guidance__sum": {
+   "phrase": "Apple's revenue guidance",
+   "pair": [
+    "higher",
+    "lower"
+   ],
+   "wording": "sum_expect",
+   "principal": "aaplrep"
+  },
+  "stocks:us_stock_prices__sum": {
+   "phrase": "US stock prices",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "stocks:us_technology_stocks__sum": {
+   "phrase": "US technology stocks",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "stocks"
+  },
+  "earnings:us_corporate_earnings__sum": {
+   "phrase": "US corporate earnings",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "earnings"
+  },
+  "usa:the_risk_of_a_us_recession__sum": {
+   "phrase": "the risk of a US recession",
+   "pair": [
+    "rise",
+    "fall"
+   ],
+   "wording": "summary",
+   "principal": "usa"
+  }
+ },
+ "reads": [
+  {
+   "id": "demand/aapl:apple_s_revenue__sum",
+   "query": "aapl:apple_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": -0.55067,
+   "sd": 0.47328
+  },
+  {
+   "id": "company/demand/aapl:apple_s_revenue__sum",
+   "query": "aapl:apple_s_revenue__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": -0.55067,
+   "sd": 0.47328
+  },
+  {
+   "id": "demand/aapl:demand_for_apple_s_products__sum",
+   "query": "aapl:demand_for_apple_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 1.87045,
+   "sd": 0.59983
+  },
+  {
+   "id": "company/demand/aapl:demand_for_apple_s_products__sum",
+   "query": "aapl:demand_for_apple_s_products__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 1.87045,
+   "sd": 0.59983
+  },
+  {
+   "id": "demand/aapl:iphone_sales__sum",
+   "query": "aapl:iphone_sales__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "demand",
+   "mean": 1.34553,
+   "sd": 0.59736
+  },
+  {
+   "id": "company/demand/aapl:iphone_sales__sum",
+   "query": "aapl:iphone_sales__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "demand",
+   "mean": 1.34553,
+   "sd": 0.59736
+  },
+  {
+   "id": "profits/aapl:apple_s_profit_margins__sum",
+   "query": "aapl:apple_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits",
+   "mean": -1.29181,
+   "sd": 0.38753
+  },
+  {
+   "id": "company/profits/aapl:apple_s_profit_margins__sum",
+   "query": "aapl:apple_s_profit_margins__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits",
+   "mean": -1.29181,
+   "sd": 0.38753
+  },
+  {
+   "id": "profits/aapl:apple_s_profits__sum",
+   "query": "aapl:apple_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "profits",
+   "mean": -0.51857,
+   "sd": 0.46381
+  },
+  {
+   "id": "company/profits/aapl:apple_s_profits__sum",
+   "query": "aapl:apple_s_profits__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "profits",
+   "mean": -0.51857,
+   "sd": 0.46381
+  },
+  {
+   "id": "outlook/aapl:apple_s_growth_prospects__sum",
+   "query": "aapl:apple_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "outlook",
+   "mean": 2.22307,
+   "sd": 0.41732
+  },
+  {
+   "id": "company/outlook/aapl:apple_s_growth_prospects__sum",
+   "query": "aapl:apple_s_growth_prospects__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "outlook",
+   "mean": 2.22307,
+   "sd": 0.41732
+  },
+  {
+   "id": "competition/aapl:apple_s_market_share__sum",
+   "query": "aapl:apple_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "competition",
+   "mean": -0.88064,
+   "sd": 0.76814
+  },
+  {
+   "id": "company/competition/aapl:apple_s_market_share__sum",
+   "query": "aapl:apple_s_market_share__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "competition",
+   "mean": -0.88064,
+   "sd": 0.76814
+  },
+  {
+   "id": "reflectors/aapl:apple__sum",
+   "query": "aapl:apple__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": 1.51501,
+   "sd": 0.44546
+  },
+  {
+   "id": "company/reflectors/aapl:apple__sum",
+   "query": "aapl:apple__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": 1.51501,
+   "sd": 0.44546
+  },
+  {
+   "id": "reflectors/aapl:apple_s_share_price__sum",
+   "query": "aapl:apple_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": -0.1109,
+   "sd": 0.37208
+  },
+  {
+   "id": "company/reflectors/aapl:apple_s_share_price__sum",
+   "query": "aapl:apple_s_share_price__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": -0.1109,
+   "sd": 0.37208
+  },
+  {
+   "id": "reflectors/aapl:the_valuation_of_apple__sum",
+   "query": "aapl:the_valuation_of_apple__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "reflectors",
+   "mean": -0.09669,
+   "sd": 0.50157
+  },
+  {
+   "id": "company/reflectors/aapl:the_valuation_of_apple__sum",
+   "query": "aapl:the_valuation_of_apple__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "reflectors",
+   "mean": -0.09669,
+   "sd": 0.50157
+  },
+  {
+   "id": "surprise/aaplrep:apple_s_revenue_guidance__sum",
+   "query": "aaplrep:apple_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "surprise",
+   "mean": 0.05882,
+   "sd": 0.27958
+  },
+  {
+   "id": "company/surprise/aaplrep:apple_s_revenue_guidance__sum",
+   "query": "aaplrep:apple_s_revenue_guidance__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "surprise",
+   "mean": 0.05882,
+   "sd": 0.27958
+  },
+  {
+   "id": "market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.28032,
+   "sd": 0.5995
+  },
+  {
+   "id": "company/market/stocks:us_stock_prices__sum",
+   "query": "stocks:us_stock_prices__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.28032,
+   "sd": 0.5995
+  },
+  {
+   "id": "market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "market",
+   "mean": -0.15845,
+   "sd": 0.49532
+  },
+  {
+   "id": "company/market/stocks:us_technology_stocks__sum",
+   "query": "stocks:us_technology_stocks__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "market",
+   "mean": -0.15845,
+   "sd": 0.49532
+  },
+  {
+   "id": "macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "macro",
+   "mean": -0.52439,
+   "sd": 0.76956
+  },
+  {
+   "id": "company/macro/earnings:us_corporate_earnings__sum",
+   "query": "earnings:us_corporate_earnings__sum",
+   "kind": "pair",
+   "sign": 1,
+   "category": "company",
+   "view": "macro",
+   "mean": -0.52439,
+   "sd": 0.76956
+  },
+  {
+   "id": "macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "macro",
+   "mean": -2.13748,
+   "sd": 0.67084
+  },
+  {
+   "id": "company/macro/usa:the_risk_of_a_us_recession__sum",
+   "query": "usa:the_risk_of_a_us_recession__sum",
+   "kind": "pair",
+   "sign": -1,
+   "category": "company",
+   "view": "macro",
+   "mean": -2.13748,
+   "sd": 0.67084
+  }
+ ],
+ "categories": {
+  "demand": {
+   "label": "Demand for the company's products and its revenue",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.04452,
+     0.24399,
+     0.34708,
+     0.4222,
+     0.47881,
+     0.51822,
+     0.5594,
+     0.60069,
+     0.6433,
+     0.70076,
+     0.7506,
+     0.89553,
+     0.99497,
+     0.99642
+    ]
+   }
+  },
+  "profits": {
+   "label": "Profits and margins",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00899,
+     0.2759,
+     0.3499,
+     0.40494,
+     0.45036,
+     0.49481,
+     0.53868,
+     0.58115,
+     0.63501,
+     0.70122,
+     0.77376,
+     0.95165,
+     0.99924,
+     0.99957
+    ]
+   }
+  },
+  "outlook": {
+   "label": "Earnings forecasts and growth prospects",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.0016,
+     0.24751,
+     0.32874,
+     0.38964,
+     0.45253,
+     0.50478,
+     0.56129,
+     0.61858,
+     0.68374,
+     0.75807,
+     0.81047,
+     0.90976,
+     0.97927,
+     0.99465
+    ]
+   }
+  },
+  "competition": {
+   "label": "Market share and competitive pressure",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.01644,
+     0.24424,
+     0.312,
+     0.38025,
+     0.43728,
+     0.48737,
+     0.54022,
+     0.59057,
+     0.65186,
+     0.7432,
+     0.83997,
+     0.96095,
+     0.99768,
+     0.99863
+    ]
+   }
+  },
+  "reflectors": {
+   "label": "The share price, the valuation and the shareholder read",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00386,
+     0.29643,
+     0.36747,
+     0.4113,
+     0.45192,
+     0.4928,
+     0.53334,
+     0.57955,
+     0.63197,
+     0.70476,
+     0.76352,
+     0.9249,
+     0.99763,
+     0.99947
+    ]
+   }
+  },
+  "surprise": {
+   "label": "Results and guidance against expectations",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00478,
+     0.21751,
+     0.32897,
+     0.39763,
+     0.46722,
+     0.52248,
+     0.58208,
+     0.63731,
+     0.69071,
+     0.75686,
+     0.80612,
+     0.87093,
+     0.93993,
+     0.98297
+    ]
+   }
+  },
+  "market": {
+   "label": "US stock and technology-stock prices, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.00227,
+     0.28588,
+     0.37339,
+     0.43145,
+     0.47192,
+     0.50502,
+     0.5419,
+     0.58421,
+     0.63403,
+     0.71591,
+     0.78066,
+     0.92449,
+     0.99309,
+     0.99789
+    ]
+   }
+  },
+  "macro": {
+   "label": "Earnings, rates, risk appetite and the economy, as read on the company's articles",
+   "role": "slot",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.02796,
+     0.30531,
+     0.40481,
+     0.4521,
+     0.4882,
+     0.51985,
+     0.54865,
+     0.58254,
+     0.61984,
+     0.67614,
+     0.72382,
+     0.82682,
+     0.97095,
+     0.97507
+    ]
+   }
+  },
+  "company": {
+   "label": "Apple news read",
+   "aggregate": "views",
+   "words": [
+    "very negative",
+    "negative",
+    "balanced",
+    "positive",
+    "very positive"
+   ],
+   "role": "composite",
+   "platt": [
+    1.0,
+    0.0
+   ],
+   "fit_platt": false,
+   "uncalibrated": true,
+   "threshold": null,
+   "normal_quantiles": {
+    "levels": [
+     0,
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     0.9,
+     0.95,
+     0.99,
+     0.999,
+     1
+    ],
+    "values": [
+     0.03838,
+     0.31441,
+     0.38188,
+     0.43288,
+     0.46239,
+     0.49773,
+     0.53264,
+     0.56715,
+     0.60987,
+     0.66986,
+     0.70878,
+     0.87107,
+     0.98027,
+     0.99172
+    ]
+   }
+  }
+ },
+ "decision": {
+  "mode": "per_category",
+  "fallback": "per_category",
+  "critical": [],
+  "per_category": {}
+ },
+ "engine": "fp_51319d2ff6",
+ "calibration": {
+  "sample": "calibration/wikinews_business.json.gz",
+  "n": 1500,
+  "statistic": "mean and sd of each read over the sample; no thresholds, no decision",
+  "date": "2026-10-24"
+ }
+}

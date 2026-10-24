@@ -1,0 +1,57 @@
+[
+ {
+  "id": "wn13093",
+  "context": "article",
+  "text": "AMD filed an antitrust complaint against Intel Corporation two days ago in U.S. federal district court for the district of Delaware under Section 2 of the Sherman Antitrust Act, Sections 4 and 16 of the Clayton Act, and the California Business and Professions Code.\nAccording to the complaint, Intel has unlawfully maintained its monopoly by, among other things:\nForcing major customers such as Dell, Sony, Toshiba, Gateway, and Hitachi into Intel-exclusive deals in return for outright cash payments, discriminatory pricing or marketing subsidies conditioned on the exclusion of AMD;\nAccording to industry reports, and as confirmed by the JFTC in Japan, Intel has paid Dell and Toshiba huge sums not to do business with AMD.\nIntel paid Sony millions for exclusivity. AMD’s share of Sony’s business went from 23 percent in ‘02 to 8% in ‘03, to 0%, where it remains today.\nForcing other major customers such as NEC, Acer, and Fujitsu into partial exclusivity agreements by conditioning rebates, allowances and market development funds (MDF) on customers’ agreement to severely limit or forego entirely purchases from AMD;\nIntel paid NEC several million dollars for caps on NEC’s purchases from AMD. Those caps assured Intel at least 90% of NEC’s business in Japan and imposed a worldwide cap on the amount of AMD business NEC could do.\nEstablishing a system of discriminatory and retroactive incentives triggered by purchases at such high levels as to have the intended effect of denying customers the freedom to purchase any significant volume of processors from AMD;\nWhen AMD succeeded in getting on the HP retail roadmap for mobile computers, and its products sold well, Intel responded by withholding HP’s fourth quarter 2004 rebate check and refusing to waive HP’s failure to achieve its targeted rebate goal; it allowed HP to make up the shortfall in succeeding quarters by promising Intel at least 90% of HP’s mainstream retail business.\nThreatening retaliation against customers for introducing AMD computer platforms, particularly in strategic market segments such as commercial desktop;\nThen-Compaq CEO Michael Capellas said in 2000 that because of the volume of business given to AMD, Intel withheld delivery of critical server chips. Saying \"he had a gun to his head,\" he told AMD he had to stop buying.\nAccording to Gateway executives, their company has paid a high price for even its limited AMD dealings. They claim that Intel has \"beaten them into ‘guacamole’\" in retaliation.\nEstablishing and enforcing quotas among key retailers such as Best Buy and Circuit City, effectively requiring them to stock overwhelmingly or exclusively, Intel computers, artificially limiting consumer choice;\nAMD has been entirely shut out from Media Markt, Europe's largest computer retailer, which accounts for 35 percent of Germany's retail sales.\nOffice Depot declined to stock AMD-powered notebooks regardless of the amount of financial support AMD offered, citing the risk of retaliation.\nForcing PC makers and tech partners to boycott AMD product launches or promotions;\nThen-Intel CEO Craig Barrett threatened Acer’s Chairman with \"severe consequences\" for supporting the AMD Athlon 64 launch. This coincided with an unexplained delay by Intel in providing $15-20M in market development funds owed to Acer. Acer withdrew from the launch in September 2003.\nAbusing its market power by forcing on the industry technical standards and products that have as their main purpose the handicapping of AMD in the marketplace.\nIntel denied AMD access to the highest level of membership for the Advanced DRAM technology consortium to limit AMD’s participation in critical industry standard decisions that would affect its business.\nIntel designed its compilers, which translate software programs into machine-readable language, to degrade a program’s performance if operated on a computer powered by an AMD microprocessor.",
+  "source": {
+   "title": "AMD files antitrust lawsuit against Intel in US federal district court",
+   "url": "https://en.wikinews.org/wiki/AMD_files_antitrust_lawsuit_against_Intel_in_US_federal_district_court",
+   "revision": 4810660,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn14831",
+  "context": "article",
+  "text": "Local Law enforcement officials acting on behalf of the European Commission raided offices of Intel and several computer makers this morning, a spokesman for the EU said. He did not specify which countries or which other firms were involved. However, a spokesman for Intel Germany, Hans-Jürgen Werner, said that Intel's offices in Munich and Swindon were among those searched.\nIt emerged on Wednesday 13th, that raids also took place at Intel's facility in County Kildare, Ireland in relation to the firms anti-competitive business practices. Intel employs over 5,000 people at its Irish manufacturing facility.\nThe raids are most likely connected to an ongoing anti-trust investigation against Intel by the EU. It is alleged that the company used its market dominance to bully its clients into buying its chips instead of AMD ones. Intel is denying the allegations.",
+  "source": {
+   "title": "Intel's offices across the EU raided",
+   "url": "https://en.wikinews.org/wiki/Intel%27s_offices_across_the_EU_raided",
+   "revision": 4811130,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn22204",
+  "context": "article",
+  "text": "An Intel spokesperson confirmed Thursday that Dell would no longer be offering servers with Intel Itanium CPUs.  The spokesperson said \"Losing Dell as an Itanium customer is unfortunate but frankly, we see their impact as negligible.\"  Servers with Itanium CPUs are no longer promoted on Dell's website, though a few can be found by searching.\nDell is the largest seller of computers with Intel processors. Dell currently sells 10.5 percent of all servers worldwide. The majority of Dell servers use an IA-32 (colloquially \"x86\") chip, but a growing number use the 64-bit Intel Xeon. Sales of Itanium servers have been very poor; last year Dell sold only 1,371 Itanium servers, up from 12 the previous year. In February, IBM also phased out Itanium-based servers, replacing them with IBM Power CPUs. Fujitsu, HP, Hitachi NEC, SGI and Unisys are the only major manufacturers to still offer Itanium-based servers.\nThe Intel Itanium was designed in the early 1990s. It was intended to be the processor of choice for 64-bit computers, but the processor suffered from several major flaws preventing widespread adoption. Unlike competing AMD64 chips, the Intel Itanium uses a different instruction set from IA-32 chips. An emulation feature allows them to run IA-32 code, but only very slowly; users were forced to choose between accepting greatly-reduced performance and expending time and programmers' salaries porting their software.  Even Intel has acquiesced to AMD's leadership in this field, designing chips with a compatible EM64T technology.",
+  "source": {
+   "title": "Dell to drop Itanium-based servers",
+   "url": "https://en.wikinews.org/wiki/Dell_to_drop_Itanium-based_servers",
+   "revision": 4816669,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn109785",
+  "context": "article",
+  "text": "After the launch of Intel Atom for low-price PCs during the 2008 COMPUTEX Taipei, Intel globally unveiled the Centrino 2 Processor Technology (formerly codenamed \"Montevina\") products for laptops yesterday July 15.\nThis Centrino 2 continues support for features on the earlier-released 45 nanometer (45nm) \"Penryn\" processor, and implements enhanced security and management features to the Vpro version. \"HD-to-Go\" for mobile entertainment and \"802.11n\" for wireless networking were embedded into this new processor technology. Due to the difference on networking infrastructure in several nations, the WiMAX feature will be added in Europe and North America before this December.\nAccording to Intel Corp., wireless network transmission with 802.11 draft-N feature will be up to 450 Mbps, it delivered five times the speed and twice the range of older 802.11a/g technology in this processor technology. In addition, Intel Centrino 2 also provided the horsepower and battery life for mobile entertainment and mobile business.\n\"Intel launches 45nm \"Penryn\" processor aiming for energy-efficiency\" — Wikinews, November 13, 2007",
+  "source": {
+   "title": "Intel launches Centrino 2 aiming for performance and mobility",
+   "url": "https://en.wikinews.org/wiki/Intel_launches_Centrino_2_aiming_for_performance_and_mobility",
+   "revision": 4820029,
+   "license": "CC BY 2.5"
+  }
+ },
+ {
+  "id": "wn110447",
+  "context": "article",
+  "text": "From the middle of July, Sony Corporation refreshed their senior laptop brand VAIO from \"Video Audio Integrated Operation\" to \"Visual Audio Intelligent Organizer\". According to Sony Taiwan Limited, this refreshment is an attempt to relocate the laptop consuming market for business and entertainment factors.\nIn the \"VAIO Experience 2008\" press conference in Europe, Sony promoted their new product series for different populations including BZ for business, FW for home entertainment, Z for ultra-slim, and SR for complex applications.\nDifferent with past series, Sony added \"Clear Bright\" screening technology for high-definition display, and \"full-carbon production\" features. BD-burning and Intel Centrino 2 processing technologies will be featured in all the new models. For security issue, Sony also embedded fingerprint system to prevent personal data to be stolen. Continued from TZ series, innovative designs including \"Green Power Button\", \"Situational Switch\" are also added in newly-launched series.\n\"Due to consuming market differences, Sony only promoted BZ series in Europe and America but not included Asia. Although the TICA Show in Taipei will be different, functionality will be the greatest issue when a consumers choose a notebook [computer] before buying.\" addressed by executives from Sony Taiwan Limited, during the \"VAIO Experience 2008\" press conference in Taiwan.",
+  "source": {
+   "title": "Sony refreshes VAIO brand for business and entertainment",
+   "url": "https://en.wikinews.org/wiki/Sony_refreshes_VAIO_brand_for_business_and_entertainment",
+   "revision": 4826316,
+   "license": "CC BY 2.5"
+  }
+ }
+]
