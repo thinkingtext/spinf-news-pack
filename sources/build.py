@@ -2,14 +2,14 @@
 """Build the thinkingtext news packs: the published question sets of tt-news-index (the OIL-F6 and EQ-S10 news indexes) exported as
 spinf prompt packs, standardised on a public news sample, with a golden fixture per version.
 
-    python tools/build.py export    --registry ../tt-news-index                      # drafts/<name>.json from the registry and the specs
-    python tools/build.py score     --draft drafts/oil.json --inputs calibration/wikinews_business.json.gz --out calibration/answers/oil.jsonl
-    python tools/build.py calibrate --draft drafts/oil.json --answers calibration/answers/oil.jsonl --out packs/oil/0.1.0.json
-    python tools/build.py samples   --inputs calibration/wikinews_business.json.gz    # packs/<name>/samples/inputs.json, drawn from the sample
-    python tools/build.py fixture   --pack packs/oil/0.1.0.json --samples packs/oil/samples/inputs.json --out packs/oil/fixtures/0.1.0.json
-    python tools/build.py manifest                                                    # prompt-packs.json from the pack folders
-    python tools/build.py readme                                                      # packs/<name>/README.md from the pack files
-    python tools/build.py check                                                       # every fixture recomputed with spinf_serve.packs (CI)
+    python sources/build.py export    --registry ../tt-news-index                  # sources/drafts/<name>.draft.json from the registry and the specs
+    python sources/build.py score     --draft sources/drafts/oil.draft.json --inputs sources/calibration/wikinews_business.json.gz --out sources/calibration/answers/oil.jsonl
+    python sources/build.py calibrate --draft sources/drafts/oil.draft.json --answers sources/calibration/answers/oil.jsonl --out packs/oil/0.1.0.json
+    python sources/build.py samples   --inputs sources/calibration/wikinews_business.json.gz   # packs/<name>/samples/inputs.json, drawn from the sample
+    python sources/build.py fixture   --pack packs/oil/0.1.0.json --samples packs/oil/samples/inputs.json --out packs/oil/fixtures/0.1.0.json
+    python sources/build.py manifest                                                # prompt-packs.json from the pack folders
+    python sources/build.py readme                                                  # packs/<name>/README.md and QUESTIONS.md from the pack files
+    python sources/build.py check                                                   # every fixture recomputed with spinf_serve.packs (CI)
 
 The only dependencies are spinf-serve (its `packs` module is pure Python) and, for `export`, PyYAML and a checkout of tt-news-index.
 Scoring needs a server: SPINF_URL (default http://localhost:8000, a local spinf-serve serving spinf/gemma-4-12b-fp8) and, for the
@@ -194,7 +194,7 @@ def export(a):
         problems = packs.validate(d, draft=True)
         assert not problems, (name, problems)
         os.makedirs(os.path.join(ROOT, a.out), exist_ok=True)
-        with open(os.path.join(ROOT, a.out, f"{name}.json"), "w") as f:
+        with open(os.path.join(ROOT, a.out, f"{name}.draft.json"), "w") as f:
             json.dump(d, f, indent=1, ensure_ascii=False)
             f.write("\n")
         print(f"{name:14s} {len(d['scoring']['queries']):3d} queries, {len(d['reads']):3d} reads, {len(d['categories']):2d} categories")
@@ -296,7 +296,7 @@ def calibrate(a):
         s = sorted(1 / (1 + math.exp(-m[c])) for m in macros)
         spec["normal_quantiles"] = {"levels": LEVELS, "values": [round(quantile(s, q), 5) for q in LEVELS]}
     pack["decision"] = {"mode": "per_category", "fallback": "per_category", "critical": [], "per_category": {}}
-    pack["calibration"] = {"sample": os.path.relpath(a.sample, ROOT) if a.sample else "calibration/wikinews_business.json.gz", "n": len(rows), "statistic": "mean and sd of each read over the sample; no thresholds, no decision", "date": time.strftime("%Y-%m-%d")}
+    pack["calibration"] = {"sample": os.path.relpath(a.sample, ROOT) if a.sample else "sources/calibration/wikinews_business.json.gz", "n": len(rows), "statistic": "mean and sd of each read over the sample; no thresholds, no decision", "date": time.strftime("%Y-%m-%d")}
     problems = packs.validate(pack)
     assert not problems, problems
     os.makedirs(os.path.dirname(a.out) or ".", exist_ok=True)
@@ -320,8 +320,8 @@ SAMPLE_PICK = {
 
 def samples(a):
     arts = load_sample(a.inputs)
-    for draft_path in sorted(glob.glob(os.path.join(ROOT, "drafts", "*.json"))):
-        name = os.path.basename(draft_path)[:-5]
+    for draft_path in sorted(glob.glob(os.path.join(ROOT, "sources", "drafts", "*.draft.json"))):
+        name = os.path.basename(draft_path)[: -len(".draft.json")]
         folder = os.path.join(ROOT, "packs", name)
         with open(draft_path) as f:
             d = json.load(f)
@@ -342,7 +342,7 @@ def samples(a):
         picked = [x for _, _, x in cands[:n]]
         out = [{"id": x["id"], "context": "article", "text": x["text"], "source": {"title": x["title"], "url": x["url"], "revision": x["revision"], "license": "CC BY 2.5"}} for x in picked]
         if len(out) < 3 and name.startswith("equity-"):  # Wikinews rarely covers some names: illustrative articles written by thinkingtext
-            with open(os.path.join(ROOT, "calibration", "synthetic_samples.json")) as f:
+            with open(os.path.join(ROOT, "sources", "calibration", "synthetic_samples.json")) as f:
                 syn = json.load(f).get(name.split("-", 1)[1], [])
             out += [{"id": x["id"], "context": "article", "text": x["text"], "source": {"title": x["title"], "license": "written by thinkingtext, illustrative (not a news report)"}} for x in syn]
         os.makedirs(os.path.join(folder, "samples"), exist_ok=True)
@@ -521,20 +521,11 @@ def readme(a):
             for c, spec in d["categories"].items():
                 cells = sorted({r["query"] for r in d["reads"] if r["category"] == c})
                 lines.append(f"| `{c}` | {spec['label']} | {spec.get('role', '')} | {len(cells)} |")
-        lines += ["", "## Cells", "", "| cell | phrase | answers | sign | wording |", "|---|---|---|---|---|"]
-        seen = set()
-        base = [r for r in d["reads"] if not r.get("view")] or d["reads"]
-        for r in base:
-            if r["query"] in seen:
-                continue
-            seen.add(r["query"])
-            lines += _cells_table(d, [r])
         lines += [
             "",
-            "Wordings: `default` = *\"{article}\\n\\nAs a result, {phrase} is likely to\"*; `summary` = *\"{article}\\n\\nSummary of the key facts in the",
-            "article above, from beginning to end, and their consequence: {phrase} is likely to\"*; `sum_news_co` = *\"... for {company} shareholders,",
-            "this news is\"* (positive / negative); `sum_expect` = *\"... relative to market expectations, {phrase} came in\"* (higher / lower).",
-            "The sign is the direction of the first answer toward the category's \"up\" (a higher oil price, a higher share price).",
+            "## Questions",
+            "",
+            f"The {n_q} questions, written out as the model sees them and grouped by category, are in [`QUESTIONS.md`](QUESTIONS.md).",
         ]
         if name.startswith("equity-"):
             w = o["weights"]
@@ -557,14 +548,66 @@ def readme(a):
             "",
             "## Files",
             "",
-            f"`{os.path.relpath(versions[0], folder)}` the pack; `samples/inputs.json` the articles the fixture scores: Wikinews articles (CC BY 2.5, attributed in each",
+            f"`{os.path.relpath(versions[0], folder)}` the pack, the file a server loads; `QUESTIONS.md` its questions written out; `samples/inputs.json` the articles the fixture scores: Wikinews articles (CC BY 2.5, attributed in each",
             "entry) and, for companies Wikinews rarely covers, illustrative articles written by thinkingtext (marked as such; not news reports);",
             f"`fixtures/{d['version']}.json` the samples' raw results and the evaluator's output.",
             "",
         ]
         with open(os.path.join(folder, "README.md"), "w") as f:
             f.write("\n".join(lines))
-        print(f"{name}: README written")
+        _questions(folder, d)
+        print(f"{name}: README and QUESTIONS written")
+
+
+WORDINGS = {
+    "default": "As a result, {phrase} is likely to",
+    "summary": "Summary of the key facts in the article above, from beginning to end, and their consequence: {phrase} is likely to",
+}
+
+
+def _questions(folder, d):
+    """QUESTIONS.md: every question written out as the model sees it, grouped by category, the answers and the sign next to it."""
+    q_by_id = {q["id"]: q for q in d["scoring"]["queries"]}
+    by_cat = {}
+    for r in d["reads"]:
+        if r.get("view"):
+            continue
+        by_cat.setdefault(r["category"], []).append(r)
+    lines = [
+        f"# {d['pack']} {d['version']}: the questions",
+        "",
+        f"Every question is the article followed by one sentence that stops where a one-word answer goes, written here as `___`. The engine",
+        "reads the two answers' log-probabilities at that point; the read is `logprob(first) − logprob(second)`, and the sign is the",
+        "direction of the first answer toward the category's \"up\" (a higher oil price, a higher share price). The questions are listed by",
+        "category, in the order the pack averages them.",
+        "",
+        "```",
+        "<the article>",
+        "",
+        "<the sentence below> ___",
+        "```",
+        "",
+    ]
+    for cat, spec in d["categories"].items():
+        reads = by_cat.get(cat)
+        lines += [f"## `{cat}`: {spec.get('label', cat)}", ""]
+        if not reads:
+            base_sign = {r["query"]: r["sign"] for r in d["reads"] if not r.get("view")}
+            signs = {}
+            for r in d["reads"]:
+                if r["category"] == cat and r.get("view"):
+                    signs.setdefault(r["view"], "+" if r["sign"] * base_sign[r["query"]] > 0 else "−")
+            lines += ["A composite: the mean of " + ", ".join(f"`{m}` ({sg})" for m, sg in sorted(signs.items())) + ", each signed toward the composite's \"up\".", ""]
+            continue
+        lines += ["| question (after the article) | answers | sign | cell |", "|---|---|---|---|"]
+        for r in reads:
+            q = q_by_id[r["query"]]
+            sentence = q["template"].strip().replace("{?}", " ___").replace("|", "\\|")
+            answers = " / ".join(f"`{o}`" for o in q["options"])
+            lines.append(f"| {sentence} | {answers} | {'+' if r['sign'] > 0 else '−'} | `{r['query']}` |")
+        lines.append("")
+    with open(os.path.join(folder, "QUESTIONS.md"), "w") as f:
+        f.write("\n".join(lines))
 
 
 def main():
@@ -572,7 +615,7 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("export")
     p.add_argument("--registry", required=True, help="a checkout of thinkingtext/tt-news-index")
-    p.add_argument("--out", default="drafts")
+    p.add_argument("--out", default="sources/drafts")
     p.set_defaults(fn=export)
     p = sub.add_parser("score")
     p.add_argument("--draft", required=True)

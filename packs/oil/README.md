@@ -48,67 +48,18 @@ code ([thinkingtext/tt-news-index](https://github.com/thinkingtext/tt-news-index
 | `volatility` | Financial market volatility | context | 2 | falling sharply, falling, steady, rising, rising sharply |
 | `f6` | Oil news read (F6) | composite | 18 | very bearish, bearish, balanced, bullish, very bullish |
 
-## Cells
+## Questions
 
-| cell | phrase | answers | sign | wording |
-|---|---|---|---|---|
-| `world:global_oil_demand` | global oil demand | increase / decrease | + | default |
-| `usa:us_oil_demand` | US oil demand | increase / decrease | + | default |
-| `china:chinese_oil_demand` | Chinese oil demand | increase / decrease | + | default |
-| `world:global_oil_supply` | global oil supply | increase / decrease | + | default |
-| `opec:opec_crude_oil_production` | OPEC+ crude oil production | increase / decrease | + | default |
-| `shale:us_shale_oil_production` | US shale oil production | increase / decrease | + | default |
-| `nonopec:non_opec_oil_supply` | non-OPEC oil supply | increase / decrease | + | default |
-| `us:us_crude_oil_inventories` | US crude oil inventories | rise / fall | + | default |
-| `cushing:crude_oil_inventories_at_cushing_oklahom` | crude oil inventories at Cushing, Oklahoma | rise / fall | + | default |
-| `gasoline:us_gasoline_inventories` | US gasoline inventories | rise / fall | + | default |
-| `diesel:us_distillate_inventories` | US distillate inventories | rise / fall | + | default |
-| `opec:opec_production_quotas` | OPEC+ production quotas | tighten / ease | + | default |
-| `mideast:the_risk_of_oil_supply_disruptions_in_th` | the risk of oil supply disruptions in the Middle East | rise / fall | + | default |
-| `hormuz:the_risk_of_a_closure_of_the_strait_of_h` | the risk of a closure of the Strait of Hormuz | rise / fall | + | default |
-| `russia:the_risk_of_disruption_to_russian_oil_ex` | the risk of disruption to Russian oil exports | rise / fall | + | default |
-| `ukraine:the_risk_of_escalation_in_the_war_in_ukr` | the risk of escalation in the war in Ukraine | rise / fall | + | default |
-| `world:global_economic_growth` | global economic growth | rise / fall | + | default |
-| `usa:us_economic_growth` | US economic growth | rise / fall | + | default |
-| `china:china_s_economic_growth` | China's economic growth | rise / fall | + | default |
-| `world:the_risk_of_a_global_recession` | the risk of a global recession | rise / fall | − | default |
-| `fed:us_interest_rates` | US interest rates | rise / fall | + | default |
-| `fed:the_federal_funds_rate` | the federal funds rate | rise / fall | + | default |
-| `dollar:the_us_dollar` | the US dollar | rise / fall | + | default |
-| `dollar:the_dollar` | the dollar | strengthen / weaken | + | default |
-| `stocks:us_stock_prices` | US stock prices | rise / fall | + | default |
-| `market:mood_financial_markets` | financial markets | optimism / pessimism | + | mood |
-| `market:fear_in_financial_markets` | fear in financial markets | rise / fall | − | default |
-| `market:investor_optimism` | investor optimism | rise / fall | + | default |
-| `market:risk_aversion_among_investors` | risk aversion among investors | rise / fall | − | default |
-| `market:turmoil_in_financial_markets` | turmoil in financial markets | rise / fall | − | default |
-| `refiners:global_refining_margins` | global refining margins | rise / fall | + | default |
-| `diesel:diesel_prices` | diesel prices | rise / fall | + | default |
-| `fed:us_inflation` | US inflation | rise / fall | + | default |
-| `fed:expectations_of_fed_rate_cuts` | expectations of Fed rate cuts | rise / fall | + | default |
-| `fed:bets_on_federal_reserve_rate_cuts` | bets on Federal Reserve rate cuts | increase / decrease | + | default |
-| `gold:gold_prices` | gold prices | rise / fall | + | default |
-| `euro:the_euro_against_the_us_dollar` | the euro against the US dollar | rise / fall | + | default |
-| `euro:the_euro` | the euro | strengthen / weaken | + | default |
-| `market:geopolitical_tensions` | geopolitical tensions | ease / escalate | − | default |
-| `market:the_risk_of_a_wider_war` | the risk of a wider war | rise / fall | + | default |
-| `market:trade_tensions` | trade tensions | ease / escalate | − | default |
-| `trade:us_china_trade_tensions` | US-China trade tensions | rise / fall | − | default |
-| `haven:financial_market_volatility` | financial market volatility | rise / fall | + | default |
-
-Wordings: `default` = *"{article}\n\nAs a result, {phrase} is likely to"*; `summary` = *"{article}\n\nSummary of the key facts in the
-article above, from beginning to end, and their consequence: {phrase} is likely to"*; `sum_news_co` = *"... for {company} shareholders,
-this news is"* (positive / negative); `sum_expect` = *"... relative to market expectations, {phrase} came in"* (higher / lower).
-The sign is the direction of the first answer toward the category's "up" (a higher oil price, a higher share price).
+The 43 questions, written out as the model sees them and grouped by category, are in [`QUESTIONS.md`](QUESTIONS.md).
 
 ## Calibration
 
-Standardised on 1500 Wikinews business, economy, energy and company articles (CC BY 2.5; `calibration/wikinews_business.json.gz`),
+Standardised on 1500 Wikinews business, economy, energy and company articles (CC BY 2.5; `sources/calibration/wikinews_business.json.gz`),
 scored on fp_51319d2ff6 on 2026-10-24. Nothing is fitted on labels or prices: the index's own article data stays
 with the index. Exported from the tt-news-index registry (spec 1.1, registry md5 `a1607d16`) on 2026-10-24.
 
 ## Files
 
-`0.1.0.json` the pack; `samples/inputs.json` the articles the fixture scores: Wikinews articles (CC BY 2.5, attributed in each
+`0.1.0.json` the pack, the file a server loads; `QUESTIONS.md` its questions written out; `samples/inputs.json` the articles the fixture scores: Wikinews articles (CC BY 2.5, attributed in each
 entry) and, for companies Wikinews rarely covers, illustrative articles written by thinkingtext (marked as such; not news reports);
 `fixtures/0.1.0.json` the samples' raw results and the evaluator's output.

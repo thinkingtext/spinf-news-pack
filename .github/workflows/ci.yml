@@ -1,0 +1,20 @@
+# Every pack file and the manifest validated with spinf-serve's pack commands, and every fixture recomputed, on every push and
+# pull request. SPINF_SERVE_SOURCE (a repository variable) installs spinf-serve from somewhere else than PyPI (a git URL, a
+# wheel); unset, the released package is used.
+name: ci
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
+      - run: uv venv && uv pip install "${{ vars.SPINF_SERVE_SOURCE || 'spinf-serve' }}"
+      - run: uv run spinf-serve packs validate .
+      - run: uv run spinf-serve packs list --packs . --no-official --model spinf/gemma-4-12b-fp8
+      - run: uv run python sources/build.py check

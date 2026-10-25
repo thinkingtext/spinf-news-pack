@@ -1027,7 +1027,7 @@
  },
  "engine": "fp_51319d2ff6",
  "calibration": {
-  "sample": "calibration/wikinews_business.json.gz",
+  "sample": "sources/calibration/wikinews_business.json.gz",
   "n": 1500,
   "statistic": "mean and sd of each read over the sample; no thresholds, no decision",
   "date": "2026-10-24"

@@ -35,36 +35,9 @@ code ([thinkingtext/tt-news-index](https://github.com/thinkingtext/tt-news-index
 | `macro` | Earnings, rates, risk appetite and the economy, as read on the company's articles | slot | 4 |
 | `company` | Meta news read | composite | 21 |
 
-## Cells
+## Questions
 
-| cell | phrase | answers | sign | wording |
-|---|---|---|---|---|
-| `meta:demand_for_meta_s_products__sum` | demand for Meta's products | increase / decrease | + | summary |
-| `meta:meta_s_advertising_revenue__sum` | Meta's advertising revenue | rise / fall | + | summary |
-| `meta:meta_s_revenue__sum` | Meta's revenue | rise / fall | + | summary |
-| `meta:meta_s_profit_margins__sum` | Meta's profit margins | rise / fall | + | summary |
-| `meta:meta_s_profits__sum` | Meta's profits | rise / fall | + | summary |
-| `meta:meta_s_earnings_forecasts__sum` | Meta's earnings forecasts | rise / fall | + | summary |
-| `meta:meta_s_growth_prospects__sum` | Meta's growth prospects | improve / worsen | + | summary |
-| `meta:meta_s_market_share__sum` | Meta's market share | rise / fall | + | summary |
-| `meta:meta_s_costs__sum` | Meta's costs | rise / fall | − | summary |
-| `meta:meta__sum` | Meta | positive / negative | + | sum_news_co |
-| `meta:meta_s_share_price__sum` | Meta's share price | rise / fall | + | summary |
-| `meta:the_valuation_of_meta__sum` | the valuation of Meta | rise / fall | + | summary |
-| `metarep:meta_s_daily_active_users__sum` | Meta's daily active users | higher / lower | + | sum_expect |
-| `metarep:meta_s_quarterly_results__sum` | Meta's quarterly results | higher / lower | + | sum_expect |
-| `metarep:meta_s_revenue_guidance__sum` | Meta's revenue guidance | higher / lower | + | sum_expect |
-| `stocks:us_stock_prices__sum` | US stock prices | rise / fall | + | summary |
-| `stocks:us_technology_stocks__sum` | US technology stocks | rise / fall | + | summary |
-| `earnings:us_corporate_earnings__sum` | US corporate earnings | rise / fall | + | summary |
-| `investors:news_inv_investors__sum` | investors | positive / negative | + | sum_news_inv |
-| `tech:big_tech_earnings__sum` | big tech earnings | rise / fall | + | summary |
-| `usa:the_risk_of_a_us_recession__sum` | the risk of a US recession | rise / fall | − | summary |
-
-Wordings: `default` = *"{article}\n\nAs a result, {phrase} is likely to"*; `summary` = *"{article}\n\nSummary of the key facts in the
-article above, from beginning to end, and their consequence: {phrase} is likely to"*; `sum_news_co` = *"... for {company} shareholders,
-this news is"* (positive / negative); `sum_expect` = *"... relative to market expectations, {phrase} came in"* (higher / lower).
-The sign is the direction of the first answer toward the category's "up" (a higher oil price, a higher share price).
+The 21 questions, written out as the model sees them and grouped by category, are in [`QUESTIONS.md`](QUESTIONS.md).
 
 ## The index formula
 
@@ -72,12 +45,12 @@ EQ-S10 for Meta = 0.67 × the company read (`company`: the mean of the non-empty
 
 ## Calibration
 
-Standardised on 1500 Wikinews business, economy, energy and company articles (CC BY 2.5; `calibration/wikinews_business.json.gz`),
+Standardised on 1500 Wikinews business, economy, energy and company articles (CC BY 2.5; `sources/calibration/wikinews_business.json.gz`),
 scored on fp_51319d2ff6 on 2026-10-24. Nothing is fitted on labels or prices: the index's own article data stays
 with the index. Exported from the tt-news-index registry (spec 1.2, registry md5 `ffb2d034`) on 2026-10-24.
 
 ## Files
 
-`0.1.0.json` the pack; `samples/inputs.json` the articles the fixture scores: Wikinews articles (CC BY 2.5, attributed in each
+`0.1.0.json` the pack, the file a server loads; `QUESTIONS.md` its questions written out; `samples/inputs.json` the articles the fixture scores: Wikinews articles (CC BY 2.5, attributed in each
 entry) and, for companies Wikinews rarely covers, illustrative articles written by thinkingtext (marked as such; not news reports);
 `fixtures/0.1.0.json` the samples' raw results and the evaluator's output.
