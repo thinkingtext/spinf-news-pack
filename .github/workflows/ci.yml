@@ -1,6 +1,7 @@
 # Every pack file and the manifest validated with spinf-serve's pack commands, and every fixture recomputed, on every push and
 # pull request. SPINF_SERVE_SOURCE (a repository variable) installs spinf-serve from somewhere else than PyPI (a git URL, a
-# wheel); unset, the released package is used.
+# wheel); unset, the released package is used. SPINF_SERVE_TOKEN (a repository secret) is used for a private git source;
+# unset, nothing changes.
 name: ci
 on:
   push:
@@ -14,7 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v10.2.0
-      - run: uv venv && uv pip install "${{ vars.SPINF_SERVE_SOURCE || 'spinf-serve' }}"
+      - run: |
+          if [ -n "$SPINF_SERVE_TOKEN" ]; then
+            git config --global url."https://x-access-token:${SPINF_SERVE_TOKEN}@github.com/".insteadOf "https://github.com/"
+          fi
+          uv venv && uv pip install "${{ vars.SPINF_SERVE_SOURCE || 'spinf-serve' }}"
+        env:
+          SPINF_SERVE_TOKEN: ${{ secrets.SPINF_SERVE_TOKEN }}
       - run: uv run spinf-serve packs validate .
       - run: uv run spinf-serve packs list --packs . --no-official --model spinf/gemma-4-12b-fp8
       - run: uv run python sources/build.py check
