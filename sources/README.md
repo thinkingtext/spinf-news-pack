@@ -3,7 +3,7 @@
 Nothing here is needed to use the packs. This folder holds what they are built from and the scripts that build them.
 
 - `build.py`: the pipeline, one subcommand per step (see its docstring for the commands): `export` the question sets from a checkout
-  of [thinkingtext/tt-news-index](https://github.com/thinkingtext/tt-news-index) (its cell registry and index specifications);
+  of thinkingtext's tt-news-index, which is not public (its cell registry and index specifications);
   `score` them on a spinf-serve over the calibration sample; `calibrate` into a pack (the mean and standard deviation of each read,
   no thresholds, no decision); `samples` to pick each pack's sample articles; `fixture` to score the samples; `manifest`, `readme`
   and `check`, which recomputes every fixture and is what CI runs.

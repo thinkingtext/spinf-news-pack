@@ -17,7 +17,7 @@ articles. The reads themselves come back with `include_queries: true`: each cell
 
 What the index does with them, and this pack does not: the daily mean of each cell over the day's gated articles, a trailing
 robust z over 250 days, an exponential smoothing, the composite's state words and the price regressions. Those live in the index's
-code ([thinkingtext/tt-news-index](https://github.com/thinkingtext/tt-news-index)); the pack is the question set and the per-read baselines.
+code (thinkingtext's tt-news-index, which is not public); the pack is the question set and the per-read baselines.
 
 ## Categories
 

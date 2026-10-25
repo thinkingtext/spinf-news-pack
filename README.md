@@ -38,7 +38,7 @@ company's articles with its pack, and the general flow with `market`. The same c
 
 The indexes select the articles (outlet lists, keyword gates per market, deduplication, the first 260 words), average each cell
 over the day's articles, standardise the daily means on a trailing 250-day window, smooth them, and read the result against prices.
-All of that is the consumer's side ([thinkingtext/tt-news-index](https://github.com/thinkingtext/tt-news-index)); the packs are the
+All of that is the consumer's side (thinkingtext's tt-news-index, which is not public); the packs are the
 question sets and per-read baselines, exported from the index's cell registry by `sources/build.py` and re-exported as a new version
 whenever the index's specification changes.
 
